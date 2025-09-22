@@ -324,6 +324,20 @@
       font-size: var(--eldoa-font-size-small);
     }
     
+    /* Top banner ad container */
+    .eldoa-ad-top-container {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      margin: 0;
+      padding: 0;
+      line-height: 1;
+    }
+    
+    .eldoa-ad-top-container:empty {
+      display: none;
+    }
+    
     /* Tablet styles (larger phones and small tablets) */
     @media screen and (min-width: 481px) {
       :root {
@@ -394,6 +408,7 @@
       .eldoa-header-container,
       .eldoa-footer-container,
       .eldoa-ad-zone,
+      .eldoa-ad-top-container,
       #eldoa-back-to-top,
       .theme-toggle {
         display: none !important;
@@ -593,6 +608,22 @@
       window.eldoaComponentLoader.load('eldoa-header-inject', '/components/header.html');
       window.eldoaComponentLoader.load('eldoa-footer-inject', '/components/footer.html');
       
+      // Load top banner ad
+      fetch('/ads/ad-top-banner.html')
+        .then(response => response.text())
+        .then(html => {
+          const topAdZone = document.getElementById('eldoa-ad-top');
+          if (topAdZone) {
+            topAdZone.innerHTML = html;
+            // Execute any scripts in the loaded content
+            const scripts = topAdZone.getElementsByTagName('script');
+            for (let script of scripts) {
+              eval(script.innerHTML);
+            }
+          }
+        })
+        .catch(error => console.log('Top banner ad failed to load:', error));
+      
       // Load ads
       fetch('/ads/ad-mid-content.html')
         .then(response => response.text())
@@ -607,6 +638,9 @@
   </script>
 </head>
 <body class="eldoa-page" data-page-type="condition" data-condition="achilles-tendinopathy">
+  
+  <!-- Top Banner Ad Zone -->
+  <div id="eldoa-ad-top" class="eldoa-ad-top-container" data-component="ad-top"></div>
   
   <!-- Theme Toggle Button -->
   <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
