@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+  
+  <!-- iOS Specific -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+  
+  <!-- Core Meta Tags -->
+  <title>Achilles Tendinopathy – ELDOA Encyclopedia</title>
+  <meta name="description" content="What Achilles tendinopathy is, how ELDOA addresses the whole posterior chain (plantar fascia → calves → hamstrings), and the L5–S1 position's role in relief. Includes kid-friendly summary and visual wiki." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.eldoaai.com/library/achilles-tendinopathy" />
+  
+  <!-- Mobile Theme Colors -->
+  <meta name="theme-color" content="#2c3e50" />
+  <meta name="msapplication-navbutton-color" content="#2c3e50" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  
+  <!-- CSS Custom Properties for Mobile-First Design -->
+  <style id="eldoa-base-styles">
+    /* Light mode (default) */
+    :root {
+      /* Colors */
+      --eldoa-primary-color: #3498db;
+      --eldoa-secondary-color: #2c3e50;
+      --eldoa-accent-color: #4caf50;
+      --eldoa-warning-color: #ff9800;
+      --eldoa-info-color: #007acc;
+      --eldoa-background: #ffffff;
+      --eldoa-surface: #f9f9f9;
+      --eldoa-text-primary: #333333;
+      --eldoa-text-secondary: #666666;
+      --eldoa-border-color: #e0e0e0;
+      
+      /* Mobile-First Spacing */
+      --eldoa-spacing-xs: 4px;
+      --eldoa-spacing-sm: 8px;
+      --eldoa-spacing-md: 16px;
+      --eldoa-spacing-lg: 24px;
+      --eldoa-spacing-xl: 32px;
+      
+      /* Mobile-First Typography */
+      --eldoa-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --eldoa-font-size-base: 16px;
+      --eldoa-font-size-small: 14px;
+      --eldoa-font-size-h1: 28px;
+      --eldoa-font-size-h2: 22px;
+      --eldoa-font-size-h3: 18px;
+      --eldoa-line-height: 1.6;
+      
+      /* Layout */
+      --eldoa-max-width: 800px;
+      --eldoa-border-radius: 8px;
+      
+      /* Touch targets */
+      --eldoa-touch-target: 44px;
+      
+      /* Safe area insets for iOS */
+      --safe-area-inset-top: env(safe-area-inset-top);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      --safe-area-inset-left: env(safe-area-inset-left);
+      --safe-area-inset-right: env(safe-area-inset-right);
+    }
+    
+    /* Dark mode styles */
+    [data-theme="dark"] {
+      --eldoa-primary-color: #5ba3e5;
+      --eldoa-secondary-color: #e0e0e0;
+      --eldoa-accent-color: #66bb6a;
+      --eldoa-warning-color: #ffb74d;
+      --eldoa-info-color: #4fc3f7;
+      --eldoa-background: #1a1a1a;
+      --eldoa-surface: #2a2a2a;
+      --eldoa-text-primary: #e0e0e0;
+      --eldoa-text-secondary: #b0b0b0;
+      --eldoa-border-color: #404040;
+    }
+    
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      bottom: 80px;
+      right: 20px;
+      right: calc(20px + env(safe-area-inset-right));
+      background: var(--eldoa-surface);
+      color: var(--eldoa-text-primary);
+      border: 2px solid var(--eldoa-border-color);
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 900;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .theme-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    /* Global box sizing */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    
+    /* Mobile-First Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--eldoa-background);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .eldoa-container {
+      font-family: var(--eldoa-font-family);
+      font-size: var(--eldoa-font-size-base);
+      line-height: var(--eldoa-line-height);
+      color: var(--eldoa-text-primary);
+      max-width: var(--eldoa-max-width);
+      margin: 0 auto;
+      padding: var(--eldoa-spacing-md);
+      padding-left: calc(var(--eldoa-spacing-md) + var(--safe-area-inset-left));
+      padding-right: calc(var(--eldoa-spacing-md) + var(--safe-area-inset-right));
+    }
+    
+    /* Mobile-optimized breadcrumb */
+    .eldoa-breadcrumb {
+      margin: var(--eldoa-spacing-md) 0;
+      padding: var(--eldoa-spacing-sm) var(--eldoa-spacing-md);
+      background: var(--eldoa-surface);
+      border-radius: var(--eldoa-border-radius);
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      font-size: var(--eldoa-font-size-small);
+      border: 1px solid var(--eldoa-border-color);
+    }
+    
+    .eldoa-breadcrumb a {
+      color: var(--eldoa-info-color);
+      text-decoration: none;
+      touch-action: manipulation;
+    }
+    
+    /* Touch-friendly links */
+    a, button {
+      touch-action: manipulation;
+      min-height: var(--eldoa-touch-target);
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    /* Mobile-optimized sections */
+    .eldoa-pocketbook {
+      background: var(--eldoa-surface);
+      padding: var(--eldoa-spacing-md);
+      border-left: 4px solid var(--eldoa-accent-color);
+      margin: var(--eldoa-spacing-md) 0;
+      border-radius: var(--eldoa-border-radius);
+      border: 1px solid var(--eldoa-border-color);
+    }
+    
+    /* Responsive images with fallback */
+    .eldoa-image-placeholder {
+      border: 2px dashed var(--eldoa-border-color);
+      padding: var(--eldoa-spacing-md);
+      margin: var(--eldoa-spacing-md) 0;
+      background: var(--eldoa-surface);
+      border-radius: var(--eldoa-border-radius);
+      text-align: center;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .eldoa-image-placeholder img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .eldoa-placeholder-content {
+      color: var(--eldoa-text-secondary);
+      padding: var(--eldoa-spacing-lg);
+    }
+    
+    .eldoa-prompt-text {
+      background: var(--eldoa-background);
+      padding: var(--eldoa-spacing-md);
+      border-left: 4px solid var(--eldoa-info-color);
+      margin: var(--eldoa-spacing-md) 0;
+      font-style: italic;
+      text-align: left;
+      font-size: var(--eldoa-font-size-small);
+      border-radius: var(--eldoa-border-radius);
+    }
+    
+    .eldoa-filename {
+      font-family: monospace;
+      color: var(--eldoa-info-color);
+      font-weight: bold;
+      margin-top: var(--eldoa-spacing-md);
+      font-size: var(--eldoa-font-size-small);
+    }
+    
+    /* Mobile-first typography */
+    .eldoa-h1 {
+      color: var(--eldoa-secondary-color);
+      border-bottom: 3px solid var(--eldoa-primary-color);
+      padding-bottom: var(--eldoa-spacing-md);
+      margin-bottom: var(--eldoa-spacing-lg);
+      font-size: var(--eldoa-font-size-h1);
+      line-height: 1.2;
+    }
+    
+    .eldoa-h2 {
+      color: var(--eldoa-secondary-color);
+      margin-top: var(--eldoa-spacing-xl);
+      font-size: var(--eldoa-font-size-h2);
+      line-height: 1.3;
+    }
+    
+    .eldoa-h3 {
+      font-size: var(--eldoa-font-size-h3);
+      line-height: 1.4;
+      color: var(--eldoa-secondary-color);
+    }
+    
+    /* Mobile-optimized cards */
+    .eldoa-positions-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--eldoa-spacing-md);
+      margin: var(--eldoa-spacing-md) 0;
+    }
+    
+    .eldoa-position-card {
+      background: var(--eldoa-surface);
+      border: 1px solid var(--eldoa-border-color);
+      padding: var(--eldoa-spacing-md);
+      border-radius: var(--eldoa-border-radius);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    /* Mobile-optimized related links */
+    .eldoa-related {
+      background: var(--eldoa-surface);
+      padding: var(--eldoa-spacing-md);
+      border-radius: var(--eldoa-border-radius);
+      margin: var(--eldoa-spacing-md) 0;
+      border: 1px solid var(--eldoa-border-color);
+    }
+    
+    .eldoa-related ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .eldoa-related li {
+      margin: var(--eldoa-spacing-sm) 0;
+      min-height: var(--eldoa-touch-target);
+      display: flex;
+      align-items: center;
+    }
+    
+    .eldoa-related a {
+      color: var(--eldoa-warning-color);
+      text-decoration: none;
+      padding: var(--eldoa-spacing-sm) 0;
+      display: block;
+      width: 100%;
+    }
+    
+    /* Mobile FAQ */
+    .eldoa-faq-item {
+      margin-bottom: var(--eldoa-spacing-lg);
+      padding-bottom: var(--eldoa-spacing-md);
+      border-bottom: 1px solid var(--eldoa-border-color);
+    }
+    
+    .eldoa-faq-item:last-child {
+      border-bottom: none;
+    }
+    
+    .eldoa-faq-item h3 {
+      margin-bottom: var(--eldoa-spacing-sm);
+    }
+    
+    /* Mobile-optimized ad zones */
+    .eldoa-ad-zone {
+      background: var(--eldoa-surface);
+      border: 1px dashed var(--eldoa-border-color);
+      padding: var(--eldoa-spacing-md);
+      margin: var(--eldoa-spacing-md) 0;
+      text-align: center;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--eldoa-border-radius);
+    }
+    
+    .eldoa-ad-placeholder {
+      color: var(--eldoa-text-secondary);
+      font-size: var(--eldoa-font-size-small);
+    }
+    
+    /* Tablet styles (larger phones and small tablets) */
+    @media screen and (min-width: 481px) {
+      :root {
+        --eldoa-spacing-md: 20px;
+        --eldoa-spacing-lg: 28px;
+        --eldoa-spacing-xl: 40px;
+        --eldoa-font-size-h1: 32px;
+        --eldoa-font-size-h2: 24px;
+        --eldoa-font-size-h3: 20px;
+      }
+      
+      .eldoa-container {
+        padding: var(--eldoa-spacing-lg);
+      }
+      
+      .eldoa-positions-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--eldoa-spacing-lg);
+      }
+    }
+    
+    /* Desktop styles */
+    @media screen and (min-width: 768px) {
+      :root {
+        --eldoa-font-size-h1: 36px;
+        --eldoa-font-size-h2: 28px;
+        --eldoa-font-size-h3: 22px;
+      }
+      
+      .eldoa-breadcrumb {
+        padding: var(--eldoa-spacing-md) var(--eldoa-spacing-lg);
+      }
+      
+      .eldoa-pocketbook {
+        padding: var(--eldoa-spacing-lg);
+      }
+      
+      .eldoa-related {
+        padding: var(--eldoa-spacing-lg);
+      }
+    }
+    
+    /* Landscape orientation adjustments */
+    @media screen and (orientation: landscape) and (max-height: 500px) {
+      :root {
+        --eldoa-spacing-lg: 16px;
+        --eldoa-spacing-xl: 24px;
+      }
+      
+      .eldoa-h1 {
+        font-size: 24px;
+        margin-bottom: var(--eldoa-spacing-md);
+      }
+    }
+    
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    
+    /* Print styles */
+    @media print {
+      .eldoa-header-container,
+      .eldoa-footer-container,
+      .eldoa-ad-zone,
+      #eldoa-back-to-top,
+      .theme-toggle {
+        display: none !important;
+      }
+    }
+  </style>
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Achilles Tendinopathy – ELDOA Encyclopedia" />
+  <meta property="og:description" content="ELDOA decompression and postural optimization for Achilles tendinopathy, with pocketbook, encyclopedia, and visual wiki sections." />
+  <meta property="og:url" content="https://www.eldoaai.com/library/achilles-tendinopathy" />
+  <meta property="og:image" content="https://www.eldoaai.com/images/achilles-tendinopathy-medical-diagram.jpg" />
+  <meta property="og:image:alt" content="Achilles tendon anatomy with ELDOA context" />
+  <meta property="og:site_name" content="ELDOA Encyclopedia" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Achilles Tendinopathy – ELDOA Encyclopedia" />
+  <meta name="twitter:description" content="How ELDOA helps Achilles tendinopathy through fascial decompression, posterior chain normalization, and L5–S1 mobility." />
+  <meta name="twitter:image" content="https://www.eldoaai.com/images/achilles-tendinopathy-medical-diagram.jpg" />
+  
+  <!-- All Schema.org markup (keeping same as before) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ELDOA Encyclopedia", "item": "https://www.eldoaai.com/library/" },
+      { "@type": "ListItem", "position": 2, "name": "A-Z Index", "item": "https://www.eldoaai.com/library/a-index" },
+      { "@type": "ListItem", "position": 3, "name": "Achilles Tendinopathy", "item": "https://www.eldoaai.com/library/achilles-tendinopathy" }
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Achilles Tendinopathy – ELDOA Encyclopedia",
+    "url":"https://www.eldoaai.com/library/achilles-tendinopathy",
+    "inLanguage":"en",
+    "speakable":{
+      "@type":"SpeakableSpecification",
+      "cssSelector":[
+        ".eldoa-pocketbook p",
+        ".eldoa-encyclopedia p:first-of-type"
+      ]
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Achilles Tendinopathy",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.eldoaai.com/library/achilles-tendinopathy"},
+    "author":{"@type":"Organization","name":"ELDOA Encyclopedia"},
+    "dateModified":"2025-09-22",
+    "image":"https://www.eldoaai.com/images/achilles-tendinopathy-medical-diagram.jpg"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ImageObject",
+    "url":"https://www.eldoaai.com/images/achilles-tendinopathy-medical-diagram.jpg",
+    "width":1200,
+    "height":630
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalCondition",
+    "name": "Achilles Tendinopathy",
+    "alternateName": "Achilles Tendinitis",
+    "description": "A common overuse injury particularly prevalent in running and jumping athletes. ELDOA addresses the entire posterior chain and uses targeted decompression (e.g., L5–S1) to restore optimal loading and proprioception.",
+    "associatedAnatomy": { "@type": "AnatomicalStructure", "name": "Achilles tendon" },
+    "cause": { "@type": "MedicalCause", "name": "Overuse from repetitive running or jumping" },
+    "signOrSymptom": [
+      { "@type": "MedicalSymptom", "name": "Heel or tendon pain with activity" },
+      { "@type": "MedicalSymptom", "name": "Morning stiffness" },
+      { "@type": "MedicalSymptom", "name": "Tenderness along the tendon" }
+    ],
+    "possibleTreatment": [
+      { "@type": "TherapeuticProcedure", "name": "ELDOA fascial decompression and postural optimization" },
+      { "@type": "TherapeuticProcedure", "name": "ELDOA L5–S1 segmental positioning to address neural tension" }
+    ],
+    "mainEntityOfPage": "https://www.eldoaai.com/library/achilles-tendinopathy",
+    "url": "https://www.eldoaai.com/library/achilles-tendinopathy",
+    "lastReviewed": "2025-09-22",
+    "reviewedBy": { "@type": "Organization", "name": "ELDOA Encyclopedia" },
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.eldoaai.com/images/achilles-tendinopathy-medical-diagram.jpg",
+      "caption": "Achilles tendon anatomy and ELDOA context"
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Achilles tendinopathy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "An overuse injury of the Achilles tendon that connects the calf muscles to the heel. It is common in running and jumping athletes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does ELDOA help with Achilles tendinopathy?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ELDOA addresses the entire posterior chain and uses targeted fascial decompression and postural optimization to normalize tension and restore optimal loading, rather than treating only the local tendon."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which ELDOA position is commonly used?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The L5–S1 decompression position is often emphasized to address neural tension components that can masquerade as tendon pain and to influence the lower extremity kinetic chain."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is ELDOA different from regular stretching?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. ELDOA is an active, sustained positioning method engaging fascia and proprioception; it differs from passive stretching by promoting longer-lasting changes in tissue quality and motor control."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can kids use ELDOA for Achilles pain?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes—simplified, supervised ELDOA can be used for kids. The Pocketbook summary provides kid-friendly framing; a trained instructor should oversee positioning."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often should I practice ELDOA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "In acute phases, daily short holds are common; as symptoms improve, frequency typically reduces to several sessions per week. Follow guidance from a qualified practitioner."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there research limitations I should know about?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. While clinical adoption is growing, more high-quality trials and long-term data are needed. ELDOA is best integrated within comprehensive care with appropriate assessment."
+        }
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Theme Detection and Setup -->
+  <script>
+    // Theme setup (before page renders)
+    (function() {
+      const savedTheme = localStorage.getItem('eldoa-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  
+  <!-- Component and Ad Loader -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load header and footer
+      window.eldoaComponentLoader.load('eldoa-header-inject', '/components/header.html');
+      window.eldoaComponentLoader.load('eldoa-footer-inject', '/components/footer.html');
+      
+      // Load ads
+      fetch('/ads/ad-mid-content.html')
+        .then(response => response.text())
+        .then(html => window.eldoaAdManager.inject('eldoa-ad-mid', html))
+        .catch(error => console.log('Mid-content ad failed to load:', error));
+        
+      fetch('/ads/ad-bottom.html')
+        .then(response => response.text())
+        .then(html => window.eldoaAdManager.inject('eldoa-ad-bottom', html))
+        .catch(error => console.log('Bottom ad failed to load:', error));
+    });
+  </script>
+</head>
+<body class="eldoa-page" data-page-type="condition" data-condition="achilles-tendinopathy">
+  
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+    <span id="theme-icon">🌙</span>
+  </button>
+  
+  <!-- Header Injection Zone -->
+  <div id="eldoa-header-inject" class="eldoa-header-container" data-component="header">
+    <!-- External header will be injected here -->
+  </div>
+  
+  <!-- Main Content Container -->
+  <div class="eldoa-container">
+    
+    <!-- Navigation Breadcrumb -->
+    <nav class="eldoa-breadcrumb" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/library/" itemprop="item"><span itemprop="name">ELDOA Encyclopedia</span></a>
+        <meta itemprop="position" content="1" />
+      </span> →
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/library/a-index.html" itemprop="item"><span itemprop="name">A</span></a>
+        <meta itemprop="position" content="2" />
+      </span> →
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Achilles Tendinopathy</span>
+        <meta itemprop="position" content="3" />
+      </span>
+    </nav>
+    
+    <!-- Main Article -->
+    <article class="eldoa-article" itemscope itemtype="https://schema.org/Article">
+      <header class="eldoa-article-header">
+        <h1 class="eldoa-h1" itemprop="headline">Achilles Tendinopathy</h1>
+        <meta itemprop="dateModified" content="2025-09-22" />
+        <meta itemprop="author" content="ELDOA Encyclopedia" />
+      </header>
+      
+      <!-- Pocketbook Summary Section -->
+      <section class="eldoa-pocketbook eldoa-section" data-section="pocketbook">
+        <h2 class="eldoa-h2">Quick Reference (Pocketbook)</h2>
+        <p class="eldoa-kids-summary"><strong>Eldoa for Kids Summary:</strong> When the strong rope (tendon) that connects your calf muscle to your heel gets sore from too much jumping or running. Eldoa helps by gently stretching your whole leg and back to take pressure off the sore spot.</p>
+      </section>
+      
+      <!-- Primary Image with Fallback -->
+      <div class="eldoa-image-placeholder" data-image-type="primary">
+        <img src="/images/achilles-tendinopathy-medical-diagram.jpg"
+             alt="Lower leg anatomy: calf muscles connecting to heel via the Achilles tendon, highlighted to show tenderness"
+             class="eldoa-image"
+             loading="lazy"
+             width="1200"
+             height="630"
+             itemprop="image"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <div class="eldoa-placeholder-content" style="display:none;">
+          <div class="eldoa-prompt-text">
+            <strong>AI Image Prompt:</strong><br>
+            Medical illustration style: side view of lower leg showing calf muscle connected to heel bone by a thick cord-like tendon, highlighted in soft red glow, clean white background, anatomical drawing style
+          </div>
+          <div class="eldoa-filename">🖼️ /images/achilles-tendinopathy-medical-diagram.jpg</div>
+          <div style="margin-top: 10px; font-size: 12px;">
+            <strong>Dimensions:</strong> 1200x630px<br>
+            <strong>Format:</strong> JPG<br>
+            <strong>Purpose:</strong> Primary medical diagram
+          </div>
+        </div>
+      </div>
+      
+      <!-- Encyclopedia Content -->
+      <section class="eldoa-encyclopedia eldoa-section" data-section="encyclopedia">
+        <h2 class="eldoa-h2">Detailed Explanation (Encyclopedia)</h2>
+        <p>A common overuse injury particularly prevalent in running and jumping athletes, Achilles tendinopathy responds well to Eldoa's comprehensive approach to fascial decompression and postural optimization. The technique recognizes that local tendon pathology often reflects dysfunction throughout the entire posterior chain, from the plantar fascia through the calf complex to the hamstrings and beyond.</p>
+        
+        <!-- Mid-Content Ad Zone -->
+        <div id="eldoa-ad-mid" class="eldoa-ad-zone" data-ad-position="mid-content" data-ad-size="responsive">
+          <div class="eldoa-ad-placeholder">Advertisement Space</div>
+        </div>
+        
+        <p>By addressing postural adaptations that create repetitive strain on the Achilles tendon, Eldoa works to restore optimal loading patterns rather than simply treating local symptoms. The targeted fascial decompression protocols help normalize tension throughout the lower extremity kinetic chain, reducing the eccentric overload that contributes to tendinopathy development.</p>
+        
+        <p>Additionally, the restoration of segmental mobility at L5–S1 and throughout the lumbar spine can address neural tension components that masquerade as tendon pain, while the improved proprioceptive awareness developed through sustained positioning helps athletes recognize and avoid the movement patterns that perpetuate injury.</p>
+      </section>
+      
+      <!-- Visual Wiki Section -->
+      <section class="eldoa-wiki eldoa-section" data-section="wiki">
+        <h2 class="eldoa-h2">Visual Guide (Wiki)</h2>
+        
+        <div class="eldoa-positions-grid">
+          <div class="eldoa-position-card">
+            <h3 class="eldoa-h3">Primary ELDOA Position</h3>
+            <div class="eldoa-image-placeholder" data-image-type="position">
+              <img src="/images/eldoa-l5-s1-achilles.jpg"
+                   alt="ELDOA L5–S1 decompression positioning to influence posterior chain and neural components"
+                   class="eldoa-image"
+                   loading="lazy"
+                   width="600"
+                   height="400"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+              <div class="eldoa-placeholder-content" style="display:none;">
+                <div class="eldoa-prompt-text">
+                  <strong>AI Image Prompt:</strong><br>
+                  Clinical demonstration: person lying supine with specific leg positioning for L5-S1 decompression targeting posterior chain, professional setting
+                </div>
+                <div class="eldoa-filename">🖼️ /images/eldoa-l5-s1-achilles.jpg</div>
+                <div style="margin-top: 10px; font-size: 12px;">
+                  <strong>Dimensions:</strong> 600x400px<br>
+                  <strong>Format:</strong> JPG<br>
+                  <strong>Purpose:</strong> Position demonstration
+                </div>
+              </div>
+            </div>
+            <p>Focus on L5–S1 decompression to address neural tension contributions to Achilles pain.</p>
+          </div>
+          
+          <div class="eldoa-position-card">
+            <h3 class="eldoa-h3">Supporting Positions</h3>
+            <div class="eldoa-image-placeholder" data-image-type="position">
+              <img src="/images/eldoa-posterior-chain.jpg"
+                   alt="Posterior chain overview from plantar fascia to hamstrings highlighted during ELDOA"
+                   class="eldoa-image"
+                   loading="lazy"
+                   width="600"
+                   height="400"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+              <div class="eldoa-placeholder-content" style="display:none;">
+                <div class="eldoa-prompt-text">
+                  <strong>AI Image Prompt:</strong><br>
+                  Educational diagram: full posterior chain from plantar fascia to hamstrings highlighted during ELDOA position, anatomical overlay
+                </div>
+                <div class="eldoa-filename">🖼️ /images/eldoa-posterior-chain.jpg</div>
+                <div style="margin-top: 10px; font-size: 12px;">
+                  <strong>Dimensions:</strong> 600x400px<br>
+                  <strong>Format:</strong> JPG<br>
+                  <strong>Purpose:</strong> Educational diagram
+                </div>
+              </div>
+            </div>
+            <p>Comprehensive posterior chain work addresses the full kinetic chain involved in Achilles loading.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Related Topics -->
+      <aside class="eldoa-related eldoa-section" data-section="related">
+        <h2 class="eldoa-h2">Related Topics</h2>
+        <ul class="eldoa-related-list">
+          <li><a href="/library/athletic-performance-enhancement.html" class="eldoa-link">Athletic Performance Enhancement</a></li>
+          <li><a href="/library/fascial-system.html" class="eldoa-link">Fascial System</a></li>
+          <li><a href="/library/l5-s1-junction.html" class="eldoa-link">L5–S1 Junction</a></li>
+          <li><a href="/library/proprioception.html" class="eldoa-link">Proprioception</a></li>
+          <li><a href="/library/overuse-injuries.html" class="eldoa-link">Overuse Injuries</a></li>
+        </ul>
+      </aside>
+      
+      <!-- FAQ Section -->
+      <section class="eldoa-faq eldoa-section" data-section="faq" id="faq">
+        <h2 class="eldoa-h2">Frequently Asked Questions</h2>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">What is Achilles tendinopathy?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">An overuse injury of the Achilles tendon that connects the calf muscles to the heel. It commonly affects running and jumping athletes.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">How does ELDOA help with Achilles tendinopathy?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">ELDOA looks beyond the tendon to address the full posterior chain. Through targeted fascial decompression and postural optimization, it aims to normalize tension and restore optimal loading patterns.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">Which ELDOA position is commonly used?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">The L5–S1 decompression position is emphasized to address neural tension elements and influence the lower extremity kinetic chain.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">Is ELDOA different from regular stretching?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes. ELDOA involves active, sustained positioning with conscious fascial engagement and proprioceptive focus, which can promote longer-lasting changes than passive stretching alone.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">Can kids use ELDOA for Achilles pain?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes—simplified, supervised ELDOA is appropriate. Use kid-friendly cues and ensure guidance from a qualified practitioner.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">How often should I practice ELDOA for Achilles issues?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Acute phases often use brief daily holds; as symptoms improve, sessions typically taper to several times weekly. Individualize with a trained practitioner.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">Are there research limitations I should know about?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Yes. While promising and widely used clinically, ELDOA needs more high-quality trials and long-term outcome data. It's best integrated within comprehensive care.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Bottom Ad Zone -->
+      <div id="eldoa-ad-bottom" class="eldoa-ad-zone" data-ad-position="bottom" data-ad-size="responsive">
+        <div class="eldoa-ad-placeholder">Advertisement Space</div>
+      </div>
+      
+    </article>
+  </div>
+  
+  <!-- Footer Injection Zone -->
+  <div id="eldoa-footer-inject" class="eldoa-footer-container" data-component="footer">
+    <!-- External footer will be injected here -->
+  </div>
+  
+  <!-- Component Loader Script -->
+  <script>
+    // Dynamic component loader for header/footer
+    (function() {
+      const componentLoader = {
+        load: function(componentId, url) {
+          const element = document.getElementById(componentId);
+          if (!element || !url) return;
+          
+          fetch(url)
+            .then(response => response.text())
+            .then(html => {
+              element.innerHTML = html;
+              element.dispatchEvent(new Event('component-loaded'));
+            })
+            .catch(error => console.error(`Failed to load ${componentId}:`, error));
+        }
+      };
+      
+      window.eldoaComponentLoader = componentLoader;
+    })();
+    
+    // Ad injection helper
+    (function() {
+      window.eldoaAdManager = {
+        inject: function(zoneId, content) {
+          const zone = document.getElementById(zoneId);
+          if (zone) {
+            zone.innerHTML = content;
+            zone.classList.add('eldoa-ad-loaded');
+          }
+        },
+        
+        injectScript: function(zoneId, scriptUrl) {
+          const zone = document.getElementById(zoneId);
+          if (zone) {
+            const script = document.createElement('script');
+            script.src = scriptUrl;
+            script.async = true;
+            zone.appendChild(script);
+          }
+        }
+      };
+    })();
+    
+    // Theme toggle functionality
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+      
+      function updateIcon(theme) {
+        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+      }
+      
+      // Set initial icon
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      updateIcon(currentTheme);
+      
+      // Toggle handler
+      toggle.addEventListener('click', function() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('eldoa-theme', next);
+        updateIcon(next);
+      });
+    })();
+  </script>
+</body>
+</html>
