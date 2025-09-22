@@ -1,0 +1,95 @@
+<!-- ad-mid-content.html - Fixed for Dark/Light Mode -->
+<style>
+  .eldoa-ad-mid-content {
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    border-radius: 8px;
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #2c3e50 !important; /* Force dark text */
+  }
+  
+  /* Dark mode override - keep light background for readability */
+  [data-theme="dark"] .eldoa-ad-mid-content {
+    background: linear-gradient(135deg, #e8f4ff 0%, #b8d4f1 100%);
+    color: #1a1a1a !important; /* Ensure dark text on light background */
+  }
+  
+  .eldoa-ad-mid-content strong {
+    display: block;
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #2c3e50 !important;
+  }
+  
+  [data-theme="dark"] .eldoa-ad-mid-content strong {
+    color: #1a1a1a !important;
+  }
+  
+  .eldoa-ad-mid-content a {
+    color: #2c3e50 !important;
+    font-weight: bold;
+    text-decoration: underline;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  [data-theme="dark"] .eldoa-ad-mid-content a {
+    color: #0056b3 !important;
+  }
+  
+  .eldoa-ad-mid-content a:hover,
+  .eldoa-ad-mid-content a:active {
+    opacity: 0.8;
+  }
+  
+  .eldoa-ad-features {
+    display: block;
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555 !important;
+  }
+  
+  [data-theme="dark"] .eldoa-ad-features {
+    color: #333 !important;
+  }
+  
+  .eldoa-ad-text {
+    margin: 8px 0;
+    color: inherit;
+  }
+  
+  /* Mobile adjustments */
+  @media screen and (max-width: 480px) {
+    .eldoa-ad-mid-content {
+      padding: 16px;
+      font-size: 14px;
+    }
+    
+    .eldoa-ad-mid-content strong {
+      font-size: 16px;
+    }
+    
+    .eldoa-ad-features {
+      font-size: 13px;
+    }
+  }
+  
+  /* Landscape mobile */
+  @media screen and (orientation: landscape) and (max-height: 500px) {
+    .eldoa-ad-mid-content {
+      padding: 12px 16px;
+    }
+  }
+</style>
+
+<div class="eldoa-ad-content eldoa-ad-mid-content">
+  <strong>🏃‍♂️ Elite Performance Recovery 🏃‍♀️</strong>
+  <div class="eldoa-ad-text">
+    Learn from <a href="https://www.benvelazquez.com/" target="_blank" rel="noopener">Ben Velazquez</a> - 
+    the expert trusted by NFL & NHL pros like Christian McCaffrey & Connor McDavid.
+  </div>
+  <div class="eldoa-ad-features">✨ Virtual Consultations • 🎯 ELDOA Specialist • 💪 Concussion Recovery</div>
+</div>
