@@ -1,0 +1,125 @@
+<!-- ad-top-banner.html -->
+<style>
+  .eldoa-top-banner {
+    background: #3498db;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    position: relative;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  }
+  
+  .eldoa-top-banner-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-right: 40px; /* Space for close button */
+  }
+  
+  .eldoa-top-banner a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .eldoa-top-banner a:hover {
+    text-decoration: none;
+  }
+  
+  .eldoa-banner-close {
+    position: absolute;
+    top: 50%;
+    right: 16px;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 8px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+    font-weight: normal;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .eldoa-banner-close:hover {
+    opacity: 1;
+  }
+  
+  /* Dark mode support */
+  [data-theme="dark"] .eldoa-top-banner {
+    background: #2980b9;
+  }
+  
+  /* Mobile adjustments */
+  @media screen and (max-width: 480px) {
+    .eldoa-top-banner {
+      font-size: 13px;
+      padding: 10px 12px;
+    }
+    
+    .eldoa-top-banner-inner {
+      padding-right: 36px;
+    }
+    
+    .eldoa-banner-close {
+      right: 8px;
+      font-size: 18px;
+      width: 28px;
+      height: 28px;
+    }
+  }
+  
+  /* Landscape mobile */
+  @media screen and (orientation: landscape) and (max-height: 500px) {
+    .eldoa-top-banner {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+</style>
+
+<div class="eldoa-top-banner" id="eldoa-top-banner">
+  <div class="eldoa-top-banner-inner">
+    🎯 Professional ELDOA Training: <a href="https://www.benvelazquez.com/" target="_blank" rel="noopener">Learn from Ben Velazquez</a> - Trusted by NFL & NHL Athletes
+  </div>
+  <button class="eldoa-banner-close" onclick="closeTopBanner()" aria-label="Close banner">×</button>
+</div>
+
+<script>
+// BANNER CONTROL - Set to true to show banner, false to hide
+const BANNER_ENABLED = false; // <-- Change this to true when ready to show
+
+function closeTopBanner() {
+  const banner = document.getElementById('eldoa-top-banner');
+  if (banner) {
+    banner.style.display = 'none';
+    localStorage.setItem('eldoa-banner-closed', 'true');
+  }
+}
+
+// Initialize banner visibility
+(function() {
+  const banner = document.getElementById('eldoa-top-banner');
+  if (!banner) return;
+  
+  // First check if banner is enabled
+  if (!BANNER_ENABLED) {
+    banner.style.display = 'none';
+    return;
+  }
+  
+  // Then check if user previously closed it
+  if (localStorage.getItem('eldoa-banner-closed') === 'true') {
+    banner.style.display = 'none';
+  }
+})();
+</script>
