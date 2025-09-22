@@ -1,0 +1,285 @@
+<!-- footer.html - Mobile Optimized -->
+<style>
+  /* Mobile-first footer styles */
+  .eldoa-global-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #e0e0e0;
+    margin-top: 40px;
+    padding: 32px 16px;
+    padding-bottom: calc(32px + env(safe-area-inset-bottom));
+  }
+  
+  .eldoa-footer-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .eldoa-footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    margin-bottom: 32px;
+  }
+  
+  .eldoa-footer-section h3 {
+    color: #2c3e50;
+    margin: 0 0 16px 0;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .eldoa-footer-section p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 14px;
+    margin: 0;
+  }
+  
+  .eldoa-footer-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .eldoa-footer-section li {
+    margin-bottom: 12px;
+  }
+  
+  .eldoa-footer-section a {
+    color: #666;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 4px 0;
+    transition: color 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  .eldoa-footer-section a:active {
+    color: #3498db;
+  }
+  
+  .eldoa-footer-highlight {
+    color: #3498db;
+    font-weight: bold;
+  }
+  
+  /* Footer copyright section */
+  .eldoa-footer-copyright {
+    border-top: 1px solid #e0e0e0;
+    padding-top: 24px;
+    text-align: center;
+    color: #999;
+    font-size: 13px;
+    line-height: 1.5;
+  }
+  
+  .eldoa-footer-copyright p {
+    margin: 0 0 8px 0;
+  }
+  
+  .eldoa-footer-copyright p:last-child {
+    margin: 0;
+  }
+  
+  /* Back to top button */
+  #eldoa-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    bottom: calc(20px + env(safe-area-inset-bottom));
+    right: 20px;
+    right: calc(20px + env(safe-area-inset-right));
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+    z-index: 900;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  #eldoa-back-to-top:active {
+    transform: scale(0.95);
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  
+  /* Tablet styles */
+  @media screen and (min-width: 600px) {
+    .eldoa-footer-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Desktop styles */
+  @media screen and (min-width: 768px) {
+    .eldoa-global-footer {
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+    
+    .eldoa-footer-grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      margin-bottom: 40px;
+    }
+    
+    .eldoa-footer-section a:hover {
+      color: #3498db;
+    }
+    
+    #eldoa-back-to-top:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+  }
+  
+  /* Landscape mobile adjustments */
+  @media screen and (orientation: landscape) and (max-height: 500px) {
+    .eldoa-global-footer {
+      padding: 24px 16px;
+      margin-top: 32px;
+    }
+    
+    .eldoa-footer-grid {
+      gap: 24px;
+      margin-bottom: 24px;
+    }
+  }
+  
+  /* Dark mode support */
+  @media (prefers-color-scheme: dark) {
+    .eldoa-global-footer {
+      background: #1a1a1a;
+      border-top-color: #404040;
+    }
+    
+    .eldoa-footer-section h3 {
+      color: #e0e0e0;
+    }
+    
+    .eldoa-footer-section p,
+    .eldoa-footer-section a {
+      color: #b0b0b0;
+    }
+    
+    .eldoa-footer-section a:active,
+    .eldoa-footer-section a:hover {
+      color: #5ba3e5;
+    }
+    
+    .eldoa-footer-copyright {
+      border-top-color: #404040;
+      color: #808080;
+    }
+    
+    #eldoa-back-to-top {
+      background: #5ba3e5;
+    }
+  }
+</style>
+
+<footer class="eldoa-global-footer">
+  <div class="eldoa-footer-inner">
+    <div class="eldoa-footer-grid">
+      
+      <!-- About Section -->
+      <div class="eldoa-footer-section">
+        <h3>About ELDOA Encyclopedia</h3>
+        <p>
+          Your comprehensive resource for understanding ELDOA methods, positions, and applications based on the work of Dr. Guy Voyer.
+        </p>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="eldoa-footer-section">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/library/">📚 Library Home</a></li>
+          <li><a href="/library/conditions.html">🏥 Conditions</a></li>
+          <li><a href="/library/positions.html">🧘 Positions</a></li>
+          <li><a href="/about.html">ℹ️ About</a></li>
+          <li><a href="/contact.html">📧 Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Professional Training -->
+      <div class="eldoa-footer-section">
+        <h3>Professional Training</h3>
+        <p>
+          Looking for expert ELDOA instruction?<br><br>
+          <a href="https://www.benvelazquez.com/" class="eldoa-footer-highlight">
+            Ben Velazquez
+          </a> offers virtual consultations and training for athletes and individuals worldwide.
+        </p>
+      </div>
+    </div>
+    
+    <!-- Copyright -->
+    <div class="eldoa-footer-copyright">
+      <p>
+        © 2025 ELDOA Encyclopedia. Educational resource based on the work of Dr. Guy Voyer.
+      </p>
+      <p>
+        ⚠️ Always consult with a qualified practitioner before beginning any exercise program.
+      </p>
+    </div>
+  </div>
+</footer>
+
+<!-- Back to top button -->
+<button onclick="scrollToTop()" 
+        aria-label="Back to top"
+        id="eldoa-back-to-top">
+  ↑
+</button>
+
+<script>
+// Smooth scroll to top
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+// Show/hide back to top button based on scroll position
+let lastScrollY = 0;
+let ticking = false;
+
+function updateBackToTopButton() {
+  const button = document.getElementById('eldoa-back-to-top');
+  const scrollY = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if (scrollY > 300) {
+    button.style.display = 'flex';
+  } else {
+    button.style.display = 'none';
+  }
+  
+  lastScrollY = scrollY;
+  ticking = false;
+}
+
+function requestTick() {
+  if (!ticking) {
+    window.requestAnimationFrame(updateBackToTopButton);
+    ticking = true;
+  }
+}
+
+// Throttle scroll events for better performance
+window.addEventListener('scroll', requestTick, { passive: true });
+
+// Initial check
+updateBackToTopButton();
+</script>

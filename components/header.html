@@ -1,0 +1,282 @@
+<!-- header.html - Mobile Optimized -->
+<style>
+  /* Mobile-first header styles */
+  .eldoa-global-header {
+    background: #2c3e50;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .eldoa-header-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    padding-left: calc(16px + env(safe-area-inset-left));
+    padding-right: calc(16px + env(safe-area-inset-right));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .eldoa-logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  /* Mobile hamburger menu */
+  .eldoa-mobile-menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  /* Desktop nav (hidden on mobile) */
+  .eldoa-nav-desktop {
+    display: none;
+  }
+  
+  /* Mobile nav (slide-out menu) */
+  .eldoa-nav-mobile {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    max-width: 80vw;
+    height: 100vh;
+    height: 100dvh;
+    background: #34495e;
+    box-shadow: -2px 0 8px rgba(0,0,0,0.2);
+    transition: right 0.3s ease;
+    z-index: 1001;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  .eldoa-nav-mobile.active {
+    right: 0;
+  }
+  
+  .eldoa-mobile-nav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+  }
+  
+  .eldoa-mobile-nav-title {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .eldoa-mobile-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    padding: 4px;
+    cursor: pointer;
+    line-height: 1;
+  }
+  
+  .eldoa-nav-mobile a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    font-size: 16px;
+    transition: background 0.2s ease;
+  }
+  
+  .eldoa-nav-mobile a:active {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  /* Mobile menu overlay */
+  .eldoa-mobile-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .eldoa-mobile-overlay.active {
+    display: block;
+    opacity: 1;
+  }
+  
+  /* Promotional banner */
+  .eldoa-promo-banner {
+    background: #3498db;
+    color: white;
+    padding: 12px 16px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  
+  .eldoa-promo-banner a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  /* Tablet styles */
+  @media screen and (min-width: 768px) {
+    .eldoa-header-inner {
+      padding: 20px;
+    }
+    
+    .eldoa-logo a {
+      font-size: 24px;
+    }
+    
+    /* Show desktop nav, hide mobile toggle */
+    .eldoa-mobile-menu-toggle {
+      display: none;
+    }
+    
+    .eldoa-nav-desktop {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    
+    .eldoa-nav-desktop a {
+      color: white;
+      text-decoration: none;
+      opacity: 0.9;
+      transition: opacity 0.2s ease;
+      padding: 8px 0;
+      font-size: 16px;
+    }
+    
+    .eldoa-nav-desktop a:hover {
+      opacity: 1;
+    }
+    
+    .eldoa-nav-mobile,
+    .eldoa-mobile-overlay {
+      display: none !important;
+    }
+  }
+  
+  /* Landscape mobile adjustments */
+  @media screen and (orientation: landscape) and (max-height: 500px) {
+    .eldoa-header-inner {
+      padding: 12px 16px;
+    }
+    
+    .eldoa-logo a {
+      font-size: 18px;
+    }
+    
+    .eldoa-promo-banner {
+      padding: 8px 16px;
+      font-size: 13px;
+    }
+  }
+  
+  /* iOS notch support */
+  @supports (padding-top: env(safe-area-inset-top)) {
+    .eldoa-nav-mobile {
+      padding-top: env(safe-area-inset-top);
+    }
+  }
+</style>
+
+<header class="eldoa-global-header">
+  <div class="eldoa-header-inner">
+    <div class="eldoa-logo">
+      <a href="/library/">
+        <span>📚</span>
+        <span>ELDOA Encyclopedia</span>
+      </a>
+    </div>
+    
+    <!-- Mobile menu toggle -->
+    <button class="eldoa-mobile-menu-toggle" aria-label="Open menu" onclick="toggleMobileMenu()">
+      ☰
+    </button>
+    
+    <!-- Desktop navigation -->
+    <nav class="eldoa-nav-desktop">
+      <a href="/library/">Home</a>
+      <a href="/library/a-index.html">A-Z Index</a>
+      <a href="/library/pocketbook.html">Pocketbook</a>
+      <a href="/library/encyclopedia.html">Encyclopedia</a>
+      <a href="/library/wiki.html">Visual Wiki</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Mobile navigation menu -->
+<div class="eldoa-mobile-overlay" onclick="toggleMobileMenu()"></div>
+<nav class="eldoa-nav-mobile">
+  <div class="eldoa-mobile-nav-header">
+    <div class="eldoa-mobile-nav-title">Menu</div>
+    <button class="eldoa-mobile-close" aria-label="Close menu" onclick="toggleMobileMenu()">×</button>
+  </div>
+  <a href="/library/" onclick="toggleMobileMenu()">🏠 Home</a>
+  <a href="/library/a-index.html" onclick="toggleMobileMenu()">📖 A-Z Index</a>
+  <a href="/library/pocketbook.html" onclick="toggleMobileMenu()">📔 Pocketbook</a>
+  <a href="/library/encyclopedia.html" onclick="toggleMobileMenu()">📚 Encyclopedia</a>
+  <a href="/library/wiki.html" onclick="toggleMobileMenu()">🖼️ Visual Wiki</a>
+  <a href="/library/conditions.html" onclick="toggleMobileMenu()">🏥 Conditions</a>
+  <a href="/library/positions.html" onclick="toggleMobileMenu()">🧘 Positions</a>
+  <a href="/about.html" onclick="toggleMobileMenu()">ℹ️ About</a>
+</nav>
+
+<!-- Promotional banner -->
+<div class="eldoa-promo-banner">
+  🎯 Professional ELDOA Training: <a href="https://www.benvelazquez.com/">Learn from Ben Velazquez</a> - Trusted by NFL & NHL Athletes
+</div>
+
+<script>
+function toggleMobileMenu() {
+  const mobileNav = document.querySelector('.eldoa-nav-mobile');
+  const overlay = document.querySelector('.eldoa-mobile-overlay');
+  const isActive = mobileNav.classList.contains('active');
+  
+  if (isActive) {
+    mobileNav.classList.remove('active');
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  } else {
+    mobileNav.classList.add('active');
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+// Close menu on escape key
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    const mobileNav = document.querySelector('.eldoa-nav-mobile');
+    if (mobileNav && mobileNav.classList.contains('active')) {
+      toggleMobileMenu();
+    }
+  }
+});
+</script>

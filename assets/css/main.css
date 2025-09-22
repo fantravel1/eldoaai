@@ -1,0 +1,353 @@
+/* main.css - Mobile Optimized Custom Styles for ELDOA Encyclopedia */
+
+/* =========================================
+   CSS Custom Property Overrides
+   ========================================= */
+
+:root {
+  /* Custom overrides can be added here */
+  /* Example: --eldoa-primary-color: #your-brand-color; */
+}
+
+/* =========================================
+   Global Mobile Optimizations
+   ========================================= */
+
+/* Ensure smooth scrolling on iOS */
+html {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Prevent iOS zoom on form inputs */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+  font-size: 16px;
+}
+
+/* Better touch targets for all interactive elements */
+a, button, [role="button"] {
+  position: relative;
+}
+
+a::before,
+button::before,
+[role="button"]::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  bottom: -8px;
+  left: -8px;
+}
+
+/* =========================================
+   Component Loading States
+   ========================================= */
+
+/* Hide placeholder text when ads are loaded */
+.eldoa-ad-loaded .eldoa-ad-placeholder {
+  display: none;
+}
+
+/* Smooth fade-in for loaded components */
+.eldoa-header-container,
+.eldoa-footer-container,
+.eldoa-ad-zone {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.eldoa-header-container:not(:empty),
+.eldoa-footer-container:not(:empty),
+.eldoa-ad-loaded {
+  opacity: 1;
+}
+
+/* Loading skeleton animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.eldoa-loading {
+  background: linear-gradient(
+    90deg,
+    #f0f0f0 0px,
+    #f8f8f8 40px,
+    #f0f0f0 80px
+  );
+  background-size: 200px 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+/* =========================================
+   Mobile-Specific Enhancements
+   ========================================= */
+
+/* Improve readability on small screens */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 15px;
+  }
+  
+  /* Larger tap targets for mobile */
+  .eldoa-related a {
+    padding: 12px 0;
+  }
+  
+  /* Better spacing for mobile */
+  .eldoa-section {
+    margin: 24px 0;
+  }
+  
+  /* Optimize images for mobile */
+  .eldoa-image-container {
+    padding: 12px;
+  }
+}
+
+/* =========================================
+   iOS-Specific Fixes
+   ========================================= */
+
+/* Fix iOS button styling */
+@supports (-webkit-touch-callout: none) {
+  button,
+  input[type="button"],
+  input[type="submit"] {
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  /* Fix iOS Safari bounce scroll */
+  .eldoa-container {
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* =========================================
+   Android-Specific Fixes
+   ========================================= */
+
+/* Optimize for Android Chrome */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5) {
+  /* High DPI adjustments */
+  .eldoa-border-color {
+    border-width: 0.5px;
+  }
+}
+
+/* =========================================
+   Performance Optimizations
+   ========================================= */
+
+/* Use GPU acceleration for animations */
+.eldoa-nav-mobile,
+.eldoa-mobile-overlay,
+#eldoa-back-to-top {
+  will-change: transform, opacity;
+}
+
+/* Optimize font loading */
+.eldoa-container {
+  font-display: swap;
+}
+
+/* =========================================
+   Accessibility Enhancements
+   ========================================= */
+
+/* Focus states for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  outline: 3px solid var(--eldoa-primary-color);
+  outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-to-content {
+  position: absolute;
+  left: -9999px;
+  z-index: 9999;
+  padding: 12px 24px;
+  background: var(--eldoa-primary-color);
+  color: white;
+  text-decoration: none;
+  border-radius: 0 0 8px 0;
+}
+
+.skip-to-content:focus {
+  left: 0;
+  top: 0;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .eldoa-ad-zone {
+    border: 2px solid currentColor;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* =========================================
+   Print Styles
+   ========================================= */
+
+@media print {
+  /* Hide interactive elements */
+  .eldoa-header-container,
+  .eldoa-footer-container,
+  .eldoa-ad-zone,
+  #eldoa-back-to-top,
+  .eldoa-mobile-menu-toggle,
+  .eldoa-nav-mobile {
+    display: none !important;
+  }
+  
+  /* Expand content for print */
+  .eldoa-container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  /* Ensure good contrast */
+  * {
+    color: #000 !important;
+    background: #fff !important;
+  }
+  
+  /* Show URLs for links */
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+}
+
+/* =========================================
+   Utility Classes for Mobile
+   ========================================= */
+
+/* Hide on mobile */
+@media screen and (max-width: 767px) {
+  .eldoa-hide-mobile {
+    display: none !important;
+  }
+}
+
+/* Show only on mobile */
+.eldoa-show-mobile {
+  display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .eldoa-show-mobile {
+    display: block !important;
+  }
+}
+
+/* Responsive text alignment */
+@media screen and (max-width: 767px) {
+  .eldoa-text-center-mobile {
+    text-align: center !important;
+  }
+  
+  .eldoa-text-left-mobile {
+    text-align: left !important;
+  }
+}
+
+/* =========================================
+   Custom Ad Styling
+   ========================================= */
+
+/* Ensure ads look good on all devices */
+.eldoa-ad-content {
+  max-width: 100%;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+/* Ad hover effects (desktop only) */
+@media (hover: hover) {
+  .eldoa-ad-content a:hover {
+    opacity: 0.9;
+  }
+}
+
+/* =========================================
+   Animation Classes
+   ========================================= */
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Subtle entrance animations */
+@media (prefers-reduced-motion: no-preference) {
+  .eldoa-section {
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* =========================================
+   Custom Scrollbar (Desktop)
+   ========================================= */
+
+@media screen and (min-width: 768px) {
+  /* Custom scrollbar for webkit browsers */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 6px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: #888 #f1f1f1;
+  }
+}
