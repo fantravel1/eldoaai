@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover" />
+  
+  <!-- iOS Specific -->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="format-detection" content="telephone=no" />
+  
+  <!-- Core Meta Tags -->
+  <!-- Page‑specific meta tags -->
+  <title>Alexander Technique – ELDOA Encyclopedia</title>
+  <meta name="description" content="Learn about the Alexander Technique – a gentle method of postural and proprioceptive re‑education that emphasises releasing excess tension and improving head–neck–back alignment. Discover how this approach complements ELDOA’s active decompression through a kid‑friendly pocketbook, concise encyclopedia entry, visual guide and FAQs." />
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+  <link rel="canonical" href="https://www.eldoaai.com/library/alexander-technique" />
+  <meta name="author" content="ELDOA Encyclopedia" />
+  <meta name="publisher" content="ELDOA AI" />
+  
+  <!-- Mobile Theme Colors -->
+  <meta name="theme-color" content="#2c3e50" />
+  <meta name="msapplication-navbutton-color" content="#2c3e50" />
+  
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/css/main.css" />
+  
+  <!-- CSS Custom Properties for Mobile-First Design -->
+  <style id="eldoa-base-styles">
+    /* Light mode (default) */
+    :root {
+      /* Colors */
+      --eldoa-primary-color: #3498db;
+      --eldoa-secondary-color: #2c3e50;
+      --eldoa-accent-color: #4caf50;
+      --eldoa-warning-color: #ff9800;
+      --eldoa-info-color: #007acc;
+      --eldoa-background: #ffffff;
+      --eldoa-surface: #f9f9f9;
+      --eldoa-text-primary: #333333;
+      --eldoa-text-secondary: #666666;
+      --eldoa-border-color: #e0e0e0;
+      
+      /* Mobile-First Spacing */
+      --eldoa-spacing-xs: 4px;
+      --eldoa-spacing-sm: 8px;
+      --eldoa-spacing-md: 16px;
+      --eldoa-spacing-lg: 24px;
+      --eldoa-spacing-xl: 32px;
+      
+      /* Mobile-First Typography */
+      --eldoa-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      --eldoa-font-size-base: 16px;
+      --eldoa-font-size-small: 14px;
+      --eldoa-font-size-h1: 28px;
+      --eldoa-font-size-h2: 22px;
+      --eldoa-font-size-h3: 18px;
+      --eldoa-line-height: 1.6;
+      
+      /* Layout */
+      --eldoa-max-width: 800px;
+      --eldoa-border-radius: 8px;
+      
+      /* Touch targets */
+      --eldoa-touch-target: 44px;
+      
+      /* Safe area insets for iOS */
+      --safe-area-inset-top: env(safe-area-inset-top);
+      --safe-area-inset-bottom: env(safe-area-inset-bottom);
+      --safe-area-inset-left: env(safe-area-inset-left);
+      --safe-area-inset-right: env(safe-area-inset-right);
+    }
+    
+    /* Dark mode styles */
+    [data-theme="dark"] {
+      --eldoa-primary-color: #5ba3e5;
+      --eldoa-secondary-color: #e0e0e0;
+      --eldoa-accent-color: #66bb6a;
+      --eldoa-warning-color: #ffb74d;
+      --eldoa-info-color: #4fc3f7;
+      --eldoa-background: #1a1a1a;
+      --eldoa-surface: #2a2a2a;
+      --eldoa-text-primary: #e0e0e0;
+      --eldoa-text-secondary: #b0b0b0;
+      --eldoa-border-color: #404040;
+    }
+    
+    /* Theme toggle button */
+    .theme-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      right: calc(20px + env(safe-area-inset-right));
+      background: var(--eldoa-surface);
+      color: var(--eldoa-text-primary);
+      border: 2px solid var(--eldoa-border-color);
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+      cursor: pointer;
+      z-index: 900;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .theme-toggle:hover {
+      transform: scale(1.1);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    
+    /* Global box sizing */
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    
+    /* Mobile-First Base Styles */
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--eldoa-background);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      -webkit-tap-highlight-color: transparent;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .eldoa-container {
+      font-family: var(--eldoa-font-family);
+      font-size: var(--eldoa-font-size-base);
+      line-height: var(--eldoa-line-height);
+      color: var(--eldoa-text-primary);
+      max-width: var(--eldoa-max-width);
+      margin: 0 auto;
+      padding: var(--eldoa-spacing-md);
+      padding-left: calc(var(--eldoa-spacing-md) + var(--safe-area-inset-left));
+      padding-right: calc(var(--eldoa-spacing-md) + var(--safe-area-inset-right));
+    }
+    
+    /* Mobile-optimized breadcrumb */
+    .eldoa-breadcrumb {
+      margin: var(--eldoa-spacing-md) 0;
+      padding: var(--eldoa-spacing-sm) var(--eldoa-spacing-md);
+      background: var(--eldoa-surface);
+      border-radius: var(--eldoa-border-radius);
+      overflow-x: auto;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+      font-size: var(--eldoa-font-size-small);
+      border: 1px solid var(--eldoa-border-color);
+    }
+    
+    .eldoa-breadcrumb a {
+      color: var(--eldoa-info-color);
+      text-decoration: none;
+      touch-action: manipulation;
+    }
+    
+    /* Touch-friendly links */
+    a, button {
+      touch-action: manipulation;
+      min-height: var(--eldoa-touch-target);
+      display: inline-flex;
+      align-items: center;
+    }
+    
+    /* Mobile-optimized sections */
+    .eldoa-pocketbook {
+      background: var(--eldoa-surface);
+      padding: var(--eldoa-spacing-md);
+      border-left: 4px solid var(--eldoa-accent-color);
+      margin: var(--eldoa-spacing-md) 0;
+      border-radius: var(--eldoa-border-radius);
+      border: 1px solid var(--eldoa-border-color);
+    }
+    
+    /* Responsive images with fallback */
+    .eldoa-image-placeholder {
+      border: 2px dashed var(--eldoa-border-color);
+      padding: var(--eldoa-spacing-md);
+      margin: var(--eldoa-spacing-md) 0;
+      background: var(--eldoa-surface);
+      border-radius: var(--eldoa-border-radius);
+      text-align: center;
+      min-height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .eldoa-image-placeholder img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    
+    .eldoa-placeholder-content {
+      color: var(--eldoa-text-secondary);
+      padding: var(--eldoa-spacing-lg);
+    }
+    
+    .eldoa-prompt-text {
+      background: var(--eldoa-background);
+      padding: var(--eldoa-spacing-md);
+      border-left: 4px solid var(--eldoa-info-color);
+      margin: var(--eldoa-spacing-md) 0;
+      font-style: italic;
+      text-align: left;
+      font-size: var(--eldoa-font-size-small);
+      border-radius: var(--eldoa-border-radius);
+    }
+    
+    .eldoa-filename {
+      font-family: monospace;
+      color: var(--eldoa-info-color);
+      font-weight: bold;
+      margin-top: var(--eldoa-spacing-md);
+      font-size: var(--eldoa-font-size-small);
+    }
+    
+    /* Mobile-first typography */
+    .eldoa-h1 {
+      color: var(--eldoa-secondary-color);
+      border-bottom: 3px solid var(--eldoa-primary-color);
+      padding-bottom: var(--eldoa-spacing-md);
+      margin-bottom: var(--eldoa-spacing-lg);
+      font-size: var(--eldoa-font-size-h1);
+      line-height: 1.2;
+    }
+    
+    .eldoa-h2 {
+      color: var(--eldoa-secondary-color);
+      margin-top: var(--eldoa-spacing-xl);
+      font-size: var(--eldoa-font-size-h2);
+      line-height: 1.3;
+    }
+    
+    .eldoa-h3 {
+      font-size: var(--eldoa-font-size-h3);
+      line-height: 1.4;
+      color: var(--eldoa-secondary-color);
+    }
+    
+    /* Mobile-optimized cards */
+    .eldoa-positions-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--eldoa-spacing-md);
+      margin: var(--eldoa-spacing-md) 0;
+    }
+    
+    .eldoa-position-card {
+      background: var(--eldoa-surface);
+      border: 1px solid var(--eldoa-border-color);
+      padding: var(--eldoa-spacing-md);
+      border-radius: var(--eldoa-border-radius);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    
+    /* Mobile-optimized related links */
+    .eldoa-related {
+      background: var(--eldoa-surface);
+      padding: var(--eldoa-spacing-md);
+      border-radius: var(--eldoa-border-radius);
+      margin: var(--eldoa-spacing-md) 0;
+      border: 1px solid var(--eldoa-border-color);
+    }
+    
+    .eldoa-related ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .eldoa-related li {
+      margin: var(--eldoa-spacing-sm) 0;
+      min-height: var(--eldoa-touch-target);
+      display: flex;
+      align-items: center;
+    }
+    
+    .eldoa-related a {
+      color: var(--eldoa-warning-color);
+      text-decoration: none;
+      padding: var(--eldoa-spacing-sm) 0;
+      display: block;
+      width: 100%;
+    }
+    
+    /* Mobile FAQ */
+    .eldoa-faq-item {
+      margin-bottom: var(--eldoa-spacing-lg);
+      padding-bottom: var(--eldoa-spacing-md);
+      border-bottom: 1px solid var(--eldoa-border-color);
+    }
+    
+    .eldoa-faq-item:last-child {
+      border-bottom: none;
+    }
+    
+    .eldoa-faq-item h3 {
+      margin-bottom: var(--eldoa-spacing-sm);
+    }
+    
+    /* Mobile-optimized ad zones */
+    .eldoa-ad-zone {
+      background: var(--eldoa-surface);
+      border: 1px dashed var(--eldoa-border-color);
+      padding: var(--eldoa-spacing-md);
+      margin: var(--eldoa-spacing-md) 0;
+      text-align: center;
+      min-height: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: var(--eldoa-border-radius);
+    }
+    
+    .eldoa-ad-placeholder {
+      color: var(--eldoa-text-secondary);
+      font-size: var(--eldoa-font-size-small);
+    }
+    
+    /* Tablet styles (larger phones and small tablets) */
+    @media screen and (min-width: 481px) {
+      :root {
+        --eldoa-spacing-md: 20px;
+        --eldoa-spacing-lg: 28px;
+        --eldoa-spacing-xl: 40px;
+        --eldoa-font-size-h1: 32px;
+        --eldoa-font-size-h2: 24px;
+        --eldoa-font-size-h3: 20px;
+      }
+      
+      .eldoa-container {
+        padding: var(--eldoa-spacing-lg);
+      }
+      
+      .eldoa-positions-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: var(--eldoa-spacing-lg);
+      }
+    }
+    
+    /* Desktop styles */
+    @media screen and (min-width: 768px) {
+      :root {
+        --eldoa-font-size-h1: 36px;
+        --eldoa-font-size-h2: 28px;
+        --eldoa-font-size-h3: 22px;
+      }
+      
+      .eldoa-breadcrumb {
+        padding: var(--eldoa-spacing-md) var(--eldoa-spacing-lg);
+      }
+      
+      .eldoa-pocketbook {
+        padding: var(--eldoa-spacing-lg);
+      }
+      
+      .eldoa-related {
+        padding: var(--eldoa-spacing-lg);
+      }
+    }
+    
+    /* Landscape orientation adjustments */
+    @media screen and (orientation: landscape) and (max-height: 500px) {
+      :root {
+        --eldoa-spacing-lg: 16px;
+        --eldoa-spacing-xl: 24px;
+      }
+      
+      .eldoa-h1 {
+        font-size: 24px;
+        margin-bottom: var(--eldoa-spacing-md);
+      }
+    }
+    
+    /* Reduced motion */
+    @media (prefers-reduced-motion: reduce) {
+      * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    
+    /* Print styles */
+    @media print {
+      .eldoa-header-container,
+      .eldoa-footer-container,
+      .eldoa-ad-zone,
+      #eldoa-back-to-top,
+      .theme-toggle {
+        display: none !important;
+      }
+    }
+  </style>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  
+  <!-- Additional icons for Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  
+  <!-- Web App Manifest -->
+  <link rel="manifest" href="/site.webmanifest">
+  
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Achilles Tendinopathy – ELDOA Encyclopedia" />
+  <meta property="og:description" content="Discover how the Alexander Technique teaches you to let go of habitual tension and improve your posture. This page explains the method, shows how it pairs with ELDOA practice, and provides a visual guide and FAQs." />
+  <meta property="og:url" content="https://www.eldoaai.com/library/alexander-technique" />
+  <meta property="og:image" content="https://www.eldoaai.com/images/alexander-technique-medical-diagram.jpg" />
+  <meta property="og:image:alt" content="Head, neck and upper torso anatomical illustration demonstrating alignment and tension release" />
+  <meta property="og:site_name" content="ELDOA Encyclopedia" />
+  <meta property="og:locale" content="en_US" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Alexander Technique – ELDOA Encyclopedia" />
+  <meta name="twitter:description" content="Explore the Alexander Technique: a posture and awareness method that complements ELDOA’s decompression exercises by focusing on releasing excess tension and re‑training head–neck–back coordination." />
+  <meta name="twitter:image" content="https://www.eldoaai.com/images/alexander-technique-medical-diagram.jpg" />
+  
+  <!-- All Schema.org markup (keeping same as before) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "ELDOA Encyclopedia", "item": "https://www.eldoaai.com/library/" },
+      { "@type": "ListItem", "position": 2, "name": "A Index", "item": "https://www.eldoaai.com/library/a-index" },
+      { "@type": "ListItem", "position": 3, "name": "Alexander Technique", "item": "https://www.eldoaai.com/library/alexander-technique" }
+    ]
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebPage",
+    "name":"Alexander Technique – ELDOA Encyclopedia",
+    "url":"https://www.eldoaai.com/library/alexander-technique",
+    "inLanguage":"en",
+    "speakable":{
+      "@type":"SpeakableSpecification",
+      "cssSelector":[
+        ".eldoa-pocketbook p",
+        ".eldoa-encyclopedia p:first-of-type"
+      ]
+    }
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Alexander Technique",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://www.eldoaai.com/library/alexander-technique"},
+    "author":{"@type":"Organization","name":"ELDOA Encyclopedia"},
+    "dateModified":"2025-09-23",
+    "image":"https://www.eldoaai.com/images/alexander-technique-medical-diagram.jpg"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ImageObject",
+    "url":"https://www.eldoaai.com/images/alexander-technique-medical-diagram.jpg",
+    "width":1200,
+    "height":630
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "DefinedTerm",
+    "name": "Alexander Technique",
+    "description": "The Alexander Technique is a method of postural and proprioceptive re‑education that emphasises releasing habitual tension and improving the relationship between the head, neck and back. It teaches inhibition of harmful movement patterns through gentle guidance and conscious awareness, complementing ELDOA’s active decompression.",
+    "url": "https://www.eldoaai.com/library/alexander-technique",
+    "inDefinedTermSet": "https://www.eldoaai.com/library/"
+  }
+  </script>
+  
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is the Alexander Technique?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Alexander Technique is a method of postural and proprioceptive re‑education that teaches you to release unnecessary tension and improve how your head, neck and back work together. It focuses on retraining habitual movement patterns rather than stretching.【248283325465270†L83-L109】."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does the Alexander Technique differ from ELDOA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The Alexander Technique uses gentle guidance and conscious awareness to inhibit harmful habits and encourage efficient movement, emphasising head–neck–back alignment. ELDOA employs sustained, active positions to create fascial decompression and structural change. Both improve posture but via different mechanisms and can complement each other【544611281076464†L840-L878】."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What benefits can I expect from practising the Alexander Technique?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Research shows the technique can reduce postural sway by about 26 %, improve movement efficiency, and prevent injuries in performing arts and sports【544611281076464†L840-L878】【248283325465270†L124-L130】. Practitioners also report better balance, coordination, and ease of movement."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How is the technique taught?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Typically taught in private or small group lessons, instructors use verbal cues and gentle touch to help you recognise and stop tension habits. You then practise improved coordination during everyday activities like sitting, standing, walking or bending【248283325465270†L83-L109】."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can children benefit from the Alexander Technique?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Children often adapt quickly to body awareness training. Lessons are tailored to be playful and focus on ease of movement. Developing good postural habits early can support lifelong health."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to notice improvement?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Many people feel lighter and more balanced after a few sessions, but lasting change requires regular practice. Integrating the principles into daily life leads to cumulative benefits over weeks and months."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there any reasons to avoid the Alexander Technique?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The technique is gentle and generally safe. However, individuals with acute injuries or severe medical conditions should consult a healthcare provider before starting. Sessions should never cause pain; the emphasis is on relaxation and awareness."
+        }
+      }
+    ]
+  }
+  </script>
+  
+  <!-- Theme Detection and Setup -->
+  <script>
+    // Theme setup (before page renders)
+    (function() {
+      const savedTheme = localStorage.getItem('eldoa-theme') || 'light';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
+  
+  <!-- Component and Ad Loader -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Load header and footer
+      window.eldoaComponentLoader.load('eldoa-header-inject', '/components/header.html');
+      window.eldoaComponentLoader.load('eldoa-footer-inject', '/components/footer.html');
+      
+      // Load ads
+      fetch('/ads/ad-mid-content.html')
+        .then(response => response.text())
+        .then(html => window.eldoaAdManager.inject('eldoa-ad-mid', html))
+        .catch(error => console.log('Mid-content ad failed to load:', error));
+        
+      fetch('/ads/ad-bottom.html')
+        .then(response => response.text())
+        .then(html => window.eldoaAdManager.inject('eldoa-ad-bottom', html))
+        .catch(error => console.log('Bottom ad failed to load:', error));
+    });
+  </script>
+
+  <!-- Header Mobile Menu Element -->
+  <script>
+  // Mobile menu handler for dynamically loaded header
+  document.addEventListener('click', function(e) {
+    const mobileNav = document.querySelector('.eldoa-nav-mobile');
+    const overlay = document.querySelector('.eldoa-mobile-overlay');
+    
+    // Check what was clicked
+    const isMenuToggle = e.target.closest('.eldoa-mobile-menu-toggle');
+    const isCloseButton = e.target.closest('.eldoa-mobile-close');
+    const isOverlay = e.target.classList.contains('eldoa-mobile-overlay');
+    const isMenuLink = e.target.closest('.eldoa-nav-mobile a');
+    
+    if (isMenuToggle || isCloseButton || isOverlay) {
+      e.preventDefault();
+      
+      if (mobileNav && overlay) {
+        const isActive = mobileNav.classList.contains('active');
+        
+        if (isActive) {
+          // Close menu
+          mobileNav.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        } else {
+          // Open menu
+          mobileNav.classList.add('active');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+    }
+    
+    // Close menu when clicking a link
+    if (isMenuLink && mobileNav && overlay) {
+      setTimeout(function() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }, 100);
+    }
+  });
+  
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const mobileNav = document.querySelector('.eldoa-nav-mobile');
+      const overlay = document.querySelector('.eldoa-mobile-overlay');
+      
+      if (mobileNav && overlay && mobileNav.classList.contains('active')) {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+  });
+  </script>
+  
+</head>
+<body class="eldoa-page" data-page-type="technique" data-condition="alexander-technique">
+  
+  <!-- Theme Toggle Button -->
+  <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+    <span id="theme-icon">🌙</span>
+  </button>
+  
+  <!-- Header Injection Zone -->
+  <div id="eldoa-header-inject" class="eldoa-header-container" data-component="header">
+    <!-- External header will be injected here -->
+  </div>
+  
+  <!-- Main Content Container -->
+  <div class="eldoa-container">
+    
+    <!-- Navigation Breadcrumb -->
+    <nav class="eldoa-breadcrumb" aria-label="Breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/library/" itemprop="item"><span itemprop="name">ELDOA Encyclopedia</span></a>
+        <meta itemprop="position" content="1" />
+      </span> →
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/library/a-index.html" itemprop="item"><span itemprop="name">A</span></a>
+        <meta itemprop="position" content="2" />
+      </span> →
+      <span itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name">Alexander Technique</span>
+        <meta itemprop="position" content="3" />
+      </span>
+    </nav>
+    
+    <!-- Main Article -->
+    <article class="eldoa-article" itemscope itemtype="https://schema.org/Article">
+      <header class="eldoa-article-header">
+        <h1 class="eldoa-h1" itemprop="headline">Alexander Technique</h1>
+        <meta itemprop="dateModified" content="2025-09-23" />
+        <meta itemprop="author" content="ELDOA Encyclopedia" />
+      </header>
+      
+      <!-- Pocketbook Summary Section -->
+      <section class="eldoa-pocketbook eldoa-section" data-section="pocketbook">
+        <h2 class="eldoa-h2">Quick Reference</h2>
+        <p class="eldoa-kids-summary"><strong>Eldoa for Kids Summary:</strong> The Alexander Technique is like a secret for standing tall without stiffness. Instead of stretching, you learn to relax your neck and back so your head feels light on top of your spine. It teaches you to move smoothly and let go of tension while you play or study.</p>
+      </section>
+      
+      <!-- Primary Image with Fallback -->
+      <div class="eldoa-image-placeholder" data-image-type="primary">
+        <img src="/images/alexander-technique-medical-diagram.jpg"
+             alt="Anatomical illustration of the head, neck and upper torso highlighting alignment and tension release"
+             class="eldoa-image"
+             loading="lazy"
+             width="1200"
+             height="630"
+             itemprop="image"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+        <div class="eldoa-placeholder-content" style="display:none;">
+          <div class="eldoa-prompt-text">
+            <strong>AI Image Prompt:</strong><br>
+            Anatomical illustration highlighting head, neck and upper torso alignment; subtle shading, front view, depicting tension release along the cervical spine; clean white background; educational medical style
+          </div>
+          <div class="eldoa-filename">🖼️ /images/alexander-technique-medical-diagram.jpg</div>
+          <div style="margin-top: 10px; font-size: 12px;">
+            <strong>Dimensions:</strong> 1200x630px<br>
+            <strong>Format:</strong> JPG<br>
+            <strong>Purpose:</strong> Primary medical diagram
+          </div>
+        </div>
+      </div>
+      
+      <!-- Encyclopedia Content -->
+      <section class="eldoa-encyclopedia eldoa-section" data-section="encyclopedia">
+        <h2 class="eldoa-h2">Detailed Explanation</h2>
+        <p>The Alexander Technique is not a traditional stretch or strengthening program—it's a method of postural and proprioceptive re‑education. Lessons focus on learning to <em>let go</em> of unnecessary tension, especially around the head, neck and back. Instructors use verbal cues and light touch to help you identify and inhibit harmful movement habits, so you can move with greater ease and coordination【248283325465270†L83-L109】.</p>
+
+        <!-- Mid-Content Ad Zone -->
+        <div id="eldoa-ad-mid" class="eldoa-ad-zone" data-ad-position="mid-content" data-ad-size="responsive">
+          <div class="eldoa-ad-placeholder">Advertisement Space</div>
+        </div>
+
+        <p>Research suggests that practising the Alexander Technique can significantly improve balance and postural control; one study reported about a 26&nbsp;% reduction in postural sway, attributed to improved automatic postural coordination【544611281076464†L840-L878】. The technique is widely used by musicians, actors and athletes to reduce injury risk and enhance performance through improved efficiency of movement and heightened body awareness【248283325465270†L124-L130】.</p>
+
+        <p>Unlike ELDOA, which uses sustained, active postures to create fascial decompression and structural change, the Alexander Technique emphasises mindful inhibition and release. Combining the two approaches can be synergistic: the Alexander Technique builds the awareness and coordination needed for better posture, while ELDOA provides targeted decompression to lengthen fascia and deepen structural alignment【544611281076464†L840-L878】.</p>
+      </section>
+      
+      <!-- Visual Wiki Section -->
+      <section class="eldoa-wiki eldoa-section" data-section="wiki">
+        <h2 class="eldoa-h2">Visual Guide</h2>
+        
+        <div class="eldoa-positions-grid">
+          <div class="eldoa-position-card">
+            <h3 class="eldoa-h3">Semi‑Supine Rest &amp; Lengthening</h3>
+            <div class="eldoa-image-placeholder" data-image-type="position">
+              <img src="/images/eldoa-semi-supine-alexander.jpg"
+                   alt="Semi‑supine ELDOA variation emphasising head–neck–back alignment and gentle lengthening"
+                   class="eldoa-image"
+                   loading="lazy"
+                   width="600"
+                   height="400"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+              <div class="eldoa-placeholder-content" style="display:none;">
+                <div class="eldoa-prompt-text">
+                  <strong>AI Image Prompt:</strong><br>
+                  Therapeutic demonstration: person lying in semi‑supine position with knees bent, emphasising head–neck–back alignment and subtle tension release, calm studio setting
+                </div>
+                <div class="eldoa-filename">🖼️ /images/eldoa-semi-supine-alexander.jpg</div>
+                <div style="margin-top: 10px; font-size: 12px;">
+                  <strong>Dimensions:</strong> 600x400px<br>
+                  <strong>Format:</strong> JPG<br>
+                  <strong>Purpose:</strong> Position demonstration
+                </div>
+              </div>
+            </div>
+            <p>Use the semi‑supine rest to practice letting go of excess tension while maintaining active lengthening along the spine.</p>
+          </div>
+          
+          <div class="eldoa-position-card">
+            <h3 class="eldoa-h3">Head–Neck–Back Relationship</h3>
+            <div class="eldoa-image-placeholder" data-image-type="position">
+              <img src="/images/eldoa-head-neck-alexander.jpg"
+                   alt="Educational diagram of head–neck–back posture and proprioceptive awareness used in the Alexander Technique"
+                   class="eldoa-image"
+                   loading="lazy"
+                   width="600"
+                   height="400"
+                   onerror="this.style.display='none'; this.nextElementSibling.style.display='block';" />
+              <div class="eldoa-placeholder-content" style="display:none;">
+                <div class="eldoa-prompt-text">
+                  <strong>AI Image Prompt:</strong><br>
+                  Educational diagram highlighting the head, neck and back posture with proprioceptive cues and fascia lines, minimalistic colours
+                </div>
+                <div class="eldoa-filename">🖼️ /images/eldoa-head-neck-alexander.jpg</div>
+                <div style="margin-top: 10px; font-size: 12px;">
+                  <strong>Dimensions:</strong> 600x400px<br>
+                  <strong>Format:</strong> JPG<br>
+                  <strong>Purpose:</strong> Educational diagram
+                </div>
+              </div>
+            </div>
+            <p>This diagram illustrates the head–neck–back relationship central to the Alexander Technique, highlighting proprioceptive awareness used to coordinate movement.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Related Topics -->
+      <aside class="eldoa-related eldoa-section" data-section="related">
+        <h2 class="eldoa-h2">Related Topics</h2>
+        <ul class="eldoa-related-list">
+          <li><a href="/library/alignment.html" class="eldoa-link">Alignment</a></li>
+          <li><a href="/library/body-awareness.html" class="eldoa-link">Body Awareness</a></li>
+          <li><a href="/library/cervical-spine.html" class="eldoa-link">Cervical Spine</a></li>
+          <li><a href="/library/feldenkrais-method.html" class="eldoa-link">Feldenkrais Method</a></li>
+          <li><a href="/library/balance-training.html" class="eldoa-link">Balance Training</a></li>
+        </ul>
+      </aside>
+      
+      <!-- FAQ Section -->
+      <section class="eldoa-faq eldoa-section" data-section="faq" id="faq">
+        <h2 class="eldoa-h2">Frequently Asked Questions</h2>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">What is the Alexander Technique?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">It’s a gentle method of learning to release unnecessary tension and improve how your head, neck and back work together. Instead of adding exercises, you practise stopping old habits and moving with greater ease【248283325465270†L83-L109】.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">How does the Alexander Technique differ from ELDOA?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">The Alexander Technique uses mindful release and gentle guidance to inhibit harmful habits, while ELDOA uses active positions to create fascial decompression. They both improve posture, but one focuses on awareness and the other on structural lengthening【544611281076464†L840-L878】.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">What benefits can I expect?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Studies show the technique can reduce postural sway and improve automatic postural coordination【544611281076464†L840-L878】. Many performers and athletes also report enhanced balance, coordination and ease of movement【248283325465270†L124-L130】.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">How do I learn the Alexander Technique?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">It’s typically taught one‑to‑one or in small groups. Instructors use verbal instructions and gentle touch to help you recognise tension habits and practise improved coordination during everyday activities like standing or walking【248283325465270†L83-L109】.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">Is the Alexander Technique appropriate for children?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Absolutely. Children often adapt quickly to body‑awareness training when lessons are playful. Early practice can help them develop healthy postural habits and movement ease.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">How long will it take to notice improvement?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">Many people feel lighter and more balanced after a few sessions. However, lasting change occurs over weeks to months as you integrate the principles into your daily life and continue practising.</p>
+          </div>
+        </div>
+        
+        <div class="eldoa-faq-item" itemprop="mainEntity" itemscope itemtype="https://schema.org/Question">
+          <h3 class="eldoa-h3" itemprop="name">Are there any reasons to avoid the Alexander Technique?</h3>
+          <div itemprop="acceptedAnswer" itemscope itemtype="https://schema.org/Answer">
+            <p itemprop="text">The technique is gentle and low‑risk. Nonetheless, if you have a recent injury or serious medical condition, consult a healthcare provider before starting. Lessons should never cause pain; the emphasis is on relaxation and awareness.</p>
+          </div>
+        </div>
+      </section>
+      
+      <!-- Bottom Ad Zone -->
+      <div id="eldoa-ad-bottom" class="eldoa-ad-zone" data-ad-position="bottom" data-ad-size="responsive">
+        <div class="eldoa-ad-placeholder">Advertisement Space</div>
+      </div>
+      
+    </article>
+  </div>
+  
+  <!-- Footer Injection Zone -->
+  <div id="eldoa-footer-inject" class="eldoa-footer-container" data-component="footer">
+    <!-- External footer will be injected here -->
+  </div>
+  
+  <!-- Component Loader Script -->
+  <script>
+    // Dynamic component loader for header/footer
+    (function() {
+      const componentLoader = {
+        load: function(componentId, url) {
+          const element = document.getElementById(componentId);
+          if (!element || !url) return;
+          
+          fetch(url)
+            .then(response => response.text())
+            .then(html => {
+              element.innerHTML = html;
+              element.dispatchEvent(new Event('component-loaded'));
+            })
+            .catch(error => console.error(`Failed to load ${componentId}:`, error));
+        }
+      };
+      
+      window.eldoaComponentLoader = componentLoader;
+    })();
+    
+    // Ad injection helper
+    (function() {
+      window.eldoaAdManager = {
+        inject: function(zoneId, content) {
+          const zone = document.getElementById(zoneId);
+          if (zone) {
+            zone.innerHTML = content;
+            zone.classList.add('eldoa-ad-loaded');
+          }
+        },
+        
+        injectScript: function(zoneId, scriptUrl) {
+          const zone = document.getElementById(zoneId);
+          if (zone) {
+            const script = document.createElement('script');
+            script.src = scriptUrl;
+            script.async = true;
+            zone.appendChild(script);
+          }
+        }
+      };
+    })();
+    
+    // Theme toggle functionality
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+      
+      function updateIcon(theme) {
+        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+      }
+      
+      // Set initial icon
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      updateIcon(currentTheme);
+      
+      // Toggle handler
+      toggle.addEventListener('click', function() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('eldoa-theme', next);
+        updateIcon(next);
+      });
+    })();
+  </script>
+</body>
+</html>
