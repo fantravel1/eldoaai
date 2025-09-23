@@ -324,20 +324,6 @@
       font-size: var(--eldoa-font-size-small);
     }
     
-    /* Top banner ad container */
-    .eldoa-ad-top-container {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      margin: 0;
-      padding: 0;
-      line-height: 1;
-    }
-    
-    .eldoa-ad-top-container:empty {
-      display: none;
-    }
-    
     /* Tablet styles (larger phones and small tablets) */
     @media screen and (min-width: 481px) {
       :root {
@@ -408,7 +394,6 @@
       .eldoa-header-container,
       .eldoa-footer-container,
       .eldoa-ad-zone,
-      .eldoa-ad-top-container,
       #eldoa-back-to-top,
       .theme-toggle {
         display: none !important;
@@ -638,9 +623,6 @@
   </script>
 </head>
 <body class="eldoa-page" data-page-type="condition" data-condition="achilles-tendinopathy">
-  
-  <!-- Top Banner Ad Zone -->
-  <div id="eldoa-ad-top" class="eldoa-ad-top-container" data-component="ad-top"></div>
   
   <!-- Theme Toggle Button -->
   <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
