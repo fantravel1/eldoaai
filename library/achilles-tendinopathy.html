@@ -593,22 +593,6 @@
       window.eldoaComponentLoader.load('eldoa-header-inject', '/components/header.html');
       window.eldoaComponentLoader.load('eldoa-footer-inject', '/components/footer.html');
       
-      // Load top banner ad
-      fetch('/ads/ad-top-banner.html')
-        .then(response => response.text())
-        .then(html => {
-          const topAdZone = document.getElementById('eldoa-ad-top');
-          if (topAdZone) {
-            topAdZone.innerHTML = html;
-            // Execute any scripts in the loaded content
-            const scripts = topAdZone.getElementsByTagName('script');
-            for (let script of scripts) {
-              eval(script.innerHTML);
-            }
-          }
-        })
-        .catch(error => console.log('Top banner ad failed to load:', error));
-      
       // Load ads
       fetch('/ads/ad-mid-content.html')
         .then(response => response.text())
