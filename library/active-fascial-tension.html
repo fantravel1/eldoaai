@@ -845,5 +845,80 @@
   <div id="eldoa-footer-inject" class="eldoa-footer-container" data-component="footer">
     <!-- External footer will be injected here -->
   </div>
+
+  <!-- Component Loader Script -->
+  <script>
+    // Dynamic component loader for header/footer
+    (function() {
+      const componentLoader = {
+        load: function(componentId, url) {
+          const element = document.getElementById(componentId);
+          if (!element || !url) return;
+          
+          fetch(url)
+            .then(response => response.text())
+            .then(html => {
+              element.innerHTML = html;
+              element.dispatchEvent(new Event('component-loaded'));
+            })
+            .catch(error => console.error(`Failed to load ${componentId}:`, error));
+        }
+      };
+      
+      window.eldoaComponentLoader = componentLoader;
+    })();
+  </script>
+
+  <!-- Ad injection helper -->
+  <script>
+    (function() {
+      window.eldoaAdManager = {
+        inject: function(zoneId, content) {
+          const zone = document.getElementById(zoneId);
+          if (zone) {
+            zone.innerHTML = content;
+            zone.classList.add('eldoa-ad-loaded');
+          }
+        },
+        
+        injectScript: function(zoneId, scriptUrl) {
+          const zone = document.getElementById(zoneId);
+          if (zone) {
+            const script = document.createElement('script');
+            script.src = scriptUrl;
+            script.async = true;
+            zone.appendChild(script);
+          }
+        }
+      };
+    })();
+  </script>
+
+  <!-- Theme toggle functionality -->
+  <script>
+    (function() {
+      const toggle = document.getElementById('theme-toggle');
+      const icon = document.getElementById('theme-icon');
+      
+      function updateIcon(theme) {
+        icon.textContent = theme === 'dark' ? '☀️' : '🌙';
+      }
+      
+      // Set initial icon
+      const currentTheme = document.documentElement.getAttribute('data-theme') || 'light';
+      updateIcon(currentTheme);
+      
+      // Toggle handler
+      toggle.addEventListener('click', function() {
+        const current = document.documentElement.getAttribute('data-theme') || 'light';
+        const next = current === 'dark' ? 'light' : 'dark';
+        
+        document.documentElement.setAttribute('data-theme', next);
+        localStorage.setItem('eldoa-theme', next);
+        updateIcon(next);
+      });
+    })();
+  </script>
+
 </body>
 </html>
