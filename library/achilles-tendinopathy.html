@@ -605,6 +605,65 @@
         .catch(error => console.log('Bottom ad failed to load:', error));
     });
   </script>
+
+  <!-- Header Mobile Menu Element -->
+  <script>
+  // Mobile menu handler for dynamically loaded header
+  document.addEventListener('click', function(e) {
+    const mobileNav = document.querySelector('.eldoa-nav-mobile');
+    const overlay = document.querySelector('.eldoa-mobile-overlay');
+    
+    // Check what was clicked
+    const isMenuToggle = e.target.closest('.eldoa-mobile-menu-toggle');
+    const isCloseButton = e.target.closest('.eldoa-mobile-close');
+    const isOverlay = e.target.classList.contains('eldoa-mobile-overlay');
+    const isMenuLink = e.target.closest('.eldoa-nav-mobile a');
+    
+    if (isMenuToggle || isCloseButton || isOverlay) {
+      e.preventDefault();
+      
+      if (mobileNav && overlay) {
+        const isActive = mobileNav.classList.contains('active');
+        
+        if (isActive) {
+          // Close menu
+          mobileNav.classList.remove('active');
+          overlay.classList.remove('active');
+          document.body.style.overflow = '';
+        } else {
+          // Open menu
+          mobileNav.classList.add('active');
+          overlay.classList.add('active');
+          document.body.style.overflow = 'hidden';
+        }
+      }
+    }
+    
+    // Close menu when clicking a link
+    if (isMenuLink && mobileNav && overlay) {
+      setTimeout(function() {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }, 100);
+    }
+  });
+  
+  // Close on Escape key
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      const mobileNav = document.querySelector('.eldoa-nav-mobile');
+      const overlay = document.querySelector('.eldoa-mobile-overlay');
+      
+      if (mobileNav && overlay && mobileNav.classList.contains('active')) {
+        mobileNav.classList.remove('active');
+        overlay.classList.remove('active');
+        document.body.style.overflow = '';
+      }
+    }
+  });
+  </script>
+  
 </head>
 <body class="eldoa-page" data-page-type="condition" data-condition="achilles-tendinopathy">
   
