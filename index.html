@@ -20,7 +20,7 @@
   <meta name="twitter:description" content="A complete, mobile‑first ELDOA encyclopedia with A–Z entries, videos by practice/ailment/protocol, and a global practitioner directory."/>
   <meta name="twitter:image" content="/images/og-image.jpg"/>
 
-  <!-- App / PWA friendliness (progressive enhancement) -->
+  <!-- App / PWA friendliness -->
   <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -29,26 +29,24 @@
   <link rel="manifest" href="/site.webmanifest">
   <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
   <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 
   <style>
     [data-theme="light"] {
       --bg: #ffffff;
       --fg: #0d0f13;
-      --muted: #475569; /* slate-600 for better contrast on white */
-      --brand: #2f2fe6; /* deeper indigo for WCAG contrast */
-      --brand-2: #0891b2; /* cyan-700 for links on light */
-      --card: #f8fafc; /* slate-50 */
-      --border: #e2e8f0; /* slate-200 */
-      --ok: #15803d; /* green-700 */
-      --warn: #a16207; /* amber-700 */
-      --err: #b91c1c; /* red-700 */
+      --muted: #475569;
+      --brand: #2f2fe6;
+      --brand-2: #0891b2;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --ok: #15803d;
+      --warn: #a16207;
+      --err: #b91c1c;
     }
     [data-theme="dark"] {
       --bg: #0b0d12;
       --fg: #eef2ff;
-      --muted: #c7d2fe; /* indigo-200 */
+      --muted: #c7d2fe;
       --brand: #8b5cf6;
       --brand-2: #22d3ee;
       --card: #111827;
@@ -59,11 +57,9 @@
     }
 
     html, body {height: 100%;}
-    body {
-      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
       background: var(--bg); color: var(--fg);
-      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
-    }
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
     .container { width: min(1100px, 92vw); margin: 0 auto; }
@@ -94,7 +90,7 @@
     .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); line-height:1.05; margin:.2rem 0 .6rem; }
     .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
     .sub { color: var(--muted); max-width: 58ch; }
-    .widget-card { position:relative; aspect-ratio: 1.2/1; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); display:grid; place-items:center; }
+    .widget-card { position:relative; aspect-ratio: 1.2/1; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); display:grid; place-items:center; padding-top: 2rem; }
     .cube { width: 160px; height:160px; transform-style: preserve-3d; transition: transform 80ms linear; }
     .face { position:absolute; width:100%; height:100%; display:grid; place-items:center; font-weight:800; font-size:1.2rem; color:#fff; background: color-mix(in oklab, var(--brand), #000 15%); border: 1px solid color-mix(in oklab, #000, transparent 75%); opacity:.92; }
     .face:nth-child(1) { transform: translateZ(80px); }
@@ -156,7 +152,7 @@
       header .btn { padding:.55rem .75rem; }
       form[role="search"] { flex-wrap:wrap; }
       form[role="search"] button { width:100%; justify-content:center; }
-      .widget-card { aspect-ratio: 1/1; }
+      .widget-card { aspect-ratio: 1/1; padding-top: 2.6rem; } /* lower the cube so banner isn't covered */
       .container { width: min(1000px, 94vw); }
     }
 
@@ -170,7 +166,7 @@
     .badge { display:inline-block; padding:.15rem .5rem; border-radius:999px; border:1px solid var(--border); font-size:.75rem; margin-left:.4rem; }
   </style>
 
-  <!-- Structured Data (AEO & SEO) -->
+  <!-- Structured Data -->
   <script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"WebSite",
@@ -181,23 +177,6 @@
       "target":"https://eldoa.ai/search?q={query}",
       "query-input":"required name=query"
     }
-  }</script>
-  <script type="application/ld+json">{
-    "@context":"https://schema.org",
-    "@type":"Organization",
-    "name":"ELDOA AI",
-    "url":"https://eldoa.ai/",
-    "logo":"/images/logo1.png",
-    "sameAs":["https://www.instagram.com/eldoa","https://www.youtube.com/results?search_query=eldoa"]
-  }</script>
-  <script type="application/ld+json">{
-    "@context":"https://schema.org",
-    "@type":"FAQPage",
-    "mainEntity":[
-      {"@type":"Question","name":"What is ELDOA?","acceptedAnswer":{"@type":"Answer","text":"ELDOA is a precise series of postures designed to create space at specific joints of the spine and body, supporting posture, hydration of fascia, and pain management."}},
-      {"@type":"Question","name":"Who created ELDOA?","acceptedAnswer":{"@type":"Answer","text":"The method was developed by osteopath Guy Voyer, DO. ELDOA AI curates references, videos, and practitioner insights globally."}},
-      {"@type":"Question","name":"Is ELDOA safe for beginners?","acceptedAnswer":{"@type":"Answer","text":"Always consult a professional. Our directory helps you find trained practitioners; our videos and entries are educational, not medical advice."}}
-    ]
   }</script>
 </head>
 <body>
@@ -258,7 +237,7 @@
             <div class="face">L‑5 S1</div>
           </div>
           <div class="widget-ui">
-            <div class="status" id="gyroStatus">Gyroscope: <strong>inactive</strong> <span id="gyroReadout" class="readout"></span></div>
+            <div class="status" id="gyroStatus">Optimal phone angle: <strong>inactive</strong> <span id="gyroReadout" class="readout"></span></div>
             <div style="display:flex; gap:.5rem;">
               <button id="activateGyro" class="btn" type="button">Activate Gyroscope</button>
               <button id="simulateMouse" class="btn" type="button" aria-pressed="false">Mouse Sim</button>
@@ -269,7 +248,7 @@
           </noscript>
         </div>
       </div>
-      <p class="section-sub" style="margin-top:.75rem">On phones/tablets, tap <em>Activate Gyroscope</em>. On laptops, use <em>Mouse Sim</em> or imagine posture aligning as if your screen were held <strong>upright at eye level</strong> (don’t look down). The cube hints at spatial orientation cues used in ELDOA.</p>
+      <p class="section-sub" style="margin-top:.75rem">On phones/tablets, tap <em>Activate Gyroscope</em>. On laptops, use <em>Mouse Sim</em>. Keep the phone <strong>upright at eye level</strong> — don’t look down.</p>
     </section>
 
     <!-- A–Z LIBRARY -->
@@ -281,7 +260,7 @@
         <div id="azChips" class="chips" aria-label="Letter filters" style="display:flex; gap:.4rem; flex-wrap:wrap"></div>
       </div>
       <div id="libList" class="list" aria-live="polite">
-        <!-- Example cards (replace with generated content or CMS) -->
+        <!-- Example cards -->
         <article class="card" data-title="C5‑C6 Flexion" data-letter="C">
           <h3><a href="/library/c5-c6-flexion">C5‑C6 Flexion</a></h3>
           <div class="meta">Region: Cervical • Tags: posture, neural</div>
@@ -302,16 +281,6 @@
           <div class="meta">Region: Pelvis • Tags: hip flexor, posture</div>
           <p>Myofascial chains connected to hip positioning and ELDOA cues.</p>
         </article>
-        <article class="card" data-title="Disc Hydration" data-letter="D">
-          <h3><a href="/library/disc-hydration">Disc Hydration</a></h3>
-          <div class="meta">Concept • Tags: fascia, recovery</div>
-          <p>How long holds and stillness influence disc hydration dynamics.</p>
-        </article>
-        <article class="card" data-title="Facet Joints" data-letter="F">
-          <h3><a href="/library/facet-joints">Facet Joints</a></h3>
-          <div class="meta">Anatomy • Tags: spine, biomechanics</div>
-          <p>Segmental mechanics relevant to ELDOA placements and vectors.</p>
-        </article>
       </div>
       <div style="margin-top:.75rem;"><a class="btn" href="/library/">View complete A–Z index</a></div>
     </section>
@@ -319,7 +288,7 @@
     <!-- VIDEOS REPOSITORY -->
     <section id="videos" aria-labelledby="videos-title">
       <h2 id="videos-title">Global ELDOA Videos</h2>
-      <p class="section-sub">Curated across platforms. Segment by <strong>practice</strong>, <strong>ailments</strong>, and <strong>protocols</strong>. Submit a link to grow the archive.</p>
+      <p class="section-sub">Curated across platforms. Segment by <strong>practice</strong>, <strong>ailments</strong>, and <strong>protocols</strong>.</p>
       <div class="filters" role="toolbar" aria-label="Video filters">
         <label for="vf1" class="sr-only">Practice</label>
         <select id="vf1" aria-label="Practice">
@@ -345,7 +314,6 @@
           <option>Performance</option>
         </select>
         <input type="search" id="videoSearch" placeholder="Search videos…" aria-label="Search videos"/>
-        <button class="btn" type="button" id="submitVideo">Submit a Link</button>
       </div>
       <div id="videoGrid" class="grid">
         <article class="card" data-practice="Beginner" data-ailment="Low Back Pain" data-protocol="Daily 10‑min">
@@ -358,16 +326,11 @@
           <p class="meta">Intermediate • Neck • Recovery</p>
           <a class="btn" href="#" rel="nofollow">Watch</a>
         </article>
-        <article class="card" data-practice="Sport‑specific" data-ailment="Shoulder" data-protocol="Performance">
-          <h3>Overhead Stability</h3>
-          <p class="meta">Sport • Shoulder • Performance</p>
-          <a class="btn" href="#" rel="nofollow">Watch</a>
-        </article>
       </div>
       <div style="margin-top:.75rem;"><a class="btn" href="/video/">Explore full repository</a></div>
     </section>
 
-    <!-- PRACTITIONERS DIRECTORY (placeholder for future data) -->
+    <!-- PRACTITIONERS DIRECTORY -->
     <section id="practitioners" aria-labelledby="pract-title">
       <h2 id="pract-title">Practitioners — Worldwide</h2>
       <p class="section-sub">We’re assembling a verified index. Meanwhile, find guidance from certified professionals.</p>
@@ -382,15 +345,10 @@
           <p class="meta">Tell us your city + goals</p>
           <a class="btn" href="/expert/request">Request</a>
         </article>
-        <article class="card">
-          <h3>Standards & Verification</h3>
-          <p class="meta">How we verify credentials</p>
-          <a class="btn" href="/expert/standards">Learn more</a>
-        </article>
       </div>
     </section>
 
-    <!-- PHILOSOPHIES / GUY VOYER FEATURED ESSAYS -->
+    <!-- PHILOSOPHIES -->
     <section id="philosophy" aria-labelledby="philo-title">
       <h2 id="philo-title">Philosophies of ELDOA</h2>
       <p class="section-sub">Featured writings and talks from <strong>Guy Voyer, DO</strong>, with reflections from practitioners worldwide contributing to the living body of work.</p>
@@ -401,11 +359,6 @@
           <a class="btn" href="/philosophy/foundations">Read</a>
         </article>
         <article class="card">
-          <h3>Integrating ELDOA in Daily Life</h3>
-          <p>Micro‑sessions, breath, and posture hygiene when you work at a desk.</p>
-          <a class="btn" href="/philosophy/daily-integration">Read</a>
-        </article>
-        <article class="card">
           <h3>Practitioner Voices</h3>
           <p>Short essays from the global community on teaching, learning, and care.</p>
           <a class="btn" href="/philosophy/voices">Read</a>
@@ -413,7 +366,7 @@
       </div>
     </section>
 
-    <!-- SEARCH RESULTS (rendered when on /search or when form submits) -->
+    <!-- SEARCH RESULTS (SPA) -->
     <section id="searchResults" aria-labelledby="sr-title">
       <div class="sr-head">
         <h2 id="sr-title">Search results</h2>
@@ -425,9 +378,7 @@
 
   <footer role="contentinfo">
     <div class="container" style="display:grid; gap:1rem">
-      <div>
-        <strong>ELDOA AI</strong> — Knowledge • Videos • Practitioners
-      </div>
+      <div><strong>ELDOA AI</strong> — Knowledge • Videos • Practitioners</div>
       <div style="display:flex; gap:.75rem; flex-wrap:wrap">
         <a href="/about">About</a>
         <a href="/contribute">Contribute</a>
@@ -439,8 +390,8 @@
     </div>
   </footer>
 
-  <script defer>
-    // ----- THEME TOGGLE -----
+  <script>
+    // THEME TOGGLE
     (function(){
       const root = document.documentElement;
       const btn = document.getElementById('themeToggle');
@@ -455,16 +406,11 @@
           else { metaLight.setAttribute('content', '#ffffff'); metaDark.setAttribute('content', '#ffffff'); }
         }
       };
-      const saved = localStorage.getItem(key);
-      setTheme(saved === 'dark' ? 'dark' : 'light');
-      btn.addEventListener('click', () => {
-        const cur = root.getAttribute('data-theme') || 'light';
-        const next = cur === 'light' ? 'dark' : 'light';
-        setTheme(next);
-      });
+      setTheme(localStorage.getItem(key) === 'dark' ? 'dark' : 'light');
+      btn.addEventListener('click', () => setTheme((root.getAttribute('data-theme')||'light') === 'light' ? 'dark' : 'light'));
     })();
 
-    // ----- MOBILE MENU -----
+    // MOBILE MENU
     (function(){
       const toggle = document.getElementById('menuToggle');
       const panel = document.getElementById('mobileMenu');
@@ -478,7 +424,7 @@
       window.addEventListener('resize', ()=>{ if (window.innerWidth > 720 && !panel.hidden) close(); });
     })();
 
-    // ----- GYROSCOPE WIDGET (DeviceOrientation API with iOS permission) -----
+    // GYROSCOPE WIDGET — Optimal phone angle (beta-only)
     (function(){
       const cube = document.getElementById('cube');
       const statusEl = document.getElementById('gyroStatus');
@@ -490,17 +436,17 @@
       let last = {alpha:0, beta:0, gamma:0};
       let lastGold = false;
 
-      const THRESH_GOLD = 1.5; // degrees
-      const THRESH_GREEN = 3.0; // degrees
+      const THRESH_GOLD = 1.5; // degrees (kept for visual gold flash)
+      const THRESH_GREEN = 3.0; // degrees (kept for green state)
+      const SWEET = 2.0; // ± degrees = sweet spot (~1–2% give requested)
+      const PERCENT_MODE = 'fitness'; // 'fitness' = 100% best; 'error' = 0% best
 
       const setStatus = (txt, level='') => {
-        statusEl.innerHTML = `Gyroscope: <strong>${txt}</strong> <span id="gyroReadout" class="readout">${readoutEl?.textContent||''}</span>`;
+        statusEl.innerHTML = `Optimal phone angle: <strong>${txt}</strong> <span id="gyroReadout" class="readout">${readoutEl?.textContent||''}</span>`;
         statusEl.style.color = level==="ok"?"var(--ok)":level==="warn"?"var(--warn)":level==="err"?"var(--err)":"var(--muted)";
       };
 
-      const render = (a, b, g) => {
-        cube.style.transform = `rotateX(${b}deg) rotateY(${a}deg) rotateZ(${g}deg)`;
-      };
+      const render = (a, b, g) => { cube.style.transform = `rotateX(${b}deg) rotateY(${a}deg) rotateZ(${g}deg)`; };
 
       const getAngle = () => {
         if (screen.orientation && typeof screen.orientation.angle === 'number') return screen.orientation.angle;
@@ -513,73 +459,82 @@
         if (a === 180) return {beta: -90, gamma: 0, mode:'portrait-inverted'};
         if (a === 90) return {beta: 0, gamma: 90, mode:'landscape-left'};
         if (a === 270) return {beta: 0, gamma: -90, mode:'landscape-right'};
-        return {beta: 90, gamma: 0, mode:'portrait'}; // fallback
+        return {beta: 90, gamma: 0, mode:'portrait'};
       };
 
-      const isUpright = (b, g, angle) => {
+      // percent based on |beta-targetBeta| only
+      function optimalPercent(db){
+        if (db <= SWEET) return PERCENT_MODE==='fitness' ? 100 : 0;
+        const windowDeg = 20; // falloff window
+        const over = db - SWEET;
+        if (PERCENT_MODE === 'fitness') {
+          // 100 at sweet, down to 0 at SWEET+window, negative beyond
+          return Math.round(100 - (over/windowDeg)*100);
+        } else {
+          // 0 at sweet, up to 100 at SWEET+window, >100 beyond
+          return Math.round((over/windowDeg)*100);
+        }
+      }
+
+      const isUpright = (b, _g, angle) => {
         const t = targetsForAngle(angle);
         const db = Math.abs((b ?? 0) - t.beta);
-        const dg = Math.abs((g ?? 0) - t.gamma);
-        return { gold: db < THRESH_GOLD && dg < THRESH_GOLD, green: db < THRESH_GREEN && dg < THRESH_GREEN, db, dg, t };
+        // Visual states still rely on tight beta windows
+        return { gold: db < THRESH_GOLD, green: db < THRESH_GREEN, db, t };
       };
 
-      const updateUI = (upright, b, g, angle) => {
+      const updateUI = (upright, b, angle) => {
         const card = cube.parentElement;
         const banner = document.getElementById('uprightBanner');
         const cue = document.getElementById('uprightCue');
-        if (readoutEl) readoutEl.textContent = `β:${(b??0).toFixed(0)}° γ:${(g??0).toFixed(0)}° • angle:${angle}°`;
+        const db = Math.abs((b??0) - upright.t.beta);
+        const pct = optimalPercent(db);
+        const pctLabel = (pct > 0 ? pct : Math.ceil(pct)) + '%'; // allow negative for fitness mode when far off
+
+        if (readoutEl) readoutEl.textContent = `β:${(b??0).toFixed(0)}° • ${pctLabel}`;
 
         if (upright.gold) {
           card.classList.add('ok','flash');
           cue.classList.add('ok'); cue.setAttribute('aria-hidden','false');
-          setStatus('perfect vertical ✓', 'ok');
+          setStatus('100% ✓', 'ok');
           banner.textContent = 'Perfect vertical — gold!';
-          banner.classList.add('ok');
-          banner.setAttribute('aria-hidden','false');
+          banner.classList.add('ok'); banner.setAttribute('aria-hidden','false');
           if (!lastGold && navigator.vibrate) { try { navigator.vibrate([25, 40, 25]); } catch(_){} }
           lastGold = true;
         } else if (upright.green) {
           card.classList.add('ok'); card.classList.remove('flash');
           cue.classList.add('ok'); cue.setAttribute('aria-hidden','false');
-          setStatus('vertical ✓', 'ok');
+          setStatus('~100% ✓', 'ok');
           banner.textContent = 'Vertical — green';
-          banner.classList.add('ok');
-          banner.setAttribute('aria-hidden','false');
+          banner.classList.add('ok'); banner.setAttribute('aria-hidden','false');
           lastGold = false;
         } else {
           card.classList.remove('ok','flash');
           cue.classList.remove('ok'); cue.setAttribute('aria-hidden','true');
-          setStatus('tilt', 'warn');
+          setStatus(pctLabel, 'warn');
           banner.textContent = 'Hold phone upright';
-          banner.classList.remove('ok');
-          banner.setAttribute('aria-hidden','true');
+          banner.classList.remove('ok'); banner.setAttribute('aria-hidden','true');
           lastGold = false;
         }
       };
 
       const onOrient = (e) => {
-        const a = e.alpha ?? last.alpha; // yaw
-        const b = e.beta ?? last.beta;   // front-back tilt
-        const g = e.gamma ?? last.gamma; // left-right tilt
+        const a = e.alpha ?? last.alpha;
+        const b = e.beta ?? last.beta;   // beta only
+        const g = e.gamma ?? last.gamma;
         last = {alpha:a, beta:b, gamma:g};
         render(a, b, g);
         const angle = getAngle();
         const upright = isUpright(b, g, angle);
-        updateUI(upright, b, g, angle);
+        updateUI(upright, b, angle);
       };
 
       const startListening = () => {
         window.addEventListener('deviceorientation', onOrient, true);
         if (screen.orientation && 'onchange' in screen.orientation) {
-          screen.orientation.addEventListener('change', () => {
-            const angle = getAngle();
-            if (readoutEl) readoutEl.textContent = `angle:${angle}°`;
-          });
+          screen.orientation.addEventListener('change', () => {});
         } else {
-          window.addEventListener('orientationchange', () => {
-            const angle = getAngle();
-            if (readoutEl) readoutEl.textContent = `angle:${angle}°`;
-          });
+          window.addEventListener('orientationchange', () => {});
         }
         setStatus('active', 'ok');
       };
@@ -609,44 +564,39 @@
       });
       window.addEventListener('mousemove', (e)=>{
         if(!simulating) return;
-        const angle = 0; // simulate portrait primary
-        const x = (e.clientY / window.innerHeight) * 180 - 90; // beta
-        const y = (e.clientX / window.innerWidth) * 360 - 180; // alpha
-        render(y, x, 0);
-        const upright = isUpright(x, 0, angle);
-        updateUI(upright, x, 0, angle);
+        const angle = 0; // simulate portrait
+        const beta = (e.clientY / window.innerHeight) * 180 - 90; // approximate
+        render(0, beta, 0);
+        const upright = isUpright(beta, 0, angle);
+        updateUI(upright, beta, angle);
       });
 
-      // --- Lightweight console tests (sanity checks) ---
-      (function runWidgetTests(){
+      // Sanity tests
+      (function(){
         const tests = [];
-        const assert = (name, cond) => tests.push({name, pass: !!cond});
-        const t0 = targetsForAngle(0); assert('targets 0° portrait', t0.beta===90 && t0.gamma===0);
-        const t90 = targetsForAngle(90); assert('targets 90° landscape-left', t90.beta===0 && t90.gamma===90);
-        const gold = isUpright(90, 0, 0).gold; assert('gold at perfect portrait', gold===true);
-        const nearGreen = isUpright(92.8, 0.5, 0).green; assert('green near threshold', nearGreen===true);
-        console.groupCollapsed('%cELDOA AI — widget tests','color:var(--brand)');
-        tests.forEach(t=> console[t.pass?'log':'warn'](`${t.pass?'PASS':'FAIL'}: ${t.name}`));
+        const assert = (n,c)=>tests.push({n,pass:!!c});
+        const t0 = targetsForAngle(0); assert('targets 0° portrait', t0.beta===90);
+        assert('percent sweet spot 100', optimalPercent(1.5)===100);
+        assert('percent declines', optimalPercent(10) < 100);
+        console.groupCollapsed('%cELDOA AI — optimal angle tests','color:var(--brand)');
+        tests.forEach(t=>console[t.pass?'log':'warn'](`${t.pass?'PASS':'FAIL'}: ${t.n}`));
         console.groupEnd();
       })();
     })();
 
-    // ----- A–Z LIBRARY FILTERS -----
+    // A–Z filters
     (function(){
       const list = Array.from(document.querySelectorAll('#libList .card'));
       const search = document.getElementById('libSearch');
       const chipsWrap = document.getElementById('azChips');
       const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
       let activeLetter = '';
-
-      // create letter chips
       letters.forEach(L => {
         const b = document.createElement('button');
         b.className = 'chip'; b.type='button'; b.textContent = L;
         b.addEventListener('click', ()=>{ activeLetter = (activeLetter===L?'':L); filter(); });
         chipsWrap.appendChild(b);
       });
-
       const filter = () => {
         const q = (search.value || '').toLowerCase();
         list.forEach(card => {
@@ -660,7 +610,7 @@
       search.addEventListener('input', filter);
     })();
 
-    // ----- VIDEOS FILTER DEMO (front-end only placeholder) -----
+    // Videos filter (demo)
     (function(){
       const grid = Array.from(document.querySelectorAll('#videos .card'));
       const selects = ['vf1','vf2','vf3'].map(id=>document.getElementById(id));
@@ -675,20 +625,13 @@
       };
       selects.forEach(s=>s.addEventListener('change', filter));
       q.addEventListener('input', filter);
-      document.getElementById('submitVideo').addEventListener('click', ()=>{
-        alert('Submission form coming soon.');
-      });
     })();
 
-    // ----- DYNAMIC DATA LOADERS (progressive enhancement) -----
+    // Progressive data loaders (optional JSON sources)
     (async function(){
-      // Helper: safe fetch JSON
-      async function getJSON(url){
-        try { const r = await fetch(url, {headers:{'Accept':'application/json'}}); if(!r.ok) return null; return await r.json(); } catch { return null; }
-      }
-      window.__ELDOA_GETJSON__ = getJSON; // expose for search module
+      async function getJSON(url){ try { const r = await fetch(url, {headers:{'Accept':'application/json'}}); if(!r.ok) return null; return await r.json(); } catch { return null; } }
+      window.__ELDOA_GETJSON__ = getJSON;
 
-      // 1) Encyclopedia entries from /library/index.json (expected fields: title, slug, letter, summary, region, tags[])
       const libData = await getJSON('/library/index.json');
       if (Array.isArray(libData) && libData.length) {
         const wrap = document.getElementById('libList');
@@ -707,7 +650,6 @@
         });
       }
 
-      // 2) Videos from /video/index.json (expected fields: title, url, practice, ailment, protocol, meta)
       const vidData = await getJSON('/video/index.json');
       if (Array.isArray(vidData) && vidData.length) {
         const grid = document.getElementById('videoGrid');
@@ -727,11 +669,9 @@
         });
       }
 
-      // 3) Practitioners from /expert/index.json (expected fields: name, city, country, url)
       const proData = await getJSON('/expert/index.json');
       if (Array.isArray(proData) && proData.length) {
         const grid = document.getElementById('practGrid');
-        // keep the three CTA cards, then append practitioners
         proData.slice(0, 6).forEach(p => {
           const card = document.createElement('article');
           card.className = 'card';
@@ -744,10 +684,8 @@
         });
       }
     })();
-  </script>
 
-  <!-- Global search SPA + typo tolerance module -->
-  <script>
+    // Global search SPA + typo tolerance
     (function(){
       const form = document.querySelector('form[role="search"]');
       if (!form) return;
@@ -756,10 +694,8 @@
       const groupsWrap = document.getElementById('sr-groups');
       const countEl = document.getElementById('sr-count');
 
-      // Normalize helper (lowercase, strip accents)
       const norm = (s='') => s.toString().toLowerCase().normalize('NFD').replace(/\p{Diacritic}+/gu,'');
 
-      // Simple bounded Levenshtein (cut off at 2)
       function lev2(a,b,max=2){
         a = norm(a); b = norm(b);
         if (!a || !b) return Math.max(a.length,b.length);
@@ -767,28 +703,23 @@
         const prev = new Uint16Array(b.length+1);
         for (let j=0;j<=b.length;j++) prev[j]=j;
         for (let i=1;i<=a.length;i++){
-          let last = prev[0]; prev[0] = i;
-          let minRow = prev[0];
+          let last = prev[0]; prev[0] = i; let minRow = prev[0];
           for (let j=1;j<=b.length;j++){
-            const tmp = prev[j];
-            const cost = a[i-1]===b[j-1]?0:1;
+            const tmp = prev[j]; const cost = a[i-1]===b[j-1]?0:1;
             prev[j] = Math.min(prev[j]+1, prev[j-1]+1, last+cost);
             last = tmp; if (prev[j] < minRow) minRow = prev[j];
           }
-          if (minRow > max) return max+1; // early exit
+          if (minRow > max) return max+1;
         }
         return prev[b.length];
       }
 
-      // Field scorer: substring match wins; else small edit distance okay
       function scoreDoc(query, ...fields){
-        const q = norm(query);
-        if (!q) return 999;
+        const q = norm(query); if (!q) return 999;
         let best = Infinity;
         for (const f of fields){
-          const s = norm(f||'');
-          if (!s) continue;
-          if (s.includes(q)) return 0; // exact/substring boost
+          const s = norm(f||''); if (!s) continue;
+          if (s.includes(q)) return 0;
           const words = s.split(/[^a-z0-9]+/g);
           for (const w of words){ if (!w) continue; best = Math.min(best, lev2(q,w,2)); if (best===0) return 0; }
           best = Math.min(best, lev2(q,s,2));
@@ -809,39 +740,15 @@
       }
 
       function renderResults(query, buckets){
-        // hide main sections, show results
         ['library','videos','practitioners'].forEach(id=>{ const el = document.getElementById(id); if (el) el.style.display='none'; });
         sr.classList.add('active');
-
         groupsWrap.innerHTML = '';
         let total = 0;
-        const addGroup = (title, items) => {
-          if (!items.length) return;
-          total += items.length;
-          const g = document.createElement('div');
-          g.className = 'sr-group';
-          g.innerHTML = `<h3>${title} <span class="badge">${items.length}</span></h3>`;
-          items.forEach(it => g.appendChild(it));
-          groupsWrap.appendChild(g);
-        };
-
-        const entryCards = buckets.entries.map(e=>{
-          const a = document.createElement('a');
-          a.href = `/library/${e.slug||''}`; a.className='sr-item'; a.innerHTML = `<strong>${e.title||'Untitled'}</strong><div class="meta">${[e.region,(e.tags||[]).join(', ')].filter(Boolean).join(' • ')}</div><p>${e.summary||''}</p>`; return a;
-        });
-        const videoCards = buckets.videos.map(v=>{
-          const a = document.createElement('a');
-          a.href = v.url||'#'; a.target='_blank'; a.rel='nofollow noopener'; a.className='sr-item'; a.innerHTML = `<strong>${v.title||'Untitled'}</strong><div class="meta">${[v.practice,v.ailment,v.protocol].filter(Boolean).join(' • ')}</div>`; return a;
-        });
-        const proCards = buckets.pros.map(p=>{
-          const a = document.createElement('a');
-          a.href = p.url||'/expert'; a.className='sr-item'; a.innerHTML = `<strong>${p.name||'Practitioner'}</strong><div class="meta">${[p.city,p.country].filter(Boolean).join(', ')}</div>`; return a;
-        });
-
-        addGroup('Encyclopedia entries', entryCards);
-        addGroup('Videos', videoCards);
-        addGroup('Practitioners', proCards);
-
+        const addGroup = (title, items) => { if (!items.length) return; total += items.length; const g = document.createElement('div'); g.className = 'sr-group'; g.innerHTML = `<h3>${title} <span class="badge">${items.length}</span></h3>`; items.forEach(it => g.appendChild(it)); groupsWrap.appendChild(g); };
+        const entryCards = buckets.entries.map(e=>{ const a = document.createElement('a'); a.href = `/library/${e.slug||''}`; a.className='sr-item'; a.innerHTML = `<strong>${e.title||'Untitled'}</strong><div class="meta">${[e.region,(e.tags||[]).join(', ')].filter(Boolean).join(' • ')}</div><p>${e.summary||''}</p>`; return a; });
+        const videoCards = buckets.videos.map(v=>{ const a = document.createElement('a'); a.href = v.url||'#'; a.target='_blank'; a.rel='nofollow noopener'; a.className='sr-item'; a.innerHTML = `<strong>${v.title||'Untitled'}</strong><div class="meta">${[v.practice,v.ailment,v.protocol].filter(Boolean).join(' • ')}</div>`; return a; });
+        const proCards = buckets.pros.map(p=>{ const a = document.createElement('a'); a.href = p.url||'/expert'; a.className='sr-item'; a.innerHTML = `<strong>${p.name||'Practitioner'}</strong><div class="meta">${[p.city,p.country].filter(Boolean).join(', ')}</div>`; return a; });
+        addGroup('Encyclopedia entries', entryCards); addGroup('Videos', videoCards); addGroup('Practitioners', proCards);
         countEl.textContent = `${total} result${total===1?'':'s'} for “${query}”`;
       }
 
@@ -850,14 +757,9 @@
         const scoredEntries = entries.map(e=>({e, s: scoreDoc(query, e.title, e.summary, (e.tags||[]).join(' '), e.region)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
         const scoredVideos  = videos.map(v=>({v, s: scoreDoc(query, v.title, v.practice, v.ailment, v.protocol)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
         const scoredPros    = pros.map(p=>({p, s: scoreDoc(query, p.name, p.city, p.country)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
-        renderResults(query, {
-          entries: scoredEntries.map(x=>x.e),
-          videos:  scoredVideos.map(x=>x.v),
-          pros:    scoredPros.map(x=>x.p)
-        });
+        renderResults(query, { entries: scoredEntries.map(x=>x.e), videos:  scoredVideos.map(x=>x.v), pros:    scoredPros.map(x=>x.p) });
       }
 
-      // SPA enhancement: keep shareable URL /search?q=...
       form.addEventListener('submit', (ev)=>{
         ev.preventDefault();
         const q = input.value.trim(); if(!q) return;
@@ -865,30 +767,10 @@
         runSearch(q);
       });
 
-      // Direct load on /search
       const params = new URLSearchParams(location.search);
       const path = location.pathname.replace(/\/?$/,'/');
-      if (path === '/search/') {
-        const q = params.get('q')||''; if (q) { input.value = q; runSearch(q); }
-      }
-      // Back/forward
-      window.addEventListener('popstate', ()=>{
-        const ps = new URLSearchParams(location.search);
-        const q = ps.get('q')||''; if (q) { input.value = q; runSearch(q); }
-      });
-
-      // ---- Tests for fuzzy search ----
-      (function runSearchTests(){
-        const tests = [];
-        const assert = (name, cond) => tests.push({name, pass: !!cond});
-        assert('lev2 exact', lev2('cervical','cervical')===0);
-        assert('lev2 1 edit', lev2('cervicle','cervical')<=2);
-        assert('lev2 2 edits', lev2('throasic','thoracic')<=2);
-        assert('scoreDoc substring', scoreDoc('thor','thoracic outlet')===0);
-        console.groupCollapsed('%cELDOA AI — search tests','color:var(--brand)');
-        tests.forEach(t=> console[t.pass?'log':'warn'](`${t.pass?'PASS':'FAIL'}: ${t.name}`));
-        console.groupEnd();
-      })();
+      if (path === '/search/') { const q = params.get('q')||''; if (q) { input.value = q; runSearch(q); } }
+      window.addEventListener('popstate', ()=>{ const ps = new URLSearchParams(location.search); const q = ps.get('q')||''; if (q) { input.value = q; runSearch(q); } });
     })();
   </script>
 </body>
