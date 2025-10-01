@@ -1,0 +1,684 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ELDOA AI — The Living Encyclopedia of ELDOA</title>
+  <meta name="description" content="ELDOA AI is a mobile‑first encyclopedia, video library, and global practitioner index for the ELDOA method, inspired by Guy Voyer. Explore protocols, practices, and philosophies."/>
+  <meta name="keywords" content="ELDOA, Guy Voyer, fascial stretching, spine health, posture, back pain, protocols, myofascial, biomechanics"/>
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="canonical" href="https://eldoa.ai/"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://eldoa.ai/"/>
+  <meta property="og:title" content="ELDOA AI — The Living Encyclopedia of ELDOA"/>
+  <meta property="og:description" content="A complete, mobile‑first ELDOA encyclopedia with A–Z entries, videos by practice/ailment/protocol, and a global practitioner directory."/>
+  <meta property="og:image" content="/images/og-image.jpg"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="ELDOA AI — The Living Encyclopedia of ELDOA"/>
+  <meta name="twitter:description" content="A complete, mobile‑first ELDOA encyclopedia with A–Z entries, videos by practice/ailment/protocol, and a global practitioner directory."/>
+  <meta name="twitter:image" content="/images/og-image.jpg"/>
+
+  <!-- App / PWA friendliness (progressive enhancement) -->
+  <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+  <!-- System fonts for perf; swap a webfont later if desired -->
+
+  <style>
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #475569; /* slate-600 for better contrast on white */
+      --brand: #2f2fe6; /* slightly deeper indigo for WCAG contrast */
+      --brand-2: #0891b2; /* cyan-700 for links on light */
+      --card: #f8fafc; /* slate-50 */
+      --border: #e2e8f0; /* slate-200 */
+      --ok: #15803d; /* green-700 */
+      --warn: #a16207; /* amber-700 */
+      --err: #b91c1c; /* red-700 */
+    }
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #c7d2fe; /* indigo-200 */
+      --brand: #8b5cf6;
+      --brand-2: #22d3ee;
+      --card: #111827;
+      --border: #262b36;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --err: #ef4444;
+    }
+    /* (fixed) removed stray extra closing brace here */
+
+    html, body {height: 100%;}
+    body {
+      margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--bg); color: var(--fg);
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 92vw); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg), transparent 20%); border-bottom: 1px solid var(--border); }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding: .75rem 0; }
+    .logo { display:flex; align-items:center; gap:.6rem; font-weight:800; letter-spacing:.2px; }
+    .logo-mark { width:32px; height:32px; border-radius:8px; background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2)); box-shadow: 0 0 0 2px color-mix(in oklab, var(--bg), transparent 65%); }
+    .nav a { font-weight:600; }
+    .nav-right { display:flex; align-items:center; gap:.75rem; }
+    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.65rem .9rem; border-radius:12px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); color: var(--fg); font-weight:700; }
+    .btn:hover { filter: brightness(1.03); }
+    .switch { cursor:pointer; border:1px solid var(--border); border-radius:999px; padding:.3rem; display:flex; align-items:center; gap:.3rem; }
+    .switch span { display:inline-block; width:20px; height:20px; border-radius:999px; background: var(--brand); }
+
+    /* Hero */
+    .hero { padding: 2rem 0 1.5rem; }
+    .hero-grid { display:grid; grid-template-columns:1fr; gap:1rem; }
+    @media(min-width:900px){ .hero-grid { grid-template-columns: 1.2fr .8fr; align-items:center; } }
+    .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); line-height:1.05; margin:.2rem 0 .6rem; }
+    .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
+    .sub { color: var(--muted); max-width: 58ch; }
+    .widget-card { position:relative; aspect-ratio: 1.2/1; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); display:grid; place-items:center; }
+    .cube { width: 160px; height:160px; transform-style: preserve-3d; transition: transform 80ms linear; }
+    .face { position:absolute; width:100%; height:100%; display:grid; place-items:center; font-weight:800; font-size:1.2rem; color:#fff; background: color-mix(in oklab, var(--brand), #000 15%); border: 1px solid color-mix(in oklab, #000, transparent 75%); opacity:.92; }
+    .face:nth-child(1) { transform: translateZ(80px); }
+    .face:nth-child(2) { transform: rotateY(180deg) translateZ(80px); }
+    .face:nth-child(3) { transform: rotateY(90deg) translateZ(80px); }
+    .face:nth-child(4) { transform: rotateY(-90deg) translateZ(80px); }
+    .face:nth-child(5) { transform: rotateX(90deg) translateZ(80px); }
+    .face:nth-child(6) { transform: rotateX(-90deg) translateZ(80px); }
+    .widget-ui { position:absolute; inset:auto 0 0 0; display:flex; gap:.5rem; padding:.6rem; background: color-mix(in oklab, var(--bg), transparent 35%); backdrop-filter: blur(8px); align-items:center; justify-content:space-between; }
+    .widget-ui .status { font-size:.85rem; color: var(--muted); }
+
+    /* Sections */
+    section { padding: 2rem 0; border-top: 1px solid var(--border); }
+    h2 { font-size: clamp(1.2rem, 3.6vw, 1.8rem); margin: 0 0 .25rem; }
+    p.section-sub { color: var(--muted); margin:.1rem 0 1rem; max-width: 65ch; }
+
+    /* A–Z library */
+    .az-controls { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; }
+    .chip { border:1px solid var(--border); border-radius:999px; padding:.4rem .7rem; font-weight:700; }
+    .list { display:grid; grid-template-columns:1fr; gap:.6rem; margin-top:1rem; }
+    @media(min-width:720px){ .list { grid-template-columns: repeat(2, 1fr);} }
+    @media(min-width:1040px){ .list { grid-template-columns: repeat(3, 1fr);} }
+    .card { border:1px solid var(--border); border-radius:16px; padding: .9rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); }
+    .card h3 { margin:.1rem 0 .3rem; font-size:1rem; }
+    .meta { font-size:.85rem; color: var(--muted); }
+
+    /* Filters */
+    .filters { display:flex; gap:.5rem; flex-wrap:wrap; margin:.5rem 0 1rem; }
+    select, input[type="search"] { padding:.6rem .7rem; border-radius:12px; border:1px solid var(--border); background: var(--bg); color: var(--fg); }
+
+    .grid { display:grid; grid-template-columns:1fr; gap:.75rem; }
+    @media(min-width:760px){ .grid { grid-template-columns: repeat(2, 1fr);} }
+    @media(min-width:1100px){ .grid { grid-template-columns: repeat(3, 1fr);} }
+
+    /* Footer */
+    footer { padding:2rem 0 4rem; border-top:1px solid var(--border); color: var(--muted); }
+
+    /* Accessibility helpers */
+    .sr-only { position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    /* Upright posture feedback */
+    .widget-card.ok { outline: 3px solid var(--ok); box-shadow: 0 0 0 2px color-mix(in oklab, var(--ok), transparent 60%); }
+    .widget-card.ok.flash { animation: flash-ok 900ms ease-in-out infinite alternate; }
+    @keyframes flash-ok {
+      from { box-shadow: 0 0 0 4px color-mix(in oklab, var(--ok), transparent 70%), 0 0 0 10px color-mix(in oklab, #eab308, transparent 90%); }
+      to { box-shadow: 0 0 0 8px color-mix(in oklab, var(--ok), transparent 45%), 0 0 0 16px color-mix(in oklab, #eab308, transparent 65%); }
+    }
+    .widget-banner { position:absolute; top:.6rem; right:.6rem; border-radius:10px; padding:.35rem .55rem; font-weight:800; font-size:.8rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); border:1px solid var(--border); }
+    .widget-banner.ok { background: linear-gradient(90deg, color-mix(in oklab, #16a34a, transparent 20%), color-mix(in oklab, #eab308, transparent 20%)); color:#052e16; }
+    .widget-cue { position:absolute; inset:0; display:grid; place-items:center; font-weight:900; letter-spacing:.06em; font-size:clamp(1rem, 4.8vw, 1.3rem); color: color-mix(in oklab, var(--fg), transparent 40%); pointer-events:none; text-align:center; padding:1rem; }
+    .widget-cue.ok { color:#065f46; }
+    .readout { font-size:.8rem; margin-left:.5rem; color: var(--muted); }
+  </style>
+
+  <!-- Structured Data (AEO & SEO) -->
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"ELDOA AI",
+    "url":"https://eldoa.ai/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://eldoa.ai/search?q={query}",
+      "query-input":"required name=query"
+    }
+  }</script>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"ELDOA AI",
+    "url":"https://eldoa.ai/",
+    "logo":"/images/logo1.png",
+    "sameAs":["https://www.instagram.com/eldoa","https://www.youtube.com/results?search_query=eldoa"]
+  }</script>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {"@type":"Question","name":"What is ELDOA?","acceptedAnswer":{"@type":"Answer","text":"ELDOA is a precise series of postures designed to create space at specific joints of the spine and body, supporting posture, hydration of fascia, and pain management."}},
+      {"@type":"Question","name":"Who created ELDOA?","acceptedAnswer":{"@type":"Answer","text":"The method was developed by osteopath Guy Voyer, DO. ELDOA AI curates references, videos, and practitioner insights globally."}},
+      {"@type":"Question","name":"Is ELDOA safe for beginners?","acceptedAnswer":{"@type":"Answer","text":"Always consult a professional. Our directory helps you find trained practitioners; our videos and entries are educational, not medical advice."}}
+    ]
+  }</script>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header role="banner">
+    <div class="container nav" aria-label="Primary">
+      <a class="logo" href="#top" aria-label="ELDOA AI Home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+      </a>
+      <div class="nav-right">
+        <a href="#library" class="btn">Encyclopedia A–Z</a>
+        <a href="#videos" class="btn" rel="nofollow">Videos</a>
+        <a href="#practitioners" class="btn" rel="nofollow">Practitioners</a>
+        <button id="themeToggle" class="switch" aria-label="Toggle dark/light theme"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <!-- HERO / GYROSCOPE WIDGET -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <div class="kicker">Mobile‑first • Encyclopedia • Directory</div>
+          <h1 id="hero-title">The Living Encyclopedia of <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">ELDOA</span></h1>
+          <p class="sub">Search precise ELDOA entries, explore videos by <strong>practice</strong>, <strong>ailment</strong>, and <strong>protocol</strong>, and find practitioners worldwide. Built for speed, clarity, and truth to the philosophy of Guy Voyer.</p>
+          <form role="search" action="/search" method="get" aria-label="Site search" style="margin-top:1rem;display:flex;gap:.5rem;">
+            <label class="sr-only" for="q">Search ELDOA AI</label>
+            <input id="q" name="q" type="search" placeholder="Search posture, vertebral level, or term…" autocomplete="on" enterkeyhint="search" style="flex:1"/>
+            <button class="btn" type="submit" aria-label="Search">Search</button>
+          </form>
+        </div>
+
+        <div class="widget-card" aria-live="polite" aria-busy="false">
+          <div id="uprightBanner" class="widget-banner" aria-hidden="true">Hold phone upright</div>
+          <div id="uprightCue" class="widget-cue" aria-hidden="true">HEAD UP — TUCK CHIN</div>
+          <div id="cube" class="cube" role="img" aria-label="Interactive orientation cube">
+            <div class="face">EL</div>
+            <div class="face">DO</div>
+            <div class="face">A‑I</div>
+            <div class="face">C‑2</div>
+            <div class="face">T‑12</div>
+            <div class="face">L‑5 S1</div>
+          </div>
+          <div class="widget-ui">
+            <div class="status" id="gyroStatus">Gyroscope: <strong>inactive</strong> <span id="gyroReadout" class="readout"></span></div>
+            <div style="display:flex; gap:.5rem;">
+              <button id="activateGyro" class="btn" type="button">Activate Gyroscope</button>
+              <button id="simulateMouse" class="btn" type="button" aria-pressed="false">Mouse Sim</button>
+            </div>
+          </div>
+          <noscript>
+            <div class="status">Enable JavaScript to try the mobile orientation demo.</div>
+          </noscript>
+        </div>
+      </div>
+      <p class="section-sub" style="margin-top:.75rem">On phones/tablets, tap <em>Activate Gyroscope</em>. On laptops, use <em>Mouse Sim</em> or imagine posture aligning as if your screen were held <strong>upright at eye level</strong> (don’t look down). The cube hints at spatial orientation cues used in ELDOA.</p>
+    </section>
+
+    <!-- A–Z LIBRARY -->
+    <section id="library" aria-labelledby="library-title">
+      <h2 id="library-title">A–Z: ELDOA Encyclopedia</h2>
+      <p class="section-sub">Featured headwords. Full index coming soon. Use the chips to filter by initial; search narrows results instantly.</p>
+      <div class="az-controls" role="toolbar" aria-label="A–Z filters">
+        <input type="search" id="libSearch" placeholder="Filter entries…" aria-label="Filter entries"/>
+        <div id="azChips" class="chips" aria-label="Letter filters" style="display:flex; gap:.4rem; flex-wrap:wrap"></div>
+      </div>
+      <div id="libList" class="list" aria-live="polite">
+        <!-- Example cards (replace with generated content or CMS) -->
+        <article class="card" data-title="C5‑C6 Flexion" data-letter="C">
+          <h3><a href="/library/c5-c6-flexion">C5‑C6 Flexion</a></h3>
+          <div class="meta">Region: Cervical • Tags: posture, neural</div>
+          <p>Setup and cues for creating space at the C5‑C6 segment.</p>
+        </article>
+        <article class="card" data-title="L5‑S1 Decompression" data-letter="L">
+          <h3><a href="/library/l5-s1-decompression">L5‑S1 Decompression</a></h3>
+          <div class="meta">Region: Lumbar • Tags: low back, disc</div>
+          <p>Precise posture to influence hydration and spacing at L5‑S1.</p>
+        </article>
+        <article class="card" data-title="Thoracic Outlet" data-letter="T">
+          <h3><a href="/library/thoracic-outlet">Thoracic Outlet</a></h3>
+          <div class="meta">Region: Thoracic • Tags: shoulder, numbness</div>
+          <p>Considerations for T1‑T2 and shoulder girdle relationships.</p>
+        </article>
+        <article class="card" data-title="Anterior Hip Line" data-letter="A">
+          <h3><a href="/library/anterior-hip-line">Anterior Hip Line</a></h3>
+          <div class="meta">Region: Pelvis • Tags: hip flexor, posture</div>
+          <p>Myofascial chains connected to hip positioning and ELDOA cues.</p>
+        </article>
+        <article class="card" data-title="Disc Hydration" data-letter="D">
+          <h3><a href="/library/disc-hydration">Disc Hydration</a></h3>
+          <div class="meta">Concept • Tags: fascia, recovery</div>
+          <p>How long holds and stillness influence disc hydration dynamics.</p>
+        </article>
+        <article class="card" data-title="Facet Joints" data-letter="F">
+          <h3><a href="/library/facet-joints">Facet Joints</a></h3>
+          <div class="meta">Anatomy • Tags: spine, biomechanics</div>
+          <p>Segmental mechanics relevant to ELDOA placements and vectors.</p>
+        </article>
+      </div>
+      <div style="margin-top:.75rem;"><a class="btn" href="/library/">View complete A–Z index</a></div>
+    </section>
+
+    <!-- VIDEOS REPOSITORY -->
+    <section id="videos" aria-labelledby="videos-title">
+      <h2 id="videos-title">Global ELDOA Videos</h2>
+      <p class="section-sub">Curated across platforms. Segment by <strong>practice</strong>, <strong>ailments</strong>, and <strong>protocols</strong>. Submit a link to grow the archive.</p>
+      <div class="filters" role="toolbar" aria-label="Video filters">
+        <label for="vf1" class="sr-only">Practice</label>
+        <select id="vf1" aria-label="Practice">
+          <option value="">Practice</option>
+          <option>Beginner</option>
+          <option>Intermediate</option>
+          <option>Advanced</option>
+          <option>Sport‑specific</option>
+        </select>
+        <label for="vf2" class="sr-only">Ailment</label>
+        <select id="vf2" aria-label="Ailment">
+          <option value="">Ailment</option>
+          <option>Low Back Pain</option>
+          <option>Neck Stiffness</option>
+          <option>Sciatica</option>
+          <option>Shoulder</option>
+        </select>
+        <label for="vf3" class="sr-only">Protocol</label>
+        <select id="vf3" aria-label="Protocol">
+          <option value="">Protocol</option>
+          <option>Daily 10‑min</option>
+          <option>Recovery</option>
+          <option>Performance</option>
+        </select>
+        <input type="search" id="videoSearch" placeholder="Search videos…" aria-label="Search videos"/>
+        <button class="btn" type="button" id="submitVideo">Submit a Link</button>
+      </div>
+      <div id="videoGrid" class="grid">
+        <article class="card" data-practice="Beginner" data-ailment="Low Back Pain" data-protocol="Daily 10‑min">
+          <h3>Intro: L5‑S1 Daily</h3>
+          <p class="meta">Beginner • Low Back Pain • 10‑min</p>
+          <a class="btn" href="#" rel="nofollow">Watch</a>
+        </article>
+        <article class="card" data-practice="Intermediate" data-ailment="Neck Stiffness" data-protocol="Recovery">
+          <h3>Cervical Reset</h3>
+          <p class="meta">Intermediate • Neck • Recovery</p>
+          <a class="btn" href="#" rel="nofollow">Watch</a>
+        </article>
+        <article class="card" data-practice="Sport‑specific" data-ailment="Shoulder" data-protocol="Performance">
+          <h3>Overhead Stability</h3>
+          <p class="meta">Sport • Shoulder • Performance</p>
+          <a class="btn" href="#" rel="nofollow">Watch</a>
+        </article>
+      </div>
+      <div style="margin-top:.75rem;"><a class="btn" href="/video/">Explore full repository</a></div>
+    </section>
+
+    <!-- PRACTITIONERS DIRECTORY (placeholder for future data) -->
+    <section id="practitioners" aria-labelledby="pract-title">
+      <h2 id="pract-title">Practitioners — Worldwide</h2>
+      <p class="section-sub">We’re assembling a verified index. Meanwhile, find guidance from certified professionals.</p>
+      <div class="grid" id="practGrid">
+        <article class="card">
+          <h3>Join the Directory</h3>
+          <p class="meta">For certified ELDOA practitioners</p>
+          <a class="btn" href="/expert/apply">Apply</a>
+        </article>
+        <article class="card">
+          <h3>Request a Practitioner</h3>
+          <p class="meta">Tell us your city + goals</p>
+          <a class="btn" href="/expert/request">Request</a>
+        </article>
+        <article class="card">
+          <h3>Standards & Verification</h3>
+          <p class="meta">How we verify credentials</p>
+          <a class="btn" href="/expert/standards">Learn more</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- PHILOSOPHIES / GUY VOYER FEATURED ESSAYS -->
+    <section id="philosophy" aria-labelledby="philo-title">
+      <h2 id="philo-title">Philosophies of ELDOA</h2>
+      <p class="section-sub">Featured writings and talks from <strong>Guy Voyer, DO</strong>, with reflections from practitioners worldwide contributing to the living body of work.</p>
+      <div class="grid">
+        <article class="card">
+          <h3>Foundations of Segmental Posture</h3>
+          <p>Why precision, stillness, and tension matter for disc hydration and joint space.</p>
+          <a class="btn" href="/philosophy/foundations">Read</a>
+        </article>
+        <article class="card">
+          <h3>Integrating ELDOA in Daily Life</h3>
+          <p>Micro‑sessions, breath, and posture hygiene when you work at a desk.</p>
+          <a class="btn" href="/philosophy/daily-integration">Read</a>
+        </article>
+        <article class="card">
+          <h3>Practitioner Voices</h3>
+          <p>Short essays from the global community on teaching, learning, and care.</p>
+          <a class="btn" href="/philosophy/voices">Read</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container" style="display:grid; gap:1rem">
+      <div>
+        <strong>ELDOA AI</strong> — Knowledge • Videos • Practitioners
+      </div>
+      <div style="display:flex; gap:.75rem; flex-wrap:wrap">
+        <a href="/about">About</a>
+        <a href="/contribute">Contribute</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="/contact">Contact</a>
+      </div>
+      <small>Educational content only — not medical advice.</small>
+    </div>
+  </footer>
+
+  <script defer>
+    // ----- THEME TOGGLE -----
+    (function(){
+      const root = document.documentElement;
+      const btn = document.getElementById('themeToggle');
+      const key = 'theme';
+      const metaLight = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: light)"]') || document.querySelector('meta[name="theme-color"]');
+      const metaDark = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: dark)"]');
+      const setTheme = (mode) => {
+        root.setAttribute('data-theme', mode);
+        localStorage.setItem(key, mode);
+        // update theme-color for address bars
+        if (metaLight && metaDark) {
+          if (mode === 'dark') { metaDark.setAttribute('content', '#0b0d12'); metaLight.setAttribute('content', '#0b0d12'); }
+          else { metaLight.setAttribute('content', '#ffffff'); metaDark.setAttribute('content', '#ffffff'); }
+        }
+      };
+      const saved = localStorage.getItem(key);
+      setTheme(saved === 'dark' ? 'dark' : 'light');
+      btn.addEventListener('click', () => {
+        const cur = root.getAttribute('data-theme') || 'light';
+        const next = cur === 'light' ? 'dark' : 'light';
+        setTheme(next);
+      });
+    })();
+
+    // ----- GYROSCOPE WIDGET (DeviceOrientation API with iOS permission) -----
+    (function(){
+      const cube = document.getElementById('cube');
+      const statusEl = document.getElementById('gyroStatus');
+      const readoutEl = document.getElementById('gyroReadout');
+      const activateBtn = document.getElementById('activateGyro');
+      const simulateBtn = document.getElementById('simulateMouse');
+
+      let simulating = false;
+      let last = {alpha:0, beta:0, gamma:0};
+      let lastGold = false;
+
+      const THRESH_GOLD = 1.5; // degrees
+      const THRESH_GREEN = 3.0; // degrees
+
+      const setStatus = (txt, level='') => {
+        statusEl.innerHTML = `Gyroscope: <strong>${txt}</strong> <span id="gyroReadout" class="readout">${readoutEl?.textContent||''}</span>`;
+        statusEl.style.color = level==="ok"?"var(--ok)":level==="warn"?"var(--warn)":level==="err"?"var(--err)":"var(--muted)";
+      };
+
+      const render = (a, b, g) => {
+        cube.style.transform = `rotateX(${b}deg) rotateY(${a}deg) rotateZ(${g}deg)`;
+      };
+
+      const getAngle = () => {
+        if (screen.orientation && typeof screen.orientation.angle === 'number') return screen.orientation.angle;
+        return (typeof window.orientation === 'number') ? (window.orientation % 360 + 360) % 360 : 0;
+      };
+
+      const targetsForAngle = (angle) => {
+        const a = Math.round(((angle % 360) + 360) % 360);
+        if (a === 0) return {beta: 90, gamma: 0, mode:'portrait'};
+        if (a === 180) return {beta: -90, gamma: 0, mode:'portrait-inverted'};
+        if (a === 90) return {beta: 0, gamma: 90, mode:'landscape-left'};
+        if (a === 270) return {beta: 0, gamma: -90, mode:'landscape-right'};
+        return {beta: 90, gamma: 0, mode:'portrait'}; // fallback
+      };
+
+      const isUpright = (b, g, angle) => {
+        const t = targetsForAngle(angle);
+        const db = Math.abs((b ?? 0) - t.beta);
+        const dg = Math.abs((g ?? 0) - t.gamma);
+        return { gold: db < THRESH_GOLD && dg < THRESH_GOLD, green: db < THRESH_GREEN && dg < THRESH_GREEN, db, dg, t };
+      };
+
+      const updateUI = (upright, b, g, angle) => {
+        const card = cube.parentElement;
+        const banner = document.getElementById('uprightBanner');
+        const cue = document.getElementById('uprightCue');
+        if (readoutEl) readoutEl.textContent = `β:${(b??0).toFixed(0)}° γ:${(g??0).toFixed(0)}° • angle:${angle}°`;
+
+        if (upright.gold) {
+          card.classList.add('ok','flash');
+          cue.classList.add('ok'); cue.setAttribute('aria-hidden','false');
+          setStatus('perfect vertical ✓', 'ok');
+          banner.textContent = 'Perfect vertical — gold!';
+          banner.classList.add('ok');
+          banner.setAttribute('aria-hidden','false');
+          if (!lastGold && navigator.vibrate) { try { navigator.vibrate([25, 40, 25]); } catch(_){} }
+          lastGold = true;
+        } else if (upright.green) {
+          card.classList.add('ok'); card.classList.remove('flash');
+          cue.classList.add('ok'); cue.setAttribute('aria-hidden','false');
+          setStatus('vertical ✓', 'ok');
+          banner.textContent = 'Vertical — green';
+          banner.classList.add('ok');
+          banner.setAttribute('aria-hidden','false');
+          lastGold = false;
+        } else {
+          card.classList.remove('ok','flash');
+          cue.classList.remove('ok'); cue.setAttribute('aria-hidden','true');
+          setStatus('tilt', 'warn');
+          banner.textContent = 'Hold phone upright';
+          banner.classList.remove('ok');
+          banner.setAttribute('aria-hidden','true');
+          lastGold = false;
+        }
+      };
+
+      const onOrient = (e) => {
+        const a = e.alpha ?? last.alpha; // yaw
+        const b = e.beta ?? last.beta;   // front-back tilt
+        const g = e.gamma ?? last.gamma; // left-right tilt
+        last = {alpha:a, beta:b, gamma:g};
+        render(a, b, g);
+        const angle = getAngle();
+        const upright = isUpright(b, g, angle);
+        updateUI(upright, b, g, angle);
+      };
+
+      const startListening = () => {
+        window.addEventListener('deviceorientation', onOrient, true);
+        if (screen.orientation && 'onchange' in screen.orientation) {
+          screen.orientation.addEventListener('change', () => {
+            const angle = getAngle();
+            if (readoutEl) readoutEl.textContent = `angle:${angle}°`;
+          });
+        } else {
+          window.addEventListener('orientationchange', () => {
+            const angle = getAngle();
+            if (readoutEl) readoutEl.textContent = `angle:${angle}°`;
+          });
+        }
+        setStatus('active', 'ok');
+      };
+
+      const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+      activateBtn.addEventListener('click', async () => {
+        try {
+          if (isIOS() && window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission === 'function') {
+            const p = await DeviceOrientationEvent.requestPermission();
+            if (p === 'granted') startListening(); else setStatus('denied', 'err');
+          } else if ('ondeviceorientation' in window) {
+            startListening();
+          } else {
+            setStatus('unsupported', 'warn');
+          }
+        } catch (e) {
+          setStatus('error', 'err');
+        }
+      });
+
+      // Mouse simulation for desktops/laptops
+      simulateBtn.addEventListener('click', () => {
+        simulating = !simulating;
+        simulateBtn.setAttribute('aria-pressed', String(simulating));
+        setStatus(simulating? 'mouse sim' : 'inactive');
+      });
+      window.addEventListener('mousemove', (e)=>{
+        if(!simulating) return;
+        const angle = 0; // simulate portrait primary
+        const x = (e.clientY / window.innerHeight) * 180 - 90; // beta
+        const y = (e.clientX / window.innerWidth) * 360 - 180; // alpha
+        render(y, x, 0);
+        const upright = isUpright(x, 0, angle);
+        updateUI(upright, x, 0, angle);
+      });
+
+      // --- Lightweight console tests (sanity checks) ---
+      (function runWidgetTests(){
+        const tests = [];
+        const assert = (name, cond) => tests.push({name, pass: !!cond});
+        const t0 = targetsForAngle(0); assert('targets 0° portrait', t0.beta===90 && t0.gamma===0);
+        const t90 = targetsForAngle(90); assert('targets 90° landscape-left', t90.beta===0 && t90.gamma===90);
+        const gold = isUpright(90, 0, 0).gold; assert('gold at perfect portrait', gold===true);
+        const nearGreen = isUpright(92.8, 0.5, 0).green; assert('green near threshold', nearGreen===true);
+        console.groupCollapsed('%cELDOA AI — widget tests','color:var(--brand)');
+        tests.forEach(t=> console[t.pass?'log':'warn'](`${t.pass?'PASS':'FAIL'}: ${t.name}`));
+        console.groupEnd();
+      })();
+    })();
+
+    // ----- A–Z LIBRARY FILTERS -----
+    (function(){
+      const list = Array.from(document.querySelectorAll('#libList .card'));
+      const search = document.getElementById('libSearch');
+      const chipsWrap = document.getElementById('azChips');
+      const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+      let activeLetter = '';
+
+      // create letter chips
+      letters.forEach(L => {
+        const b = document.createElement('button');
+        b.className = 'chip'; b.type='button'; b.textContent = L;
+        b.addEventListener('click', ()=>{ activeLetter = (activeLetter===L?'':L); filter(); });
+        chipsWrap.appendChild(b);
+      });
+
+      const filter = () => {
+        const q = (search.value || '').toLowerCase();
+        list.forEach(card => {
+          const title = (card.dataset.title || '').toLowerCase();
+          const letter = card.dataset.letter || '';
+          const matchQ = !q || title.includes(q);
+          const matchL = !activeLetter || letter === activeLetter;
+          card.style.display = (matchQ && matchL) ? '' : 'none';
+        });
+      };
+      search.addEventListener('input', filter);
+    })();
+
+    // ----- VIDEOS FILTER DEMO (front-end only placeholder) -----
+    (function(){
+      const grid = Array.from(document.querySelectorAll('#videos .card'));
+      const selects = ['vf1','vf2','vf3'].map(id=>document.getElementById(id));
+      const q = document.getElementById('videoSearch');
+      const filter = () => {
+        const [p,a,pr] = selects.map(s=>s.value);
+        const query = (q.value||'').toLowerCase();
+        grid.forEach(it => {
+          const good = (!p || it.dataset.practice===p) && (!a || it.dataset.ailment===a) && (!pr || it.dataset.protocol===pr) && (!query || it.textContent.toLowerCase().includes(query));
+          it.style.display = good? '' : 'none';
+        });
+      };
+      selects.forEach(s=>s.addEventListener('change', filter));
+      q.addEventListener('input', filter);
+      document.getElementById('submitVideo').addEventListener('click', ()=>{
+        alert('Submission form coming soon.');
+      });
+    })();
+
+    // ----- DYNAMIC DATA LOADERS (progressive enhancement) -----
+    (async function(){
+      // Helper: safe fetch JSON
+      async function getJSON(url){
+        try { const r = await fetch(url, {headers:{'Accept':'application/json'}}); if(!r.ok) return null; return await r.json(); } catch { return null; }
+      }
+
+      // 1) Encyclopedia entries from /library/index.json (expected fields: title, slug, letter, summary, region, tags[])
+      const libData = await getJSON('/library/index.json');
+      if (Array.isArray(libData) && libData.length) {
+        const wrap = document.getElementById('libList');
+        wrap.innerHTML = '';
+        libData.slice(0, 18).forEach(item => {
+          const el = document.createElement('article');
+          el.className = 'card';
+          el.dataset.title = item.title || '';
+          el.dataset.letter = (item.letter || (item.title||'')[0] || '').toUpperCase();
+          el.innerHTML = `
+            <h3><a href="/library/${item.slug || ''}">${item.title || 'Untitled'}</a></h3>
+            <div class="meta">${item.region?`Region: ${item.region} • `:''}Tags: ${(item.tags||[]).join(', ')}</div>
+            <p>${item.summary || ''}</p>
+          `;
+          wrap.appendChild(el);
+        });
+      }
+
+      // 2) Videos from /video/index.json (expected fields: title, url, practice, ailment, protocol, meta)
+      const vidData = await getJSON('/video/index.json');
+      if (Array.isArray(vidData) && vidData.length) {
+        const grid = document.getElementById('videoGrid');
+        grid.innerHTML = '';
+        vidData.slice(0, 9).forEach(v => {
+          const a = document.createElement('article');
+          a.className = 'card';
+          a.dataset.practice = v.practice || '';
+          a.dataset.ailment = v.ailment || '';
+          a.dataset.protocol = v.protocol || '';
+          a.innerHTML = `
+            <h3>${v.title || 'Untitled'}</h3>
+            <p class="meta">${[v.practice, v.ailment, v.protocol].filter(Boolean).join(' • ')}</p>
+            <a class="btn" href="${v.url || '#'}" rel="nofollow noopener" target="_blank">Watch</a>
+          `;
+          grid.appendChild(a);
+        });
+      }
+
+      // 3) Practitioners from /expert/index.json (expected fields: name, city, country, url)
+      const proData = await getJSON('/expert/index.json');
+      if (Array.isArray(proData) && proData.length) {
+        const grid = document.getElementById('practGrid');
+        // keep the three CTA cards, then append practitioners
+        proData.slice(0, 6).forEach(p => {
+          const card = document.createElement('article');
+          card.className = 'card';
+          card.innerHTML = `
+            <h3>${p.name || 'Practitioner'}</h3>
+            <p class="meta">${[p.city, p.country].filter(Boolean).join(', ')}</p>
+            ${p.url ? `<a class=\"btn\" href=\"${p.url}\" target=\"_blank\" rel=\"nofollow noopener\">Profile</a>` : ''}
+          `;
+          grid.appendChild(card);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
