@@ -31,14 +31,13 @@
   <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
-  <!-- System fonts for perf; swap a webfont later if desired -->
 
   <style>
     [data-theme="light"] {
       --bg: #ffffff;
       --fg: #0d0f13;
       --muted: #475569; /* slate-600 for better contrast on white */
-      --brand: #2f2fe6; /* slightly deeper indigo for WCAG contrast */
+      --brand: #2f2fe6; /* deeper indigo for WCAG contrast */
       --brand-2: #0891b2; /* cyan-700 for links on light */
       --card: #f8fafc; /* slate-50 */
       --border: #e2e8f0; /* slate-200 */
@@ -58,7 +57,6 @@
       --warn: #f59e0b;
       --err: #ef4444;
     }
-    /* (fixed) removed stray extra closing brace here */
 
     html, body {height: 100%;}
     body {
@@ -75,10 +73,19 @@
     .logo-mark { width:32px; height:32px; border-radius:8px; background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2)); box-shadow: 0 0 0 2px color-mix(in oklab, var(--bg), transparent 65%); }
     .nav a { font-weight:600; }
     .nav-right { display:flex; align-items:center; gap:.75rem; }
+    .nav-links { display:flex; align-items:center; gap:.5rem; }
     .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.65rem .9rem; border-radius:12px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); color: var(--fg); font-weight:700; }
     .btn:hover { filter: brightness(1.03); }
     .switch { cursor:pointer; border:1px solid var(--border); border-radius:999px; padding:.3rem; display:flex; align-items:center; gap:.3rem; }
     .switch span { display:inline-block; width:20px; height:20px; border-radius:999px; background: var(--brand); }
+
+    /* Hamburger */
+    .hamburger { display:none; width:40px; height:40px; border-radius:10px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); align-items:center; justify-content:center; }
+    .hamburger svg { width:22px; height:22px; }
+    .mobile-menu { position:fixed; inset:56px 0 auto 0; background: var(--bg); border-bottom:1px solid var(--border); box-shadow: 0 10px 30px color-mix(in oklab, #000, transparent 70%); z-index:49; transform: translateY(-8px); opacity:0; pointer-events:none; transition: transform .18s ease, opacity .18s ease; }
+    .mobile-menu.open { transform: translateY(0); opacity:1; pointer-events:auto; }
+    .mobile-menu .menu-inner { padding: .75rem; display:grid; gap:.5rem; }
+    .mobile-menu a { display:block; padding:.9rem 1rem; border:1px solid var(--border); border-radius:12px; background: color-mix(in oklab, var(--bg), var(--card) 35%); font-weight:700; text-align:center; }
 
     /* Hero */
     .hero { padding: 2rem 0 1.5rem; }
@@ -133,13 +140,34 @@
     .widget-card.ok.flash { animation: flash-ok 900ms ease-in-out infinite alternate; }
     @keyframes flash-ok {
       from { box-shadow: 0 0 0 4px color-mix(in oklab, var(--ok), transparent 70%), 0 0 0 10px color-mix(in oklab, #eab308, transparent 90%); }
-      to { box-shadow: 0 0 0 8px color-mix(in oklab, var(--ok), transparent 45%), 0 0 0 16px color-mix(in oklab, #eab308, transparent 65%); }
+      to   { box-shadow: 0 0 0 8px color-mix(in oklab, var(--ok), transparent 45%), 0 0 0 16px color-mix(in oklab, #eab308, transparent 65%); }
     }
     .widget-banner { position:absolute; top:.6rem; right:.6rem; border-radius:10px; padding:.35rem .55rem; font-weight:800; font-size:.8rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); border:1px solid var(--border); }
     .widget-banner.ok { background: linear-gradient(90deg, color-mix(in oklab, #16a34a, transparent 20%), color-mix(in oklab, #eab308, transparent 20%)); color:#052e16; }
     .widget-cue { position:absolute; inset:0; display:grid; place-items:center; font-weight:900; letter-spacing:.06em; font-size:clamp(1rem, 4.8vw, 1.3rem); color: color-mix(in oklab, var(--fg), transparent 40%); pointer-events:none; text-align:center; padding:1rem; }
     .widget-cue.ok { color:#065f46; }
     .readout { font-size:.8rem; margin-left:.5rem; color: var(--muted); }
+
+    /* Responsive adjustments */
+    @media(max-width: 720px){
+      .nav-links { display:none; }
+      .hamburger { display:inline-flex; }
+      .nav { padding: .5rem 0; }
+      header .btn { padding:.55rem .75rem; }
+      form[role="search"] { flex-wrap:wrap; }
+      form[role="search"] button { width:100%; justify-content:center; }
+      .widget-card { aspect-ratio: 1/1; }
+      .container { width: min(1000px, 94vw); }
+    }
+
+    /* Search results */
+    #searchResults { display:none; padding: 2rem 0; }
+    #searchResults.active { display:block; }
+    .sr-head { display:flex; align-items:baseline; justify-content:space-between; gap:.75rem; }
+    .sr-count { color: var(--muted); font-size:.9rem; }
+    .sr-group { margin-top:1rem; border-top:1px solid var(--border); padding-top:1rem; }
+    .sr-item { display:block; border:1px solid var(--border); border-radius:12px; padding:.9rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); margin:.5rem 0; }
+    .badge { display:inline-block; padding:.15rem .5rem; border-radius:999px; border:1px solid var(--border); font-size:.75rem; margin-left:.4rem; }
   </style>
 
   <!-- Structured Data (AEO & SEO) -->
@@ -181,10 +209,24 @@
         <span>ELDOA <span style="color:var(--brand)">AI</span></span>
       </a>
       <div class="nav-right">
-        <a href="#library" class="btn">Encyclopedia A–Z</a>
-        <a href="#videos" class="btn" rel="nofollow">Videos</a>
-        <a href="#practitioners" class="btn" rel="nofollow">Practitioners</a>
+        <nav class="nav-links" aria-label="Primary links">
+          <a href="#library" class="btn">Encyclopedia A–Z</a>
+          <a href="#videos" class="btn" rel="nofollow">Videos</a>
+          <a href="#practitioners" class="btn" rel="nofollow">Practitioners</a>
+        </nav>
+        <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
         <button id="themeToggle" class="switch" aria-label="Toggle dark/light theme"><span></span></button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <div class="menu-inner container">
+        <a href="#library">Encyclopedia A–Z</a>
+        <a href="#videos" rel="nofollow">Videos</a>
+        <a href="#practitioners" rel="nofollow">Practitioners</a>
+        <a href="#philosophy">Philosophies</a>
+        <a href="/library/">Full A–Z index</a>
       </div>
     </div>
   </header>
@@ -370,6 +412,15 @@
         </article>
       </div>
     </section>
+
+    <!-- SEARCH RESULTS (rendered when on /search or when form submits) -->
+    <section id="searchResults" aria-labelledby="sr-title">
+      <div class="sr-head">
+        <h2 id="sr-title">Search results</h2>
+        <div class="sr-count" id="sr-count"></div>
+      </div>
+      <div id="sr-groups"></div>
+    </section>
   </main>
 
   <footer role="contentinfo">
@@ -399,7 +450,6 @@
       const setTheme = (mode) => {
         root.setAttribute('data-theme', mode);
         localStorage.setItem(key, mode);
-        // update theme-color for address bars
         if (metaLight && metaDark) {
           if (mode === 'dark') { metaDark.setAttribute('content', '#0b0d12'); metaLight.setAttribute('content', '#0b0d12'); }
           else { metaLight.setAttribute('content', '#ffffff'); metaDark.setAttribute('content', '#ffffff'); }
@@ -412,6 +462,20 @@
         const next = cur === 'light' ? 'dark' : 'light';
         setTheme(next);
       });
+    })();
+
+    // ----- MOBILE MENU -----
+    (function(){
+      const toggle = document.getElementById('menuToggle');
+      const panel = document.getElementById('mobileMenu');
+      if (!toggle || !panel) return;
+      const open = () => { panel.hidden = false; panel.classList.add('open'); toggle.setAttribute('aria-expanded','true'); document.documentElement.style.overflow='hidden'; };
+      const close = () => { panel.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); document.documentElement.style.overflow=''; setTimeout(()=>{ panel.hidden = true; }, 180); };
+      toggle.addEventListener('click', ()=>{ panel.hidden || !panel.classList.contains('open') ? open() : close(); });
+      panel.addEventListener('click', (e)=>{ if (e.target === panel) close(); });
+      panel.querySelectorAll('a').forEach(a=> a.addEventListener('click', close));
+      window.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') close(); });
+      window.addEventListener('resize', ()=>{ if (window.innerWidth > 720 && !panel.hidden) close(); });
     })();
 
     // ----- GYROSCOPE WIDGET (DeviceOrientation API with iOS permission) -----
@@ -622,6 +686,7 @@
       async function getJSON(url){
         try { const r = await fetch(url, {headers:{'Accept':'application/json'}}); if(!r.ok) return null; return await r.json(); } catch { return null; }
       }
+      window.__ELDOA_GETJSON__ = getJSON; // expose for search module
 
       // 1) Encyclopedia entries from /library/index.json (expected fields: title, slug, letter, summary, region, tags[])
       const libData = await getJSON('/library/index.json');
@@ -673,11 +738,157 @@
           card.innerHTML = `
             <h3>${p.name || 'Practitioner'}</h3>
             <p class="meta">${[p.city, p.country].filter(Boolean).join(', ')}</p>
-            ${p.url ? `<a class=\"btn\" href=\"${p.url}\" target=\"_blank\" rel=\"nofollow noopener\">Profile</a>` : ''}
+            ${p.url ? `<a class="btn" href="${p.url}" target="_blank" rel="nofollow noopener">Profile</a>` : ''}
           `;
           grid.appendChild(card);
         });
       }
+    })();
+  </script>
+
+  <!-- Global search SPA + typo tolerance module -->
+  <script>
+    (function(){
+      const form = document.querySelector('form[role="search"]');
+      if (!form) return;
+      const input = document.getElementById('q');
+      const sr = document.getElementById('searchResults');
+      const groupsWrap = document.getElementById('sr-groups');
+      const countEl = document.getElementById('sr-count');
+
+      // Normalize helper (lowercase, strip accents)
+      const norm = (s='') => s.toString().toLowerCase().normalize('NFD').replace(/\p{Diacritic}+/gu,'');
+
+      // Simple bounded Levenshtein (cut off at 2)
+      function lev2(a,b,max=2){
+        a = norm(a); b = norm(b);
+        if (!a || !b) return Math.max(a.length,b.length);
+        if (Math.abs(a.length-b.length) > max) return max+1;
+        const prev = new Uint16Array(b.length+1);
+        for (let j=0;j<=b.length;j++) prev[j]=j;
+        for (let i=1;i<=a.length;i++){
+          let last = prev[0]; prev[0] = i;
+          let minRow = prev[0];
+          for (let j=1;j<=b.length;j++){
+            const tmp = prev[j];
+            const cost = a[i-1]===b[j-1]?0:1;
+            prev[j] = Math.min(prev[j]+1, prev[j-1]+1, last+cost);
+            last = tmp; if (prev[j] < minRow) minRow = prev[j];
+          }
+          if (minRow > max) return max+1; // early exit
+        }
+        return prev[b.length];
+      }
+
+      // Field scorer: substring match wins; else small edit distance okay
+      function scoreDoc(query, ...fields){
+        const q = norm(query);
+        if (!q) return 999;
+        let best = Infinity;
+        for (const f of fields){
+          const s = norm(f||'');
+          if (!s) continue;
+          if (s.includes(q)) return 0; // exact/substring boost
+          const words = s.split(/[^a-z0-9]+/g);
+          for (const w of words){ if (!w) continue; best = Math.min(best, lev2(q,w,2)); if (best===0) return 0; }
+          best = Math.min(best, lev2(q,s,2));
+        }
+        return best;
+      }
+
+      async function getJSON(url){
+        try { const r = await fetch(url, {headers:{'Accept':'application/json'}}); if(!r.ok) return null; return await r.json(); } catch { return null; }
+      }
+      async function fetchAll(){
+        const [E,V,P] = await Promise.all([
+          getJSON('/library/index.json'),
+          getJSON('/video/index.json'),
+          getJSON('/expert/index.json')
+        ]);
+        return {entries: Array.isArray(E)?E:[], videos: Array.isArray(V)?V:[], pros: Array.isArray(P)?P:[]};
+      }
+
+      function renderResults(query, buckets){
+        // hide main sections, show results
+        ['library','videos','practitioners'].forEach(id=>{ const el = document.getElementById(id); if (el) el.style.display='none'; });
+        sr.classList.add('active');
+
+        groupsWrap.innerHTML = '';
+        let total = 0;
+        const addGroup = (title, items) => {
+          if (!items.length) return;
+          total += items.length;
+          const g = document.createElement('div');
+          g.className = 'sr-group';
+          g.innerHTML = `<h3>${title} <span class="badge">${items.length}</span></h3>`;
+          items.forEach(it => g.appendChild(it));
+          groupsWrap.appendChild(g);
+        };
+
+        const entryCards = buckets.entries.map(e=>{
+          const a = document.createElement('a');
+          a.href = `/library/${e.slug||''}`; a.className='sr-item'; a.innerHTML = `<strong>${e.title||'Untitled'}</strong><div class="meta">${[e.region,(e.tags||[]).join(', ')].filter(Boolean).join(' • ')}</div><p>${e.summary||''}</p>`; return a;
+        });
+        const videoCards = buckets.videos.map(v=>{
+          const a = document.createElement('a');
+          a.href = v.url||'#'; a.target='_blank'; a.rel='nofollow noopener'; a.className='sr-item'; a.innerHTML = `<strong>${v.title||'Untitled'}</strong><div class="meta">${[v.practice,v.ailment,v.protocol].filter(Boolean).join(' • ')}</div>`; return a;
+        });
+        const proCards = buckets.pros.map(p=>{
+          const a = document.createElement('a');
+          a.href = p.url||'/expert'; a.className='sr-item'; a.innerHTML = `<strong>${p.name||'Practitioner'}</strong><div class="meta">${[p.city,p.country].filter(Boolean).join(', ')}</div>`; return a;
+        });
+
+        addGroup('Encyclopedia entries', entryCards);
+        addGroup('Videos', videoCards);
+        addGroup('Practitioners', proCards);
+
+        countEl.textContent = `${total} result${total===1?'':'s'} for “${query}”`;
+      }
+
+      async function runSearch(query){
+        const {entries, videos, pros} = await fetchAll();
+        const scoredEntries = entries.map(e=>({e, s: scoreDoc(query, e.title, e.summary, (e.tags||[]).join(' '), e.region)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
+        const scoredVideos  = videos.map(v=>({v, s: scoreDoc(query, v.title, v.practice, v.ailment, v.protocol)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
+        const scoredPros    = pros.map(p=>({p, s: scoreDoc(query, p.name, p.city, p.country)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
+        renderResults(query, {
+          entries: scoredEntries.map(x=>x.e),
+          videos:  scoredVideos.map(x=>x.v),
+          pros:    scoredPros.map(x=>x.p)
+        });
+      }
+
+      // SPA enhancement: keep shareable URL /search?q=...
+      form.addEventListener('submit', (ev)=>{
+        ev.preventDefault();
+        const q = input.value.trim(); if(!q) return;
+        history.pushState({q}, '', `/search?q=${encodeURIComponent(q)}`);
+        runSearch(q);
+      });
+
+      // Direct load on /search
+      const params = new URLSearchParams(location.search);
+      const path = location.pathname.replace(/\/?$/,'/');
+      if (path === '/search/') {
+        const q = params.get('q')||''; if (q) { input.value = q; runSearch(q); }
+      }
+      // Back/forward
+      window.addEventListener('popstate', ()=>{
+        const ps = new URLSearchParams(location.search);
+        const q = ps.get('q')||''; if (q) { input.value = q; runSearch(q); }
+      });
+
+      // ---- Tests for fuzzy search ----
+      (function runSearchTests(){
+        const tests = [];
+        const assert = (name, cond) => tests.push({name, pass: !!cond});
+        assert('lev2 exact', lev2('cervical','cervical')===0);
+        assert('lev2 1 edit', lev2('cervicle','cervical')<=2);
+        assert('lev2 2 edits', lev2('throasic','thoracic')<=2);
+        assert('scoreDoc substring', scoreDoc('thor','thoracic outlet')===0);
+        console.groupCollapsed('%cELDOA AI — search tests','color:var(--brand)');
+        tests.forEach(t=> console[t.pass?'log':'warn'](`${t.pass?'PASS':'FAIL'}: ${t.name}`));
+        console.groupEnd();
+      })();
     })();
   </script>
 </body>
