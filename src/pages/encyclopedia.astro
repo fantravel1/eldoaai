@@ -1,0 +1,223 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+// Import the encyclopedia data
+import encyclopediaData from '../../public/encyclopedia-data.json';
+
+const { entries, by_letter, total_entries } = encyclopediaData;
+
+// Get all unique letters for the alphabet navigation
+const letters = Object.keys(by_letter).sort();
+---
+
+<Layout title="ELDOA Encyclopedia - Complete Guide">
+  <div class="encyclopedia-page">
+    <!-- Header Section -->
+    <section class="encyclopedia-header">
+      <div class="container mx-auto px-4 py-16">
+        <div class="max-w-4xl mx-auto text-center">
+          <div class="pillar-logo mb-4">PILLAR</div>
+          <div class="pillar-underline mx-auto mb-8"></div>
+          <h1 class="text-5xl font-bold text-gray-900 mb-6">
+            ELDOA Encyclopedia
+          </h1>
+          <p class="text-xl text-gray-600 mb-8">
+            Comprehensive reference guide with {total_entries} entries covering all aspects of ELDOA practice and theory
+          </p>
+
+          <!-- Search Box -->
+          <div class="search-container max-w-2xl mx-auto">
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search encyclopedia entries..."
+              class="w-full px-6 py-4 text-lg border-2 border-gray-300 rounded-lg focus:border-purple-600 focus:outline-none"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alphabet Navigation -->
+    <div class="alphabet-nav sticky top-0 z-10 bg-white border-b border-gray-200 shadow-sm">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap justify-center gap-2 py-4">
+          {letters.map((letter) => (
+            <a
+              href={`#letter-${letter}`}
+              class="alphabet-link px-3 py-2 text-sm font-semibold text-gray-700 hover:bg-purple-100 hover:text-purple-700 rounded transition-colors"
+            >
+              {letter}
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+
+    <!-- Entries by Letter -->
+    <section class="entries-section py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          {letters.map((letter) => (
+            <div class="letter-section mb-16" id={`letter-${letter}`}>
+              <h2 class="text-4xl font-bold text-gray-900 mb-8 pb-4 border-b-4 border-purple-600">
+                {letter}
+              </h2>
+              <div class="entries-grid grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {by_letter[letter].map((entry) => (
+                  <a
+                    href={`/encyclopedia/${entry.slug}.html`}
+                    class="entry-card block p-4 bg-white border border-gray-200 rounded-lg hover:border-purple-500 hover:shadow-lg transition-all"
+                    data-title={entry.title.toLowerCase()}
+                  >
+                    <h3 class="text-lg font-semibold text-gray-900 hover:text-purple-700">
+                      {entry.title}
+                    </h3>
+                  </a>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- No Results Message (hidden by default) -->
+    <div id="noResults" class="container mx-auto px-4 py-12 text-center hidden">
+      <p class="text-xl text-gray-600">No entries found matching your search.</p>
+    </div>
+  </div>
+
+  <style>
+    .pillar-logo {
+      color: #7c3aed;
+      font-size: 3rem;
+      font-weight: 900;
+      letter-spacing: 0.05em;
+    }
+
+    .pillar-underline {
+      width: 200px;
+      height: 4px;
+      background-color: #7c3aed;
+    }
+
+    .encyclopedia-header {
+      background: linear-gradient(135deg, #f5f3ff 0%, #ffffff 100%);
+    }
+
+    .alphabet-nav {
+      backdrop-filter: blur(10px);
+    }
+
+    .alphabet-link.active {
+      background-color: #7c3aed;
+      color: white;
+    }
+
+    .entry-card {
+      cursor: pointer;
+    }
+
+    .letter-section {
+      scroll-margin-top: 120px;
+    }
+  </style>
+
+  <script>
+    // Search functionality
+    const searchInput = document.getElementById('searchInput');
+    const entryCards = document.querySelectorAll('.entry-card');
+    const letterSections = document.querySelectorAll('.letter-section');
+    const noResults = document.getElementById('noResults');
+
+    searchInput?.addEventListener('input', (e) => {
+      const searchTerm = e.target.value.toLowerCase().trim();
+      let visibleCount = 0;
+
+      if (searchTerm === '') {
+        // Show all entries
+        entryCards.forEach(card => {
+          card.classList.remove('hidden');
+        });
+        letterSections.forEach(section => {
+          section.classList.remove('hidden');
+        });
+        noResults.classList.add('hidden');
+        return;
+      }
+
+      // Filter entries
+      entryCards.forEach(card => {
+        const title = card.getAttribute('data-title') || '';
+        if (title.includes(searchTerm)) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      // Hide letter sections with no visible entries
+      letterSections.forEach(section => {
+        const visibleCardsInSection = section.querySelectorAll('.entry-card:not(.hidden)');
+        if (visibleCardsInSection.length === 0) {
+          section.classList.add('hidden');
+        } else {
+          section.classList.remove('hidden');
+        }
+      });
+
+      // Show/hide no results message
+      if (visibleCount === 0) {
+        noResults.classList.remove('hidden');
+      } else {
+        noResults.classList.add('hidden');
+      }
+    });
+
+    // Highlight active letter in navigation
+    const observerOptions = {
+      rootMargin: '-120px 0px -80% 0px',
+      threshold: 0
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const letter = entry.target.id.replace('letter-', '');
+          document.querySelectorAll('.alphabet-link').forEach(link => {
+            link.classList.remove('active');
+          });
+          const activeLink = document.querySelector(`a[href="#${entry.target.id}"]`);
+          if (activeLink) {
+            activeLink.classList.add('active');
+          }
+        }
+      });
+    }, observerOptions);
+
+    letterSections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Smooth scroll for alphabet links
+    document.querySelectorAll('.alphabet-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = link.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          const offset = 120; // Account for sticky nav
+          const elementPosition = targetElement.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</Layout>
