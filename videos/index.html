@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ELDOA Video Library - Organized by Exercise Groups & Spinal Segments | ELDOA AI</title>
+  <meta name="description" content="Complete ELDOA video library organized by exercise groups, spinal segments, practice level, and condition. Find beginner to advanced tutorials for every body region."/>
+  <meta name="keywords" content="ELDOA videos, ELDOA tutorials, spinal segment exercises, ELDOA by level, exercise library"/>
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
+  <link rel="canonical" href="https://eldoa.ai/videos/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://eldoa.ai/videos/"/>
+  <meta property="og:title" content="ELDOA Video Library - Exercise Groups & Tutorials"/>
+  <meta property="og:description" content="Comprehensive ELDOA video library organized by spinal segments, difficulty, and condition."/>
+  <meta property="og:image" content="/images/og-videos.jpg"/>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGallery",
+    "name": "ELDOA Video Library",
+    "description": "Complete library of ELDOA exercise videos organized by spinal segments and difficulty levels",
+    "provider": {
+      "@type": "Organization",
+      "name": "ELDOA AI"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #475569;
+      --brand: #2f2fe6;
+      --brand-2: #0891b2;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --ok: #15803d;
+      --warn: #f59e0b;
+    }
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #c7d2fe;
+      --brand: #8b5cf6;
+      --brand-2: #22d3ee;
+      --card: #111827;
+      --border: #262b36;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { width: min(1200px, 94vw); margin: 0 auto; padding: 1rem 0; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(1.2) blur(8px);
+      background: color-mix(in oklab, var(--bg), transparent 20%);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--fg);
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2));
+    }
+
+    h1 {
+      font-size: clamp(1.8rem, 4.5vw, 2.5rem);
+      margin: 1.5rem 0 .5rem;
+      line-height: 1.1;
+    }
+
+    .intro { color: var(--muted); max-width: 70ch; margin-bottom: 2rem; }
+
+    /* Filter Section */
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem;
+      margin: 2rem 0;
+      padding: 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    select, input[type="search"] {
+      padding: .7rem .9rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      color: var(--fg);
+      font-size: .95rem;
+      min-width: 160px;
+      cursor: pointer;
+    }
+
+    input[type="search"] { flex: 1; min-width: 200px; }
+
+    /* Organization Tabs */
+    .org-tabs {
+      display: flex;
+      gap: .5rem;
+      flex-wrap: wrap;
+      margin: 2rem 0 1.5rem;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: .5rem;
+    }
+
+    .tab-btn {
+      padding: .7rem 1.2rem;
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      font-weight: 700;
+      cursor: pointer;
+      border-radius: 8px 8px 0 0;
+      transition: all .2s;
+    }
+
+    .tab-btn:hover {
+      background: color-mix(in oklab, var(--brand), transparent 90%);
+      color: var(--brand);
+    }
+
+    .tab-btn.active {
+      background: var(--brand);
+      color: white;
+    }
+
+    /* Video Grid */
+    .video-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    @media(min-width: 640px) {
+      .video-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media(min-width: 1024px) {
+      .video-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .video-card {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--card);
+      transition: transform .2s, box-shadow .2s;
+      cursor: pointer;
+    }
+
+    .video-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px color-mix(in oklab, #000, transparent 85%);
+    }
+
+    .video-thumb {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      display: grid;
+      place-items: center;
+      color: white;
+      font-size: 3rem;
+      position: relative;
+    }
+
+    .duration-badge {
+      position: absolute;
+      bottom: .5rem;
+      right: .5rem;
+      background: rgba(0,0,0,.8);
+      color: white;
+      padding: .25rem .5rem;
+      border-radius: 6px;
+      font-size: .75rem;
+      font-weight: 700;
+    }
+
+    .video-content {
+      padding: 1rem;
+    }
+
+    .video-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: .5rem;
+      line-height: 1.3;
+    }
+
+    .video-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      margin: .5rem 0;
+    }
+
+    .badge {
+      display: inline-block;
+      padding: .2rem .5rem;
+      border-radius: 999px;
+      font-size: .7rem;
+      font-weight: 700;
+      background: color-mix(in oklab, var(--brand), transparent 85%);
+      color: var(--brand);
+    }
+
+    .badge.beginner { background: color-mix(in oklab, #15803d, transparent 85%); color: #15803d; }
+    .badge.intermediate { background: color-mix(in oklab, #f59e0b, transparent 85%); color: #ca8a04; }
+    .badge.advanced { background: color-mix(in oklab, #dc2626, transparent 85%); color: #dc2626; }
+
+    /* Segment Group Section */
+    .segment-group {
+      margin: 3rem 0;
+    }
+
+    .segment-group h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      padding-bottom: .5rem;
+      border-bottom: 2px solid var(--brand);
+    }
+
+    .segment-group-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+
+    .video-count {
+      color: var(--muted);
+      font-size: .9rem;
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 4rem 1rem;
+      color: var(--muted);
+    }
+
+    .no-results h3 {
+      font-size: 1.5rem;
+      margin-bottom: .5rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark"></span>
+        <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+      </a>
+      <a href="/" style="text-decoration:none;color:var(--muted);font-size:.9rem">← Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>ELDOA Video Library</h1>
+    <p class="intro">
+      Complete video library organized by exercise groups, spinal segments, practice level, and condition.
+      Each video includes key cues, duration, and difficulty level. Filter to find exactly what you need.
+    </p>
+
+    <!-- Filters -->
+    <div class="filters">
+      <select id="filterLevel" aria-label="Filter by practice level">
+        <option value="">All Levels</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+      </select>
+
+      <select id="filterSegment" aria-label="Filter by spinal segment">
+        <option value="">All Segments</option>
+        <option value="C1-C2">C1-C2 (Upper Cervical)</option>
+        <option value="C4-C5">C4-C5 (Mid-Cervical)</option>
+        <option value="C7-T1">C7-T1 (Cervicothoracic)</option>
+        <option value="T12-L1">T12-L1 (Thoracolumbar)</option>
+        <option value="L4-L5">L4-L5 (Lower Lumbar)</option>
+        <option value="L5-S1">L5-S1 (Lumbosacral)</option>
+      </select>
+
+      <select id="filterAilment" aria-label="Filter by condition">
+        <option value="">All Conditions</option>
+        <option value="Low Back Pain">Low Back Pain</option>
+        <option value="Sciatica">Sciatica</option>
+        <option value="Text Neck">Text Neck</option>
+        <option value="Office Worker Syndrome">Office Worker</option>
+        <option value="Sport">Sport-Specific</option>
+      </select>
+
+      <select id="filterProtocol" aria-label="Filter by protocol">
+        <option value="">All Protocols</option>
+        <option value="Daily 10-min">Daily 10-min</option>
+        <option value="Morning Routine">Morning Routine</option>
+        <option value="Performance">Performance</option>
+        <option value="Recovery">Recovery</option>
+        <option value="Acute Phase">Acute Phase</option>
+      </select>
+
+      <input type="search" id="searchVideos" placeholder="Search videos..." aria-label="Search videos"/>
+    </div>
+
+    <!-- Organization Tabs -->
+    <div class="org-tabs">
+      <button class="tab-btn active" data-org="segment">By Exercise Group</button>
+      <button class="tab-btn" data-org="level">By Practice Level</button>
+      <button class="tab-btn" data-org="ailment">By Condition</button>
+      <button class="tab-btn" data-org="all">All Videos</button>
+    </div>
+
+    <!-- Video Display Area -->
+    <div id="videoDisplay">
+      <!-- Dynamically populated by JavaScript -->
+    </div>
+  </main>
+
+  <script>
+    // Video library data
+    const videos = [
+      {
+        id: 'l5-s1-beginner-intro',
+        title: 'L5-S1 Decompression - Beginner Introduction',
+        segment: 'L5-S1',
+        region: 'Lumbar',
+        difficulty: 'Beginner',
+        duration: '10:00',
+        ailments: ['Low Back Pain', 'Sciatica', 'Disc Issues'],
+        protocols: ['Daily 10-min', 'Morning Routine'],
+        description: 'Foundational L5-S1 decompression for low back pain relief. Perfect for beginners.',
+        keyCues: ['Posterior pelvic tilt', 'Breathe into low back', '60-second hold'],
+        url: '#'
+      },
+      {
+        id: 'cervical-reset-text-neck',
+        title: 'Cervical Reset for Text Neck',
+        segment: 'C4-C5, C7-T1',
+        region: 'Cervical',
+        difficulty: 'Intermediate',
+        duration: '15:00',
+        ailments: ['Text Neck', 'Forward Head Posture', 'Upper Cross Syndrome'],
+        protocols: ['Recovery', 'Office Worker Protocol'],
+        description: 'Combat modern text neck syndrome with targeted cervical ELDOA positions.',
+        keyCues: ['Chin tuck', 'Axial elongation', 'Breathe into back of neck'],
+        url: '#'
+      },
+      {
+        id: 'thoracolumbar-baseball',
+        title: 'Thoracolumbar Junction Protocol for Baseball Players',
+        segment: 'C7-T1, T12-L1',
+        region: 'Thoracolumbar',
+        difficulty: 'Advanced',
+        duration: '20:00',
+        ailments: ['Rotational Asymmetries', 'Junction Stress'],
+        protocols: ['Performance', 'Sport-Specific'],
+        description: 'Address rotational asymmetries and junction point stress for baseball/softball.',
+        keyCues: ['Maintain rotation', 'Balance both sides'],
+        url: '#',
+        sportSpecific: 'Baseball/Softball'
+      },
+      {
+        id: 'full-spine-morning-routine',
+        title: 'Full Spine Morning Routine (12-Minute)',
+        segment: 'All Segments',
+        region: 'Full Spine',
+        difficulty: 'Intermediate',
+        duration: '12:00',
+        ailments: ['General Maintenance', 'Postural Health'],
+        protocols: ['Daily 10-min', 'Morning Routine'],
+        description: 'Comprehensive morning ELDOA sequence covering all major spinal segments.',
+        keyCues: ['Flow through segments', 'Maintain breathing'],
+        url: '#'
+      },
+      {
+        id: 'hip-basketball-landing',
+        title: 'Hip & L5-S1 Protocol for Basketball Landing Mechanics',
+        segment: 'L5-S1, Hip',
+        region: 'Lumbar-Hip Complex',
+        difficulty: 'Intermediate',
+        duration: '18:00',
+        ailments: ['Landing Stress', 'Jump-Related Back Pain'],
+        protocols: ['Performance', 'Recovery'],
+        description: 'Manage lumbosacral stress from repetitive jumping (1,066 lb peak forces).',
+        keyCues: ['Hip-spine integration', 'Posterior chain engagement'],
+        url: '#',
+        sportSpecific: 'Basketball/Volleyball'
+      },
+      {
+        id: 'desk-worker-micro-breaks',
+        title: 'Office Desk Micro-Breaks (3-Minute Sessions)',
+        segment: 'C7-T1, T12-L1, L4-L5',
+        region: 'Multi-Segment',
+        difficulty: 'Beginner',
+        duration: '3:00',
+        ailments: ['Office Worker Syndrome', 'Prolonged Sitting'],
+        protocols: ['Micro-breaks', 'Office Integration'],
+        description: 'Evidence-based 2-3 minute ELDOA micro-breaks following the 20-8-2 protocol.',
+        keyCues: ['Quick transitions', 'Maintain quality', '2-3x daily'],
+        url: '#',
+        workplaceIntegration: true
+      },
+      {
+        id: 'acute-phase-gentle',
+        title: 'Acute Phase Protocol - Gentle Introduction',
+        segment: 'Adaptable',
+        region: 'Patient-Specific',
+        difficulty: 'Beginner',
+        duration: '8:00',
+        ailments: ['Acute Injury', 'Recent Pain Flare'],
+        protocols: ['Acute Phase', 'Recovery'],
+        description: 'Modified ELDOA for acute phase (first 2-4 weeks post-injury).',
+        keyCues: ['Pain-free only', 'Shorter holds initially'],
+        url: '#'
+      },
+      {
+        id: 'breathing-fundamentals',
+        title: 'ELDOA Breathing Fundamentals - The Internal Mechanism',
+        segment: 'All',
+        region: 'Full Body',
+        difficulty: 'Beginner',
+        duration: '16:00',
+        ailments: ['Foundation', 'Learning'],
+        protocols: ['Educational'],
+        description: 'Deep dive into breathing as the foundation of ELDOA effectiveness.',
+        keyCues: ['Diaphragmatic breath', '6 breaths/minute'],
+        url: '#',
+        foundational: true
+      }
+    ];
+
+    // State
+    let currentOrg = 'segment';
+    let filters = { level: '', segment: '', ailment: '', protocol: '', search: '' };
+
+    // Filter listeners
+    document.getElementById('filterLevel').addEventListener('change', (e) => {
+      filters.level = e.target.value;
+      renderVideos();
+    });
+
+    document.getElementById('filterSegment').addEventListener('change', (e) => {
+      filters.segment = e.target.value;
+      renderVideos();
+    });
+
+    document.getElementById('filterAilment').addEventListener('change', (e) => {
+      filters.ailment = e.target.value;
+      renderVideos();
+    });
+
+    document.getElementById('filterProtocol').addEventListener('change', (e) => {
+      filters.protocol = e.target.value;
+      renderVideos();
+    });
+
+    document.getElementById('searchVideos').addEventListener('input', (e) => {
+      filters.search = e.target.value.toLowerCase();
+      renderVideos();
+    });
+
+    // Tab switching
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        currentOrg = btn.dataset.org;
+        renderVideos();
+      });
+    });
+
+    // Filter videos
+    function filterVideos() {
+      return videos.filter(v => {
+        if (filters.level && v.difficulty !== filters.level) return false;
+        if (filters.segment && !v.segment.includes(filters.segment)) return false;
+        if (filters.ailment) {
+          if (filters.ailment === 'Sport' && !v.sportSpecific) return false;
+          if (filters.ailment !== 'Sport' && !v.ailments.some(a => a.includes(filters.ailment))) return false;
+        }
+        if (filters.protocol && !v.protocols.some(p => p.includes(filters.protocol))) return false;
+        if (filters.search) {
+          const searchable = `${v.title} ${v.description} ${v.segment}`.toLowerCase();
+          if (!searchable.includes(filters.search)) return false;
+        }
+        return true;
+      });
+    }
+
+    // Render videos
+    function renderVideos() {
+      const filteredVideos = filterVideos();
+      const display = document.getElementById('videoDisplay');
+
+      if (filteredVideos.length === 0) {
+        display.innerHTML = `
+          <div class="no-results">
+            <h3>No videos found</h3>
+            <p>Try adjusting your filters or search terms.</p>
+          </div>
+        `;
+        return;
+      }
+
+      if (currentOrg === 'segment') {
+        renderBySegment(filteredVideos);
+      } else if (currentOrg === 'level') {
+        renderByLevel(filteredVideos);
+      } else if (currentOrg === 'ailment') {
+        renderByAilment(filteredVideos);
+      } else {
+        renderAllVideos(filteredVideos);
+      }
+    }
+
+    function renderBySegment(vids) {
+      const segments = ['C1-C2', 'C4-C5', 'C7-T1', 'T12-L1', 'L4-L5', 'L5-S1', 'All Segments'];
+      let html = '';
+
+      segments.forEach(seg => {
+        const segVideos = vids.filter(v => v.segment.includes(seg));
+        if (segVideos.length === 0) return;
+
+        html += `
+          <div class="segment-group">
+            <div class="segment-group-header">
+              <h2>${seg}</h2>
+              <span class="video-count">${segVideos.length} video${segVideos.length !== 1 ? 's' : ''}</span>
+            </div>
+            <div class="video-grid">
+              ${segVideos.map(renderVideoCard).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      document.getElementById('videoDisplay').innerHTML = html;
+    }
+
+    function renderByLevel(vids) {
+      const levels = ['Beginner', 'Intermediate', 'Advanced'];
+      let html = '';
+
+      levels.forEach(level => {
+        const levelVideos = vids.filter(v => v.difficulty.includes(level));
+        if (levelVideos.length === 0) return;
+
+        html += `
+          <div class="segment-group">
+            <div class="segment-group-header">
+              <h2>${level}</h2>
+              <span class="video-count">${levelVideos.length} video${levelVideos.length !== 1 ? 's' : ''}</span>
+            </div>
+            <div class="video-grid">
+              ${levelVideos.map(renderVideoCard).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      document.getElementById('videoDisplay').innerHTML = html;
+    }
+
+    function renderByAilment(vids) {
+      const ailments = [...new Set(vids.flatMap(v => v.ailments))];
+      let html = '';
+
+      ailments.forEach(ailment => {
+        const ailmentVideos = vids.filter(v => v.ailments.includes(ailment));
+
+        html += `
+          <div class="segment-group">
+            <div class="segment-group-header">
+              <h2>${ailment}</h2>
+              <span class="video-count">${ailmentVideos.length} video${ailmentVideos.length !== 1 ? 's' : ''}</span>
+            </div>
+            <div class="video-grid">
+              ${ailmentVideos.map(renderVideoCard).join('')}
+            </div>
+          </div>
+        `;
+      });
+
+      document.getElementById('videoDisplay').innerHTML = html;
+    }
+
+    function renderAllVideos(vids) {
+      const html = `
+        <div class="video-grid">
+          ${vids.map(renderVideoCard).join('')}
+        </div>
+      `;
+      document.getElementById('videoDisplay').innerHTML = html;
+    }
+
+    function renderVideoCard(video) {
+      const difficultyClass = video.difficulty.toLowerCase().split('-')[0];
+
+      return `
+        <div class="video-card" onclick="window.location.href='${video.url}'">
+          <div class="video-thumb">
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+              <polygon points="5 3 19 12 5 21 5 3"></polygon>
+            </svg>
+            <span class="duration-badge">${video.duration}</span>
+          </div>
+          <div class="video-content">
+            <h3>${video.title}</h3>
+            <div class="video-meta">
+              <span class="badge ${difficultyClass}">${video.difficulty}</span>
+              <span class="badge">${video.segment}</span>
+            </div>
+            <p style="font-size:.9rem;color:var(--muted);margin-top:.5rem">${video.description}</p>
+          </div>
+        </div>
+      `;
+    }
+
+    // Initial render
+    renderVideos();
+  </script>
+</body>
+</html>

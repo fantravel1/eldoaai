@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ELDOA for Kids - A Pocket Guide | Learn About Your Spine! | ELDOA AI</title>
+  <meta name="description" content="Kid-friendly explanations of ELDOA, your spine, and how to stay healthy. Learn about your body in simple, fun language with colorful illustrations."/>
+  <meta name="keywords" content="ELDOA for kids, children's health, spine education, posture for kids, body awareness"/>
+  <meta name="robots" content="index,follow,max-image-preview:large"/>
+  <link rel="canonical" href="https://eldoa.ai/kids/"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:title" content="ELDOA for Kids - Learn About Your Spine!"/>
+  <meta property="og:description" content="Fun, kid-friendly guide to understanding ELDOA and your amazing body."/>
+  <meta property="og:image" content="/images/og-kids.jpg"/>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalProgram",
+    "name": "ELDOA for Kids Pocket Guide",
+    "description": "Educational content teaching children about spinal health and ELDOA",
+    "educationalLevel": "Elementary/Middle School",
+    "teaches": "Body awareness, spinal health, posture"
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #fffef9;
+      --fg: #1a1a1a;
+      --muted: #666;
+      --brand: #ff6b6b;
+      --brand-2: #4ecdc4;
+      --brand-3: #ffe66d;
+      --brand-4: #a8dadc;
+      --card: #fff;
+      --border: #e0e0e0;
+    }
+
+    [data-theme="dark"] {
+      --bg: #1a1a2e;
+      --fg: #f0f0f0;
+      --muted: #b0b0b0;
+      --card: #252540;
+      --border: #3a3a52;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      width: min(800px, 94vw);
+      margin: 0 auto;
+      padding: 1rem 0;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: white;
+      padding: 2rem 0;
+      text-align: center;
+      border-radius: 0 0 24px 24px;
+      margin-bottom: 2rem;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 5vw, 3rem);
+      margin-bottom: .5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,.2);
+    }
+
+    .subtitle {
+      font-size: clamp(1.1rem, 3vw, 1.4rem);
+      opacity: .95;
+    }
+
+    .intro {
+      background: white;
+      border: 3px dashed var(--brand-2);
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin: 2rem 0;
+      font-size: 1.1rem;
+    }
+
+    .alphabet-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+      margin: 2rem 0;
+      justify-content: center;
+    }
+
+    .letter-btn {
+      width: 44px;
+      height: 44px;
+      border: 2px solid var(--brand);
+      border-radius: 12px;
+      background: white;
+      color: var(--brand);
+      font-weight: 800;
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: all .2s;
+    }
+
+    .letter-btn:hover, .letter-btn.active {
+      background: var(--brand);
+      color: white;
+      transform: scale(1.1);
+    }
+
+    .entry-card {
+      background: var(--card);
+      border: 3px solid;
+      border-radius: 20px;
+      padding: 1.5rem;
+      margin: 1.5rem 0;
+      box-shadow: 0 4px 12px rgba(0,0,0,.1);
+      transition: transform .2s;
+    }
+
+    .entry-card:hover {
+      transform: translateY(-4px);
+    }
+
+    .entry-card.color-1 { border-color: var(--brand); }
+    .entry-card.color-2 { border-color: var(--brand-2); }
+    .entry-card.color-3 { border-color: var(--brand-3); }
+    .entry-card.color-4 { border-color: var(--brand-4); }
+
+    .entry-card h2 {
+      font-size: clamp(1.3rem, 4vw, 1.8rem);
+      margin-bottom: .75rem;
+      color: var(--brand);
+    }
+
+    .entry-card p {
+      font-size: clamp(1rem, 2.5vw, 1.15rem);
+      line-height: 1.8;
+    }
+
+    .fun-fact {
+      background: linear-gradient(135deg, #fff3cd, #ffe66d);
+      border-left: 4px solid #ffc107;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 12px;
+    }
+
+    .fun-fact strong {
+      color: #d68400;
+    }
+
+    .emoji {
+      font-size: 2rem;
+      margin-right: .5rem;
+    }
+
+    .back-link {
+      display: inline-block;
+      padding: .75rem 1.5rem;
+      background: var(--brand-2);
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-weight: 700;
+      margin-top: 2rem;
+    }
+
+    .back-link:hover {
+      background: var(--brand);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      .entry-card {
+        box-shadow: 0 4px 12px rgba(0,0,0,.3);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1><span class="emoji">📚</span> ELDOA for Kids</h1>
+      <p class="subtitle">A Pocket Guide to Your Amazing Body!</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="intro">
+      <strong>Hey there!</strong> Welcome to the ELDOA Pocket Guide for Kids! This is where you can learn cool stuff about your body, your spine, and how ELDOA helps you stay strong and healthy. Each word below is explained in a fun, easy way. Ready to explore?
+    </div>
+
+    <div class="alphabet-nav" id="alphabetNav">
+      <!-- Generated by JavaScript -->
+    </div>
+
+    <div id="entries">
+      <!-- A -->
+      <div class="entry-card color-1" data-letter="A">
+        <h2><span class="emoji">🦶</span> Achilles Tendinopathy</h2>
+        <p>When the strong rope (tendon) that connects your calf muscle to your heel gets sore from too much jumping or running. ELDOA helps by gently stretching your whole leg and back to take pressure off the sore spot.</p>
+      </div>
+
+      <div class="entry-card color-2" data-letter="A">
+        <h2><span class="emoji">💪</span> Active Fascial Tension</h2>
+        <p>Instead of someone else stretching you, you use your own muscles to create a special kind of stretch. It's like being your own stretching coach!</p>
+      </div>
+
+      <div class="entry-card color-3" data-letter="A">
+        <h2><span class="emoji">🧱</span> Active Spinal Decompression</h2>
+        <p>You make space between the bones in your back by doing special positions. Think of it like gently pulling apart a stack of blocks without anyone else's help.</p>
+      </div>
+
+      <div class="entry-card color-4" data-letter="A">
+        <h2><span class="emoji">🩹</span> Acute Phase Protocol</h2>
+        <p>When you first get hurt, you need to be extra gentle with exercises. It's like when you scrape your knee - you clean it carefully at first, then treat it normally when it's better.</p>
+      </div>
+
+      <div class="entry-card color-1" data-letter="A">
+        <h2><span class="emoji">🧍</span> Alignment</h2>
+        <p>Making sure all the bones in your body line up properly, like stacking blocks perfectly straight. Good alignment helps you move better and hurt less.</p>
+      </div>
+
+      <div class="entry-card color-2" data-letter="A">
+        <h2><span class="emoji">⛷️</span> Alpine Sports</h2>
+        <p>Snow sports like skiing where people can hurt their backs from falls or bumps. ELDOA exercises help make skiers' backs stronger and safer.</p>
+      </div>
+
+      <div class="entry-card color-3" data-letter="A">
+        <h2><span class="emoji">🔬</span> Anatomical Connections</h2>
+        <p>The idea that your spine bones might be connected to other parts inside your body. Scientists are still studying if this is true!</p>
+      </div>
+
+      <div class="entry-card color-4" data-letter="A">
+        <h2><span class="emoji">🏺</span> Anterior Pelvic Tilt</h2>
+        <p>When your hips tip forward like you're pouring water out of a bowl. This can make your back hurt if it tips too much.</p>
+      </div>
+
+      <div class="entry-card color-1" data-letter="A">
+        <h2><span class="emoji">🤸</span> Anticipatory Postural Adjustments</h2>
+        <p>Your body gets ready to move before you even start moving. It's like how you bend your knees before jumping!</p>
+      </div>
+
+      <!-- B -->
+      <div class="entry-card color-2" data-letter="B">
+        <h2><span class="emoji">🫁</span> Breathing</h2>
+        <p>The super important part of ELDOA! You breathe slowly and deeply into your belly while holding positions. This helps create space in your spine and makes the exercises work better. Try to take 6 big breaths every minute!</p>
+        <div class="fun-fact">
+          <strong>Cool Fact:</strong> Your breathing is like a secret power that helps your spine from the inside out!
+        </div>
+      </div>
+
+      <!-- C -->
+      <div class="entry-card color-3" data-letter="C">
+        <h2><span class="emoji">🦴</span> Cervical Spine</h2>
+        <p>The fancy name for your neck bones! You have 7 special bones stacked up that let you turn your head and look around. ELDOA has special exercises just for your neck.</p>
+      </div>
+
+      <!-- F -->
+      <div class="entry-card color-4" data-letter="F">
+        <h2><span class="emoji">🕸️</span> Fascia</h2>
+        <p>A thin, stretchy material that wraps around all your muscles and bones like a spider web inside your body. When you do ELDOA, you're gently stretching this web to make it work better!</p>
+      </div>
+
+      <!-- L -->
+      <div class="entry-card color-1" data-letter="L">
+        <h2><span class="emoji">🔽</span> L5-S1</h2>
+        <p>The bottom part of your low back where it connects to your tailbone area. This spot works super hard when you jump, run, or sit. ELDOA has special exercises to help this area feel better!</p>
+        <div class="fun-fact">
+          <strong>Did You Know?</strong> When basketball players land from a jump, this spot has to handle over 1,000 pounds of force! That's like catching a baby elephant!
+        </div>
+      </div>
+
+      <!-- M -->
+      <div class="entry-card color-2" data-letter="M">
+        <h2><span class="emoji">🏋️</span> Muscle Activation Patterns</h2>
+        <p>The order muscles turn on when you move. ELDOA helps them work in the right order, like following a recipe.</p>
+      </div>
+
+      <div class="entry-card color-3" data-letter="M">
+        <h2><span class="emoji">🚂</span> Myofascial Chains</h2>
+        <p>Lines of connected muscles and fascia running through your body. They work like train tracks for movement.</p>
+      </div>
+
+      <!-- N -->
+      <div class="entry-card color-4" data-letter="N">
+        <h2><span class="emoji">😣</span> Neck Pain</h2>
+        <p>When your neck hurts from looking down at devices or sleeping wrong. ELDOA has special exercises to help necks feel better.</p>
+      </div>
+
+      <div class="entry-card color-1" data-letter="N">
+        <h2><span class="emoji">🎸</span> Neural Tension</h2>
+        <p>When nerves get stretched too tight like guitar strings. ELDOA helps them glide smoothly again.</p>
+      </div>
+
+      <div class="entry-card color-2" data-letter="N">
+        <h2><span class="emoji">⚖️</span> Neutral Spine</h2>
+        <p>The best position for your back - not too curved, not too straight. It's like Goldilocks - just right!</p>
+      </div>
+
+      <!-- P -->
+      <div class="entry-card color-3" data-letter="P">
+        <h2><span class="emoji">🧍‍♂️</span> Posture</h2>
+        <p>How you hold your body when standing, sitting, or moving. Good posture makes you feel better and helps you stay healthy. ELDOA is all about helping your posture!</p>
+      </div>
+
+      <!-- S -->
+      <div class="entry-card color-4" data-letter="S">
+        <h2><span class="emoji">🦴</span> Spine</h2>
+        <p>The stack of 33 bones that runs down your back! Your spine protects your spinal cord (super important nerves) and lets you bend, twist, and move. Taking care of your spine is one of the most important things you can do!</p>
+      </div>
+
+      <!-- T -->
+      <div class="entry-card color-1" data-letter="T">
+        <h2><span class="emoji">📱</span> Text Neck</h2>
+        <p>When your neck hurts from looking down at phones and tablets too much. ELDOA can help fix this! Try to keep your phone at eye level instead.</p>
+        <div class="fun-fact">
+          <strong>Yikes!</strong> When you look down at your phone, it's like your neck is holding a bowling ball!
+        </div>
+      </div>
+
+      <!-- V -->
+      <div class="entry-card color-2" data-letter="V">
+        <h2><span class="emoji">👨‍⚕️</span> Guy Voyer</h2>
+        <p>The doctor from France who invented ELDOA over 35 years ago! He studied the body for a really long time to figure out these special exercises that help people feel better.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin:3rem 0">
+      <a href="/" class="back-link">← Back to Main Site</a>
+    </div>
+  </main>
+
+  <script>
+    // Generate alphabet navigation
+    const alphabetNav = document.getElementById('alphabetNav');
+    const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    const activeLetters = new Set();
+
+    // Determine which letters have entries
+    document.querySelectorAll('.entry-card').forEach(card => {
+      const letter = card.getAttribute('data-letter');
+      if (letter) activeLetters.add(letter.toUpperCase());
+    });
+
+    letters.forEach(letter => {
+      const btn = document.createElement('button');
+      btn.className = 'letter-btn';
+      btn.textContent = letter;
+      btn.disabled = !activeLetters.has(letter);
+      if (!activeLetters.has(letter)) {
+        btn.style.opacity = '0.3';
+        btn.style.cursor = 'not-allowed';
+      }
+
+      btn.addEventListener('click', () => {
+        // Scroll to first entry with this letter
+        const firstEntry = document.querySelector(`[data-letter="${letter}"]`);
+        if (firstEntry) {
+          firstEntry.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+          // Highlight active letter
+          document.querySelectorAll('.letter-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+        }
+      });
+
+      alphabetNav.appendChild(btn);
+    });
+
+    // Add fun animation on scroll
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '0';
+          entry.target.style.transform = 'translateY(20px)';
+          setTimeout(() => {
+            entry.target.style.transition = 'all 0.5s ease';
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+          }, 100);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.entry-card').forEach(card => {
+      observer.observe(card);
+    });
+  </script>
+</body>
+</html>
