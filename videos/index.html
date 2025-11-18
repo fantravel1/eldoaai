@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ELDOA Video Library - Organized by Exercise Groups & Spinal Segments | ELDOA AI</title>
-  <meta name="description" content="Complete ELDOA video library organized by exercise groups, spinal segments, practice level, and condition. Find beginner to advanced tutorials for every body region."/>
-  <meta name="keywords" content="ELDOA videos, ELDOA tutorials, spinal segment exercises, ELDOA by level, exercise library"/>
+  <title>ELDOA Video Library - 115+ Video Tutorials Organized by Segment & Condition | ELDOA AI</title>
+  <meta name="description" content="Comprehensive ELDOA video library with 115+ video tutorials from certified instructors. Organized by spinal segments, practice level, and condition. Find beginner to advanced tutorials for every body region with full SEO metadata."/>
+  <meta name="keywords" content="ELDOA videos, ELDOA tutorials, spinal segment exercises, ELDOA by level, exercise library, Guy Voyer, ELDOA method, back pain relief, neck pain, sciatica"/>
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"/>
   <link rel="canonical" href="https://eldoa.ai/videos/"/>
 
@@ -22,10 +22,17 @@
     "@context": "https://schema.org",
     "@type": "VideoGallery",
     "name": "ELDOA Video Library",
-    "description": "Complete library of ELDOA exercise videos organized by spinal segments and difficulty levels",
+    "description": "Comprehensive library of 115+ ELDOA exercise video tutorials from certified instructors, organized by spinal segments, conditions, and difficulty levels",
+    "numberOfItems": 115,
     "provider": {
       "@type": "Organization",
-      "name": "ELDOA AI"
+      "name": "ELDOA AI",
+      "url": "https://eldoa.ai"
+    },
+    "about": {
+      "@type": "MedicalTherapy",
+      "name": "ELDOA Method",
+      "description": "Etirements Longitudinaux avec Decoaptation Osteo Articulaire - a precise postural exercise for spinal decompression"
     }
   }
   </script>
@@ -293,8 +300,9 @@
   <main class="container">
     <h1>ELDOA Video Library</h1>
     <p class="intro">
-      Complete video library organized by exercise groups, spinal segments, practice level, and condition.
-      Each video includes key cues, duration, and difficulty level. Filter to find exactly what you need.
+      Comprehensive library of 115+ ELDOA video tutorials from certified instructors including Dan Hellman, Team Youphoric Health, Stone Bodyworks, and more.
+      Each video includes detailed metadata, duration, difficulty level, and targeted conditions.
+      Browse by spinal segment, condition, or practice level to find exactly what you need.
     </p>
 
     <!-- Filters -->
@@ -308,21 +316,60 @@
 
       <select id="filterSegment" aria-label="Filter by spinal segment">
         <option value="">All Segments</option>
-        <option value="C1-C2">C1-C2 (Upper Cervical)</option>
-        <option value="C4-C5">C4-C5 (Mid-Cervical)</option>
-        <option value="C7-T1">C7-T1 (Cervicothoracic)</option>
-        <option value="T12-L1">T12-L1 (Thoracolumbar)</option>
-        <option value="L4-L5">L4-L5 (Lower Lumbar)</option>
-        <option value="L5-S1">L5-S1 (Lumbosacral)</option>
+        <optgroup label="Cervical">
+          <option value="C1-C2">C1-C2 (Upper Cervical)</option>
+          <option value="C2-C3">C2-C3 (Upper Cervical)</option>
+          <option value="C3-C4">C3-C4 (Mid-Cervical)</option>
+          <option value="C4-C5">C4-C5 (Mid-Cervical)</option>
+          <option value="C5-C6">C5-C6 (Lower Cervical)</option>
+          <option value="C6-C7">C6-C7 (Lower Cervical)</option>
+        </optgroup>
+        <optgroup label="Thoracic">
+          <option value="C7-T1">C7-T1 (Cervicothoracic)</option>
+          <option value="T1-T2">T1-T2 (Upper Thoracic)</option>
+          <option value="T7-T8">T7-T8 (Mid Thoracic)</option>
+          <option value="T8-T9">T8-T9 (Mid Thoracic)</option>
+          <option value="T11-T12">T11-T12 (Lower Thoracic)</option>
+          <option value="T12-L1">T12-L1 (Thoracolumbar)</option>
+        </optgroup>
+        <optgroup label="Lumbar & Sacral">
+          <option value="L2-L3">L2-L3 (Lumbar)</option>
+          <option value="L3-L4">L3-L4 (Lumbar)</option>
+          <option value="L4-L5">L4-L5 (Lower Lumbar)</option>
+          <option value="L5-S1">L5-S1 (Lumbosacral)</option>
+          <option value="S1-S2">S1-S2 (Sacral)</option>
+          <option value="S5-Coccyx">S5-Coccyx (Coccygeal)</option>
+        </optgroup>
+        <option value="General">General (Full Spine)</option>
       </select>
 
       <select id="filterAilment" aria-label="Filter by condition">
         <option value="">All Conditions</option>
-        <option value="Low Back Pain">Low Back Pain</option>
-        <option value="Sciatica">Sciatica</option>
-        <option value="Text Neck">Text Neck</option>
-        <option value="Office Worker Syndrome">Office Worker</option>
-        <option value="Sport">Sport-Specific</option>
+        <optgroup label="Common Pain">
+          <option value="Low Back Pain">Low Back Pain</option>
+          <option value="Sciatica">Sciatica</option>
+          <option value="Neck Pain">Neck Pain</option>
+          <option value="Shoulder Pain">Shoulder Pain</option>
+          <option value="Hip Pain">Hip Pain</option>
+          <option value="Knee Pain">Knee Pain</option>
+          <option value="Foot Pain">Foot Pain</option>
+        </optgroup>
+        <optgroup label="Spinal Conditions">
+          <option value="Disc Herniation">Disc Herniation</option>
+          <option value="Scoliosis">Scoliosis</option>
+          <option value="Hyperkyphosis">Hyperkyphosis</option>
+          <option value="Hyperlordosis">Hyperlordosis</option>
+          <option value="Spinal Stenosis">Spinal Stenosis</option>
+          <option value="Radiculopathy">Radiculopathy</option>
+        </optgroup>
+        <optgroup label="Postural & Other">
+          <option value="Postural Issues">Postural Issues</option>
+          <option value="Pelvic Issues">Pelvic Issues</option>
+          <option value="Rib Flare">Rib Flare</option>
+          <option value="Piriformis Syndrome">Piriformis Syndrome</option>
+          <option value="Carpal Tunnel">Carpal Tunnel</option>
+        </optgroup>
+        <option value="General Spinal Health">General Spinal Health</option>
       </select>
 
       <select id="filterProtocol" aria-label="Filter by protocol">
@@ -565,7 +612,7 @@
            </svg>`;
 
       return `
-        <div class="video-card" onclick="window.location.href='${video.url}'">
+        <div class="video-card" onclick="window.location.href='/videos/pages/${video.id}.html'">
           <div class="video-thumb">
             ${thumbnailContent}
             <span class="duration-badge">${video.duration}</span>
