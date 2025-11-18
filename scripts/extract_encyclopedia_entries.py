@@ -145,7 +145,7 @@ def create_html_file(entry, output_path):
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{title} - ELDOA Encyclopedia</title>
+    <title>{title} - ELDOA AI Encyclopedia</title>
     <style>
         * {{
             margin: 0;
@@ -156,7 +156,7 @@ def create_html_file(entry, output_path):
         body {{
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
+            color: #0d0f13;
             background-color: #f5f5f5;
         }}
 
@@ -172,18 +172,28 @@ def create_html_file(entry, output_path):
             margin-bottom: 2rem;
         }}
 
-        .pillar-logo {{
-            color: #7c3aed;
+        .eldoa-logo {{
             font-size: 2.5rem;
             font-weight: 900;
             letter-spacing: 0.05em;
             margin-bottom: 0.5rem;
         }}
 
-        .pillar-underline {{
+        .eldoa-logo .eldoa {{
+            color: #0d0f13;
+        }}
+
+        .eldoa-logo .ai {{
+            background: linear-gradient(90deg, #2f2fe6, #0891b2);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }}
+
+        .eldoa-underline {{
             width: 150px;
             height: 4px;
-            background-color: #7c3aed;
+            background: linear-gradient(90deg, #2f2fe6, #0891b2);
             margin-bottom: 2rem;
         }}
 
@@ -212,7 +222,7 @@ def create_html_file(entry, output_path):
         .back-link {{
             display: inline-block;
             margin-top: 2rem;
-            color: #7c3aed;
+            color: #2f2fe6;
             text-decoration: none;
             font-weight: 600;
         }}
@@ -226,7 +236,7 @@ def create_html_file(entry, output_path):
                 padding: 1rem;
             }}
 
-            .pillar-logo {{
+            .eldoa-logo {{
                 font-size: 2rem;
             }}
 
@@ -243,8 +253,10 @@ def create_html_file(entry, output_path):
 <body>
     <div class="container">
         <div class="header">
-            <div class="pillar-logo">PILLAR</div>
-            <div class="pillar-underline"></div>
+            <div class="eldoa-logo">
+                <span class="eldoa">ELDOA</span> <span class="ai">AI</span>
+            </div>
+            <div class="eldoa-underline"></div>
         </div>
 
         <h1 class="entry-title">{title}</h1>
@@ -253,7 +265,7 @@ def create_html_file(entry, output_path):
             <p>{content_html}</p>
         </div>
 
-        <a href="/encyclopedia" class="back-link">← Back to Encyclopedia</a>
+        <a href="/encyclopedia.html" class="back-link">← Back to Encyclopedia</a>
     </div>
 </body>
 </html>'''

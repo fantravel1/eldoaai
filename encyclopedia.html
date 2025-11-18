@@ -16,7 +16,7 @@
       --bg: #ffffff;
       --fg: #0d0f13;
       --muted: #475569;
-      --brand: #7c3aed;
+      --brand: #2f2fe6;
       --brand-2: #0891b2;
       --card: #f8fafc;
       --border: #e2e8f0;
@@ -47,18 +47,26 @@
       padding: 3rem 0;
       border-bottom: 1px solid var(--border);
     }
-    .pillar-logo {
-      color: var(--brand);
+    .eldoa-logo {
       font-size: 3rem;
       font-weight: 900;
       letter-spacing: 0.05em;
       margin-bottom: 0.5rem;
       text-align: center;
     }
-    .pillar-underline {
+    .eldoa-logo .eldoa {
+      color: var(--fg);
+    }
+    .eldoa-logo .ai {
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .eldoa-underline {
       width: 200px;
       height: 4px;
-      background-color: var(--brand);
+      background: linear-gradient(90deg, var(--brand), var(--brand-2));
       margin: 0 auto 2rem;
     }
     h1 {
@@ -229,11 +237,13 @@
 
   <header class="page-header">
     <div class="container">
-      <div class="pillar-logo">PILLAR</div>
-      <div class="pillar-underline"></div>
+      <div class="eldoa-logo">
+        <span class="eldoa">ELDOA</span> <span class="ai">AI</span>
+      </div>
+      <div class="eldoa-underline"></div>
       <h1>ELDOA Encyclopedia</h1>
       <p class="subtitle">
-        Comprehensive A-Z reference with <strong id="totalCount">1127</strong> entries covering ELDOA practice, theory, and terminology
+        Comprehensive A-Z reference with <strong id="totalCount">1198</strong> entries covering ELDOA practice, theory, and terminology
       </p>
       <div class="search-box">
         <input type="search" id="searchInput" placeholder="Search encyclopedia entries..." autocomplete="off" />
