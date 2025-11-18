@@ -1,150 +1,3177 @@
 [
   {
-    "id": "l5-s1-beginner-intro",
-    "title": "L5-S1 Decompression - Beginner Introduction",
-    "segment": "L5-S1",
-    "region": "Lumbar",
+    "id": "the-eldoa-method",
+    "title": "The ELDOA Method",
+    "instructor": "Dan Hellman",
+    "duration": "9:58",
+    "duration_seconds": 598,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
     "difficulty": "Beginner",
-    "duration": "10:00",
-    "practice_level": "Beginner",
-    "ailment": ["Low Back Pain", "Sciatica", "Disc Issues"],
-    "protocol": ["Daily 10-min", "Morning Routine"],
-    "description": "Foundational L5-S1 decompression for low back pain relief. Perfect for beginners dealing with sitting-related discomfort or sciatica.",
-    "key_cues": ["Posterior pelvic tilt", "Breathe into low back", "60-second minimum hold"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE1",
-    "thumbnail": "/images/videos/l5-s1-beginner.jpg",
-    "instructor": "Certified ELDOA Instructor",
-    "equipment": "None",
-    "tags": ["beginner", "L5-S1", "low-back-pain", "daily-routine", "foundational"]
+    "description": "Introduction to ELDOA, history and benefits",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=uOQ836z1kZo",
+    "youtube_id": "uOQ836z1kZo",
+    "thumbnail": "https://img.youtube.com/vi/uOQ836z1kZo/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   },
   {
-    "id": "cervical-reset-text-neck",
-    "title": "Cervical Reset for Text Neck",
-    "segment": "C4-C5, C7-T1",
-    "region": "Cervical",
-    "difficulty": "Intermediate",
+    "id": "the-eldoa-you-can-do-every-day-l4-l5-t12-l1-t8-t9-l5-s1",
+    "title": "The ELDOA You Can Do Every Day! (L4-L5, T12-L1, T8-T9, L5-S1)",
+    "instructor": "Dan Hellman (H3TV)",
     "duration": "15:00",
-    "practice_level": "Intermediate",
-    "ailment": ["Text Neck", "Forward Head Posture", "Upper Cross Syndrome"],
-    "protocol": ["Recovery", "Office Worker Protocol"],
-    "description": "Combat modern text neck syndrome with targeted cervical ELDOA positions. Evidence shows superior results compared to conventional exercises.",
-    "key_cues": ["Chin tuck", "Axial elongation", "Breathe into back of neck"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE2",
-    "thumbnail": "/images/videos/cervical-reset.jpg",
-    "instructor": "Certified ELDOA Instructor",
-    "equipment": "None",
-    "tags": ["intermediate", "cervical", "text-neck", "office-worker", "posture"]
+    "duration_seconds": 900,
+    "segment": "T8-T9, T12-L1, L4-L5, L5-S1",
+    "segments": [
+      "T8-T9",
+      "T12-L1",
+      "L4-L5",
+      "L5-S1"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "All Levels",
+    "description": "Quick daily ELDOA circuit covering lumbar and thoracic stretches",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=ViHc9z-YYkk",
+    "youtube_id": "ViHc9z-YYkk",
+    "thumbnail": "https://img.youtube.com/vi/ViHc9z-YYkk/maxresdefault.jpg",
+    "tags": [
+      "l4-l5",
+      "t12-l1",
+      "general-spinal-health",
+      "t8-t9",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   },
   {
-    "id": "thoracolumbar-baseball",
-    "title": "Thoracolumbar Junction Protocol for Baseball Players",
-    "segment": "C7-T1, T12-L1",
-    "region": "Thoracolumbar",
-    "difficulty": "Advanced",
-    "duration": "20:00",
-    "practice_level": "Advanced",
-    "ailment": ["Rotational Asymmetries", "Junction Stress"],
-    "protocol": ["Performance", "Sport-Specific"],
-    "description": "Address rotational asymmetries and junction point stress common in baseball/softball. Targets C7-T1 and T12-L1 for pitchers and position players.",
-    "key_cues": ["Maintain rotation", "Breathe through transitions", "Balance both sides"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE3",
-    "thumbnail": "/images/videos/baseball-protocol.jpg",
-    "instructor": "Certified ELDOA Sports Performance Specialist",
-    "equipment": "None",
-    "tags": ["advanced", "sport-specific", "baseball", "rotational", "performance"],
-    "sport_specific": "Baseball/Softball"
+    "id": "the-feel-good-eldoa-program",
+    "title": "The \"FEEL GOOD\" ELDOA Program",
+    "instructor": "Dan Hellman",
+    "duration": "14:00",
+    "duration_seconds": 840,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "15-minute ELDOA routine for general well-being",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=a-3DHfj06dA",
+    "youtube_id": "a-3DHfj06dA",
+    "thumbnail": "https://img.youtube.com/vi/a-3DHfj06dA/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   },
   {
-    "id": "full-spine-morning-routine",
-    "title": "Full Spine Morning Routine (12-Minute)",
-    "segment": "All Segments",
-    "region": "Full Spine",
-    "difficulty": "Intermediate",
+    "id": "stop-suffering-from-back-pain-today",
+    "title": "STOP SUFFERING From Back Pain TODAY!",
+    "instructor": "Dan Hellman",
+    "duration": "19:54",
+    "duration_seconds": 1194,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Beginner",
+    "description": "Introductory ELDOA session for back pain relief",
+    "ailment": [
+      "Low Back Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=lBvc_cjtkA8",
+    "youtube_id": "lBvc_cjtkA8",
+    "thumbnail": "https://img.youtube.com/vi/lBvc_cjtkA8/maxresdefault.jpg",
+    "tags": [
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-ultimate-golf-longevity-plan-eldoa-stretching-to-stay-pain-free",
+    "title": "The Ultimate Golf Longevity Plan: ELDOA & Stretching to Stay Pain-Free",
+    "instructor": "The Golf Paradigm",
+    "duration": "17:09",
+    "duration_seconds": 1029,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA-based routine for golfers",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=0vmvsYActqc",
+    "youtube_id": "0vmvsYActqc",
+    "thumbnail": "https://img.youtube.com/vi/0vmvsYActqc/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "dan-hellman-the-ultimate-guided-mobility-course",
+    "title": "Dan Hellman – The ULTIMATE Guided Mobility Course!",
+    "instructor": "Dan Hellman",
     "duration": "12:00",
-    "practice_level": "Intermediate",
-    "ailment": ["General Maintenance", "Postural Health"],
-    "protocol": ["Daily 10-min", "Morning Routine"],
-    "description": "Comprehensive morning ELDOA sequence covering all major spinal segments. Perfect daily maintenance protocol.",
-    "key_cues": ["Flow through segments", "Maintain breathing", "Listen to your body"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE4",
-    "thumbnail": "/images/videos/morning-routine.jpg",
-    "instructor": "Certified ELDOA Instructor",
-    "equipment": "None",
-    "tags": ["intermediate", "full-spine", "daily-routine", "maintenance", "morning"]
+    "duration_seconds": 720,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Guided mobility class highlighting ELDOA techniques",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=gJxNeQmDseA",
+    "youtube_id": "gJxNeQmDseA",
+    "thumbnail": "https://img.youtube.com/vi/gJxNeQmDseA/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   },
   {
-    "id": "hip-basketball-landing",
-    "title": "Hip & L5-S1 Protocol for Basketball Landing Mechanics",
-    "segment": "L5-S1, Hip",
-    "region": "Lumbar-Hip Complex",
-    "difficulty": "Intermediate-Advanced",
+    "id": "podcast-092-eldoa-movement-and-mobility-with-dan-hellman",
+    "title": "Podcast 092 – ELDOA, Movement and Mobility (with Dan Hellman)",
+    "instructor": "Principles of Program Design Podcast",
+    "duration": "21:37",
+    "duration_seconds": 1297,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Intermediate",
+    "description": "Interview on ELDOA methodology and movement",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=Jy9T9JS3BSc",
+    "youtube_id": "Jy9T9JS3BSc",
+    "thumbnail": "https://img.youtube.com/vi/Jy9T9JS3BSc/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "guy-voyer-explaining-eldoa-for-t1112",
+    "title": "Guy Voyer explaining ELDOA for T11/12",
+    "instructor": "SomaTraining UK",
+    "duration": "12:20",
+    "duration_seconds": 740,
+    "segment": "T11-T12",
+    "segments": [
+      "T11-T12"
+    ],
+    "region": "Lower Thoracic",
+    "difficulty": "All Levels",
+    "description": "Demonstration of ELDOA posture for the T11-T12 thoracolumbar junction",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=kH2uZl-hocg",
+    "youtube_id": "kH2uZl-hocg",
+    "thumbnail": "https://img.youtube.com/vi/kH2uZl-hocg/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "t11-t12"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "mobilizing-the-posterior-chain-using-eldoa-stretching",
+    "title": "Mobilizing the Posterior Chain Using ELDOA Stretching",
+    "instructor": "The Pacific Clinic of Kennewick",
+    "duration": "2:14",
+    "duration_seconds": 134,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Explanation of ELDOA’s benefits for the posterior chain",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=Y3L-rLIIGSk",
+    "youtube_id": "Y3L-rLIIGSk",
+    "thumbnail": "https://img.youtube.com/vi/Y3L-rLIIGSk/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-method-thoracic-spine",
+    "title": "ELDOA Method Thoracic Spine",
+    "instructor": "Mario Novo",
+    "duration": "8:37",
+    "duration_seconds": 517,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Demonstration of an ELDOA exercise targeting the thoracic spine",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=SMMgzeznUCQ",
+    "youtube_id": "SMMgzeznUCQ",
+    "thumbnail": "https://img.youtube.com/vi/SMMgzeznUCQ/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-method-lumbar-spine",
+    "title": "ELDOA Method Lumbar Spine",
+    "instructor": "Mario Novo",
+    "duration": "7:39",
+    "duration_seconds": 459,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Demonstration of an ELDOA exercise for the lumbar spine",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=E6jTpI6KpE8",
+    "youtube_id": "E6jTpI6KpE8",
+    "thumbnail": "https://img.youtube.com/vi/E6jTpI6KpE8/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-method-cervical-spine",
+    "title": "ELDOA Method Cervical Spine",
+    "instructor": "Mario Novo",
+    "duration": "6:19",
+    "duration_seconds": 379,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Demonstration of an ELDOA exercise for the cervical spine",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=mJKb0xjfpQA",
+    "youtube_id": "mJKb0xjfpQA",
+    "thumbnail": "https://img.youtube.com/vi/mJKb0xjfpQA/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "owning-your-pain-eldoa-cervical-spine-method",
+    "title": "Owning Your Pain – ELDOA Cervical Spine Method",
+    "instructor": "Carolyn Zepf",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Follow-along ELDOA postures to reduce neck pain",
+    "ailment": [
+      "Neck Pain",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=nmULdffJCqs",
+    "youtube_id": "nmULdffJCqs",
+    "thumbnail": "https://img.youtube.com/vi/nmULdffJCqs/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "neck-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "owning-your-pain-eldoa-upper-thoracic-spine-method",
+    "title": "Owning Your Pain – ELDOA Upper Thoracic Spine Method",
+    "instructor": "Carolyn Zepf",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA postures for the upper thoracic spine to alleviate pain",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=AkSokv7Ke5Y",
+    "youtube_id": "AkSokv7Ke5Y",
+    "thumbnail": "https://img.youtube.com/vi/AkSokv7Ke5Y/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "owning-your-pain-eldoa-lower-thoracic-spine-method",
+    "title": "Owning Your Pain – ELDOA Lower Thoracic Spine Method",
+    "instructor": "Carolyn Zepf",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA postures for the lower thoracic region",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=7FhOuJwP5pU",
+    "youtube_id": "7FhOuJwP5pU",
+    "thumbnail": "https://img.youtube.com/vi/7FhOuJwP5pU/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "owning-your-pain-eldoa-for-the-lumbar-spine",
+    "title": "Owning Your Pain – ELDOA for the Lumbar Spine",
+    "instructor": "Carolyn Zepf",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA postures targeting the lumbar spine",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=LqYrE2HhRIA",
+    "youtube_id": "LqYrE2HhRIA",
+    "thumbnail": "https://img.youtube.com/vi/LqYrE2HhRIA/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "decompress-your-neck-c4-c5-with-eldoa",
+    "title": "Decompress Your Neck (C4-C5) with ELDOA",
+    "instructor": "Coach Tyler Pultro",
+    "duration": "1:30",
+    "duration_seconds": 90,
+    "segment": "C4-C5",
+    "segments": [
+      "C4-C5"
+    ],
+    "region": "Cervical",
+    "difficulty": "All Levels",
+    "description": "Brief ELDOA stretch for C4-C5 to relieve neck tension",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=zo8UjzUj6LQ",
+    "youtube_id": "zo8UjzUj6LQ",
+    "thumbnail": "https://img.youtube.com/vi/zo8UjzUj6LQ/maxresdefault.jpg",
+    "tags": [
+      "c4-c5",
+      "general-spinal-health"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "tight-neck-relief-eldoa-c5-c6",
+    "title": "Tight Neck Relief – ELDOA C5-C6",
+    "instructor": "Coach Tyler Pultro",
+    "duration": "1:45",
+    "duration_seconds": 105,
+    "segment": "C5-C6",
+    "segments": [
+      "C5-C6"
+    ],
+    "region": "Cervical",
+    "difficulty": "All Levels",
+    "description": "Quick ELDOA stretch for C5-C6 to alleviate neck and shoulder pain",
+    "ailment": [
+      "Neck Pain",
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=1VmFPwcHGrE",
+    "youtube_id": "1VmFPwcHGrE",
+    "thumbnail": "https://img.youtube.com/vi/1VmFPwcHGrE/maxresdefault.jpg",
+    "tags": [
+      "neck-pain",
+      "shoulder-pain",
+      "c5-c6"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-flow-for-the-neck",
+    "title": "ELDOA Flow for the Neck",
+    "instructor": "Stone Bodyworks Fitness (Stacey Stone)",
+    "duration": "13:57",
+    "duration_seconds": 837,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Follow-along ELDOA flow targeting the neck",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=60ZSc6xl4Dc",
+    "youtube_id": "60ZSc6xl4Dc",
+    "thumbnail": "https://img.youtube.com/vi/60ZSc6xl4Dc/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-flow-for-l4-l5-l2-l3",
+    "title": "ELDOA Flow for L4-L5 & L2-L3",
+    "instructor": "Stone Bodyworks Fitness (Stacey Stone)",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L2-L3, L4-L5",
+    "segments": [
+      "L2-L3",
+      "L4-L5"
+    ],
+    "region": "Lumbar",
+    "difficulty": "All Levels",
+    "description": "Combined ELDOA routine focusing on lumbar spine levels L4-L5 and L2-L3",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=HHofsJWqfAY",
+    "youtube_id": "HHofsJWqfAY",
+    "thumbnail": "https://img.youtube.com/vi/HHofsJWqfAY/maxresdefault.jpg",
+    "tags": [
+      "l4-l5",
+      "l2-l3",
+      "general-spinal-health"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-l5-s1-guided-exercise",
+    "title": "ELDOA L5-S1 (Guided Exercise)",
+    "instructor": "Stone Bodyworks Fitness (Stacey Stone)",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Guided ELDOA posture for the L5-S1 junction to decompress the lower back",
+    "ailment": [
+      "Low Back Pain",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=P2ehFJBQskc",
+    "youtube_id": "P2ehFJBQskc",
+    "thumbnail": "https://img.youtube.com/vi/P2ehFJBQskc/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "low-back-pain",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-express-for-neck-low-back",
+    "title": "ELDOA Express for Neck & Low Back",
+    "instructor": "Stone Bodyworks Fitness (Stacey Stone)",
     "duration": "18:00",
-    "practice_level": "Intermediate",
-    "ailment": ["Landing Stress", "Jump-Related Back Pain"],
-    "protocol": ["Performance", "Recovery"],
-    "description": "Manage lumbosacral stress from repetitive jumping (1,066 lb peak landing forces). Essential for basketball, volleyball athletes.",
-    "key_cues": ["Hip-spine integration", "Posterior chain engagement", "Breathe into lumbar"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE5",
-    "thumbnail": "/images/videos/basketball-landing.jpg",
-    "instructor": "Certified ELDOA Sports Performance Specialist",
-    "equipment": "None",
-    "tags": ["intermediate", "sport-specific", "basketball", "volleyball", "landing-mechanics"],
-    "sport_specific": "Basketball/Volleyball"
+    "duration_seconds": 1080,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Quick ELDOA routine targeting both neck and lower back",
+    "ailment": [
+      "Low Back Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=QwNED34bNhM",
+    "youtube_id": "QwNED34bNhM",
+    "thumbnail": "https://img.youtube.com/vi/QwNED34bNhM/maxresdefault.jpg",
+    "tags": [
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   },
   {
-    "id": "desk-worker-micro-breaks",
-    "title": "Office Desk Micro-Breaks (3-Minute Sessions)",
-    "segment": "C7-T1, T12-L1, L4-L5",
-    "region": "Multi-Segment",
+    "id": "general-eldoa-basic-global-posture",
+    "title": "General ELDOA (Basic Global Posture)",
+    "instructor": "Stone Bodyworks Fitness (Stacey Stone)",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
     "difficulty": "Beginner",
-    "duration": "3:00",
-    "practice_level": "Beginner",
-    "ailment": ["Office Worker Syndrome", "Prolonged Sitting"],
-    "protocol": ["Micro-breaks", "Office Integration"],
-    "description": "Evidence-based 2-3 minute ELDOA micro-breaks for office workers. Follows 20-8-2 protocol (20 min work, 8 min standing, 2 min movement).",
-    "key_cues": ["Quick transitions", "Maintain quality", "2-3x daily"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE6",
-    "thumbnail": "/images/videos/office-microbreaks.jpg",
-    "instructor": "Certified ELDOA Workplace Specialist",
-    "equipment": "Office chair optional",
-    "tags": ["beginner", "office-worker", "micro-breaks", "workplace", "sitting"],
-    "workplace_integration": true
+    "description": "Classic general ELDOA exercise for overall spinal decompression",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=l_sg13pc7ZE",
+    "youtube_id": "l_sg13pc7ZE",
+    "thumbnail": "https://img.youtube.com/vi/l_sg13pc7ZE/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   },
   {
-    "id": "acute-phase-gentle",
-    "title": "Acute Phase Protocol - Gentle Introduction",
-    "segment": "Adaptable",
-    "region": "Patient-Specific",
+    "id": "30-min-eldoa-class-w-pam-part-1",
+    "title": "30-Min ELDOA Class w/ Pam (Part 1)",
+    "instructor": "CU Ravens (Carleton University)",
+    "duration": "1839:00",
+    "duration_seconds": 110340,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
     "difficulty": "Beginner",
-    "duration": "8:00",
-    "practice_level": "Beginner",
-    "ailment": ["Acute Injury", "Recent Pain Flare"],
-    "protocol": ["Acute Phase", "Recovery"],
-    "description": "Modified ELDOA for acute phase (first 2-4 weeks post-injury). Gentler holds (30-45 seconds), daily frequency, pain-free ranges only.",
-    "key_cues": ["Pain-free only", "Shorter holds initially", "Parasympathetic focus"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE7",
-    "thumbnail": "/images/videos/acute-phase.jpg",
-    "instructor": "Certified ELDOA Therapist",
-    "equipment": "None",
-    "tags": ["beginner", "acute-phase", "rehabilitation", "gentle", "injury-recovery"]
+    "description": "Half-hour ELDOA class for beginners",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=k4bO9LInbd4",
+    "youtube_id": "k4bO9LInbd4",
+    "thumbnail": "https://img.youtube.com/vi/k4bO9LInbd4/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   },
   {
-    "id": "breathing-fundamentals",
-    "title": "ELDOA Breathing Fundamentals - The Internal Mechanism",
-    "segment": "All",
-    "region": "Full Body",
-    "difficulty": "Beginner-Essential",
-    "duration": "16:00",
-    "practice_level": "Beginner",
-    "ailment": ["Foundation", "Learning"],
-    "protocol": ["Educational"],
-    "description": "Deep dive into the essential internal mechanism: breathing as the foundation of ELDOA effectiveness. Covers diaphragmatic breathing, CSF dynamics, fascial expansion, and the critical 60-second threshold.",
-    "key_cues": ["Diaphragmatic breath", "6 breaths/minute", "Breathe into target segment"],
-    "url": "https://www.youtube.com/watch?v=EXAMPLE8",
-    "thumbnail": "/images/videos/breathing-fundamentals.jpg",
-    "instructor": "ELDOA Master Instructor",
-    "equipment": "None",
-    "tags": ["educational", "breathing", "fundamentals", "essential", "theory"],
-    "foundational": true
+    "id": "30-min-eldoa-class-w-pam-part-2",
+    "title": "30-Min ELDOA Class w/ Pam (Part 2)",
+    "instructor": "CU Ravens (Carleton University)",
+    "duration": "1900:00",
+    "duration_seconds": 114000,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Continuation of the 30-minute ELDOA class",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=Zb6Ze6N3FP0",
+    "youtube_id": "Zb6Ze6N3FP0",
+    "thumbnail": "https://img.youtube.com/vi/Zb6Ze6N3FP0/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-for-the-psoas-major-muscle-shorts",
+    "title": "ELDOA Exercises for the Psoas Major Muscle!!! #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:47",
+    "duration_seconds": 47,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Short demonstration targeting the psoas major muscle",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/qJrmlaNoM7A",
+    "youtube_id": "qJrmlaNoM7A",
+    "thumbnail": "https://img.youtube.com/vi/qJrmlaNoM7A/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "ufc-fighter-malcolm-gordon-first-training-session-post-win-shorts",
+    "title": "UFC Fighter Malcolm Gordon – First Training Session Post-Win #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "1:00",
+    "duration_seconds": 60,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Beginner",
+    "description": "Snippet of ELDOA-based training session with MMA fighter Malcolm Gordon after his UFC victory",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/l1Nx05BcRsY",
+    "youtube_id": "l1Nx05BcRsY",
+    "thumbnail": "https://img.youtube.com/vi/l1Nx05BcRsY/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "malcolm-gordon-does-the-c6-c7-eldoa-neck-pain-relief-shorts",
+    "title": "Malcolm Gordon does the C6-C7 ELDOA (Neck Pain Relief) #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:30",
+    "duration_seconds": 30,
+    "segment": "C6-C7",
+    "segments": [
+      "C6-C7"
+    ],
+    "region": "Cervical",
+    "difficulty": "All Levels",
+    "description": "ELDOA neck exercise at C6-C7 demonstrated with UFC fighter Malcolm Gordon",
+    "ailment": [
+      "Neck Pain"
+    ],
+    "url": "https://www.youtube.com/shorts/l1Nx05BcRsY",
+    "youtube_id": "l1Nx05BcRsY",
+    "thumbnail": "https://img.youtube.com/vi/l1Nx05BcRsY/maxresdefault.jpg",
+    "tags": [
+      "c6-c7",
+      "neck-pain"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-for-the-gluteus-maximus-muscle-shorts",
+    "title": "ELDOA Exercises for the Gluteus Maximus Muscle!!! #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:58",
+    "duration_seconds": 58,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Brief ELDOA routine focusing on the gluteus maximus muscle",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/vLcxPVHs-xE",
+    "youtube_id": "vLcxPVHs-xE",
+    "thumbnail": "https://img.youtube.com/vi/vLcxPVHs-xE/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-s1-s2-eldoa-exercise-for-the-gastrocnemius-muscle-shorts",
+    "title": "The S1-S2 ELDOA Exercise for the Gastrocnemius Muscle!!! #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:45",
+    "duration_seconds": 45,
+    "segment": "S1-S2",
+    "segments": [
+      "S1-S2"
+    ],
+    "region": "Sacral",
+    "difficulty": "All Levels",
+    "description": "Quick ELDOA posture targeting the gastrocnemius muscle via the S1-S2 segment",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/mC41BfsqG_Y",
+    "youtube_id": "mC41BfsqG_Y",
+    "thumbnail": "https://img.youtube.com/vi/mC41BfsqG_Y/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "s1-s2"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-s1-s2-eldoa-exercise-for-the-soleus-muscle-shorts",
+    "title": "The S1-S2 ELDOA Exercise for the Soleus Muscle!!! #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:44",
+    "duration_seconds": 44,
+    "segment": "S1-S2",
+    "segments": [
+      "S1-S2"
+    ],
+    "region": "Sacral",
+    "difficulty": "All Levels",
+    "description": "Quick ELDOA posture targeting the soleus muscle via the S1-S2 segment",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/Kv1XoMwgw7Y",
+    "youtube_id": "Kv1XoMwgw7Y",
+    "thumbnail": "https://img.youtube.com/vi/Kv1XoMwgw7Y/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "s1-s2"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "internal-coxo-femoral-eldoa-for-hip-pain-si-joint-pain-pelvic-",
+    "title": "Internal Coxo Femoral ELDOA for HIP PAIN, SI JOINT PAIN, PELVIC ...",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Intermediate",
+    "description": "ELDOA exercise for hip pain, sacroiliac joint pain, pelvic issues",
+    "ailment": [
+      "Hip Pain",
+      "Pelvic Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=q2x2w8RQmp8",
+    "youtube_id": "q2x2w8RQmp8",
+    "thumbnail": "https://img.youtube.com/vi/q2x2w8RQmp8/maxresdefault.jpg",
+    "tags": [
+      "pelvic-issues",
+      "hip-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "l5s1-eldoa-for-low-back-pain-and-sciatica",
+    "title": "L5/S1 ELDOA for Low Back Pain and Sciatica",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise for L5/S1 to relieve low back pain and sciatica",
+    "ailment": [
+      "Low Back Pain",
+      "Sciatica"
+    ],
+    "url": "https://www.youtube.com/watch?v=fUYr2dC4MjU",
+    "youtube_id": "fUYr2dC4MjU",
+    "thumbnail": "https://img.youtube.com/vi/fUYr2dC4MjU/maxresdefault.jpg",
+    "tags": [
+      "sciatica",
+      "low-back-pain",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-postures-for-low-back-shoulder-neck-pain-c6-c7-l3-l4",
+    "title": "ELDOA Postures for Low Back, Shoulder & Neck Pain! C6-C7, L3-L4",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "C6-C7, L3-L4",
+    "segments": [
+      "C6-C7",
+      "L3-L4"
+    ],
+    "region": "Cervical",
+    "difficulty": "All Levels",
+    "description": "Series of ELDOA postures addressing multiple spinal segments",
+    "ailment": [
+      "Neck Pain",
+      "Shoulder Pain",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/GWemwzDhOeQ",
+    "youtube_id": "GWemwzDhOeQ",
+    "thumbnail": "https://img.youtube.com/vi/GWemwzDhOeQ/maxresdefault.jpg",
+    "tags": [
+      "c6-c7",
+      "postural-issues",
+      "l3-l4",
+      "neck-pain",
+      "shoulder-pain"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-lumbar-scoliosis-posture-top-5-eldoa",
+    "title": "HOW TO CORRECT LUMBAR SCOLIOSIS POSTURE: Top 5 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises to correct lumbar scoliosis",
+    "ailment": [
+      "Scoliosis",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=ElXrqAvQhrg",
+    "youtube_id": "ElXrqAvQhrg",
+    "thumbnail": "https://img.youtube.com/vi/ElXrqAvQhrg/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general",
+      "scoliosis"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries",
+    "title": "Top 5 ELDOA Exercises for SHOULDER PAIN RELIEF to Fix and Prevent Injuries",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises for shoulder pain relief",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=kvrasXPuqKo",
+    "youtube_id": "kvrasXPuqKo",
+    "thumbnail": "https://img.youtube.com/vi/kvrasXPuqKo/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-for-the-gluteus-maximus-muscle-shorts",
+    "title": "ELDOA EXERCISES FOR THE GLUTEUS MAXIMUS MUSCLE!!! #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:47",
+    "duration_seconds": 47,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Short demonstration focusing on the gluteus maximus",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/vLcxPVHs-xE",
+    "youtube_id": "vLcxPVHs-xE",
+    "thumbnail": "https://img.youtube.com/vi/vLcxPVHs-xE/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-for-the-gluteus-medius-muscle-shorts",
+    "title": "ELDOA EXERCISES FOR THE GLUTEUS MEDIUS MUSCLE!!! #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:47",
+    "duration_seconds": 47,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Short demonstration focusing on the gluteus medius",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/XzjRe1JiscY",
+    "youtube_id": "XzjRe1JiscY",
+    "thumbnail": "https://img.youtube.com/vi/XzjRe1JiscY/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-for-the-psoas-major-muscle-shorts",
+    "title": "ELDOA EXERCISES FOR THE PSOAS MAJOR MUSCLE!!! #Shorts",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:44",
+    "duration_seconds": 44,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Short demonstration focusing on the psoas major muscle",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/qJrmlaNoM7A",
+    "youtube_id": "qJrmlaNoM7A",
+    "thumbnail": "https://img.youtube.com/vi/qJrmlaNoM7A/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l5-s1-eldoa-exercise-for-the-semimembranosus-muscle",
+    "title": "THE L5-S1 ELDOA EXERCISE FOR THE SEMIMEMBRANOSUS MUSCLE",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "1:00",
+    "duration_seconds": 60,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise targeting the semimembranosus muscle at L5-S1",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/GAxpQvTBdLQ",
+    "youtube_id": "GAxpQvTBdLQ",
+    "thumbnail": "https://img.youtube.com/vi/GAxpQvTBdLQ/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-method-lower-body-workout-for-low-back-pain",
+    "title": "ELDOA METHOD: LOWER BODY WORKOUT FOR LOW BACK PAIN",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Lower body workout using ELDOA to alleviate low back pain",
+    "ailment": [
+      "Low Back Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=IGch5usNRVc",
+    "youtube_id": "IGch5usNRVc",
+    "thumbnail": "https://img.youtube.com/vi/IGch5usNRVc/maxresdefault.jpg",
+    "tags": [
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "top-5-eldoa-exercises-for-shoulder-pain-relief-",
+    "title": "Top 5 ELDOA Exercises for SHOULDER PAIN RELIEF & ...",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises for shoulder pain relief",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=kvrasXPuqKo",
+    "youtube_id": "kvrasXPuqKo",
+    "thumbnail": "https://img.youtube.com/vi/kvrasXPuqKo/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "myofascial-stretching-exercises-for-low-back-pain-eldoa",
+    "title": "MYOFASCIAL STRETCHING Exercises for Low Back Pain & ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Myofascial stretching exercises combined with ELDOA for low back pain",
+    "ailment": [
+      "Low Back Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=AnFbrvzwu9Y",
+    "youtube_id": "AnFbrvzwu9Y",
+    "thumbnail": "https://img.youtube.com/vi/AnFbrvzwu9Y/maxresdefault.jpg",
+    "tags": [
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "full-eldoa-method-workout-class-for-low-back-pain-relief",
+    "title": "FULL ELDOA METHOD WORKOUT CLASS for Low Back Pain Relief",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Full workout class for low back pain relief using ELDOA",
+    "ailment": [
+      "Low Back Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=yBcVJ1JGU7U",
+    "youtube_id": "yBcVJ1JGU7U",
+    "thumbnail": "https://img.youtube.com/vi/yBcVJ1JGU7U/maxresdefault.jpg",
+    "tags": [
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa",
+    "title": "How to ELIMINATE Hip Pain | The External Coxo-Femoral ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "External coxo-femoral ELDOA to eliminate hip pain",
+    "ailment": [
+      "Hip Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=HaBRd45FCpE",
+    "youtube_id": "HaBRd45FCpE",
+    "thumbnail": "https://img.youtube.com/vi/HaBRd45FCpE/maxresdefault.jpg",
+    "tags": [
+      "hip-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "general-eldoa-for-spinal-stenosis-and-back-pain",
+    "title": "General ELDOA for Spinal Stenosis and Back Pain",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "General ELDOA exercise for spinal stenosis and back pain",
+    "ailment": [
+      "Low Back Pain",
+      "Spinal Stenosis"
+    ],
+    "url": "https://www.youtube.com/watch?v=8H7IqdzOMr8",
+    "youtube_id": "8H7IqdzOMr8",
+    "thumbnail": "https://img.youtube.com/vi/8H7IqdzOMr8/maxresdefault.jpg",
+    "tags": [
+      "spinal-stenosis",
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l3-l4-eldoa-exercise-for-the-rectus-femoris-muscle",
+    "title": "THE L3-L4 ELDOA EXERCISE FOR THE RECTUS FEMORIS MUSCLE",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L3-L4",
+    "segments": [
+      "L3-L4"
+    ],
+    "region": "Lumbar",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise for L3-L4 focusing on the rectus femoris muscle",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/v9HEbtcEMhA",
+    "youtube_id": "v9HEbtcEMhA",
+    "thumbnail": "https://img.youtube.com/vi/v9HEbtcEMhA/maxresdefault.jpg",
+    "tags": [
+      "l3-l4",
+      "general-spinal-health"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "top-5-eldoa-exercises-for-valgus-knees-knee-pain-relief",
+    "title": "Top 5 ELDOA Exercises for VALGUS KNEES | Knee Pain Relief",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises for valgus knees",
+    "ailment": [
+      "Knee Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=5yyez6apMrI",
+    "youtube_id": "5yyez6apMrI",
+    "thumbnail": "https://img.youtube.com/vi/5yyez6apMrI/maxresdefault.jpg",
+    "tags": [
+      "general",
+      "knee-pain"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-thoracic-scoliosis-posture-top-5-eldoa",
+    "title": "HOW TO CORRECT THORACIC SCOLIOSIS POSTURE: Top 5 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises to correct thoracic scoliosis",
+    "ailment": [
+      "Scoliosis",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=xD_wiCyFC_A",
+    "youtube_id": "xD_wiCyFC_A",
+    "thumbnail": "https://img.youtube.com/vi/xD_wiCyFC_A/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general",
+      "scoliosis"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-thoracic-hypokyphosis-top-5-eldoa",
+    "title": "HOW TO CORRECT THORACIC HYPOKYPHOSIS: Top 5 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises to correct thoracic hypokyphosis",
+    "ailment": [
+      "Hyperkyphosis"
+    ],
+    "url": "https://www.youtube.com/watch?v=wqQWCkUskWU",
+    "youtube_id": "wqQWCkUskWU",
+    "thumbnail": "https://img.youtube.com/vi/wqQWCkUskWU/maxresdefault.jpg",
+    "tags": [
+      "hyperkyphosis",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eliminate-shoulder-pain-elbow-pain-wrist-pain-hand-pain-improve-grip",
+    "title": "ELIMINATE Shoulder PAIN, Elbow Pain, Wrist Pain, Hand Pain & Improve Grip",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA routine to eliminate pain in shoulder, elbow, wrist, hand and improve grip",
+    "ailment": [
+      "Shoulder Pain",
+      "Elbow Pain",
+      "Wrist Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=P8KFQQ2rH6o",
+    "youtube_id": "P8KFQQ2rH6o",
+    "thumbnail": "https://img.youtube.com/vi/P8KFQQ2rH6o/maxresdefault.jpg",
+    "tags": [
+      "elbow-pain",
+      "shoulder-pain",
+      "general",
+      "wrist-pain"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-method-class-proprioception-exercises-myofascial-stretching-strengthening-eldoa",
+    "title": "ELDOA METHOD CLASS! PROPRIOCEPTION EXERCISES, Myofascial Stretching, Strengthening & ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Comprehensive ELDOA class including proprioception exercises and myofascial stretching",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=Upml40vkAxo",
+    "youtube_id": "Upml40vkAxo",
+    "thumbnail": "https://img.youtube.com/vi/Upml40vkAxo/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-t7-t8-eldoa-exercise-for-the-transverse-abdominis",
+    "title": "THE T7-T8 ELDOA EXERCISE FOR THE TRANSVERSE ABDOMINIS",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "T7-T8",
+    "segments": [
+      "T7-T8"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise for T7-T8 focusing on the transverse abdominis",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/-wVmVfI4DVE",
+    "youtube_id": "-wVmVfI4DVE",
+    "thumbnail": "https://img.youtube.com/vi/-wVmVfI4DVE/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "t7-t8"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "oseoarticular-warm-up-joint-mobilization-exercises",
+    "title": "OSEOARTICULAR WARM UP (JOINT MOBILIZATION EXERCISES)",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Intermediate",
+    "description": "Joint mobilization exercises as part of an ELDOA warm-up",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=FooBA7T11qo",
+    "youtube_id": "FooBA7T11qo",
+    "thumbnail": "https://img.youtube.com/vi/FooBA7T11qo/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-lumbar-hypolordosis-posture-top-5-eldoa",
+    "title": "HOW TO CORRECT LUMBAR HYPOLORDOSIS POSTURE: Top 5 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises to correct lumbar hypolordosis",
+    "ailment": [
+      "Hyperlordosis",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=SwQuhWS4gWM",
+    "youtube_id": "SwQuhWS4gWM",
+    "thumbnail": "https://img.youtube.com/vi/SwQuhWS4gWM/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "hyperlordosis",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "rehabilitation-exercises-for-sciatica-radiculopathy-carpal-tunnel",
+    "title": "Rehabilitation Exercises for Sciatica, Radiculopathy & Carpal Tunnel",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercises for sciatica, radiculopathy and carpal tunnel",
+    "ailment": [
+      "Sciatica",
+      "Radiculopathy",
+      "Carpal Tunnel"
+    ],
+    "url": "https://www.youtube.com/watch?v=aHiqlUEv5xE",
+    "youtube_id": "aHiqlUEv5xE",
+    "thumbnail": "https://img.youtube.com/vi/aHiqlUEv5xE/maxresdefault.jpg",
+    "tags": [
+      "radiculopathy",
+      "sciatica",
+      "carpal-tunnel",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eliminate-finger-pain-improve-grip-strength-with-the-c5-c6-eldoa",
+    "title": "ELIMINATE Finger Pain, IMPROVE Grip Strength with the C5-C6 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "C5-C6",
+    "segments": [
+      "C5-C6"
+    ],
+    "region": "Cervical",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise at C5-C6 to eliminate finger pain and improve grip strength",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=uVQRF0Kv6nQ",
+    "youtube_id": "uVQRF0Kv6nQ",
+    "thumbnail": "https://img.youtube.com/vi/uVQRF0Kv6nQ/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "c5-c6"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "top-5-eldoa-exercises-for-flat-feet-exercises-for-foot-pain-relief",
+    "title": "Top 5 ELDOA Exercises for FLAT FEET: Exercises for Foot Pain Relief",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises for flat feet and foot pain relief",
+    "ailment": [
+      "Foot Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=tUKx-4nH3FY",
+    "youtube_id": "tUKx-4nH3FY",
+    "thumbnail": "https://img.youtube.com/vi/tUKx-4nH3FY/maxresdefault.jpg",
+    "tags": [
+      "foot-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-a-rotated-pelvis-top-5-eldoa-exercises",
+    "title": "HOW TO CORRECT A ROTATED PELVIS: Top 5 ELDOA Exercises",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises to correct a rotated pelvis",
+    "ailment": [
+      "Pelvic Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=l_x7CHI3eNg",
+    "youtube_id": "l_x7CHI3eNg",
+    "thumbnail": "https://img.youtube.com/vi/l_x7CHI3eNg/maxresdefault.jpg",
+    "tags": [
+      "pelvic-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "ask-me-anything-how-can-you-treat-a-c6-c7-disc-herniation",
+    "title": "ASK ME ANYTHING: How Can You Treat a C6-C7 Disc Herniation???",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "C6-C7",
+    "segments": [
+      "C6-C7"
+    ],
+    "region": "Cervical",
+    "difficulty": "All Levels",
+    "description": "Q&A on treating C6-C7 disc herniation using ELDOA",
+    "ailment": [
+      "Disc Herniation"
+    ],
+    "url": "https://www.youtube.com/watch?v=gJqCGDNC9jI",
+    "youtube_id": "gJqCGDNC9jI",
+    "thumbnail": "https://img.youtube.com/vi/gJqCGDNC9jI/maxresdefault.jpg",
+    "tags": [
+      "c6-c7",
+      "disc-herniation"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-a-rib-flare-top-5-eldoa-postures-for-flared-ribs",
+    "title": "HOW TO CORRECT A RIB FLARE: Top 5 ELDOA Postures for Flared Ribs",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA postures for correcting a rib flare",
+    "ailment": [
+      "Postural Issues",
+      "Rib Flare"
+    ],
+    "url": "https://www.youtube.com/watch?v=LRoD3dVoH64",
+    "youtube_id": "LRoD3dVoH64",
+    "thumbnail": "https://img.youtube.com/vi/LRoD3dVoH64/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "rib-flare",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-s1-s2-eldoa-exercise-for-the-gastrocnemius-muscle",
+    "title": "THE S1-S2 ELDOA EXERCISE FOR THE GASTROCNEMIUS MUSCLE",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "S1-S2",
+    "segments": [
+      "S1-S2"
+    ],
+    "region": "Sacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise for S1-S2 focusing on gastrocnemius muscle",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/mC41BfsqG_Y",
+    "youtube_id": "mC41BfsqG_Y",
+    "thumbnail": "https://img.youtube.com/vi/mC41BfsqG_Y/maxresdefault.jpg",
+    "tags": [
+      "s1-s2",
+      "general-spinal-health"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-t7-t8-eldoa-exercise-for-the-rectus-abdominis-muscle",
+    "title": "THE T7-T8 ELDOA EXERCISE FOR THE RECTUS ABDOMINIS MUSCLE",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "T7-T8",
+    "segments": [
+      "T7-T8"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise for T7-T8 focusing on rectus abdominis muscle",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/-wVmVfI4DVE",
+    "youtube_id": "-wVmVfI4DVE",
+    "thumbnail": "https://img.youtube.com/vi/-wVmVfI4DVE/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "t7-t8"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-thoracic-hyperkyphosis-top-5-eldoa",
+    "title": "HOW TO CORRECT THORACIC HYPERKYPHOSIS: Top 5 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises to correct thoracic hyperkyphosis",
+    "ailment": [
+      "Hyperkyphosis"
+    ],
+    "url": "https://www.youtube.com/watch?v=fKV_l_3Db8Q",
+    "youtube_id": "fKV_l_3Db8Q",
+    "thumbnail": "https://img.youtube.com/vi/fKV_l_3Db8Q/maxresdefault.jpg",
+    "tags": [
+      "hyperkyphosis",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-method-3-minute-abs-workout-from-obese-to-beast",
+    "title": "ELDOA METHOD: 3 MINUTE ABS WORKOUT FROM OBESE TO BEAST",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "3-minute abs workout using ELDOA",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=ls7bPWtPEr8",
+    "youtube_id": "ls7bPWtPEr8",
+    "thumbnail": "https://img.youtube.com/vi/ls7bPWtPEr8/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "top-5-eldoa-exercises-for-an-anterior-pelvic-tilt-how-to-fix-it",
+    "title": "Top 5 ELDOA EXERCISES for an ANTERIOR PELVIC TILT | How to Fix It",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top 5 ELDOA exercises for anterior pelvic tilt",
+    "ailment": [
+      "Pelvic Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=fBFFPQ9fM-s",
+    "youtube_id": "fBFFPQ9fM-s",
+    "thumbnail": "https://img.youtube.com/vi/fBFFPQ9fM-s/maxresdefault.jpg",
+    "tags": [
+      "pelvic-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "rehabilitation-exercises-for-piriformis-syndrome-foot-drop-more",
+    "title": "Rehabilitation Exercises for Piriformis Syndrome, Foot Drop & More",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "3:17",
+    "duration_seconds": 197,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Rehabilitation exercises targeting piriformis syndrome and foot drop using ELDOA.",
+    "ailment": [
+      "Piriformis Syndrome"
+    ],
+    "url": "https://www.youtube.com/watch?v=DHyFeO9QZ84",
+    "youtube_id": "DHyFeO9QZ84",
+    "thumbnail": "https://img.youtube.com/vi/DHyFeO9QZ84/maxresdefault.jpg",
+    "tags": [
+      "piriformis-syndrome",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eliminate-glute-pain-eliminate-coccyodynia-with-the-s5-coccyx-eldoa",
+    "title": "ELIMINATE Glute PAIN & Eliminate Coccyodynia with the S5-Coccyx ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "S5-Coccyx",
+    "segments": [
+      "S5-Coccyx"
+    ],
+    "region": "Coccygeal",
+    "difficulty": "All Levels",
+    "description": "Addressing glute pain and coccyx pain using the S5-Coccyx ELDOA.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=YLX4IYWNvg4",
+    "youtube_id": "YLX4IYWNvg4",
+    "thumbnail": "https://img.youtube.com/vi/YLX4IYWNvg4/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "s5-coccyx"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eliminate-low-back-pain-with-the-general-eldoa-for-spinal-health",
+    "title": "ELIMINATE Low Back Pain with the General ELDOA for Spinal Health",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "General ELDOA posture for eliminating low back pain and improving spinal health.",
+    "ailment": [
+      "Low Back Pain",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=PdDx0mKE9Ro",
+    "youtube_id": "PdDx0mKE9Ro",
+    "thumbnail": "https://img.youtube.com/vi/PdDx0mKE9Ro/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "is-that-a-pinched-nerve-radiculopathy-explained-how-i-diagnose",
+    "title": "Is That a PINCHED NERVE? Radiculopathy Explained: How I Diagnose",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Explanation of radiculopathy and diagnosing a pinched nerve.",
+    "ailment": [
+      "Radiculopathy"
+    ],
+    "url": "https://www.youtube.com/watch?v=5T-kx46lu08",
+    "youtube_id": "5T-kx46lu08",
+    "thumbnail": "https://img.youtube.com/vi/5T-kx46lu08/maxresdefault.jpg",
+    "tags": [
+      "radiculopathy",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "dont-ignore-sciatica-what-to-do-first-for-sciatica-relief",
+    "title": "Don’t Ignore SCIATICA: What to Do First for Sciatica Relief",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Beginner",
+    "description": "Initial steps for sciatic nerve pain relief using ELDOA.",
+    "ailment": [
+      "Sciatica"
+    ],
+    "url": "https://www.youtube.com/watch?v=tlzujC-C9o4",
+    "youtube_id": "tlzujC-C9o4",
+    "thumbnail": "https://img.youtube.com/vi/tlzujC-C9o4/maxresdefault.jpg",
+    "tags": [
+      "sciatica",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "protect-the-spinal-cord-before-its-too-late-my-approach-to-spinal-health",
+    "title": "Protect the SPINAL CORD Before It’s TOO LATE! My Approach to Spinal Health",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "13:49",
+    "duration_seconds": 829,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Intermediate",
+    "description": "Strategies to protect the spinal cord and maintain spinal health.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=-JZEYNjmiPY",
+    "youtube_id": "-JZEYNjmiPY",
+    "thumbnail": "https://img.youtube.com/vi/-JZEYNjmiPY/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "l4l5-eldoa-for-low-back-pain-and-hip-pain",
+    "title": "L4/L5 ELDOA for Low Back Pain and Hip Pain",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L4-L5",
+    "segments": [
+      "L4-L5"
+    ],
+    "region": "Lumbar",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise targeting L4/L5 to relieve low back and hip pain.",
+    "ailment": [
+      "Low Back Pain",
+      "Hip Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=eafCrUS4qBM",
+    "youtube_id": "eafCrUS4qBM",
+    "thumbnail": "https://img.youtube.com/vi/eafCrUS4qBM/maxresdefault.jpg",
+    "tags": [
+      "l4-l5",
+      "low-back-pain",
+      "hip-pain"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-s1-s2-eldoa-exercise-for-the-soleus-muscle",
+    "title": "The S1-S2 ELDOA Exercise for the Soleus Muscle",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "S1-S2",
+    "segments": [
+      "S1-S2"
+    ],
+    "region": "Sacral",
+    "difficulty": "All Levels",
+    "description": "Short ELDOA exercise targeting the soleus muscle at S1-S2 for lower leg relief.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/Kv1XoMwgw7Y",
+    "youtube_id": "Kv1XoMwgw7Y",
+    "thumbnail": "https://img.youtube.com/vi/Kv1XoMwgw7Y/maxresdefault.jpg",
+    "tags": [
+      "s1-s2",
+      "general-spinal-health"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain",
+    "title": "T8/T9 ELDOA for Hyperkyphosis Postural Correction and Back Pain",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "T8-T9",
+    "segments": [
+      "T8-T9"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "All Levels",
+    "description": "ELDOA posture for T8/T9 thoracic segment addressing hyperkyphosis and back pain.",
+    "ailment": [
+      "Low Back Pain",
+      "Hyperkyphosis",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=0MgBI8kSDJo",
+    "youtube_id": "0MgBI8kSDJo",
+    "thumbnail": "https://img.youtube.com/vi/0MgBI8kSDJo/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "low-back-pain",
+      "hyperkyphosis",
+      "t8-t9"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "top-5-eldoa-exercises-for-neck-pain-relief",
+    "title": "Top 5 ELDOA Exercises for Neck Pain Relief",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "C6-C7",
+    "segments": [
+      "C6-C7"
+    ],
+    "region": "Cervical",
+    "difficulty": "All Levels",
+    "description": "Compilation of the top ELDOA exercises including C6-C7 posture for neck pain relief.",
+    "ailment": [
+      "Neck Pain",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=nf6LLULZ8WI",
+    "youtube_id": "nf6LLULZ8WI",
+    "thumbnail": "https://img.youtube.com/vi/nf6LLULZ8WI/maxresdefault.jpg",
+    "tags": [
+      "c6-c7",
+      "neck-pain",
+      "postural-issues"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-t7-t8-eldoa-exercise-for-the-internal-oblique",
+    "title": "The T7-T8 ELDOA Exercise for the Internal Oblique",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "T7-T8",
+    "segments": [
+      "T7-T8"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "Intermediate",
+    "description": "ELDOA posture at T7-T8 targeting internal oblique function.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/nR7DG7YZOq0",
+    "youtube_id": "nR7DG7YZOq0",
+    "thumbnail": "https://img.youtube.com/vi/nR7DG7YZOq0/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "t7-t8"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l3-l4-eldoa-exercise-for-the-vastus-lateralis",
+    "title": "The L3-L4 ELDOA Exercise for the Vastus Lateralis",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L3-L4",
+    "segments": [
+      "L3-L4"
+    ],
+    "region": "Lumbar",
+    "difficulty": "All Levels",
+    "description": "ELDOA posture at L3-L4 focusing on the vastus lateralis muscle.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/L6eM7lIDRvY",
+    "youtube_id": "L6eM7lIDRvY",
+    "thumbnail": "https://img.youtube.com/vi/L6eM7lIDRvY/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "l3-l4"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "t8t9-eldoa-hyperkyphosis-posture-corrector",
+    "title": "T8/T9 ELDOA Hyperkyphosis Posture Corrector",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "T8-T9",
+    "segments": [
+      "T8-T9"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "All Levels",
+    "description": "ELDOA posture to correct hyperkyphosis at T8/T9.",
+    "ailment": [
+      "Hyperkyphosis",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=faZ7YmQKHFE",
+    "youtube_id": "faZ7YmQKHFE",
+    "thumbnail": "https://img.youtube.com/vi/faZ7YmQKHFE/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "hyperkyphosis",
+      "t8-t9"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-lumbar-lordosis-posture-top-5-eldoa",
+    "title": "How to Correct Lumbar Lordosis Posture: Top 5 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Top ELDOA exercises for correcting lumbar lordosis.",
+    "ailment": [
+      "Hyperlordosis",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=cw-PJTol4lw",
+    "youtube_id": "cw-PJTol4lw",
+    "thumbnail": "https://img.youtube.com/vi/cw-PJTol4lw/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "hyperlordosis",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-pigeon-toes-top-5-eldoa-exercises",
+    "title": "How to Correct Pigeon Toes: Top 5 ELDOA Exercises",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Series of ELDOA exercises designed to correct pigeon-toed posture.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=s4tsb2_z3vE",
+    "youtube_id": "s4tsb2_z3vE",
+    "thumbnail": "https://img.youtube.com/vi/s4tsb2_z3vE/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l3-l4-l5-s1-eldoa-for-low-back-pain-and-t8-t9-eldoa",
+    "title": "The L3-L4 & L5-S1 ELDOA for Low Back Pain and T8-T9 ELDOA",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "T8-T9, L3-L4, L5-S1",
+    "segments": [
+      "T8-T9",
+      "L3-L4",
+      "L5-S1"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "All Levels",
+    "description": "Combination of L3-L4, L5-S1, and T8-T9 ELDOA exercises for back pain relief.",
+    "ailment": [
+      "Low Back Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=Yl9RdLq5P0I",
+    "youtube_id": "Yl9RdLq5P0I",
+    "thumbnail": "https://img.youtube.com/vi/Yl9RdLq5P0I/maxresdefault.jpg",
+    "tags": [
+      "l3-l4",
+      "low-back-pain",
+      "t8-t9",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l3-l4-eldoa-exercise-for-the-vastus-medialis-muscle",
+    "title": "The L3-L4 ELDOA Exercise for the Vastus Medialis Muscle",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L3-L4",
+    "segments": [
+      "L3-L4"
+    ],
+    "region": "Lumbar",
+    "difficulty": "All Levels",
+    "description": "ELDOA posture at L3-L4 targeting the vastus medialis muscle.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/72wxr6fC9c0",
+    "youtube_id": "72wxr6fC9c0",
+    "thumbnail": "https://img.youtube.com/vi/72wxr6fC9c0/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "l3-l4"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-t7-t8-eldoa-exercise-for-the-external-oblique",
+    "title": "The T7-T8 ELDOA Exercise for the External Oblique",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "T7-T8",
+    "segments": [
+      "T7-T8"
+    ],
+    "region": "Mid Thoracic",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercise at T7-T8 focusing on the external oblique muscle.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/shorts/UCC3H3Bpi44",
+    "youtube_id": "UCC3H3Bpi44",
+    "thumbnail": "https://img.youtube.com/vi/UCC3H3Bpi44/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "t7-t8"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-an-elevated-pelvis-top-5-eldoa-exercises",
+    "title": "How to Correct an Elevated Pelvis: Top 5 ELDOA Exercises",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA techniques to correct pelvic elevation.",
+    "ailment": [
+      "Pelvic Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=z0rpFZB395U",
+    "youtube_id": "z0rpFZB395U",
+    "thumbnail": "https://img.youtube.com/vi/z0rpFZB395U/maxresdefault.jpg",
+    "tags": [
+      "pelvic-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "how-to-correct-bow-legs-top-5-eldoa-postures",
+    "title": "How to Correct Bow Legs: Top 5 ELDOA Postures",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA-based approach to correcting bow legs.",
+    "ailment": [
+      "Postural Issues",
+      "Knee Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=uB5mVwSRevc",
+    "youtube_id": "uB5mVwSRevc",
+    "thumbnail": "https://img.youtube.com/vi/uB5mVwSRevc/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general",
+      "knee-pain"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-for-low-back-pain-relief",
+    "title": "ELDOA Exercises for Low Back Pain Relief",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA postures targeting low back pain relief.",
+    "ailment": [
+      "Low Back Pain",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=UV6EILpoKd0",
+    "youtube_id": "UV6EILpoKd0",
+    "thumbnail": "https://img.youtube.com/vi/UV6EILpoKd0/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "low-back-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l4-l5-eldoa-exercise-for-the-anterior-tibialis",
+    "title": "The L4-L5 ELDOA Exercise for the Anterior Tibialis",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L4-L5",
+    "segments": [
+      "L4-L5"
+    ],
+    "region": "Lumbar",
+    "difficulty": "All Levels",
+    "description": "ELDOA posture at L4-L5 focusing on the anterior tibialis muscle.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/BXHZM9z6t1g",
+    "youtube_id": "BXHZM9z6t1g",
+    "thumbnail": "https://img.youtube.com/vi/BXHZM9z6t1g/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "l4-l5"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "top-5-eldoa-exercises-for-medially-rotated-shoulders",
+    "title": "Top 5 ELDOA Exercises for Medially Rotated Shoulders",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA strategies to correct medially rotated shoulders.",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=Fh764TvKfPE",
+    "youtube_id": "Fh764TvKfPE",
+    "thumbnail": "https://img.youtube.com/vi/Fh764TvKfPE/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l3-l4-eldoa-exercise-for-the-vastus-intermedius",
+    "title": "The L3-L4 ELDOA Exercise for the Vastus Intermedius",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L3-L4",
+    "segments": [
+      "L3-L4"
+    ],
+    "region": "Lumbar",
+    "difficulty": "Intermediate",
+    "description": "ELDOA posture at L3-L4 targeting the vastus intermedius muscle.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/oCJbjedW7vA",
+    "youtube_id": "oCJbjedW7vA",
+    "thumbnail": "https://img.youtube.com/vi/oCJbjedW7vA/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "l3-l4"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-for-low-back-pain-hyperkyphosis-neck-issues",
+    "title": "ELDOA Exercises for Low Back Pain, Hyperkyphosis, Neck Issues",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Combined ELDOA exercises addressing low back pain, hyperkyphosis and neck issues.",
+    "ailment": [
+      "Low Back Pain",
+      "Hyperkyphosis"
+    ],
+    "url": "https://www.youtube.com/watch?v=0GTuFAj-LRE",
+    "youtube_id": "0GTuFAj-LRE",
+    "thumbnail": "https://img.youtube.com/vi/0GTuFAj-LRE/maxresdefault.jpg",
+    "tags": [
+      "low-back-pain",
+      "hyperkyphosis",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "the-l5-s1-eldoa-exercise-for-the-biceps-femoris-muscle",
+    "title": "The L5-S1 ELDOA Exercise for the Biceps Femoris Muscle",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA posture at L5-S1 targeting the biceps femoris muscle.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/shorts/CGhCN63itno",
+    "youtube_id": "CGhCN63itno",
+    "thumbnail": "https://img.youtube.com/vi/CGhCN63itno/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "low-back-pain-exercise-l5-s1-eldoa-effective-sciatica-relief",
+    "title": "Low Back Pain Exercise: L5-S1 ELDOA | Effective Sciatica Relief",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA posture at L5-S1 for low back pain and sciatica relief.",
+    "ailment": [
+      "Low Back Pain",
+      "Sciatica",
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=YxZl_vRwjec",
+    "youtube_id": "YxZl_vRwjec",
+    "thumbnail": "https://img.youtube.com/vi/YxZl_vRwjec/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "sciatica",
+      "low-back-pain",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "improve-posture-core-strength-and-eliminate-abdominal-pain",
+    "title": "Improve Posture & Core Strength and Eliminate Abdominal Pain",
+    "instructor": "Team Youphoric Health & Performance",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA exercises to improve posture and core strength while relieving abdominal pain.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=P8Q3MXh0vII",
+    "youtube_id": "P8Q3MXh0vII",
+    "thumbnail": "https://img.youtube.com/vi/P8Q3MXh0vII/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "spinal-health-eldoa-l5-s1-w-stefanie-obregozo-fix-back-pain",
+    "title": "Spinal Health | ELDOA L5-S1 w/ Stefanie Obregozo (FIX BACK PAIN!)",
+    "instructor": "Mind Pump TV",
+    "duration": "5:33",
+    "duration_seconds": 333,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Demonstration of ELDOA L5-S1 to fix back pain and improve spinal health.",
+    "ailment": [
+      "Low Back Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=i3Uv8tcjRzQ",
+    "youtube_id": "i3Uv8tcjRzQ",
+    "thumbnail": "https://img.youtube.com/vi/i3Uv8tcjRzQ/maxresdefault.jpg",
+    "tags": [
+      "low-back-pain",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-to-increase-flexibility-improve-posture-relieve-pain-video-1-of-9",
+    "title": "ELDOA Exercises to Increase Flexibility, Improve Posture & Relieve Pain (Video 1 of 9)",
+    "instructor": "Mind Pump TV",
+    "duration": "6:54",
+    "duration_seconds": 414,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Part 1 of a series demonstrating ELDOA exercises to increase flexibility and relieve pain.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=gvhN0563Vks",
+    "youtube_id": "gvhN0563Vks",
+    "thumbnail": "https://img.youtube.com/vi/gvhN0563Vks/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-to-increase-flexibility-improve-posture-relieve-pain-video-2-of-9",
+    "title": "ELDOA Exercises to Increase Flexibility, Improve Posture & Relieve Pain (Video 2 of 9)",
+    "instructor": "Mind Pump TV",
+    "duration": "4:06",
+    "duration_seconds": 246,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Part 2 of ELDOA exercise series for flexibility and posture.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=Z1CqLD_OniA",
+    "youtube_id": "Z1CqLD_OniA",
+    "thumbnail": "https://img.youtube.com/vi/Z1CqLD_OniA/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-to-increase-flexibility-improve-posture-relieve-pain-video-3-of-9",
+    "title": "ELDOA Exercises to Increase Flexibility, Improve Posture & Relieve Pain (Video 3 of 9)",
+    "instructor": "Mind Pump TV",
+    "duration": "8:18",
+    "duration_seconds": 498,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Part 3 of ELDOA exercise series focusing on posture and pain relief.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=iSZK45oUfg8",
+    "youtube_id": "iSZK45oUfg8",
+    "thumbnail": "https://img.youtube.com/vi/iSZK45oUfg8/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-to-increase-flexibility-improve-posture-relieve-pain-video-4-of-9",
+    "title": "ELDOA Exercises to Increase Flexibility, Improve Posture & Relieve Pain (Video 4 of 9)",
+    "instructor": "Mind Pump TV",
+    "duration": "5:12",
+    "duration_seconds": 312,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Part 4 of ELDOA exercise series to improve flexibility and posture.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=9vT0Q8ias3Q",
+    "youtube_id": "9vT0Q8ias3Q",
+    "thumbnail": "https://img.youtube.com/vi/9vT0Q8ias3Q/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-exercises-to-increase-flexibility-improve-posture-relieve-pain-video-5-of-9",
+    "title": "ELDOA Exercises to Increase Flexibility, Improve Posture & Relieve Pain (Video 5 of 9)",
+    "instructor": "Mind Pump TV",
+    "duration": "3:39",
+    "duration_seconds": 219,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Part 5 of ELDOA exercise series for flexibility and pain relief.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=0F19kuvq49A",
+    "youtube_id": "0F19kuvq49A",
+    "thumbnail": "https://img.youtube.com/vi/0F19kuvq49A/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-l5s1-active-low-back-decompression",
+    "title": "E.L.D.O.A. L5/S1 Active Low Back Decompression",
+    "instructor": "Dr. Sofia Costa",
+    "duration": "9:00",
+    "duration_seconds": 540,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Active decompression exercise targeting the L5-S1 segment.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=jaN4xUceNws",
+    "youtube_id": "jaN4xUceNws",
+    "thumbnail": "https://img.youtube.com/vi/jaN4xUceNws/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-30-minute-class-hips-shoulders-spine",
+    "title": "ELDOA™ 30 minute class: hips, shoulders, spine",
+    "instructor": "Sheri Kimura",
+    "duration": "1800:00",
+    "duration_seconds": 108000,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Full class focusing on hips, shoulders and spine using ELDOA.",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=Iw9dlBmdsTo",
+    "youtube_id": "Iw9dlBmdsTo",
+    "thumbnail": "https://img.youtube.com/vi/Iw9dlBmdsTo/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "a-full-body-eldoa-class-shoulders-hips-and-spine",
+    "title": "A full-body ELDOA™ class: Shoulders, Hips, and Spine",
+    "instructor": "Sheri Kimura",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Full-body ELDOA class targeting shoulders, hips and spine.",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=6WU4pFxIch8",
+    "youtube_id": "6WU4pFxIch8",
+    "thumbnail": "https://img.youtube.com/vi/6WU4pFxIch8/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-for-upper-back-shoulders",
+    "title": "ELDOA™ for Upper back & Shoulders",
+    "instructor": "Sheri Kimura",
+    "duration": "1741:00",
+    "duration_seconds": 104460,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA class focusing on the upper back and shoulders.",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=eDmy-x7UQPs",
+    "youtube_id": "eDmy-x7UQPs",
+    "thumbnail": "https://img.youtube.com/vi/eDmy-x7UQPs/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "upper-thoracic-shoulder-neck-eldoa-class",
+    "title": "Upper Thoracic, Shoulder & Neck ELDOA™ class",
+    "instructor": "Sheri Kimura",
+    "duration": "2447:00",
+    "duration_seconds": 146820,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA class targeting upper thoracic, shoulder and neck areas.",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=4cJPHXfokFg",
+    "youtube_id": "4cJPHXfokFg",
+    "thumbnail": "https://img.youtube.com/vi/4cJPHXfokFg/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-beginnerint-general-eldoa-breakdown",
+    "title": "ELDOA™ Beginner/Int: General ELDOA breakdown",
+    "instructor": "Sheri Kimura",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Beginner",
+    "description": "General ELDOA breakdown for beginners and intermediate practitioners.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=eIBxPMB1ZMA",
+    "youtube_id": "eIBxPMB1ZMA",
+    "thumbnail": "https://img.youtube.com/vi/eIBxPMB1ZMA/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "30-min-upper-body-mat-class-eldoa-postures-mobility-core",
+    "title": "30 Min Upper Body Mat Class: ELDOA Postures, Mobility & Core",
+    "instructor": "Sheri Kimura",
+    "duration": "1800:00",
+    "duration_seconds": 108000,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Upper body mat class incorporating ELDOA postures, mobility and core work.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=ZNmDYCVMyNM",
+    "youtube_id": "ZNmDYCVMyNM",
+    "thumbnail": "https://img.youtube.com/vi/ZNmDYCVMyNM/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "40-minute-lower-body-class-eldoa-postures-mobility-work-core",
+    "title": "40 Minute Lower Body Class: ELDOA Postures, Mobility Work & Core",
+    "instructor": "Sheri Kimura",
+    "duration": "2400:00",
+    "duration_seconds": 144000,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Lower body class focusing on ELDOA postures and mobility work with core exercises.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=Pa_tXMe7OI4",
+    "youtube_id": "Pa_tXMe7OI4",
+    "thumbnail": "https://img.youtube.com/vi/Pa_tXMe7OI4/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "6-deep-stretches-for-your-spine-eldoa",
+    "title": "6 Deep Stretches for Your Spine (ELDOA)",
+    "instructor": "Redefined Yoga",
+    "duration": "9:19",
+    "duration_seconds": 559,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Video demonstrating six deep ELDOA stretches for spinal health.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=9obuwVpHNTk",
+    "youtube_id": "9obuwVpHNTk",
+    "thumbnail": "https://img.youtube.com/vi/9obuwVpHNTk/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "spinal-health-eldoa-l5-s1-episode-009",
+    "title": "Spinal Health - ELDOA L5-S1 | Episode 009",
+    "instructor": "Carolyn Zepf",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "L5-S1",
+    "segments": [
+      "L5-S1"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Episode focusing on ELDOA L5-S1 for spinal health.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=7jsMF_G0u6c",
+    "youtube_id": "7jsMF_G0u6c",
+    "thumbnail": "https://img.youtube.com/vi/7jsMF_G0u6c/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "l5-s1"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-30-minute-hips-shoulders-spine-class",
+    "title": "ELDOA™ 30-minute Hips, Shoulders & Spine class",
+    "instructor": "Solcore Therapy & Fitness",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA class focusing on hips, shoulders, and spine from Solcore Therapy & Fitness.",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=Iw9dlBmdsTo",
+    "youtube_id": "Iw9dlBmdsTo",
+    "thumbnail": "https://img.youtube.com/vi/Iw9dlBmdsTo/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-upper-back-shoulders-class",
+    "title": "ELDOA™ Upper Back & Shoulders - Class",
+    "instructor": "Solcore Therapy & Fitness",
+    "duration": "0:00",
+    "duration_seconds": 0,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA class targeting upper back and shoulders from Solcore Therapy & Fitness.",
+    "ailment": [
+      "Shoulder Pain"
+    ],
+    "url": "https://www.youtube.com/watch?v=eDmy-x7UQPs",
+    "youtube_id": "eDmy-x7UQPs",
+    "thumbnail": "https://img.youtube.com/vi/eDmy-x7UQPs/maxresdefault.jpg",
+    "tags": [
+      "shoulder-pain",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "30-min-eldoa-class-w-pam-part-one",
+    "title": "30 Min Eldoa Class w/ Pam (Part one)",
+    "instructor": "CU Ravens",
+    "duration": "1839:00",
+    "duration_seconds": 110340,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "Beginner",
+    "description": "Half-hour ELDOA class for beginners with instructor Pam.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=Rl1l08mnyGQ",
+    "youtube_id": "Rl1l08mnyGQ",
+    "thumbnail": "https://img.youtube.com/vi/Rl1l08mnyGQ/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "30-min-eldoa-class-w-pam-part-two",
+    "title": "30 Min Eldoa Class w/ Pam (Part two)",
+    "instructor": "CU Ravens",
+    "duration": "1900:00",
+    "duration_seconds": 114000,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "Continuation of the 30-minute ELDOA class with Pam.",
+    "ailment": [
+      "General Spinal Health"
+    ],
+    "url": "https://www.youtube.com/watch?v=LTSclCe2XUY",
+    "youtube_id": "LTSclCe2XUY",
+    "thumbnail": "https://img.youtube.com/vi/LTSclCe2XUY/maxresdefault.jpg",
+    "tags": [
+      "general-spinal-health",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
+  },
+  {
+    "id": "eldoa-flow-for-the-neck",
+    "title": "ELDOA Flow for the Neck",
+    "instructor": "Stone Bodyworks Fitness",
+    "duration": "278:00",
+    "duration_seconds": 16680,
+    "segment": "General",
+    "segments": [
+      "General"
+    ],
+    "region": "Lumbosacral",
+    "difficulty": "All Levels",
+    "description": "ELDOA postures for T1-2, C4-5 & C6-7. Performed regularly, these postures can help create space in the cervical spine to aid in its longevity and resilience.",
+    "ailment": [
+      "Postural Issues"
+    ],
+    "url": "https://www.youtube.com/watch?v=60ZSc6xl4Dc",
+    "youtube_id": "60ZSc6xl4Dc",
+    "thumbnail": "https://img.youtube.com/vi/60ZSc6xl4Dc/maxresdefault.jpg",
+    "tags": [
+      "postural-issues",
+      "general"
+    ],
+    "equipment": "Mat or comfortable surface",
+    "source": "YouTube",
+    "date_added": "2025-01-18"
   }
 ]
