@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Interactive ELDOA Diagnostic - Find Your Perfect Exercise | ELDOA AI</title>
+  <meta name="description" content="Tap your body where it hurts. Get instant ELDOA exercise recommendations based on your pain location, condition, or goal. Mobile-first interactive diagnostic tool."/>
+  <meta name="keywords" content="ELDOA diagnostic, body pain map, spinal segment selector, ELDOA exercise finder, interactive body map"/>
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="canonical" href="https://eldoa.ai/diagnostic"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://eldoa.ai/diagnostic"/>
+  <meta property="og:title" content="Interactive ELDOA Diagnostic - Find Your Perfect Exercise"/>
+  <meta property="og:description" content="Tap your body where it hurts. Get instant, personalized ELDOA exercise recommendations."/>
+  <meta property="og:image" content="/images/og-diagnostic.jpg"/>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MedicalWebPage",
+    "name": "ELDOA Interactive Diagnostic Tool",
+    "description": "Interactive body map diagnostic tool for ELDOA exercise selection",
+    "mainEntity": {
+      "@type": "MedicalCondition",
+      "name": "Musculoskeletal Pain",
+      "possibleTreatment": {
+        "@type": "TherapeuticProcedure",
+        "name": "ELDOA Exercises"
+      }
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #475569;
+      --brand: #2f2fe6;
+      --brand-2: #0891b2;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --ok: #15803d;
+      --warn: #f59e0b;
+      --err: #dc2626;
+    }
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #c7d2fe;
+      --brand: #8b5cf6;
+      --brand-2: #22d3ee;
+      --card: #111827;
+      --border: #262b36;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container { width: min(1100px, 94vw); margin: 0 auto; padding: 1rem 0; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(1.2) blur(8px);
+      background: color-mix(in oklab, var(--bg), transparent 20%);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--fg);
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2));
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      margin: 1.5rem 0 .5rem;
+      line-height: 1.1;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 65ch;
+      margin-bottom: 2rem;
+    }
+
+    /* Interactive Body Map */
+    .body-map-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    @media(min-width: 900px) {
+      .body-map-container {
+        grid-template-columns: 1fr 1.2fr;
+      }
+    }
+
+    .body-diagram {
+      position: relative;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .body-svg {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .body-region {
+      cursor: pointer;
+      transition: all .2s ease;
+      fill: color-mix(in oklab, var(--brand), transparent 85%);
+      stroke: var(--brand);
+      stroke-width: 2;
+    }
+
+    .body-region:hover {
+      fill: color-mix(in oklab, var(--brand), transparent 60%);
+      transform: scale(1.05);
+    }
+
+    .body-region.active {
+      fill: var(--brand);
+      stroke: var(--brand-2);
+      stroke-width: 3;
+      animation: pulse 1.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: .7; }
+    }
+
+    .results-panel {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      background: color-mix(in oklab, var(--bg), var(--card) 35%);
+      min-height: 400px;
+    }
+
+    .results-panel h2 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .result-card {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+      margin: .75rem 0;
+      background: var(--bg);
+    }
+
+    .result-card h3 {
+      font-size: 1.1rem;
+      margin-bottom: .5rem;
+      color: var(--brand);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: .2rem .6rem;
+      border-radius: 999px;
+      font-size: .75rem;
+      font-weight: 700;
+      background: color-mix(in oklab, var(--brand), transparent 85%);
+      color: var(--brand);
+      margin-right: .4rem;
+      margin-bottom: .4rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: .6rem 1rem;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--brand);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: .5rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      filter: brightness(1.1);
+    }
+
+    .placeholder {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--muted);
+    }
+
+    .placeholder svg {
+      width: 80px;
+      height: 80px;
+      margin: 0 auto 1rem;
+      opacity: .3;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark"></span>
+        <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+      </a>
+      <a href="/" style="text-decoration:none;color:var(--muted);font-size:.9rem">← Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Where Does It Hurt?</h1>
+    <p class="intro">
+      Tap any area on the body diagram below to discover targeted ELDOA exercises for your specific concern.
+      Our AI-guided diagnostic tool matches your pain location or condition with evidence-based protocols.
+    </p>
+
+    <div class="body-map-container">
+      <!-- Body Diagram (SVG) -->
+      <div class="body-diagram">
+        <svg class="body-svg" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
+          <!-- Head/Cervical -->
+          <ellipse class="body-region" data-region="c1-c2" cx="100" cy="30" rx="25" ry="20"/>
+          <text x="100" y="35" text-anchor="middle" font-size="10" fill="currentColor">C1-C2</text>
+
+          <!-- Upper Cervical -->
+          <rect class="body-region" data-region="c4-c5" x="75" y="50" width="50" height="25" rx="8"/>
+          <text x="100" y="67" text-anchor="middle" font-size="10" fill="currentColor">C4-C5</text>
+
+          <!-- Cervicothoracic Junction -->
+          <rect class="body-region" data-region="c7-t1" x="70" y="80" width="60" height="25" rx="8"/>
+          <text x="100" y="97" text-anchor="middle" font-size="10" fill="currentColor">C7-T1</text>
+
+          <!-- Upper Thoracic -->
+          <rect class="body-region" data-region="upper-thoracic" x="65" y="110" width="70" height="40" rx="8"/>
+          <text x="100" y="135" text-anchor="middle" font-size="10" fill="currentColor">Upper T</text>
+
+          <!-- Thoracolumbar Junction -->
+          <rect class="body-region" data-region="t12-l1" x="70" y="155" width="60" height="30" rx="8"/>
+          <text x="100" y="175" text-anchor="middle" font-size="10" fill="currentColor">T12-L1</text>
+
+          <!-- Mid Lumbar -->
+          <rect class="body-region" data-region="l4-l5" x="75" y="190" width="50" height="30" rx="8"/>
+          <text x="100" y="210" text-anchor="middle" font-size="10" fill="currentColor">L4-L5</text>
+
+          <!-- Lumbosacral -->
+          <rect class="body-region" data-region="l5-s1" x="75" y="225" width="50" height="30" rx="8"/>
+          <text x="100" y="245" text-anchor="middle" font-size="10" fill="currentColor">L5-S1</text>
+
+          <!-- Sacrum/SI Joint -->
+          <ellipse class="body-region" data-region="sacrum" cx="100" cy="275" rx="30" ry="20"/>
+          <text x="100" y="280" text-anchor="middle" font-size="10" fill="currentColor">Sacrum</text>
+
+          <!-- Hip Left -->
+          <circle class="body-region" data-region="hip-left" cx="70" cy="310" r="20"/>
+          <text x="70" y="315" text-anchor="middle" font-size="9" fill="currentColor">L Hip</text>
+
+          <!-- Hip Right -->
+          <circle class="body-region" data-region="hip-right" cx="130" cy="310" r="20"/>
+          <text x="130" y="315" text-anchor="middle" font-size="9" fill="currentColor">R Hip</text>
+
+          <!-- Shoulder Left -->
+          <circle class="body-region" data-region="shoulder-left" cx="50" cy="120" r="18"/>
+          <text x="50" y="125" text-anchor="middle" font-size="8" fill="currentColor">L Sh</text>
+
+          <!-- Shoulder Right -->
+          <circle class="body-region" data-region="shoulder-right" cx="150" cy="120" r="18"/>
+          <text x="150" y="125" text-anchor="middle" font-size="8" fill="currentColor">R Sh</text>
+        </svg>
+
+        <p style="text-align:center;margin-top:1rem;color:var(--muted);font-size:.85rem">
+          <strong>Pro tip:</strong> On mobile, use your phone's gyroscope to check your posture while exploring!
+        </p>
+      </div>
+
+      <!-- Results Panel -->
+      <div class="results-panel">
+        <div id="results">
+          <div class="placeholder">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+            </svg>
+            <h2>Select a body region to begin</h2>
+            <p>Tap any highlighted area on the body diagram to see personalized ELDOA exercise recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    // Body region database
+    const regionData = {
+      'c1-c2': {
+        name: 'Upper Cervical (C1-C2)',
+        commonIssues: ['Cervicogenic headaches', 'Dizziness', 'Post-concussion syndrome', 'Vestibular dysfunction'],
+        exercises: [
+          { name: 'C1-C2 Rotation ELDOA', difficulty: 'Intermediate', url: '/library/c1-c2-rotation' },
+          { name: 'Upper Cervical Decompression', difficulty: 'Beginner', url: '/library/upper-cervical' }
+        ],
+        description: 'The atlanto-axial joint allowing 90% of head rotation. Critical for eye-cervical relationships and concussion recovery.',
+        videos: ['cervical-reset-text-neck']
+      },
+      'c4-c5': {
+        name: 'Mid-Cervical (C4-C5)',
+        commonIssues: ['Neck pain', 'Disc herniation', 'Radiculopathy', 'Shoulder referral pain'],
+        exercises: [
+          { name: 'C4-C5 Flexion ELDOA', difficulty: 'Beginner-Intermediate', url: '/library/c4-c5-flexion' }
+        ],
+        description: 'Common site of cervical disc pathology. Affects shoulder and arm function.',
+        videos: ['cervical-reset-text-neck']
+      },
+      'c7-t1': {
+        name: 'Cervicothoracic Junction (C7-T1)',
+        commonIssues: ['Text neck', 'Upper crossed syndrome', 'Thoracic outlet syndrome', 'Postural dysfunction'],
+        exercises: [
+          { name: 'C7-T1 Extension ELDOA', difficulty: 'Advanced', url: '/library/c7-t1-extension' }
+        ],
+        description: 'Critical transition zone. Stress concentration site. Perfect for text neck and office workers.',
+        evidence: 'Superior results vs conventional exercises (7-8° craniovertebral angle improvement)',
+        videos: ['cervical-reset-text-neck', 'desk-worker-micro-breaks'],
+        sportSpecific: ['Baseball (pitchers)', 'Tennis', 'Swimming']
+      },
+      't12-l1': {
+        name: 'Thoracolumbar Junction (T12-L1)',
+        commonIssues: ['Rotational injuries', 'Low back pain', 'Compression fractures'],
+        exercises: [
+          { name: 'T12-L1 Lateral Flexion ELDOA', difficulty: 'Intermediate-Advanced', url: '/library/t12-l1' }
+        ],
+        description: 'Accounts for 25-50% of traumatic spinal fractures. Fulcrum between rigid thoracic and mobile lumbar.',
+        videos: ['thoracolumbar-baseball'],
+        sportSpecific: ['Golf', 'Baseball', 'Hockey', 'Tennis']
+      },
+      'l4-l5': {
+        name: 'Lower Lumbar (L4-L5)',
+        commonIssues: ['Disc herniation', 'Low back pain', 'Degenerative disc disease', 'Sitting-related pain'],
+        exercises: [
+          { name: 'L4-L5 Flexion ELDOA', difficulty: 'Beginner-Intermediate', url: '/library/l4-l5-flexion' }
+        ],
+        description: 'Greatest height decrease after 4+ hours sitting. Perfect for office workers.',
+        evidence: 'Sitting increases intradiscal pressure 30% vs standing',
+        videos: ['desk-worker-micro-breaks']
+      },
+      'l5-s1': {
+        name: 'Lumbosacral Junction (L5-S1)',
+        commonIssues: ['Sciatica', 'Disc herniation', 'Low back pain', 'Spondylolisthesis'],
+        exercises: [
+          { name: 'L5-S1 Decompression ELDOA', difficulty: 'Beginner', url: '/library/l5-s1-decompression' },
+          { name: 'L5-S1 Extension ELDOA', difficulty: 'Intermediate', url: '/library/l5-s1-extension' }
+        ],
+        description: 'Most common site of disc herniation. Bears highest loads in spine. Essential for athletes.',
+        evidence: 'Strong clinical evidence + RCT validation. 40-60% pain reduction in VAS scores',
+        videos: ['l5-s1-beginner-intro', 'hip-basketball-landing'],
+        sportSpecific: ['Basketball', 'Volleyball', 'Track & Field']
+      },
+      'sacrum': {
+        name: 'Sacrum & SI Joint',
+        commonIssues: ['SI joint dysfunction', 'Low back pain', 'Pelvic instability'],
+        exercises: [
+          { name: 'Sacral Nutation ELDOA', difficulty: 'Beginner', url: '/library/sacral-nutation' }
+        ],
+        description: 'Sacroiliac joint connects spine to pelvis. Critical for load transfer.',
+        videos: ['l5-s1-beginner-intro']
+      },
+      'shoulder-left': {
+        name: 'Left Shoulder',
+        commonIssues: ['Rotator cuff', 'Impingement', 'Cervical referral'],
+        exercises: [
+          { name: 'C7-T1 for Shoulder', difficulty: 'Intermediate', url: '/library/c7-t1-shoulder' }
+        ],
+        description: 'Often related to cervical dysfunction. Address cervicothoracic junction first.',
+        videos: ['cervical-reset-text-neck']
+      },
+      'shoulder-right': {
+        name: 'Right Shoulder',
+        commonIssues: ['Rotator cuff', 'Impingement', 'Cervical referral'],
+        exercises: [
+          { name: 'C7-T1 for Shoulder', difficulty: 'Intermediate', url: '/library/c7-t1-shoulder' }
+        ],
+        description: 'Often related to cervical dysfunction. Address cervicothoracic junction first.',
+        videos: ['cervical-reset-text-neck']
+      },
+      'hip-left': {
+        name: 'Left Hip',
+        commonIssues: ['FAI', 'Hip flexor tightness', 'Anterior pelvic tilt'],
+        exercises: [
+          { name: 'Hip Joint ELDOA', difficulty: 'Intermediate', url: '/library/hip-joint' }
+        ],
+        description: 'Hip joint decompression for FAI, anterior pelvic tilt, and flexibility.',
+        videos: ['hip-basketball-landing']
+      },
+      'hip-right': {
+        name: 'Right Hip',
+        commonIssues: ['FAI', 'Hip flexor tightness', 'Anterior pelvic tilt'],
+        exercises: [
+          { name: 'Hip Joint ELDOA', difficulty: 'Intermediate', url: '/library/hip-joint' }
+        ],
+        description: 'Hip joint decompression for FAI, anterior pelvic tilt, and flexibility.',
+        videos: ['hip-basketball-landing']
+      }
+    };
+
+    // Handle region clicks
+    document.querySelectorAll('.body-region').forEach(region => {
+      region.addEventListener('click', function() {
+        const regionId = this.getAttribute('data-region');
+        const data = regionData[regionId];
+
+        // Update active state
+        document.querySelectorAll('.body-region').forEach(r => r.classList.remove('active'));
+        this.classList.add('active');
+
+        // Render results
+        renderResults(data);
+      });
+    });
+
+    function renderResults(data) {
+      const resultsDiv = document.getElementById('results');
+
+      let html = `
+        <h2>${data.name}</h2>
+        <p style="margin-bottom:1rem">${data.description}</p>
+
+        ${data.evidence ? `<p style="padding:.75rem;background:color-mix(in oklab,var(--ok),transparent 90%);border-radius:8px;margin-bottom:1rem;font-size:.9rem"><strong>Evidence:</strong> ${data.evidence}</p>` : ''}
+
+        <h3 style="font-size:1rem;margin:1.5rem 0 .75rem">Common Issues:</h3>
+        <div>
+          ${data.commonIssues.map(issue => `<span class="badge">${issue}</span>`).join('')}
+        </div>
+
+        <h3 style="font-size:1rem;margin:1.5rem 0 .75rem">Recommended ELDOA Exercises:</h3>
+      `;
+
+      data.exercises.forEach(ex => {
+        html += `
+          <div class="result-card">
+            <h3>${ex.name}</h3>
+            <div><span class="badge">${ex.difficulty}</span></div>
+            <a href="${ex.url}" class="btn">View Exercise →</a>
+          </div>
+        `;
+      });
+
+      if (data.sportSpecific) {
+        html += `
+          <h3 style="font-size:1rem;margin:1.5rem 0 .75rem">Especially Important For:</h3>
+          <div>
+            ${data.sportSpecific.map(sport => `<span class="badge" style="background:color-mix(in oklab,var(--brand-2),transparent 85%);color:var(--brand-2)">${sport}</span>`).join('')}
+          </div>
+        `;
+      }
+
+      if (data.videos) {
+        html += `
+          <h3 style="font-size:1rem;margin:1.5rem 0 .75rem">Instructional Videos:</h3>
+          <a href="/videos/?segment=${data.videos[0]}" class="btn">Watch Video Library →</a>
+        `;
+      }
+
+      resultsDiv.innerHTML = html;
+    }
+  </script>
+</body>
+</html>

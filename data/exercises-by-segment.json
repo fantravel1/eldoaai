@@ -1,0 +1,126 @@
+[
+  {
+    "segment": "C1-C2",
+    "name": "Upper Cervical (Atlas-Axis)",
+    "region": "Cervical",
+    "description": "The atlanto-axial joint allowing head rotation. Critical for vestibular function, eye-cervical relationships, and concussion recovery.",
+    "common_issues": ["Cervicogenic headaches", "Dizziness", "Upper cervical instability", "Post-concussion syndrome"],
+    "eldoa_positions": [
+      {
+        "name": "C1-C2 Rotation ELDOA",
+        "difficulty": "Intermediate",
+        "hold_time": "60-90 seconds",
+        "breathing_pattern": "Slow diaphragmatic, 6 breaths/minute",
+        "key_cues": ["Chin tuck", "Axial elongation", "Gentle rotation", "Maintain eye level"]
+      }
+    ],
+    "anatomical_notes": "90% of cervical rotation occurs at C1-C2. Vertebral artery considerations critical.",
+    "evidence": "Strong mechanistic support for cervico-ocular reflex optimization",
+    "related_conditions": ["Text neck", "Vestibular dysfunction", "Cervicogenic dizziness"]
+  },
+  {
+    "segment": "C4-C5",
+    "name": "Mid-Cervical",
+    "region": "Cervical",
+    "description": "Common site of cervical disc pathology and nerve root compression affecting shoulder and arm.",
+    "common_issues": ["Disc herniation", "Radiculopathy", "Neck pain", "Shoulder referral pain"],
+    "eldoa_positions": [
+      {
+        "name": "C4-C5 Flexion ELDOA",
+        "difficulty": "Beginner-Intermediate",
+        "hold_time": "60 seconds minimum",
+        "breathing_pattern": "Deep diaphragmatic",
+        "key_cues": ["Forward head translation", "Maintain neutral lower cervical", "Chin to throat", "Breathe into back of neck"]
+      }
+    ],
+    "anatomical_notes": "Nerve roots C5 (deltoid/biceps) and C6 (wrist extensors) exit here. High disc degeneration prevalence.",
+    "evidence": "Clinical studies show 40-60% pain reduction in VAS scores",
+    "related_conditions": ["Cervical radiculopathy", "Shoulder impingement secondary to cervical"]
+  },
+  {
+    "segment": "C7-T1",
+    "name": "Cervicothoracic Junction",
+    "region": "Cervical-Thoracic Transition",
+    "description": "Critical transition zone where mobile cervical spine meets rigid thoracic cage. Stress concentration and injury susceptibility site.",
+    "common_issues": ["Junction syndrome", "Thoracic outlet syndrome", "Rotational asymmetries", "Postural dysfunction"],
+    "eldoa_positions": [
+      {
+        "name": "C7-T1 Extension ELDOA",
+        "difficulty": "Advanced",
+        "hold_time": "60-90 seconds",
+        "breathing_pattern": "Controlled, avoid apnea",
+        "key_cues": ["Upper thoracic extension", "Maintain cervical length", "Shoulder blade depression", "Breathe into upper back"]
+      }
+    ],
+    "anatomical_notes": "Half the flexibility of cervical spine. Curvature reversal from lordosis to kyphosis. Critical for overhead athletes.",
+    "evidence": "Strong biomechanical rationale for baseball/softball players (thoracolumbar asymmetries)",
+    "related_conditions": ["Text neck", "Upper crossed syndrome", "Thoracic outlet syndrome"],
+    "sport_specific": ["Baseball (pitchers)", "Tennis", "Swimming", "Volleyball"]
+  },
+  {
+    "segment": "T12-L1",
+    "name": "Thoracolumbar Junction",
+    "region": "Thoracic-Lumbar Transition",
+    "description": "Accounts for 25-50% of traumatic spinal fractures. Fulcrum between inflexible thoracic and mobile lumbar regions.",
+    "common_issues": ["Compression fractures", "Rotational injuries", "Disc pathology", "Spondylolysis"],
+    "eldoa_positions": [
+      {
+        "name": "T12-L1 Lateral Flexion ELDOA",
+        "difficulty": "Intermediate-Advanced",
+        "hold_time": "60 seconds per side",
+        "breathing_pattern": "Expand into concave side",
+        "key_cues": ["Maintain frontal plane", "Avoid rotation", "Lengthen both sides", "Breathe into ribs"]
+      }
+    ],
+    "anatomical_notes": "Transition from fixed ribs to mobile lumbar. High rotational stress in athletes. Diaphragm attachment at T12.",
+    "evidence": "Biomechanical studies on junction vulnerability + clinical outcomes",
+    "related_conditions": ["Low back pain", "Rotational sports injuries", "Scheuermann's disease"],
+    "sport_specific": ["Golf", "Baseball", "Hockey", "Tennis (serving)"]
+  },
+  {
+    "segment": "L4-L5",
+    "name": "Lower Lumbar",
+    "region": "Lumbar",
+    "description": "Second most common site of disc herniation. Greatest height decrease after prolonged sitting (4+ hours).",
+    "common_issues": ["Disc herniation", "Degenerative disc disease", "Facet arthropathy", "Stenosis"],
+    "eldoa_positions": [
+      {
+        "name": "L4-L5 Flexion ELDOA",
+        "difficulty": "Beginner-Intermediate",
+        "hold_time": "60-90 seconds",
+        "breathing_pattern": "Deep belly breathing",
+        "key_cues": ["Posterior pelvic tilt", "Lengthen low back", "Knees to chest variation", "Breathe into lumbar spine"]
+      }
+    ],
+    "anatomical_notes": "Sitting increases intradiscal pressure 30% vs standing. Creep deformation occurs within 2-4 hours.",
+    "evidence": "RCT showing superiority to McKenzie exercises for non-specific low back pain",
+    "related_conditions": ["Sciatica", "Office worker syndrome", "Prolonged sitting pathology"]
+  },
+  {
+    "segment": "L5-S1",
+    "name": "Lumbosacral Junction",
+    "region": "Lumbar-Sacral Transition",
+    "description": "Bears highest loads in spine. Steeper disc inclination increases shear stresses. Most common site of disc herniation and spondylolysis.",
+    "common_issues": ["Disc herniation", "Spondylolisthesis", "Spondylolysis", "Sciatica", "Sacroiliac dysfunction"],
+    "eldoa_positions": [
+      {
+        "name": "L5-S1 Decompression ELDOA",
+        "difficulty": "Beginner",
+        "hold_time": "60-90 seconds",
+        "breathing_pattern": "Diaphragmatic, breathe into low back",
+        "key_cues": ["Posterior pelvic tilt", "Sacral nutation", "Lengthen lumbosacral angle", "Ground through feet"]
+      },
+      {
+        "name": "L5-S1 Extension ELDOA",
+        "difficulty": "Intermediate",
+        "hold_time": "60 seconds",
+        "breathing_pattern": "Avoid holding breath",
+        "key_cues": ["Anterior pelvic tilt with control", "Maintain abdominal engagement", "Lengthen through crown", "Breathe into belly"]
+      }
+    ],
+    "anatomical_notes": "Highest loads in spine. L5 nerve root exits here (dorsiflexion weakness sign). Disc inclination creates shear stress.",
+    "evidence": "Strong clinical evidence + biomechanical validation. Proven benefits for athletes (basketball landing forces 1,066 lbs)",
+    "related_conditions": ["Sciatica", "Disc herniation", "Low back pain", "Anterior pelvic tilt", "Achilles tendinopathy (posterior chain)"],
+    "sport_specific": ["Basketball", "Volleyball", "Track & Field (jumping)", "Gymnastics"]
+  }
+]
