@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>About ELDOA AI — A Movement to Share Guy Voyer's Legacy</title>
+  <meta name="description" content="A collective of ELDOA practitioners united to deliver the best free resources on one of the world's best-kept secrets. Honoring Dr. Guy Voyer's pioneering work."/>
+  <meta name="keywords" content="ELDOA, Guy Voyer, about ELDOA AI, ELDOA practitioners, contact"/>
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://eldoa.ai/about.html"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://eldoa.ai/about.html"/>
+  <meta property="og:title" content="About ELDOA AI — A Movement to Share Guy Voyer's Legacy"/>
+  <meta property="og:description" content="A collective of ELDOA practitioners united to deliver the best free resources on one of the world's best-kept secrets."/>
+  <meta property="og:image" content="/images/og-image.jpg"/>
+
+  <!-- App / PWA friendliness -->
+  <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #475569;
+      --brand: #2f2fe6;
+      --brand-2: #0891b2;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --ok: #15803d;
+      --warn: #a16207;
+      --err: #b91c1c;
+    }
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #c7d2fe;
+      --brand: #8b5cf6;
+      --brand-2: #22d3ee;
+      --card: #111827;
+      --border: #262b36;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --err: #ef4444;
+    }
+
+    html, body {height: 100%;}
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--bg); color: var(--fg);
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 92vw); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg), transparent 20%); border-bottom: 1px solid var(--border); }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding: .75rem 0; }
+    .logo { display:flex; align-items:center; gap:.6rem; font-weight:800; letter-spacing:.2px; }
+    .logo-mark { width:32px; height:32px; border-radius:8px; background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2)); box-shadow: 0 0 0 2px color-mix(in oklab, var(--bg), transparent 65%); }
+    .nav a { font-weight:600; }
+    .nav-right { display:flex; align-items:center; gap:.75rem; }
+    .nav-links { display:flex; align-items:center; gap:.5rem; }
+    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.65rem .9rem; border-radius:12px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); color: var(--fg); font-weight:700; }
+    .btn:hover { filter: brightness(1.03); }
+    .switch { cursor:pointer; border:1px solid var(--border); border-radius:999px; padding:.3rem; display:flex; align-items:center; gap:.3rem; }
+    .switch span { display:inline-block; width:20px; height:20px; border-radius:999px; background: var(--brand); }
+
+    /* Hamburger */
+    .hamburger { display:none; width:40px; height:40px; border-radius:10px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); align-items:center; justify-content:center; }
+    .hamburger svg { width:22px; height:22px; }
+    .mobile-menu { position:fixed; inset:56px 0 auto 0; background: var(--bg); border-bottom:1px solid var(--border); box-shadow: 0 10px 30px color-mix(in oklab, #000, transparent 70%); z-index:49; transform: translateY(-8px); opacity:0; pointer-events:none; transition: transform .18s ease, opacity .18s ease; }
+    .mobile-menu.open { transform: translateY(0); opacity:1; pointer-events:auto; }
+    .mobile-menu .menu-inner { padding: .75rem; display:grid; gap:.5rem; }
+    .mobile-menu a { display:block; padding:.9rem 1rem; border:1px solid var(--border); border-radius:12px; background: color-mix(in oklab, var(--bg), var(--card) 35%); font-weight:700; text-align:center; }
+
+    /* Hero */
+    .hero { padding: 3rem 0 2rem; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5.5vw, 3.5rem); line-height:1.08; margin:.3rem 0 .75rem; max-width: 24ch; margin-left: auto; margin-right: auto; }
+    .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
+    .sub { color: var(--muted); max-width: 66ch; font-size: 1.1rem; line-height: 1.6; margin: 0 auto 2rem; }
+
+    /* Sections */
+    section { padding: 2.5rem 0; border-top: 1px solid var(--border); }
+    h2 { font-size: clamp(1.4rem, 3.8vw, 2rem); margin: 0 0 .5rem; }
+    h3 { font-size: clamp(1.1rem, 2.8vw, 1.4rem); margin: .5rem 0 .4rem; }
+    p.section-sub { color: var(--muted); margin:.1rem 0 1.5rem; max-width: 68ch; line-height: 1.65; }
+
+    .card { border:1px solid var(--border); border-radius:18px; padding: 1.5rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); margin-bottom: 1.5rem; }
+    .tribute-card { background: linear-gradient(135deg, color-mix(in oklab, var(--brand), transparent 92%), color-mix(in oklab, var(--brand-2), transparent 92%)); border: 2px solid var(--border); }
+
+    .grid { display:grid; grid-template-columns:1fr; gap:1.25rem; margin-top: 1.5rem; }
+    @media(min-width:760px){ .grid { grid-template-columns: repeat(2, 1fr);} }
+
+    .profile { display: flex; align-items: start; gap: 1rem; }
+    .profile-icon { width: 56px; height: 56px; border-radius: 12px; background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2)); display: grid; place-items: center; font-size: 1.6rem; flex-shrink: 0; }
+
+    /* Footer */
+    footer { padding:2rem 0 4rem; border-top:1px solid var(--border); color: var(--muted); }
+
+    /* Accessibility helpers */
+    .sr-only { position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    /* Responsive adjustments */
+    @media(max-width: 720px){
+      .nav-links { display:none; }
+      .hamburger { display:inline-flex; }
+      .nav { padding: .5rem 0; }
+      header .btn { padding:.55rem .75rem; }
+      .container { width: min(1000px, 94vw); }
+      .profile { flex-direction: column; text-align: center; align-items: center; }
+    }
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header role="banner">
+    <div class="container nav" aria-label="Primary">
+      <a class="logo" href="/" aria-label="ELDOA AI Home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Primary links">
+          <a href="/research/" class="btn">🔬 Research</a>
+          <a href="/diagnostic.html" class="btn">🎯 Diagnostic Tool</a>
+          <a href="/videos/" class="btn">📹 Videos</a>
+          <a href="/kids/" class="btn">📚 Kids Guide</a>
+          <a href="/encyclopedia.html" class="btn">📖 Encyclopedia</a>
+        </nav>
+        <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <button id="themeToggle" class="switch" aria-label="Toggle dark/light theme"><span></span></button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <div class="menu-inner container">
+        <a href="/research/">🔬 Research & Evidence</a>
+        <a href="/diagnostic.html">🎯 Interactive Diagnostic</a>
+        <a href="/videos/">📹 Complete Video Library</a>
+        <a href="/kids/">📚 Kids Pocket Guide</a>
+        <a href="/encyclopedia.html">📖 Complete Encyclopedia</a>
+        <a href="/about.html">About & Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="kicker">About ELDOA AI</div>
+      <h1 id="hero-title">A Movement to Share One of the World's <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Best-Kept Secrets</span></h1>
+      <p class="sub">We are a collective of ELDOA practitioners coming together to deliver the best materials and free resources about ELDOA — a transformative methodology for spinal health, fascial integrity, and human movement excellence.</p>
+    </section>
+
+    <!-- MISSION -->
+    <section id="mission" aria-labelledby="mission-title">
+      <h2 id="mission-title">Our Mission</h2>
+      <p class="section-sub">ELDOA has remained one of the world's best-kept secrets for too long. This platform exists to change that — bringing together practitioners, educators, and advocates to create a comprehensive, accessible, and freely available resource for anyone seeking to understand and practice ELDOA.</p>
+
+      <div class="card">
+        <h3>🌍 A Global Collective</h3>
+        <p>ELDOA AI is not the work of a single individual — it's a collaborative movement. Practitioners from around the world contribute their knowledge, videos, research, and insights to ensure this platform represents the breadth and depth of ELDOA practice.</p>
+      </div>
+
+      <div class="card">
+        <h3>📚 Comprehensive & Free</h3>
+        <p>We believe transformative knowledge should be accessible to all. That's why every resource on ELDOA AI — from our 629-page encyclopedia to our 115+ video tutorials — is completely free. No paywalls. No hidden fees. Just pure, evidence-based ELDOA education.</p>
+      </div>
+
+      <div class="card">
+        <h3>🎯 Evidence-Based Excellence</h3>
+        <p>Every page, video, and protocol on this platform is built on the foundation of evidence-based practice. We honor the rigor and precision that defines ELDOA by ensuring our resources meet the highest standards of accuracy and clarity.</p>
+      </div>
+    </section>
+
+    <!-- TRIBUTE TO DR. GUY VOYER -->
+    <section id="tribute" aria-labelledby="tribute-title">
+      <h2 id="tribute-title">Honoring Dr. Guy Voyer, DO</h2>
+      <p class="section-sub">None of this would exist without the pioneering vision, relentless innovation, and unwavering dedication of Dr. Guy Voyer.</p>
+
+      <div class="card tribute-card">
+        <div style="text-align: center; padding: 1rem 0;">
+          <div style="font-size: 4rem; margin-bottom: 1rem;">🙏</div>
+          <h3 style="font-size: clamp(1.3rem, 3.2vw, 1.7rem); margin-bottom: .75rem;">With Deep Respect and Appreciation</h3>
+          <p style="font-size: 1.05rem; line-height: 1.7; max-width: 58ch; margin: 0 auto; color: var(--fg);">
+            Dr. Guy Voyer is the creator of ELDOA — a methodology that has transformed countless lives by addressing spinal health, fascial integrity, and human biomechanics with unparalleled precision. His decades of research, teaching, and clinical practice have established ELDOA as one of the most sophisticated and effective approaches to movement and musculoskeletal health in the world.
+          </p>
+          <p style="font-size: 1.05rem; line-height: 1.7; max-width: 58ch; margin: 1.25rem auto 0; color: var(--fg);">
+            This platform exists to honor his legacy and share his teachings with the world. Every resource here is built on the foundation he established — and we carry forward his commitment to excellence, precision, and truth in practice.
+          </p>
+          <p style="font-size: 1.15rem; font-weight: 700; margin-top: 1.5rem; color: var(--brand);">
+            Thank you, Dr. Voyer, for showing us a better way.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACKNOWLEDGMENTS -->
+    <section id="acknowledgments" aria-labelledby="acknowledgments-title">
+      <h2 id="acknowledgments-title">Special Thanks</h2>
+      <p class="section-sub">This project would not have reached thousands without the support and expertise of dedicated partners who believe in the mission.</p>
+
+      <div class="grid">
+        <div class="card">
+          <div class="profile">
+            <div class="profile-icon">🎬</div>
+            <div>
+              <h3 style="margin-top: 0;">Pillar Media</h3>
+              <p style="color: var(--muted); margin-bottom: .75rem;"><a href="https://www.pillarme.com" target="_blank" rel="noopener">www.pillarme.com</a></p>
+              <p>Pillar Media has been instrumental in amplifying this project to thousands online. Their expertise in digital strategy, content distribution, and audience engagement has helped transform ELDOA AI from a vision into a platform that's reaching practitioners and seekers around the globe.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="profile">
+            <div class="profile-icon">💪</div>
+            <div>
+              <h3 style="margin-top: 0;">Ben Velazquez</h3>
+              <p style="color: var(--muted); margin-bottom: .75rem;"><a href="https://www.benvelazquez.com" target="_blank" rel="noopener">www.benvelazquez.com</a></p>
+              <p>Ben Velazquez has been a driving force in bringing ELDOA to a wider audience. His passion for movement, education, and helping others has been vital in pushing this project forward and ensuring it reaches the people who need it most.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Get in Touch</h2>
+      <p class="section-sub">Have questions? Want to contribute? Looking to connect with the community? We'd love to hear from you.</p>
+
+      <div class="card">
+        <h3>📧 Contact Information</h3>
+        <p style="margin-bottom: 1rem;">For general inquiries, contributions, practitioner applications, or partnership opportunities, please reach out:</p>
+        <p><strong>Email:</strong> <a href="mailto:contact@eldoa.ai">contact@eldoa.ai</a></p>
+      </div>
+
+      <div class="grid" style="margin-top: 1.5rem;">
+        <div class="card">
+          <h3>🤝 Contribute Resources</h3>
+          <p>Are you a certified ELDOA practitioner with videos, articles, or research to share? We welcome contributions from the global community.</p>
+          <a class="btn" href="mailto:contact@eldoa.ai?subject=Resource%20Contribution">Submit Resources</a>
+        </div>
+
+        <div class="card">
+          <h3>🩺 Join as a Practitioner</h3>
+          <p>Want to be listed in our practitioner directory? Help us connect people with qualified ELDOA professionals worldwide.</p>
+          <a class="btn" href="mailto:contact@eldoa.ai?subject=Practitioner%20Directory">Apply to Directory</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMMUNITY PRINCIPLES -->
+    <section id="principles" aria-labelledby="principles-title">
+      <h2 id="principles-title">Our Principles</h2>
+      <p class="section-sub">The values that guide everything we do.</p>
+
+      <div class="grid">
+        <div class="card">
+          <h3>🎓 Education First</h3>
+          <p>We prioritize clarity, accuracy, and depth in everything we create. ELDOA deserves rigorous, thoughtful education.</p>
+        </div>
+
+        <div class="card">
+          <h3>🌐 Open Access</h3>
+          <p>Knowledge should be free and accessible. We are committed to keeping all resources available to everyone, everywhere.</p>
+        </div>
+
+        <div class="card">
+          <h3>🔬 Evidence-Based</h3>
+          <p>We build on science, research, and clinical experience — not trends or hype.</p>
+        </div>
+
+        <div class="card">
+          <h3>🤲 Community-Driven</h3>
+          <p>This platform thrives because of the practitioners, educators, and advocates who contribute their expertise and passion.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container" style="display:grid; gap:1rem">
+      <div><strong>ELDOA AI</strong> — Knowledge • Videos • Practitioners</div>
+      <div style="display:flex; gap:.75rem; flex-wrap:wrap">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/contribute">Contribute</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/terms">Terms</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <small>Educational content only — not medical advice. Built with respect for Dr. Guy Voyer's legacy.</small>
+    </div>
+  </footer>
+
+  <script>
+    // THEME TOGGLE
+    (function(){
+      const root = document.documentElement;
+      const btn = document.getElementById('themeToggle');
+      const key = 'theme';
+      const metaLight = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: light)"]') || document.querySelector('meta[name="theme-color"]');
+      const metaDark = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: dark)"]');
+      const setTheme = (mode) => {
+        root.setAttribute('data-theme', mode);
+        localStorage.setItem(key, mode);
+        if (metaLight && metaDark) {
+          if (mode === 'dark') { metaDark.setAttribute('content', '#0b0d12'); metaLight.setAttribute('content', '#0b0d12'); }
+          else { metaLight.setAttribute('content', '#ffffff'); metaDark.setAttribute('content', '#ffffff'); }
+        }
+      };
+      setTheme(localStorage.getItem(key) === 'dark' ? 'dark' : 'light');
+      btn.addEventListener('click', () => setTheme((root.getAttribute('data-theme')||'light') === 'light' ? 'dark' : 'light'));
+    })();
+
+    // MOBILE MENU
+    (function(){
+      const toggle = document.getElementById('menuToggle');
+      const panel = document.getElementById('mobileMenu');
+      if (!toggle || !panel) return;
+      const open = () => { panel.hidden = false; panel.classList.add('open'); toggle.setAttribute('aria-expanded','true'); document.documentElement.style.overflow='hidden'; };
+      const close = () => { panel.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); document.documentElement.style.overflow=''; setTimeout(()=>{ panel.hidden = true; }, 180); };
+      toggle.addEventListener('click', ()=>{ panel.hidden || !panel.classList.contains('open') ? open() : close(); });
+      panel.addEventListener('click', (e)=>{ if (e.target === panel) close(); });
+      panel.querySelectorAll('a').forEach(a=> a.addEventListener('click', close));
+      window.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') close(); });
+      window.addEventListener('resize', ()=>{ if (window.innerWidth > 720 && !panel.hidden) close(); });
+    })();
+  </script>
+</body>
+</html>
