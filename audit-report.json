@@ -1,0 +1,785 @@
+{
+  "summary": {
+    "total_files": 629,
+    "audited_files": 629,
+    "average_seo_score": 94.41176470588235,
+    "average_aeo_score": 60.27821939586646,
+    "average_mobile_score": 85.0,
+    "average_overall_score": 79.89666136724964,
+    "min_seo_score": 90.0,
+    "max_seo_score": 100.0,
+    "min_aeo_score": 55.00000000000001,
+    "max_aeo_score": 80.0,
+    "min_mobile_score": 85.0,
+    "max_mobile_score": 85.0
+  },
+  "seo_scores": [],
+  "aeo_scores": [],
+  "mobile_scores": [],
+  "issues": {},
+  "recommendations": [],
+  "pages_needing_attention": {
+    "seo": 0,
+    "aeo": 594,
+    "mobile": 0
+  },
+  "common_issues": {
+    "seo": {
+      "Title length (29) not optimal (30-60 chars)": 70,
+      "Title length (28) not optimal (30-60 chars)": 47,
+      "Meta description length (38) not optimal (120-160 chars)": 17,
+      "Meta description length (39) not optimal (120-160 chars)": 16,
+      "Meta description length (37) not optimal (120-160 chars)": 15,
+      "Meta description length (44) not optimal (120-160 chars)": 15,
+      "Meta description length (43) not optimal (120-160 chars)": 15,
+      "Meta description length (45) not optimal (120-160 chars)": 14,
+      "Meta description length (42) not optimal (120-160 chars)": 14,
+      "Meta description length (36) not optimal (120-160 chars)": 14
+    },
+    "aeo": {
+      "No lists - answer engines favor listed content": 594
+    },
+    "mobile": {}
+  },
+  "top_performers": [
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/connective-tissue.html",
+      "url": "https://eldoa.ai/encyclopedia/connective-tissue",
+      "seo": {
+        "score": 100.0,
+        "max_score": 100,
+        "percentage": 100.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/connective-tissue",
+        "file": "/home/user/eldoaai/public/encyclopedia/connective-tissue.html"
+      },
+      "aeo": {
+        "score": 75,
+        "max_score": 100,
+        "percentage": 75.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/connective-tissue",
+        "file": "/home/user/eldoaai/public/encyclopedia/connective-tissue.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/connective-tissue",
+        "file": "/home/user/eldoaai/public/encyclopedia/connective-tissue.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 100.0,
+        "aeo_score": 75.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/alignment.html",
+      "url": "https://eldoa.ai/encyclopedia/alignment",
+      "seo": {
+        "score": 95.0,
+        "max_score": 100,
+        "percentage": 95.0,
+        "issues": [
+          "Meta description length (69) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/alignment",
+        "file": "/home/user/eldoaai/public/encyclopedia/alignment.html"
+      },
+      "aeo": {
+        "score": 80,
+        "max_score": 100,
+        "percentage": 80.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/alignment",
+        "file": "/home/user/eldoaai/public/encyclopedia/alignment.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/alignment",
+        "file": "/home/user/eldoaai/public/encyclopedia/alignment.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 95.0,
+        "aeo_score": 80.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/fascial-tension.html",
+      "url": "https://eldoa.ai/encyclopedia/fascial-tension",
+      "seo": {
+        "score": 100.0,
+        "max_score": 100,
+        "percentage": 100.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/fascial-tension",
+        "file": "/home/user/eldoaai/public/encyclopedia/fascial-tension.html"
+      },
+      "aeo": {
+        "score": 75,
+        "max_score": 100,
+        "percentage": 75.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/fascial-tension",
+        "file": "/home/user/eldoaai/public/encyclopedia/fascial-tension.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/fascial-tension",
+        "file": "/home/user/eldoaai/public/encyclopedia/fascial-tension.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 100.0,
+        "aeo_score": 75.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/lower-crossed-syndrome.html",
+      "url": "https://eldoa.ai/encyclopedia/lower-crossed-syndrome",
+      "seo": {
+        "score": 100.0,
+        "max_score": 100,
+        "percentage": 100.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/lower-crossed-syndrome",
+        "file": "/home/user/eldoaai/public/encyclopedia/lower-crossed-syndrome.html"
+      },
+      "aeo": {
+        "score": 75,
+        "max_score": 100,
+        "percentage": 75.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/lower-crossed-syndrome",
+        "file": "/home/user/eldoaai/public/encyclopedia/lower-crossed-syndrome.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/lower-crossed-syndrome",
+        "file": "/home/user/eldoaai/public/encyclopedia/lower-crossed-syndrome.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 100.0,
+        "aeo_score": 75.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/active-fascial-tension.html",
+      "url": "https://eldoa.ai/encyclopedia/active-fascial-tension",
+      "seo": {
+        "score": 100.0,
+        "max_score": 100,
+        "percentage": 100.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/active-fascial-tension",
+        "file": "/home/user/eldoaai/public/encyclopedia/active-fascial-tension.html"
+      },
+      "aeo": {
+        "score": 75,
+        "max_score": 100,
+        "percentage": 75.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/active-fascial-tension",
+        "file": "/home/user/eldoaai/public/encyclopedia/active-fascial-tension.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/active-fascial-tension",
+        "file": "/home/user/eldoaai/public/encyclopedia/active-fascial-tension.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 100.0,
+        "aeo_score": 75.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/thoracic-spine.html",
+      "url": "https://eldoa.ai/encyclopedia/thoracic-spine",
+      "seo": {
+        "score": 95.0,
+        "max_score": 100,
+        "percentage": 95.0,
+        "issues": [
+          "Meta description length (100) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/thoracic-spine",
+        "file": "/home/user/eldoaai/public/encyclopedia/thoracic-spine.html"
+      },
+      "aeo": {
+        "score": 80,
+        "max_score": 100,
+        "percentage": 80.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/thoracic-spine",
+        "file": "/home/user/eldoaai/public/encyclopedia/thoracic-spine.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/thoracic-spine",
+        "file": "/home/user/eldoaai/public/encyclopedia/thoracic-spine.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 95.0,
+        "aeo_score": 80.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/fascial-system.html",
+      "url": "https://eldoa.ai/encyclopedia/fascial-system",
+      "seo": {
+        "score": 100.0,
+        "max_score": 100,
+        "percentage": 100.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/fascial-system",
+        "file": "/home/user/eldoaai/public/encyclopedia/fascial-system.html"
+      },
+      "aeo": {
+        "score": 75,
+        "max_score": 100,
+        "percentage": 75.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/fascial-system",
+        "file": "/home/user/eldoaai/public/encyclopedia/fascial-system.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/fascial-system",
+        "file": "/home/user/eldoaai/public/encyclopedia/fascial-system.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 100.0,
+        "aeo_score": 75.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/forward-head-posture.html",
+      "url": "https://eldoa.ai/encyclopedia/forward-head-posture",
+      "seo": {
+        "score": 95.0,
+        "max_score": 100,
+        "percentage": 95.0,
+        "issues": [
+          "Meta description length (97) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/forward-head-posture",
+        "file": "/home/user/eldoaai/public/encyclopedia/forward-head-posture.html"
+      },
+      "aeo": {
+        "score": 80,
+        "max_score": 100,
+        "percentage": 80.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/forward-head-posture",
+        "file": "/home/user/eldoaai/public/encyclopedia/forward-head-posture.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/forward-head-posture",
+        "file": "/home/user/eldoaai/public/encyclopedia/forward-head-posture.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 95.0,
+        "aeo_score": 80.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/back-pain.html",
+      "url": "https://eldoa.ai/encyclopedia/back-pain",
+      "seo": {
+        "score": 100.0,
+        "max_score": 100,
+        "percentage": 100.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/back-pain",
+        "file": "/home/user/eldoaai/public/encyclopedia/back-pain.html"
+      },
+      "aeo": {
+        "score": 75,
+        "max_score": 100,
+        "percentage": 75.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/back-pain",
+        "file": "/home/user/eldoaai/public/encyclopedia/back-pain.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/back-pain",
+        "file": "/home/user/eldoaai/public/encyclopedia/back-pain.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 100.0,
+        "aeo_score": 75.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/posture.html",
+      "url": "https://eldoa.ai/encyclopedia/posture",
+      "seo": {
+        "score": 95.0,
+        "max_score": 100,
+        "percentage": 95.0,
+        "issues": [
+          "Meta description length (38) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/posture",
+        "file": "/home/user/eldoaai/public/encyclopedia/posture.html"
+      },
+      "aeo": {
+        "score": 80,
+        "max_score": 100,
+        "percentage": 80.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/posture",
+        "file": "/home/user/eldoaai/public/encyclopedia/posture.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/posture",
+        "file": "/home/user/eldoaai/public/encyclopedia/posture.html"
+      },
+      "overall": {
+        "score": 86.66666666666667,
+        "seo_score": 95.0,
+        "aeo_score": 80.0,
+        "mobile_score": 85.0
+      }
+    }
+  ],
+  "needs_improvement": [
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/auto-normalization.html",
+      "url": "https://eldoa.ai/encyclopedia/auto-normalization",
+      "seo": {
+        "score": 95.0,
+        "max_score": 100,
+        "percentage": 95.0,
+        "issues": [
+          "Meta description length (110) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/auto-normalization",
+        "file": "/home/user/eldoaai/public/encyclopedia/auto-normalization.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/auto-normalization",
+        "file": "/home/user/eldoaai/public/encyclopedia/auto-normalization.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/auto-normalization",
+        "file": "/home/user/eldoaai/public/encyclopedia/auto-normalization.html"
+      },
+      "overall": {
+        "score": 78.33333333333333,
+        "seo_score": 95.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/body.html",
+      "url": "https://eldoa.ai/encyclopedia/body",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (28) not optimal (30-60 chars)",
+          "Meta description length (37) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/body",
+        "file": "/home/user/eldoaai/public/encyclopedia/body.html"
+      },
+      "aeo": {
+        "score": 60,
+        "max_score": 100,
+        "percentage": 60.0,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/body",
+        "file": "/home/user/eldoaai/public/encyclopedia/body.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/body",
+        "file": "/home/user/eldoaai/public/encyclopedia/body.html"
+      },
+      "overall": {
+        "score": 78.33333333333333,
+        "seo_score": 90.0,
+        "aeo_score": 60.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/stack.html",
+      "url": "https://eldoa.ai/encyclopedia/stack",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (29) not optimal (30-60 chars)",
+          "Meta description length (68) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/stack",
+        "file": "/home/user/eldoaai/public/encyclopedia/stack.html"
+      },
+      "aeo": {
+        "score": 60,
+        "max_score": 100,
+        "percentage": 60.0,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/stack",
+        "file": "/home/user/eldoaai/public/encyclopedia/stack.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/stack",
+        "file": "/home/user/eldoaai/public/encyclopedia/stack.html"
+      },
+      "overall": {
+        "score": 78.33333333333333,
+        "seo_score": 90.0,
+        "aeo_score": 60.0,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/feet.html",
+      "url": "https://eldoa.ai/encyclopedia/feet",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (28) not optimal (30-60 chars)",
+          "Meta description length (33) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/feet",
+        "file": "/home/user/eldoaai/public/encyclopedia/feet.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/feet",
+        "file": "/home/user/eldoaai/public/encyclopedia/feet.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/feet",
+        "file": "/home/user/eldoaai/public/encyclopedia/feet.html"
+      },
+      "overall": {
+        "score": 76.66666666666667,
+        "seo_score": 90.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/peek.html",
+      "url": "https://eldoa.ai/encyclopedia/peek",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (28) not optimal (30-60 chars)",
+          "Meta description length (42) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/peek",
+        "file": "/home/user/eldoaai/public/encyclopedia/peek.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/peek",
+        "file": "/home/user/eldoaai/public/encyclopedia/peek.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/peek",
+        "file": "/home/user/eldoaai/public/encyclopedia/peek.html"
+      },
+      "overall": {
+        "score": 76.66666666666667,
+        "seo_score": 90.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/care.html",
+      "url": "https://eldoa.ai/encyclopedia/care",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (28) not optimal (30-60 chars)",
+          "Meta description length (44) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/care",
+        "file": "/home/user/eldoaai/public/encyclopedia/care.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/care",
+        "file": "/home/user/eldoaai/public/encyclopedia/care.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/care",
+        "file": "/home/user/eldoaai/public/encyclopedia/care.html"
+      },
+      "overall": {
+        "score": 76.66666666666667,
+        "seo_score": 90.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/lab.html",
+      "url": "https://eldoa.ai/encyclopedia/lab",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (27) not optimal (30-60 chars)",
+          "Meta description length (75) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/lab",
+        "file": "/home/user/eldoaai/public/encyclopedia/lab.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/lab",
+        "file": "/home/user/eldoaai/public/encyclopedia/lab.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/lab",
+        "file": "/home/user/eldoaai/public/encyclopedia/lab.html"
+      },
+      "overall": {
+        "score": 76.66666666666667,
+        "seo_score": 90.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/soft.html",
+      "url": "https://eldoa.ai/encyclopedia/soft",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (28) not optimal (30-60 chars)",
+          "Meta description length (38) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/soft",
+        "file": "/home/user/eldoaai/public/encyclopedia/soft.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/soft",
+        "file": "/home/user/eldoaai/public/encyclopedia/soft.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/soft",
+        "file": "/home/user/eldoaai/public/encyclopedia/soft.html"
+      },
+      "overall": {
+        "score": 76.66666666666667,
+        "seo_score": 90.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/boost.html",
+      "url": "https://eldoa.ai/encyclopedia/boost",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (29) not optimal (30-60 chars)",
+          "Meta description length (38) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/boost",
+        "file": "/home/user/eldoaai/public/encyclopedia/boost.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/boost",
+        "file": "/home/user/eldoaai/public/encyclopedia/boost.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/boost",
+        "file": "/home/user/eldoaai/public/encyclopedia/boost.html"
+      },
+      "overall": {
+        "score": 76.66666666666667,
+        "seo_score": 90.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    },
+    {
+      "file": "/home/user/eldoaai/public/encyclopedia/space.html",
+      "url": "https://eldoa.ai/encyclopedia/space",
+      "seo": {
+        "score": 90.0,
+        "max_score": 100,
+        "percentage": 90.0,
+        "issues": [
+          "Title length (29) not optimal (30-60 chars)",
+          "Meta description length (52) not optimal (120-160 chars)"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/space",
+        "file": "/home/user/eldoaai/public/encyclopedia/space.html"
+      },
+      "aeo": {
+        "score": 55,
+        "max_score": 100,
+        "percentage": 55.00000000000001,
+        "issues": [
+          "No lists - answer engines favor listed content"
+        ],
+        "url": "https://eldoa.ai/encyclopedia/space",
+        "file": "/home/user/eldoaai/public/encyclopedia/space.html"
+      },
+      "mobile": {
+        "score": 85,
+        "max_score": 100,
+        "percentage": 85.0,
+        "issues": [],
+        "url": "https://eldoa.ai/encyclopedia/space",
+        "file": "/home/user/eldoaai/public/encyclopedia/space.html"
+      },
+      "overall": {
+        "score": 76.66666666666667,
+        "seo_score": 90.0,
+        "aeo_score": 55.00000000000001,
+        "mobile_score": 85.0
+      }
+    }
+  ]
+}
