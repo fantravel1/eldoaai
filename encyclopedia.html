@@ -85,12 +85,13 @@
     /* Search */
     .search-box {
       max-width: 600px;
-      margin: 0 auto;
+      margin: 0 auto 2rem;
       position: relative;
     }
     .search-box input {
       width: 100%;
       padding: 1rem 1.5rem;
+      padding-right: 3rem;
       font-size: 1.1rem;
       border: 2px solid var(--border);
       border-radius: 12px;
@@ -101,6 +102,93 @@
     }
     .search-box input:focus {
       border-color: var(--brand);
+    }
+    .search-icon {
+      position: absolute;
+      right: 1.5rem;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--muted);
+      pointer-events: none;
+    }
+
+    /* Autocomplete Dropdown */
+    .autocomplete-dropdown {
+      position: absolute;
+      top: calc(100% + 0.5rem);
+      left: 0;
+      right: 0;
+      background: var(--bg);
+      border: 2px solid var(--brand);
+      border-radius: 12px;
+      max-height: 400px;
+      overflow-y: auto;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      display: none;
+      z-index: 1000;
+    }
+    .autocomplete-dropdown.show {
+      display: block;
+    }
+    .autocomplete-item {
+      padding: 0.75rem 1.5rem;
+      cursor: pointer;
+      transition: background 0.15s;
+      border-bottom: 1px solid var(--border);
+    }
+    .autocomplete-item:last-child {
+      border-bottom: none;
+    }
+    .autocomplete-item:hover,
+    .autocomplete-item.selected {
+      background: var(--card);
+    }
+    .autocomplete-item strong {
+      color: var(--brand);
+      font-weight: 600;
+    }
+    .autocomplete-empty {
+      padding: 1.5rem;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    /* Top Searches */
+    .top-searches {
+      max-width: 600px;
+      margin: 0 auto 1rem;
+    }
+    .top-searches h3 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: var(--muted);
+      margin-bottom: 0.75rem;
+      text-align: center;
+    }
+    .search-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    .search-tag {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      color: var(--fg);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      cursor: pointer;
+    }
+    .search-tag:hover {
+      background: var(--brand);
+      color: white;
+      border-color: var(--brand);
+      transform: translateY(-1px);
     }
 
     /* Alphabet Nav */
@@ -227,6 +315,9 @@
       .letter-section h2 { font-size: 2rem; }
       .entries-grid { grid-template-columns: 1fr; }
       .alphabet-letters a { width: 36px; height: 36px; font-size: 0.9rem; }
+      .search-tag { font-size: 0.85rem; padding: 0.4rem 0.8rem; }
+      .search-box input { font-size: 1rem; padding: 0.875rem 1.25rem; }
+      .autocomplete-item { padding: 0.625rem 1.25rem; font-size: 0.95rem; }
     }
   </style>
 </head>
@@ -245,8 +336,31 @@
       <p class="subtitle">
         Comprehensive A-Z reference with <strong id="totalCount">1198</strong> entries covering ELDOA practice, theory, and terminology
       </p>
+
+      <!-- Top Searches -->
+      <div class="top-searches">
+        <h3>Popular Topics</h3>
+        <div class="search-tags">
+          <span class="search-tag" data-search="fascia">Fascia</span>
+          <span class="search-tag" data-search="lumbar">Lumbar Spine</span>
+          <span class="search-tag" data-search="cervical">Cervical Spine</span>
+          <span class="search-tag" data-search="pain">Pain Management</span>
+          <span class="search-tag" data-search="decompression">Decompression</span>
+          <span class="search-tag" data-search="posture">Posture</span>
+          <span class="search-tag" data-search="scoliosis">Scoliosis</span>
+          <span class="search-tag" data-search="breathing">Breathing</span>
+        </div>
+      </div>
+
+      <!-- Search Box with Autocomplete -->
       <div class="search-box">
         <input type="search" id="searchInput" placeholder="Search encyclopedia entries..." autocomplete="off" />
+        <svg class="search-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 17A8 8 0 1 0 9 1a8 8 0 0 0 0 16zM19 19l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="autocomplete-dropdown" id="autocompleteDropdown">
+          <!-- Populated by JavaScript -->
+        </div>
       </div>
     </div>
   </header>
@@ -348,29 +462,129 @@
       // Initialize search
       initializeSearch();
 
+      // Initialize top searches
+      initializeTopSearches();
+
       // Initialize scroll spy for alphabet nav
       initializeScrollSpy();
     }
 
     function initializeSearch() {
       const searchInput = document.getElementById('searchInput');
+      const autocompleteDropdown = document.getElementById('autocompleteDropdown');
       const entryCards = document.querySelectorAll('.entry-card');
       const letterSections = document.querySelectorAll('.letter-section');
       const noResults = document.getElementById('noResults');
+      let selectedIndex = -1;
+      let allEntries = [];
 
+      // Build searchable entries list
+      entryCards.forEach(card => {
+        allEntries.push({
+          title: card.querySelector('h3').textContent,
+          slug: card.dataset.slug,
+          href: card.href,
+          element: card
+        });
+      });
+
+      // Handle search input with autocomplete
       searchInput.addEventListener('input', (e) => {
         const searchTerm = e.target.value.toLowerCase().trim();
-        let visibleCount = 0;
+        selectedIndex = -1;
 
         if (searchTerm === '') {
-          // Show all
+          // Show all entries
           entryCards.forEach(card => card.style.display = 'block');
           letterSections.forEach(section => section.style.display = 'block');
           noResults.classList.remove('show');
+          autocompleteDropdown.classList.remove('show');
+          autocompleteDropdown.innerHTML = '';
           return;
         }
 
-        // Filter entries
+        // Find matching entries
+        const matches = allEntries.filter(entry =>
+          entry.title.toLowerCase().includes(searchTerm)
+        ).slice(0, 10); // Limit to 10 results
+
+        // Update autocomplete dropdown
+        if (matches.length > 0) {
+          autocompleteDropdown.innerHTML = matches.map((entry, index) => {
+            const titleLower = entry.title.toLowerCase();
+            const termIndex = titleLower.indexOf(searchTerm);
+            let displayTitle = entry.title;
+
+            // Highlight matching text
+            if (termIndex !== -1) {
+              const before = entry.title.substring(0, termIndex);
+              const match = entry.title.substring(termIndex, termIndex + searchTerm.length);
+              const after = entry.title.substring(termIndex + searchTerm.length);
+              displayTitle = `${before}<strong>${match}</strong>${after}`;
+            }
+
+            return `<div class="autocomplete-item" data-index="${index}" data-href="${entry.href}">${displayTitle}</div>`;
+          }).join('');
+          autocompleteDropdown.classList.add('show');
+        } else {
+          autocompleteDropdown.innerHTML = '<div class="autocomplete-empty">No matches found</div>';
+          autocompleteDropdown.classList.add('show');
+        }
+
+        // Filter visible entries on page
+        filterEntries(searchTerm);
+      });
+
+      // Keyboard navigation
+      searchInput.addEventListener('keydown', (e) => {
+        const items = autocompleteDropdown.querySelectorAll('.autocomplete-item');
+
+        if (e.key === 'ArrowDown') {
+          e.preventDefault();
+          selectedIndex = Math.min(selectedIndex + 1, items.length - 1);
+          updateSelection(items);
+        } else if (e.key === 'ArrowUp') {
+          e.preventDefault();
+          selectedIndex = Math.max(selectedIndex - 1, -1);
+          updateSelection(items);
+        } else if (e.key === 'Enter' && selectedIndex >= 0) {
+          e.preventDefault();
+          items[selectedIndex].click();
+        } else if (e.key === 'Escape') {
+          autocompleteDropdown.classList.remove('show');
+          selectedIndex = -1;
+        }
+      });
+
+      // Click on autocomplete item
+      autocompleteDropdown.addEventListener('click', (e) => {
+        const item = e.target.closest('.autocomplete-item');
+        if (item && item.dataset.href) {
+          window.location.href = item.dataset.href;
+        }
+      });
+
+      // Close autocomplete when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!searchInput.contains(e.target) && !autocompleteDropdown.contains(e.target)) {
+          autocompleteDropdown.classList.remove('show');
+        }
+      });
+
+      // Update selected item styling
+      function updateSelection(items) {
+        items.forEach((item, index) => {
+          item.classList.toggle('selected', index === selectedIndex);
+        });
+        if (selectedIndex >= 0 && items[selectedIndex]) {
+          items[selectedIndex].scrollIntoView({ block: 'nearest' });
+        }
+      }
+
+      // Filter entries on page
+      function filterEntries(searchTerm) {
+        let visibleCount = 0;
+
         entryCards.forEach(card => {
           const title = card.dataset.title;
           if (title.includes(searchTerm)) {
@@ -383,7 +597,6 @@
 
         // Hide empty letter sections
         letterSections.forEach(section => {
-          const visibleCards = section.querySelectorAll('.entry-card[style*="display: block"], .entry-card:not([style*="display"])');
           const hasVisibleCards = Array.from(section.querySelectorAll('.entry-card')).some(card =>
             card.style.display !== 'none'
           );
@@ -401,6 +614,32 @@
         } else {
           noResults.classList.remove('show');
         }
+      }
+    }
+
+    // Initialize top searches (popular topics)
+    function initializeTopSearches() {
+      const searchTags = document.querySelectorAll('.search-tag');
+      const searchInput = document.getElementById('searchInput');
+
+      searchTags.forEach(tag => {
+        tag.addEventListener('click', () => {
+          const searchTerm = tag.dataset.search;
+          searchInput.value = searchTerm;
+          searchInput.dispatchEvent(new Event('input'));
+          searchInput.focus();
+
+          // Scroll to results
+          setTimeout(() => {
+            const firstVisibleSection = document.querySelector('.letter-section[style*="display: block"], .letter-section:not([style*="display: none"])');
+            if (firstVisibleSection) {
+              const offset = 100;
+              const elementPosition = firstVisibleSection.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - offset;
+              window.scrollTo({ top: offsetPosition, behavior: 'smooth' });
+            }
+          }, 100);
+        });
       });
     }
 
