@@ -46,7 +46,7 @@
     header {
       background: linear-gradient(135deg, var(--brand), var(--brand-2));
       color: white;
-      padding: 3rem 1rem;
+      padding: 2rem 1rem;
       text-align: center;
       border-radius: 0 0 24px 24px;
       margin-bottom: 2rem;
@@ -212,7 +212,29 @@
     }
   </style>
 </head>
-<body>
+<body>  <header style="background: linear-gradient(135deg, #ff6b6b, #4ecdc4); position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+    <nav class="container" style="display: flex; align-items: center; justify-content: space-between; padding: 1rem;">
+      <a href="/" style="display: flex; align-items: center; gap: 0.5rem; text-decoration: none; color: white; font-weight: 800; font-size: 1.2rem;">
+        <div style="width: 36px; height: 36px; background: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem;">📚</div>
+        <span>ELDOA<span style="opacity: 0.9;"> Kids</span></span>
+      </a>
+      <div class="nav-links" style="display: flex; gap: 1rem; align-items: center;">
+        <a href="/kids/" style="color: white; text-decoration: none; font-weight: 700; padding: 0.5rem 1rem; border-radius: 10px; background: rgba(255,255,255,0.2); transition: background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">Home</a>
+        <a href="/" style="color: white; text-decoration: none; font-weight: 700; padding: 0.5rem 1rem; border-radius: 10px; background: rgba(255,255,255,0.2); transition: background 0.2s;" onmouseover="this.style.background='rgba(255,255,255,0.3)'" onmouseout="this.style.background='rgba(255,255,255,0.2)'">Main Site</a>
+      </div>
+      <button class="mobile-menu-btn" style="display: none; background: rgba(255,255,255,0.2); border: none; padding: 0.5rem; border-radius: 8px; cursor: pointer;" onclick="toggleMobileMenu()">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18"/>
+        </svg>
+      </button>
+    </nav>
+    <div class="mobile-menu" style="display: none; background: linear-gradient(135deg, #ff6b6b, #4ecdc4); padding: 1rem;">
+      <a href="/kids/" style="display: block; color: white; text-decoration: none; font-weight: 700; padding: 0.75rem 1rem; margin-bottom: 0.5rem; border-radius: 10px; background: rgba(255,255,255,0.2); text-align: center;">Home</a>
+      <a href="/" style="display: block; color: white; text-decoration: none; font-weight: 700; padding: 0.75rem 1rem; border-radius: 10px; background: rgba(255,255,255,0.2); text-align: center;">Main Site</a>
+    </div>
+  </header>
+
+
   <header>
     <div class="container">
       <h1><span class="emoji">📚</span> ELDOA Encyclopedia for Kids</h1>
@@ -221,7 +243,7 @@
   </header>
 
   <div class="container">
-    <a href="/kids/" class="back-link">← Back to Kids Home</a>
+    
 
     <div class="search-box">
       <input type="search" id="searchInput" placeholder="🔍 Search for a word..." autocomplete="off" />
@@ -4051,6 +4073,30 @@
         }
       });
     });
+  </script>
+
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.querySelector('.mobile-menu');
+      menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Show mobile menu button on small screens
+    function updateNav() {
+      const mobileBtn = document.querySelector('.mobile-menu-btn');
+      const navLinks = document.querySelector('.nav-links');
+      if (window.innerWidth < 768) {
+        mobileBtn.style.display = 'block';
+        navLinks.style.display = 'none';
+      } else {
+        mobileBtn.style.display = 'none';
+        navLinks.style.display = 'flex';
+        document.querySelector('.mobile-menu').style.display = 'none';
+      }
+    }
+
+    window.addEventListener('resize', updateNav);
+    updateNav();
   </script>
 </body>
 </html>
