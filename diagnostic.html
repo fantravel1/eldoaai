@@ -257,51 +257,51 @@
         <svg class="body-svg" viewBox="0 0 200 500" xmlns="http://www.w3.org/2000/svg">
           <!-- Head/Cervical -->
           <ellipse class="body-region" data-region="c1-c2" cx="100" cy="30" rx="25" ry="20"/>
-          <text x="100" y="35" text-anchor="middle" font-size="10" fill="currentColor">C1-C2</text>
+          <text x="100" y="35" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">C1-C2</text>
 
           <!-- Upper Cervical -->
           <rect class="body-region" data-region="c4-c5" x="75" y="50" width="50" height="25" rx="8"/>
-          <text x="100" y="67" text-anchor="middle" font-size="10" fill="currentColor">C4-C5</text>
+          <text x="100" y="67" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">C4-C5</text>
 
           <!-- Cervicothoracic Junction -->
           <rect class="body-region" data-region="c7-t1" x="70" y="80" width="60" height="25" rx="8"/>
-          <text x="100" y="97" text-anchor="middle" font-size="10" fill="currentColor">C7-T1</text>
+          <text x="100" y="97" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">C7-T1</text>
 
           <!-- Upper Thoracic -->
           <rect class="body-region" data-region="upper-thoracic" x="65" y="110" width="70" height="40" rx="8"/>
-          <text x="100" y="135" text-anchor="middle" font-size="10" fill="currentColor">Upper T</text>
+          <text x="100" y="135" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">Upper T</text>
 
           <!-- Thoracolumbar Junction -->
           <rect class="body-region" data-region="t12-l1" x="70" y="155" width="60" height="30" rx="8"/>
-          <text x="100" y="175" text-anchor="middle" font-size="10" fill="currentColor">T12-L1</text>
+          <text x="100" y="175" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">T12-L1</text>
 
           <!-- Mid Lumbar -->
           <rect class="body-region" data-region="l4-l5" x="75" y="190" width="50" height="30" rx="8"/>
-          <text x="100" y="210" text-anchor="middle" font-size="10" fill="currentColor">L4-L5</text>
+          <text x="100" y="210" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">L4-L5</text>
 
           <!-- Lumbosacral -->
           <rect class="body-region" data-region="l5-s1" x="75" y="225" width="50" height="30" rx="8"/>
-          <text x="100" y="245" text-anchor="middle" font-size="10" fill="currentColor">L5-S1</text>
+          <text x="100" y="245" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">L5-S1</text>
 
           <!-- Sacrum/SI Joint -->
           <ellipse class="body-region" data-region="sacrum" cx="100" cy="275" rx="30" ry="20"/>
-          <text x="100" y="280" text-anchor="middle" font-size="10" fill="currentColor">Sacrum</text>
+          <text x="100" y="280" text-anchor="middle" font-size="10" fill="currentColor" pointer-events="none">Sacrum</text>
 
           <!-- Hip Left -->
           <circle class="body-region" data-region="hip-left" cx="70" cy="310" r="20"/>
-          <text x="70" y="315" text-anchor="middle" font-size="9" fill="currentColor">L Hip</text>
+          <text x="70" y="315" text-anchor="middle" font-size="9" fill="currentColor" pointer-events="none">L Hip</text>
 
           <!-- Hip Right -->
           <circle class="body-region" data-region="hip-right" cx="130" cy="310" r="20"/>
-          <text x="130" y="315" text-anchor="middle" font-size="9" fill="currentColor">R Hip</text>
+          <text x="130" y="315" text-anchor="middle" font-size="9" fill="currentColor" pointer-events="none">R Hip</text>
 
           <!-- Shoulder Left -->
           <circle class="body-region" data-region="shoulder-left" cx="50" cy="120" r="18"/>
-          <text x="50" y="125" text-anchor="middle" font-size="8" fill="currentColor">L Sh</text>
+          <text x="50" y="125" text-anchor="middle" font-size="8" fill="currentColor" pointer-events="none">L Sh</text>
 
           <!-- Shoulder Right -->
           <circle class="body-region" data-region="shoulder-right" cx="150" cy="120" r="18"/>
-          <text x="150" y="125" text-anchor="middle" font-size="8" fill="currentColor">R Sh</text>
+          <text x="150" y="125" text-anchor="middle" font-size="8" fill="currentColor" pointer-events="none">R Sh</text>
         </svg>
 
         <p style="text-align:center;margin-top:1rem;color:var(--muted);font-size:.85rem">
@@ -331,108 +331,164 @@
         name: 'Upper Cervical (C1-C2)',
         commonIssues: ['Cervicogenic headaches', 'Dizziness', 'Post-concussion syndrome', 'Vestibular dysfunction'],
         exercises: [
-          { name: 'C1-C2 Rotation ELDOA', difficulty: 'Intermediate', url: '/library/c1-c2-rotation' },
-          { name: 'Upper Cervical Decompression', difficulty: 'Beginner', url: '/library/upper-cervical' }
+          { name: 'Neck Pain Relief Videos', difficulty: 'All Levels', url: '/videos/?segment=C6-C7' },
+          { name: 'Learn: Upper Cervical', difficulty: 'Encyclopedia', url: '/encyclopedia#cervical-spine' }
         ],
         description: 'The atlanto-axial joint allowing 90% of head rotation. Critical for eye-cervical relationships and concussion recovery.',
-        videos: ['cervical-reset-text-neck']
+        videoLinks: [
+          { title: 'Top 5 ELDOA for Neck Pain', url: '/videos/pages/top-5-eldoa-exercises-for-neck-pain-relief.html' },
+          { title: 'ELDOA Flow for the Neck', url: '/videos/pages/eldoa-flow-for-the-neck.html' }
+        ]
       },
       'c4-c5': {
         name: 'Mid-Cervical (C4-C5)',
         commonIssues: ['Neck pain', 'Disc herniation', 'Radiculopathy', 'Shoulder referral pain'],
         exercises: [
-          { name: 'C4-C5 Flexion ELDOA', difficulty: 'Beginner-Intermediate', url: '/library/c4-c5-flexion' }
+          { name: 'C4-C5 Neck Decompression', difficulty: 'Beginner', url: '/videos/pages/decompress-your-neck-c4-c5-with-eldoa.html' },
+          { name: 'Browse Neck Videos', difficulty: 'All Levels', url: '/videos/?ailment=Neck Pain' }
         ],
         description: 'Common site of cervical disc pathology. Affects shoulder and arm function.',
-        videos: ['cervical-reset-text-neck']
+        videoLinks: [
+          { title: 'Decompress Your Neck (C4-C5)', url: '/videos/pages/decompress-your-neck-c4-c5-with-eldoa.html' },
+          { title: 'Cervical Spine Method', url: '/videos/pages/eldoa-method-cervical-spine.html' }
+        ]
       },
       'c7-t1': {
         name: 'Cervicothoracic Junction (C7-T1)',
         commonIssues: ['Text neck', 'Upper crossed syndrome', 'Thoracic outlet syndrome', 'Postural dysfunction'],
         exercises: [
-          { name: 'C7-T1 Extension ELDOA', difficulty: 'Advanced', url: '/library/c7-t1-extension' }
+          { name: 'C5-C6 Neck Relief', difficulty: 'Beginner', url: '/videos/pages/tight-neck-relief-eldoa-c5-c6.html' },
+          { name: 'C6-C7 Neck Pain Relief', difficulty: 'Beginner', url: '/videos/pages/malcolm-gordon-does-the-c6-c7-eldoa-neck-pain-relief-shorts.html' }
         ],
         description: 'Critical transition zone. Stress concentration site. Perfect for text neck and office workers.',
         evidence: 'Superior results vs conventional exercises (7-8° craniovertebral angle improvement)',
-        videos: ['cervical-reset-text-neck', 'desk-worker-micro-breaks'],
+        videoLinks: [
+          { title: 'Top 5 ELDOA for Neck Pain', url: '/videos/pages/top-5-eldoa-exercises-for-neck-pain-relief.html' },
+          { title: 'ELDOA Flow for Neck', url: '/videos/pages/eldoa-flow-for-the-neck.html' }
+        ],
         sportSpecific: ['Baseball (pitchers)', 'Tennis', 'Swimming']
+      },
+      'upper-thoracic': {
+        name: 'Upper Thoracic Spine',
+        commonIssues: ['Upper back pain', 'Poor posture', 'Breathing dysfunction'],
+        exercises: [
+          { name: 'Upper Thoracic Videos', difficulty: 'All Levels', url: '/videos/?segment=T8-T9' },
+          { name: 'Learn: Thoracic Spine', difficulty: 'Encyclopedia', url: '/public/encyclopedia/thoracic-spine.html' }
+        ],
+        description: 'Upper thoracic region affects breathing, shoulder function, and posture.',
+        videoLinks: [
+          { title: 'Upper Thoracic Method', url: '/videos/pages/owning-your-pain-eldoa-upper-thoracic-spine-method.html' },
+          { title: 'ELDOA for Upper Back & Shoulders', url: '/videos/pages/eldoa-for-upper-back-shoulders.html' }
+        ]
       },
       't12-l1': {
         name: 'Thoracolumbar Junction (T12-L1)',
         commonIssues: ['Rotational injuries', 'Low back pain', 'Compression fractures'],
         exercises: [
-          { name: 'T12-L1 Lateral Flexion ELDOA', difficulty: 'Intermediate-Advanced', url: '/library/t12-l1' }
+          { name: 'T8-T9 Posture Correction', difficulty: 'Intermediate', url: '/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html' },
+          { name: 'Thoracic Spine Method', difficulty: 'Beginner', url: '/videos/pages/eldoa-method-thoracic-spine.html' }
         ],
         description: 'Accounts for 25-50% of traumatic spinal fractures. Fulcrum between rigid thoracic and mobile lumbar.',
-        videos: ['thoracolumbar-baseball'],
+        videoLinks: [
+          { title: 'T8-T9 ELDOA', url: '/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html' },
+          { title: 'The Daily ELDOA Circuit', url: '/videos/pages/the-eldoa-you-can-do-every-day-l4-l5-t12-l1-t8-t9-l5-s1.html' }
+        ],
         sportSpecific: ['Golf', 'Baseball', 'Hockey', 'Tennis']
       },
       'l4-l5': {
         name: 'Lower Lumbar (L4-L5)',
         commonIssues: ['Disc herniation', 'Low back pain', 'Degenerative disc disease', 'Sitting-related pain'],
         exercises: [
-          { name: 'L4-L5 Flexion ELDOA', difficulty: 'Beginner-Intermediate', url: '/library/l4-l5-flexion' }
+          { name: 'L4-L5 Low Back & Hip Pain', difficulty: 'Beginner', url: '/videos/pages/l4l5-eldoa-for-low-back-pain-and-hip-pain.html' },
+          { name: 'Browse Low Back Videos', difficulty: 'All Levels', url: '/videos/?ailment=Low Back Pain' }
         ],
         description: 'Greatest height decrease after 4+ hours sitting. Perfect for office workers.',
         evidence: 'Sitting increases intradiscal pressure 30% vs standing',
-        videos: ['desk-worker-micro-breaks']
+        videoLinks: [
+          { title: 'L4-L5 for Low Back & Hip Pain', url: '/videos/pages/l4l5-eldoa-for-low-back-pain-and-hip-pain.html' },
+          { title: 'ELDOA Flow for L4-L5 & L2-L3', url: '/videos/pages/eldoa-flow-for-l4-l5-l2-l3.html' }
+        ]
       },
       'l5-s1': {
         name: 'Lumbosacral Junction (L5-S1)',
         commonIssues: ['Sciatica', 'Disc herniation', 'Low back pain', 'Spondylolisthesis'],
         exercises: [
-          { name: 'L5-S1 Decompression ELDOA', difficulty: 'Beginner', url: '/library/l5-s1-decompression' },
-          { name: 'L5-S1 Extension ELDOA', difficulty: 'Intermediate', url: '/library/l5-s1-extension' }
+          { name: 'L5-S1 Sciatica Relief', difficulty: 'Beginner', url: '/videos/pages/l5s1-eldoa-for-low-back-pain-and-sciatica.html' },
+          { name: 'L5-S1 Effective Relief', difficulty: 'Beginner', url: '/videos/pages/low-back-pain-exercise-l5-s1-eldoa-effective-sciatica-relief.html' }
         ],
         description: 'Most common site of disc herniation. Bears highest loads in spine. Essential for athletes.',
         evidence: 'Strong clinical evidence + RCT validation. 40-60% pain reduction in VAS scores',
-        videos: ['l5-s1-beginner-intro', 'hip-basketball-landing'],
+        videoLinks: [
+          { title: 'L5-S1 for Sciatica', url: '/videos/pages/l5s1-eldoa-for-low-back-pain-and-sciatica.html' },
+          { title: 'L5-S1 Guided Exercise', url: '/videos/pages/eldoa-l5-s1-guided-exercise.html' },
+          { title: 'Fix Back Pain (L5-S1)', url: '/videos/pages/spinal-health-eldoa-l5-s1-w-stefanie-obregozo-fix-back-pain.html' }
+        ],
         sportSpecific: ['Basketball', 'Volleyball', 'Track & Field']
       },
       'sacrum': {
         name: 'Sacrum & SI Joint',
         commonIssues: ['SI joint dysfunction', 'Low back pain', 'Pelvic instability'],
         exercises: [
-          { name: 'Sacral Nutation ELDOA', difficulty: 'Beginner', url: '/library/sacral-nutation' }
+          { name: 'Eliminate Glute & Coccyx Pain', difficulty: 'Beginner', url: '/videos/pages/eliminate-glute-pain-eliminate-coccyodynia-with-the-s5-coccyx-eldoa.html' },
+          { name: 'General Low Back Relief', difficulty: 'Beginner', url: '/videos/pages/eliminate-low-back-pain-with-the-general-eldoa-for-spinal-health.html' }
         ],
         description: 'Sacroiliac joint connects spine to pelvis. Critical for load transfer.',
-        videos: ['l5-s1-beginner-intro']
+        videoLinks: [
+          { title: 'S5-Coccyx ELDOA', url: '/videos/pages/eliminate-glute-pain-eliminate-coccyodynia-with-the-s5-coccyx-eldoa.html' },
+          { title: 'General ELDOA for Spinal Health', url: '/videos/pages/general-eldoa-for-spinal-stenosis-and-back-pain.html' }
+        ]
       },
       'shoulder-left': {
         name: 'Left Shoulder',
         commonIssues: ['Rotator cuff', 'Impingement', 'Cervical referral'],
         exercises: [
-          { name: 'C7-T1 for Shoulder', difficulty: 'Intermediate', url: '/library/c7-t1-shoulder' }
+          { name: 'Top 5 Shoulder Pain Relief', difficulty: 'All Levels', url: '/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html' },
+          { name: 'Browse Shoulder Videos', difficulty: 'All Levels', url: '/videos/?ailment=Shoulder Pain' }
         ],
         description: 'Often related to cervical dysfunction. Address cervicothoracic junction first.',
-        videos: ['cervical-reset-text-neck']
+        videoLinks: [
+          { title: 'Top 5 for Shoulder Pain', url: '/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html' },
+          { title: 'Upper Thoracic & Shoulders', url: '/videos/pages/upper-thoracic-shoulder-neck-eldoa-class.html' }
+        ]
       },
       'shoulder-right': {
         name: 'Right Shoulder',
         commonIssues: ['Rotator cuff', 'Impingement', 'Cervical referral'],
         exercises: [
-          { name: 'C7-T1 for Shoulder', difficulty: 'Intermediate', url: '/library/c7-t1-shoulder' }
+          { name: 'Top 5 Shoulder Pain Relief', difficulty: 'All Levels', url: '/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html' },
+          { name: 'Browse Shoulder Videos', difficulty: 'All Levels', url: '/videos/?ailment=Shoulder Pain' }
         ],
         description: 'Often related to cervical dysfunction. Address cervicothoracic junction first.',
-        videos: ['cervical-reset-text-neck']
+        videoLinks: [
+          { title: 'Top 5 for Shoulder Pain', url: '/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html' },
+          { title: 'Eliminate Shoulder/Elbow/Wrist Pain', url: '/videos/pages/eliminate-shoulder-pain-elbow-pain-wrist-pain-hand-pain-improve-grip.html' }
+        ]
       },
       'hip-left': {
         name: 'Left Hip',
         commonIssues: ['FAI', 'Hip flexor tightness', 'Anterior pelvic tilt'],
         exercises: [
-          { name: 'Hip Joint ELDOA', difficulty: 'Intermediate', url: '/library/hip-joint' }
+          { name: 'External Coxo-Femoral Hip ELDOA', difficulty: 'Intermediate', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' },
+          { name: 'Browse Hip Videos', difficulty: 'All Levels', url: '/videos/?ailment=Hip Pain' }
         ],
         description: 'Hip joint decompression for FAI, anterior pelvic tilt, and flexibility.',
-        videos: ['hip-basketball-landing']
+        videoLinks: [
+          { title: 'Eliminate Hip Pain', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' },
+          { title: 'Internal Coxo-Femoral ELDOA', url: '/videos/pages/internal-coxo-femoral-eldoa-for-hip-pain-si-joint-pain-pelvic-.html' }
+        ]
       },
       'hip-right': {
         name: 'Right Hip',
         commonIssues: ['FAI', 'Hip flexor tightness', 'Anterior pelvic tilt'],
         exercises: [
-          { name: 'Hip Joint ELDOA', difficulty: 'Intermediate', url: '/library/hip-joint' }
+          { name: 'External Coxo-Femoral Hip ELDOA', difficulty: 'Intermediate', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' },
+          { name: 'Browse Hip Videos', difficulty: 'All Levels', url: '/videos/?ailment=Hip Pain' }
         ],
         description: 'Hip joint decompression for FAI, anterior pelvic tilt, and flexibility.',
-        videos: ['hip-basketball-landing']
+        videoLinks: [
+          { title: 'Eliminate Hip Pain', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' },
+          { title: 'Internal Coxo-Femoral ELDOA', url: '/videos/pages/internal-coxo-femoral-eldoa-for-hip-pain-si-joint-pain-pelvic-.html' }
+        ]
       }
     };
 
@@ -487,11 +543,19 @@
         `;
       }
 
-      if (data.videos) {
+      if (data.videoLinks && data.videoLinks.length > 0) {
         html += `
-          <h3 style="font-size:1rem;margin:1.5rem 0 .75rem">Instructional Videos:</h3>
-          <a href="/videos/?segment=${data.videos[0]}" class="btn">Watch Video Library →</a>
+          <h3 style="font-size:1rem;margin:1.5rem 0 .75rem">Watch Video Tutorials:</h3>
         `;
+        data.videoLinks.forEach(video => {
+          html += `
+            <div style="margin:.5rem 0">
+              <a href="${video.url}" class="btn" style="width:100%;text-align:left;display:block;padding:.7rem 1rem">
+                ▶ ${video.title}
+              </a>
+            </div>
+          `;
+        });
       }
 
       resultsDiv.innerHTML = html;
