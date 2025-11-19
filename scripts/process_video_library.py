@@ -155,6 +155,7 @@ def generate_slug(title):
 def process_csv_to_json(csv_path, output_json_path):
     """Process CSV and create enhanced video library JSON"""
     videos = []
+    used_ids = {}  # Track used IDs and their counts
 
     with open(csv_path, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
@@ -175,8 +176,14 @@ def process_csv_to_json(csv_path, output_json_path):
             # Parse duration
             duration, duration_seconds = parse_duration(duration_str)
 
-            # Generate unique ID
-            video_id = generate_slug(title)
+            # Generate unique ID with duplicate handling
+            base_id = generate_slug(title)
+            if base_id in used_ids:
+                used_ids[base_id] += 1
+                video_id = f"{base_id}-{used_ids[base_id]}"
+            else:
+                used_ids[base_id] = 0
+                video_id = base_id
 
             # Extract YouTube ID for thumbnail
             youtube_id = extract_youtube_id(link)
