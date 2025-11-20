@@ -599,9 +599,13 @@ def main():
     with open(DATA_FILE, 'r', encoding='utf-8') as f:
         data = json.load(f)
 
-    entries = data['entries']
     by_letter = data['by_letter']
     total_entries = data['total_entries']
+
+    # Collect all entries from by_letter structure
+    entries = []
+    for letter_entries in by_letter.values():
+        entries.extend(letter_entries)
 
     print(f"Found {total_entries} entries")
 
