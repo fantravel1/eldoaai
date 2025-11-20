@@ -90,9 +90,28 @@
     .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); line-height:1.05; margin:.2rem 0 .6rem; }
     .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
     .sub { color: var(--muted); max-width: 58ch; }
-    .widget-card { position:relative; aspect-ratio: 1.2/1; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); display:grid; place-items:center; padding-top: 2rem; }
-    .head-container { width: 200px; height:240px; transform-style: preserve-3d; transition: transform 80ms linear; perspective: 800px; }
-    .head-svg { width: 100%; height: 100%; display: block; }
+    .widget-card { position:relative; aspect-ratio: 1.2/1; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); display:grid; place-items:center; padding-top: 2rem; perspective: 1000px; }
+    .head-container { width: 180px; height:220px; transform-style: preserve-3d; transition: transform 80ms linear; position: relative; }
+    .head-3d { position: absolute; width: 120px; height: 160px; left: 50%; top: 50%; margin-left: -60px; margin-top: -80px; transform-style: preserve-3d; }
+
+    /* 3D Head faces */
+    .head-face { position: absolute; width: 120px; height: 160px; border-radius: 50%; background: color-mix(in oklab, var(--brand), transparent 70%); border: 2px solid color-mix(in oklab, var(--brand), transparent 40%); backface-visibility: visible; }
+    .head-face.front { transform: translateZ(40px); }
+    .head-face.back { transform: translateZ(-40px) rotateY(180deg); background: color-mix(in oklab, var(--brand), transparent 80%); }
+    .head-face.left { width: 80px; left: -40px; transform: rotateY(-90deg) translateZ(20px); border-radius: 50% 0 0 50%; background: color-mix(in oklab, var(--brand), transparent 75%); }
+    .head-face.right { width: 80px; right: -40px; left: auto; transform: rotateY(90deg) translateZ(20px); border-radius: 0 50% 50% 0; background: color-mix(in oklab, var(--brand), transparent 75%); }
+    .head-face.top { height: 80px; border-radius: 50% 50% 30% 30%; transform: rotateX(90deg) translateZ(40px); background: color-mix(in oklab, var(--brand), transparent 78%); }
+
+    /* Facial features on front face */
+    .face-features { position: absolute; width: 100%; height: 100%; transform: translateZ(41px); pointer-events: none; }
+    .eye { position: absolute; width: 14px; height: 18px; border-radius: 50%; background: color-mix(in oklab, var(--brand), transparent 30%); top: 45%; }
+    .eye.left { left: 28%; }
+    .eye.right { right: 28%; }
+    .nose { position: absolute; width: 3px; height: 30px; background: color-mix(in oklab, var(--brand), transparent 50%); top: 50%; left: 50%; margin-left: -1.5px; border-radius: 2px; }
+    .mouth { position: absolute; width: 40px; height: 15px; border: 2px solid color-mix(in oklab, var(--brand), transparent 50%); border-top: none; border-radius: 0 0 50% 50%; top: 68%; left: 50%; margin-left: -20px; }
+
+    /* Neck */
+    .neck { position: absolute; width: 50px; height: 70px; background: color-mix(in oklab, var(--brand), transparent 70%); bottom: -70px; left: 50%; margin-left: -25px; border-radius: 8px; transform-style: preserve-3d; }
     .widget-ui { position:absolute; inset:auto 0 0 0; display:flex; gap:.5rem; padding:.6rem; background: color-mix(in oklab, var(--bg), transparent 35%); backdrop-filter: blur(8px); align-items:center; justify-content:space-between; }
     .widget-ui .status { font-size:.85rem; color: var(--muted); }
 
@@ -186,7 +205,7 @@
           <a href="/research/" class="btn">🔬 Research</a>
           <a href="/diagnostic.html" class="btn">🎯 Diagnostic Tool</a>
           <a href="/videos/" class="btn">📹 Videos</a>
-          <a href="/kids/" class="btn">📚 Kids Guide</a>
+          <a href="/practitioners.html" class="btn">🧑‍⚕️ Practitioners</a>
           <a href="/encyclopedia.html" class="btn">📖 Encyclopedia</a>
         </nav>
         <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
@@ -200,9 +219,9 @@
         <a href="/research/">🔬 Research & Evidence</a>
         <a href="/diagnostic.html">🎯 Interactive Diagnostic</a>
         <a href="/videos/">📹 Complete Video Library</a>
-        <a href="/kids/">📚 Kids Pocket Guide</a>
+        <a href="/practitioners.html">🧑‍⚕️ Find Practitioners</a>
         <a href="/encyclopedia.html">📖 Complete Encyclopedia</a>
-        <a href="#practitioners" rel="nofollow">Practitioners</a>
+        <a href="#practitioners" rel="nofollow">About Practitioners</a>
         <a href="#philosophy">Philosophies</a>
       </div>
     </div>
@@ -226,24 +245,26 @@
         <div class="widget-card" aria-live="polite" aria-busy="false">
           <div id="uprightBanner" class="widget-banner" aria-hidden="true">Hold phone upright</div>
           <div id="uprightCue" class="widget-cue" aria-hidden="true">HEAD UP — TUCK CHIN</div>
-          <div id="headContainer" class="head-container" role="img" aria-label="Interactive orientation head - mimics your posture">
-            <svg class="head-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+          <div id="headContainer" class="head-container" role="img" aria-label="Interactive orientation head - mirrors your posture">
+            <div class="head-3d">
+              <!-- 3D Head faces -->
+              <div class="head-face front"></div>
+              <div class="head-face back"></div>
+              <div class="head-face left"></div>
+              <div class="head-face right"></div>
+              <div class="head-face top"></div>
+
+              <!-- Facial features -->
+              <div class="face-features">
+                <div class="eye left"></div>
+                <div class="eye right"></div>
+                <div class="nose"></div>
+                <div class="mouth"></div>
+              </div>
+
               <!-- Neck -->
-              <rect x="42" y="85" width="16" height="25" rx="4" fill="color-mix(in oklab, var(--brand), transparent 70%)" opacity="0.8"/>
-
-              <!-- Head shape -->
-              <ellipse cx="50" cy="50" rx="28" ry="35" fill="color-mix(in oklab, var(--brand), transparent 70%)" stroke="color-mix(in oklab, var(--brand), transparent 40%)" stroke-width="2" opacity="0.9"/>
-
-              <!-- Eyes -->
-              <ellipse cx="40" cy="45" rx="4" ry="5" fill="color-mix(in oklab, var(--brand), transparent 30%)" opacity="0.85"/>
-              <ellipse cx="60" cy="45" rx="4" ry="5" fill="color-mix(in oklab, var(--brand), transparent 30%)" opacity="0.85"/>
-
-              <!-- Subtle nose indication -->
-              <line x1="50" y1="50" x2="50" y2="58" stroke="color-mix(in oklab, var(--brand), transparent 50%)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
-
-              <!-- Subtle mouth -->
-              <path d="M 42 68 Q 50 71 58 68" stroke="color-mix(in oklab, var(--brand), transparent 50%)" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
-            </svg>
+              <div class="neck"></div>
+            </div>
           </div>
           <div class="widget-ui">
             <div class="status" id="gyroStatus">Optimal phone angle: <strong>inactive</strong> <span id="gyroReadout" class="readout"></span></div>
@@ -381,18 +402,48 @@
 
     <!-- PRACTITIONERS DIRECTORY -->
     <section id="practitioners" aria-labelledby="pract-title">
-      <h2 id="pract-title">Practitioners — Worldwide</h2>
-      <p class="section-sub">We’re assembling a verified index. Meanwhile, find guidance from certified professionals.</p>
-      <div class="grid" id="practGrid">
+      <h2 id="pract-title">🧑‍⚕️ Find Certified ELDOA Practitioners</h2>
+      <p class="section-sub">Comprehensive directory of <strong>61 verified ELDOA practitioners</strong> from France and the United States. Search by location, certification level, specializations, and more.</p>
+
+      <div class="grid" style="margin-bottom:1.5rem">
+        <article class="card" style="text-align:center">
+          <div style="font-size:2.5rem;font-weight:700;color:var(--brand);margin-bottom:.5rem">61</div>
+          <h3 style="font-size:1rem;margin:0">Total Practitioners</h3>
+          <p class="meta">Verified profiles worldwide</p>
+        </article>
+        <article class="card" style="text-align:center">
+          <div style="font-size:2.5rem;font-weight:700;color:var(--brand);margin-bottom:.5rem">46</div>
+          <h3 style="font-size:1rem;margin:0">USA Level 4 Trainers</h3>
+          <p class="meta">Certified across 9 states</p>
+        </article>
+        <article class="card" style="text-align:center">
+          <div style="font-size:2.5rem;font-weight:700;color:var(--brand);margin-bottom:.5rem">15</div>
+          <h3 style="font-size:1rem;margin:0">France Practitioners</h3>
+          <p class="meta">Birthplace of ELDOA</p>
+        </article>
+      </div>
+
+      <div class="grid">
         <article class="card">
-          <h3>Join the Directory</h3>
-          <p class="meta">For certified ELDOA practitioners</p>
-          <a class="btn" href="/expert/apply">Apply</a>
+          <h3>Search Directory</h3>
+          <p>Filter by country, state, certification level, and specializations. View detailed profiles with contact information.</p>
+          <a class="btn" href="/practitioners.html">Browse All Practitioners →</a>
         </article>
         <article class="card">
-          <h3>Request a Practitioner</h3>
-          <p class="meta">Tell us your city + goals</p>
-          <a class="btn" href="/expert/request">Request</a>
+          <h3>Top Specializations</h3>
+          <p class="meta">Featured expertise areas</p>
+          <ul style="margin:.5rem 0 0;padding-left:1.5rem;line-height:1.8">
+            <li>Chronic pain management</li>
+            <li>Sports performance & rehab</li>
+            <li>Post-surgical recovery</li>
+            <li>Golf-specific fitness</li>
+            <li>Pre/postnatal care</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Notable Practitioners</h3>
+          <p>Work with practitioners who have served Olympic athletes, professional sports teams (MLB, NFL, NBA, NHL), and specialized in advanced ELDOA therapy.</p>
+          <a class="btn" href="/practitioners.html?level=4">View Level 4 Trainers →</a>
         </article>
       </div>
     </section>
@@ -494,7 +545,13 @@
         statusEl.style.color = level==="ok"?"var(--ok)":level==="warn"?"var(--warn)":level==="err"?"var(--err)":"var(--muted)";
       };
 
-      const render = (a, b, g) => { headContainer.style.transform = `rotateX(${b}deg) rotateY(${a}deg) rotateZ(${g}deg)`; };
+      const render = (a, b, g) => {
+        // Mirror the rotation: when phone is upright (beta=90), head faces forward (rotateX=0)
+        // When phone is flat (beta=0), head tilts back (rotateX=90)
+        const mirrorBeta = 90 - b;
+        const mirrorAlpha = -a; // Also invert left/right for true mirror effect
+        headContainer.style.transform = `rotateX(${mirrorBeta}deg) rotateY(${mirrorAlpha}deg) rotateZ(${-g}deg)`;
+      };
 
       const getAngle = () => {
         if (screen.orientation && typeof screen.orientation.angle === 'number') return screen.orientation.angle;
