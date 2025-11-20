@@ -1,5 +1,5 @@
 {
-  "total_entries": 1198,
+  "total_entries": 629,
   "by_letter": {
     "M": [
       {
@@ -23,41 +23,6 @@
         "file": "map.html"
       },
       {
-        "title": "map",
-        "slug": "map",
-        "file": "map.html"
-      },
-      {
-        "title": "map",
-        "slug": "map",
-        "file": "map.html"
-      },
-      {
-        "title": "map",
-        "slug": "map",
-        "file": "map.html"
-      },
-      {
-        "title": "map",
-        "slug": "map",
-        "file": "map.html"
-      },
-      {
-        "title": "map",
-        "slug": "map",
-        "file": "map.html"
-      },
-      {
-        "title": "map",
-        "slug": "map",
-        "file": "map.html"
-      },
-      {
-        "title": "map",
-        "slug": "map",
-        "file": "map.html"
-      },
-      {
         "title": "mapping",
         "slug": "mapping",
         "file": "mapping.html"
@@ -66,11 +31,6 @@
         "title": "match",
         "slug": "match",
         "file": "match.html"
-      },
-      {
-        "title": "materials",
-        "slug": "materials",
-        "file": "materials.html"
       },
       {
         "title": "materials",
@@ -113,11 +73,6 @@
         "file": "messages.html"
       },
       {
-        "title": "messages",
-        "slug": "messages",
-        "file": "messages.html"
-      },
-      {
         "title": "microscopy",
         "slug": "microscopy",
         "file": "microscopy.html"
@@ -138,21 +93,6 @@
         "file": "model.html"
       },
       {
-        "title": "model",
-        "slug": "model",
-        "file": "model.html"
-      },
-      {
-        "title": "model",
-        "slug": "model",
-        "file": "model.html"
-      },
-      {
-        "title": "modifications",
-        "slug": "modifications",
-        "file": "modifications.html"
-      },
-      {
         "title": "modifications",
         "slug": "modifications",
         "file": "modifications.html"
@@ -166,26 +106,6 @@
         "title": "monster",
         "slug": "monster",
         "file": "monster.html"
-      },
-      {
-        "title": "monster",
-        "slug": "monster",
-        "file": "monster.html"
-      },
-      {
-        "title": "monster",
-        "slug": "monster",
-        "file": "monster.html"
-      },
-      {
-        "title": "montage",
-        "slug": "montage",
-        "file": "montage.html"
-      },
-      {
-        "title": "montage",
-        "slug": "montage",
-        "file": "montage.html"
       },
       {
         "title": "montage",
@@ -213,24 +133,9 @@
         "file": "moves.html"
       },
       {
-        "title": "moves",
-        "slug": "moves",
-        "file": "moves.html"
-      },
-      {
-        "title": "moves",
-        "slug": "moves",
-        "file": "moves.html"
-      },
-      {
         "title": "movies",
         "slug": "movies",
         "file": "movies.html"
-      },
-      {
-        "title": "moving",
-        "slug": "moving",
-        "file": "moving.html"
       },
       {
         "title": "moving",
@@ -251,21 +156,6 @@
         "title": "Muscle Activation Patterns",
         "slug": "muscle-activation-patterns",
         "file": "muscle-activation-patterns.html"
-      },
-      {
-        "title": "muscles",
-        "slug": "muscles",
-        "file": "muscles.html"
-      },
-      {
-        "title": "muscles",
-        "slug": "muscles",
-        "file": "muscles.html"
-      },
-      {
-        "title": "muscles",
-        "slug": "muscles",
-        "file": "muscles.html"
       },
       {
         "title": "muscles",
@@ -295,16 +185,6 @@
         "file": "neck.html"
       },
       {
-        "title": "neck",
-        "slug": "neck",
-        "file": "neck.html"
-      },
-      {
-        "title": "neck",
-        "slug": "neck",
-        "file": "neck.html"
-      },
-      {
         "title": "Neck Pain",
         "slug": "neck-pain",
         "file": "neck-pain.html"
@@ -313,16 +193,6 @@
         "title": "needed",
         "slug": "needed",
         "file": "needed.html"
-      },
-      {
-        "title": "needed",
-        "slug": "needed",
-        "file": "needed.html"
-      },
-      {
-        "title": "needs",
-        "slug": "needs",
-        "file": "needs.html"
       },
       {
         "title": "needs",
@@ -375,11 +245,6 @@
         "file": "normal.html"
       },
       {
-        "title": "normal",
-        "slug": "normal",
-        "file": "normal.html"
-      },
-      {
         "title": "Normalization",
         "slug": "normalization",
         "file": "normalization.html"
@@ -415,11 +280,6 @@
         "title": "Osteopathy",
         "slug": "osteopathy",
         "file": "osteopathy.html"
-      },
-      {
-        "title": "ouchies",
-        "slug": "ouchies",
-        "file": "ouchies.html"
       },
       {
         "title": "ouchies",
@@ -494,11 +354,6 @@
         "file": "adaptations.html"
       },
       {
-        "title": "adaptations",
-        "slug": "adaptations",
-        "file": "adaptations.html"
-      },
-      {
         "title": "alert",
         "slug": "alert",
         "file": "alert.html"
@@ -515,11 +370,6 @@
       },
       {
         "title": "Alignment",
-        "slug": "alignment",
-        "file": "alignment.html"
-      },
-      {
-        "title": "alignment",
         "slug": "alignment",
         "file": "alignment.html"
       },
@@ -549,44 +399,9 @@
         "file": "analysis.html"
       },
       {
-        "title": "analysis",
-        "slug": "analysis",
-        "file": "analysis.html"
-      },
-      {
-        "title": "analysis",
-        "slug": "analysis",
-        "file": "analysis.html"
-      },
-      {
-        "title": "analysis",
-        "slug": "analysis",
-        "file": "analysis.html"
-      },
-      {
-        "title": "analysis",
-        "slug": "analysis",
-        "file": "analysis.html"
-      },
-      {
-        "title": "analysis",
-        "slug": "analysis",
-        "file": "analysis.html"
-      },
-      {
-        "title": "analysis",
-        "slug": "analysis",
-        "file": "analysis.html"
-      },
-      {
         "title": "Anatomical Connections",
         "slug": "anatomical-connections",
         "file": "anatomical-connections.html"
-      },
-      {
-        "title": "anatomy",
-        "slug": "anatomy",
-        "file": "anatomy.html"
       },
       {
         "title": "anatomy",
@@ -666,26 +481,6 @@
         "file": "back.html"
       },
       {
-        "title": "back",
-        "slug": "back",
-        "file": "back.html"
-      },
-      {
-        "title": "back",
-        "slug": "back",
-        "file": "back.html"
-      },
-      {
-        "title": "back",
-        "slug": "back",
-        "file": "back.html"
-      },
-      {
-        "title": "back",
-        "slug": "back",
-        "file": "back.html"
-      },
-      {
         "title": "Back Pain",
         "slug": "back-pain",
         "file": "back-pain.html"
@@ -736,16 +531,6 @@
         "file": "bending.html"
       },
       {
-        "title": "bending",
-        "slug": "bending",
-        "file": "bending.html"
-      },
-      {
-        "title": "bending",
-        "slug": "bending",
-        "file": "bending.html"
-      },
-      {
         "title": "bendy",
         "slug": "bendy",
         "file": "bendy.html"
@@ -754,21 +539,6 @@
         "title": "benefit",
         "slug": "benefit",
         "file": "benefit.html"
-      },
-      {
-        "title": "better",
-        "slug": "better",
-        "file": "better.html"
-      },
-      {
-        "title": "better",
-        "slug": "better",
-        "file": "better.html"
-      },
-      {
-        "title": "better",
-        "slug": "better",
-        "file": "better.html"
       },
       {
         "title": "better",
@@ -799,31 +569,6 @@
         "title": "bodies",
         "slug": "bodies",
         "file": "bodies.html"
-      },
-      {
-        "title": "body",
-        "slug": "body",
-        "file": "body.html"
-      },
-      {
-        "title": "body",
-        "slug": "body",
-        "file": "body.html"
-      },
-      {
-        "title": "body",
-        "slug": "body",
-        "file": "body.html"
-      },
-      {
-        "title": "body",
-        "slug": "body",
-        "file": "body.html"
-      },
-      {
-        "title": "body",
-        "slug": "body",
-        "file": "body.html"
       },
       {
         "title": "body",
@@ -866,24 +611,9 @@
         "file": "breathing.html"
       },
       {
-        "title": "breathing",
-        "slug": "breathing",
-        "file": "breathing.html"
-      },
-      {
-        "title": "breathing",
-        "slug": "breathing",
-        "file": "breathing.html"
-      },
-      {
         "title": "Breathing Integration",
         "slug": "breathing-integration",
         "file": "breathing-integration.html"
-      },
-      {
-        "title": "buddy",
-        "slug": "buddy",
-        "file": "buddy.html"
       },
       {
         "title": "buddy",
@@ -896,16 +626,6 @@
         "title": "pad",
         "slug": "pad",
         "file": "pad.html"
-      },
-      {
-        "title": "pain",
-        "slug": "pain",
-        "file": "pain.html"
-      },
-      {
-        "title": "pain",
-        "slug": "pain",
-        "file": "pain.html"
       },
       {
         "title": "pain",
@@ -943,11 +663,6 @@
         "file": "party.html"
       },
       {
-        "title": "party",
-        "slug": "party",
-        "file": "party.html"
-      },
-      {
         "title": "path",
         "slug": "path",
         "file": "path.html"
@@ -956,11 +671,6 @@
         "title": "pathway",
         "slug": "pathway",
         "file": "pathway.html"
-      },
-      {
-        "title": "pattern",
-        "slug": "pattern",
-        "file": "pattern.html"
       },
       {
         "title": "pattern",
@@ -998,11 +708,6 @@
         "file": "perfect.html"
       },
       {
-        "title": "perfect",
-        "slug": "perfect",
-        "file": "perfect.html"
-      },
-      {
         "title": "Performance Enhancement",
         "slug": "performance-enhancement",
         "file": "performance-enhancement.html"
@@ -1028,359 +733,9 @@
         "file": "photo.html"
       },
       {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
-        "title": "photo",
-        "slug": "photo",
-        "file": "photo.html"
-      },
-      {
         "title": "photograph",
         "slug": "photograph",
         "file": "photograph.html"
-      },
-      {
-        "title": "photograph",
-        "slug": "photograph",
-        "file": "photograph.html"
-      },
-      {
-        "title": "photos",
-        "slug": "photos",
-        "file": "photos.html"
       },
       {
         "title": "photos",
@@ -1391,11 +746,6 @@
         "title": "Physical Therapy",
         "slug": "physical-therapy",
         "file": "physical-therapy.html"
-      },
-      {
-        "title": "picture",
-        "slug": "picture",
-        "file": "picture.html"
       },
       {
         "title": "picture",
@@ -1438,11 +788,6 @@
         "file": "play.html"
       },
       {
-        "title": "play",
-        "slug": "play",
-        "file": "play.html"
-      },
-      {
         "title": "Pocketbook",
         "slug": "pocketbook",
         "file": "pocketbook.html"
@@ -1468,21 +813,6 @@
         "file": "positioning.html"
       },
       {
-        "title": "positioning",
-        "slug": "positioning",
-        "file": "positioning.html"
-      },
-      {
-        "title": "positioning",
-        "slug": "positioning",
-        "file": "positioning.html"
-      },
-      {
-        "title": "positions",
-        "slug": "positions",
-        "file": "positions.html"
-      },
-      {
         "title": "positions",
         "slug": "positions",
         "file": "positions.html"
@@ -1498,16 +828,6 @@
         "file": "poster.html"
       },
       {
-        "title": "poster",
-        "slug": "poster",
-        "file": "poster.html"
-      },
-      {
-        "title": "poster",
-        "slug": "poster",
-        "file": "poster.html"
-      },
-      {
         "title": "Postural Assessment",
         "slug": "postural-assessment",
         "file": "postural-assessment.html"
@@ -1516,26 +836,6 @@
         "title": "posture",
         "slug": "posture",
         "file": "posture.html"
-      },
-      {
-        "title": "posture",
-        "slug": "posture",
-        "file": "posture.html"
-      },
-      {
-        "title": "power",
-        "slug": "power",
-        "file": "power.html"
-      },
-      {
-        "title": "power",
-        "slug": "power",
-        "file": "power.html"
-      },
-      {
-        "title": "power",
-        "slug": "power",
-        "file": "power.html"
       },
       {
         "title": "power",
@@ -1573,31 +873,6 @@
         "file": "problem.html"
       },
       {
-        "title": "problem",
-        "slug": "problem",
-        "file": "problem.html"
-      },
-      {
-        "title": "problems",
-        "slug": "problems",
-        "file": "problems.html"
-      },
-      {
-        "title": "problems",
-        "slug": "problems",
-        "file": "problems.html"
-      },
-      {
-        "title": "problems",
-        "slug": "problems",
-        "file": "problems.html"
-      },
-      {
-        "title": "problems",
-        "slug": "problems",
-        "file": "problems.html"
-      },
-      {
         "title": "problems",
         "slug": "problems",
         "file": "problems.html"
@@ -1611,16 +886,6 @@
         "title": "program",
         "slug": "program",
         "file": "program.html"
-      },
-      {
-        "title": "progression",
-        "slug": "progression",
-        "file": "progression.html"
-      },
-      {
-        "title": "progression",
-        "slug": "progression",
-        "file": "progression.html"
       },
       {
         "title": "progression",
@@ -1653,29 +918,9 @@
         "file": "protocols.html"
       },
       {
-        "title": "protocols",
-        "slug": "protocols",
-        "file": "protocols.html"
-      },
-      {
         "title": "puzzle",
         "slug": "puzzle",
         "file": "puzzle.html"
-      },
-      {
-        "title": "pyramid",
-        "slug": "pyramid",
-        "file": "pyramid.html"
-      },
-      {
-        "title": "pyramid",
-        "slug": "pyramid",
-        "file": "pyramid.html"
-      },
-      {
-        "title": "pyramid",
-        "slug": "pyramid",
-        "file": "pyramid.html"
       },
       {
         "title": "pyramid",
@@ -1688,21 +933,6 @@
         "title": "Education",
         "slug": "education",
         "file": "education.html"
-      },
-      {
-        "title": "effect",
-        "slug": "effect",
-        "file": "effect.html"
-      },
-      {
-        "title": "effect",
-        "slug": "effect",
-        "file": "effect.html"
-      },
-      {
-        "title": "effect",
-        "slug": "effect",
-        "file": "effect.html"
       },
       {
         "title": "effect",
@@ -1725,26 +955,6 @@
         "file": "eldoa-encyclopedia.html"
       },
       {
-        "title": "Eldoa Encyclopedia",
-        "slug": "eldoa-encyclopedia",
-        "file": "eldoa-encyclopedia.html"
-      },
-      {
-        "title": "Eldoa Encyclopedia",
-        "slug": "eldoa-encyclopedia",
-        "file": "eldoa-encyclopedia.html"
-      },
-      {
-        "title": "Eldoa Encyclopedia",
-        "slug": "eldoa-encyclopedia",
-        "file": "eldoa-encyclopedia.html"
-      },
-      {
-        "title": "Eldoa Encyclopedia",
-        "slug": "eldoa-encyclopedia",
-        "file": "eldoa-encyclopedia.html"
-      },
-      {
         "title": "EMG Studies",
         "slug": "emg-studies",
         "file": "emg-studies.html"
@@ -1753,101 +963,6 @@
         "title": "Empowerment",
         "slug": "empowerment",
         "file": "empowerment.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
-      },
-      {
-        "title": "Encyclopedia",
-        "slug": "encyclopedia",
-        "file": "encyclopedia.html"
       },
       {
         "title": "Encyclopedia",
@@ -1908,41 +1023,6 @@
         "title": "Exercise Prescription",
         "slug": "exercise-prescription",
         "file": "exercise-prescription.html"
-      },
-      {
-        "title": "exercises",
-        "slug": "exercises",
-        "file": "exercises.html"
-      },
-      {
-        "title": "exercises",
-        "slug": "exercises",
-        "file": "exercises.html"
-      },
-      {
-        "title": "exercises",
-        "slug": "exercises",
-        "file": "exercises.html"
-      },
-      {
-        "title": "exercises",
-        "slug": "exercises",
-        "file": "exercises.html"
-      },
-      {
-        "title": "exercises",
-        "slug": "exercises",
-        "file": "exercises.html"
-      },
-      {
-        "title": "exercises",
-        "slug": "exercises",
-        "file": "exercises.html"
-      },
-      {
-        "title": "exercises",
-        "slug": "exercises",
-        "file": "exercises.html"
       },
       {
         "title": "exercises",
@@ -2057,41 +1137,6 @@
         "file": "flowchart.html"
       },
       {
-        "title": "flowchart",
-        "slug": "flowchart",
-        "file": "flowchart.html"
-      },
-      {
-        "title": "flowchart",
-        "slug": "flowchart",
-        "file": "flowchart.html"
-      },
-      {
-        "title": "flowchart",
-        "slug": "flowchart",
-        "file": "flowchart.html"
-      },
-      {
-        "title": "flowchart",
-        "slug": "flowchart",
-        "file": "flowchart.html"
-      },
-      {
-        "title": "flowchart",
-        "slug": "flowchart",
-        "file": "flowchart.html"
-      },
-      {
-        "title": "flowchart",
-        "slug": "flowchart",
-        "file": "flowchart.html"
-      },
-      {
-        "title": "flowchart",
-        "slug": "flowchart",
-        "file": "flowchart.html"
-      },
-      {
         "title": "Fluid Dynamics",
         "slug": "fluid-dynamics",
         "file": "fluid-dynamics.html"
@@ -2107,16 +1152,6 @@
         "file": "form.html"
       },
       {
-        "title": "form",
-        "slug": "form",
-        "file": "form.html"
-      },
-      {
-        "title": "form",
-        "slug": "form",
-        "file": "form.html"
-      },
-      {
         "title": "Forward Head Posture",
         "slug": "forward-head-posture",
         "file": "forward-head-posture.html"
@@ -2125,16 +1160,6 @@
         "title": "frame",
         "slug": "frame",
         "file": "frame.html"
-      },
-      {
-        "title": "frame",
-        "slug": "frame",
-        "file": "frame.html"
-      },
-      {
-        "title": "frames",
-        "slug": "frames",
-        "file": "frames.html"
       },
       {
         "title": "frames",
@@ -2157,19 +1182,9 @@
         "file": "friends.html"
       },
       {
-        "title": "friends",
-        "slug": "friends",
-        "file": "friends.html"
-      },
-      {
         "title": "friendship",
         "slug": "friendship",
         "file": "friendship.html"
-      },
-      {
-        "title": "fun",
-        "slug": "fun",
-        "file": "fun.html"
       },
       {
         "title": "fun",
@@ -2279,74 +1294,9 @@
         "file": "time.html"
       },
       {
-        "title": "time",
-        "slug": "time",
-        "file": "time.html"
-      },
-      {
         "title": "Time Efficiency",
         "slug": "time-efficiency",
         "file": "time-efficiency.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
-      },
-      {
-        "title": "timeline",
-        "slug": "timeline",
-        "file": "timeline.html"
       },
       {
         "title": "timeline",
@@ -2389,21 +1339,6 @@
         "file": "tracking.html"
       },
       {
-        "title": "tracking",
-        "slug": "tracking",
-        "file": "tracking.html"
-      },
-      {
-        "title": "tracking",
-        "slug": "tracking",
-        "file": "tracking.html"
-      },
-      {
-        "title": "train",
-        "slug": "train",
-        "file": "train.html"
-      },
-      {
         "title": "train",
         "slug": "train",
         "file": "train.html"
@@ -2444,24 +1379,9 @@
         "file": "troubles.html"
       },
       {
-        "title": "troubles",
-        "slug": "troubles",
-        "file": "troubles.html"
-      },
-      {
-        "title": "troubles",
-        "slug": "troubles",
-        "file": "troubles.html"
-      },
-      {
         "title": "trunk",
         "slug": "trunk",
         "file": "trunk.html"
-      },
-      {
-        "title": "twist",
-        "slug": "twist",
-        "file": "twist.html"
       },
       {
         "title": "twist",
@@ -2506,31 +1426,6 @@
         "file": "scale.html"
       },
       {
-        "title": "scale",
-        "slug": "scale",
-        "file": "scale.html"
-      },
-      {
-        "title": "scale",
-        "slug": "scale",
-        "file": "scale.html"
-      },
-      {
-        "title": "scale",
-        "slug": "scale",
-        "file": "scale.html"
-      },
-      {
-        "title": "scale",
-        "slug": "scale",
-        "file": "scale.html"
-      },
-      {
-        "title": "scale",
-        "slug": "scale",
-        "file": "scale.html"
-      },
-      {
         "title": "scan",
         "slug": "scan",
         "file": "scan.html"
@@ -2539,11 +1434,6 @@
         "title": "Scapular Dyskinesis",
         "slug": "scapular-dyskinesis",
         "file": "scapular-dyskinesis.html"
-      },
-      {
-        "title": "scene",
-        "slug": "scene",
-        "file": "scene.html"
       },
       {
         "title": "scene",
@@ -2576,24 +1466,9 @@
         "file": "screen.html"
       },
       {
-        "title": "screen",
-        "slug": "screen",
-        "file": "screen.html"
-      },
-      {
         "title": "Screening",
         "slug": "screening",
         "file": "screening.html"
-      },
-      {
-        "title": "screenshot",
-        "slug": "screenshot",
-        "file": "screenshot.html"
-      },
-      {
-        "title": "screenshot",
-        "slug": "screenshot",
-        "file": "screenshot.html"
       },
       {
         "title": "screenshot",
@@ -2631,41 +1506,6 @@
         "file": "sequence.html"
       },
       {
-        "title": "sequence",
-        "slug": "sequence",
-        "file": "sequence.html"
-      },
-      {
-        "title": "sequence",
-        "slug": "sequence",
-        "file": "sequence.html"
-      },
-      {
-        "title": "sequence",
-        "slug": "sequence",
-        "file": "sequence.html"
-      },
-      {
-        "title": "sequence",
-        "slug": "sequence",
-        "file": "sequence.html"
-      },
-      {
-        "title": "sequence",
-        "slug": "sequence",
-        "file": "sequence.html"
-      },
-      {
-        "title": "sequence",
-        "slug": "sequence",
-        "file": "sequence.html"
-      },
-      {
-        "title": "series",
-        "slug": "series",
-        "file": "series.html"
-      },
-      {
         "title": "series",
         "slug": "series",
         "file": "series.html"
@@ -2679,16 +1519,6 @@
         "title": "session",
         "slug": "session",
         "file": "session.html"
-      },
-      {
-        "title": "setup",
-        "slug": "setup",
-        "file": "setup.html"
-      },
-      {
-        "title": "setup",
-        "slug": "setup",
-        "file": "setup.html"
       },
       {
         "title": "setup",
@@ -2781,16 +1611,6 @@
         "file": "space.html"
       },
       {
-        "title": "space",
-        "slug": "space",
-        "file": "space.html"
-      },
-      {
-        "title": "space",
-        "slug": "space",
-        "file": "space.html"
-      },
-      {
         "title": "special",
         "slug": "special",
         "file": "special.html"
@@ -2831,16 +1651,6 @@
         "file": "spine.html"
       },
       {
-        "title": "spine",
-        "slug": "spine",
-        "file": "spine.html"
-      },
-      {
-        "title": "spine",
-        "slug": "spine",
-        "file": "spine.html"
-      },
-      {
         "title": "Sport-Specific Applications",
         "slug": "sport-specific-applications",
         "file": "sport-specific-applications.html"
@@ -2849,11 +1659,6 @@
         "title": "sports",
         "slug": "sports",
         "file": "sports.html"
-      },
-      {
-        "title": "spot",
-        "slug": "spot",
-        "file": "spot.html"
       },
       {
         "title": "spot",
@@ -2891,11 +1696,6 @@
         "file": "stages.html"
       },
       {
-        "title": "stages",
-        "slug": "stages",
-        "file": "stages.html"
-      },
-      {
         "title": "start",
         "slug": "start",
         "file": "start.html"
@@ -2924,56 +1724,6 @@
         "title": "stretch",
         "slug": "stretch",
         "file": "stretch.html"
-      },
-      {
-        "title": "stretch",
-        "slug": "stretch",
-        "file": "stretch.html"
-      },
-      {
-        "title": "stretch",
-        "slug": "stretch",
-        "file": "stretch.html"
-      },
-      {
-        "title": "stretch",
-        "slug": "stretch",
-        "file": "stretch.html"
-      },
-      {
-        "title": "stretch",
-        "slug": "stretch",
-        "file": "stretch.html"
-      },
-      {
-        "title": "stretch",
-        "slug": "stretch",
-        "file": "stretch.html"
-      },
-      {
-        "title": "stretches",
-        "slug": "stretches",
-        "file": "stretches.html"
-      },
-      {
-        "title": "stretches",
-        "slug": "stretches",
-        "file": "stretches.html"
-      },
-      {
-        "title": "stretches",
-        "slug": "stretches",
-        "file": "stretches.html"
-      },
-      {
-        "title": "stretches",
-        "slug": "stretches",
-        "file": "stretches.html"
-      },
-      {
-        "title": "stretches",
-        "slug": "stretches",
-        "file": "stretches.html"
       },
       {
         "title": "stretches",
@@ -3009,41 +1759,6 @@
         "title": "study",
         "slug": "study",
         "file": "study.html"
-      },
-      {
-        "title": "study",
-        "slug": "study",
-        "file": "study.html"
-      },
-      {
-        "title": "style",
-        "slug": "style",
-        "file": "style.html"
-      },
-      {
-        "title": "style",
-        "slug": "style",
-        "file": "style.html"
-      },
-      {
-        "title": "style",
-        "slug": "style",
-        "file": "style.html"
-      },
-      {
-        "title": "style",
-        "slug": "style",
-        "file": "style.html"
-      },
-      {
-        "title": "style",
-        "slug": "style",
-        "file": "style.html"
-      },
-      {
-        "title": "style",
-        "slug": "style",
-        "file": "style.html"
       },
       {
         "title": "style",
@@ -3140,32 +1855,12 @@
         "file": "ready.html"
       },
       {
-        "title": "ready",
-        "slug": "ready",
-        "file": "ready.html"
-      },
-      {
-        "title": "ready",
-        "slug": "ready",
-        "file": "ready.html"
-      },
-      {
         "title": "recipe",
         "slug": "recipe",
         "file": "recipe.html"
       },
       {
         "title": "Recovery",
-        "slug": "recovery",
-        "file": "recovery.html"
-      },
-      {
-        "title": "recovery",
-        "slug": "recovery",
-        "file": "recovery.html"
-      },
-      {
-        "title": "recovery",
         "slug": "recovery",
         "file": "recovery.html"
       },
@@ -3275,11 +1970,6 @@
         "file": "rotation.html"
       },
       {
-        "title": "rotation",
-        "slug": "rotation",
-        "file": "rotation.html"
-      },
-      {
         "title": "rubric",
         "slug": "rubric",
         "file": "rubric.html"
@@ -3288,11 +1978,6 @@
         "title": "Ruffini Endings",
         "slug": "ruffini-endings",
         "file": "ruffini-endings.html"
-      },
-      {
-        "title": "rules",
-        "slug": "rules",
-        "file": "rules.html"
       },
       {
         "title": "rules",
@@ -3325,11 +2010,6 @@
         "title": "University Students",
         "slug": "university-students",
         "file": "university-students.html"
-      },
-      {
-        "title": "up",
-        "slug": "up",
-        "file": "up.html"
       },
       {
         "title": "up",
@@ -3419,81 +2099,6 @@
         "file": "visualization.html"
       },
       {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
-        "title": "visualization",
-        "slug": "visualization",
-        "file": "visualization.html"
-      },
-      {
         "title": "Volume Parameters",
         "slug": "volume-parameters",
         "file": "volume-parameters.html"
@@ -3505,11 +2110,6 @@
       }
     ],
     "W": [
-      {
-        "title": "walk",
-        "slug": "walk",
-        "file": "walk.html"
-      },
       {
         "title": "walk",
         "slug": "walk",
@@ -3576,24 +2176,9 @@
         "file": "wobbly.html"
       },
       {
-        "title": "wobbly",
-        "slug": "wobbly",
-        "file": "wobbly.html"
-      },
-      {
         "title": "Women's Health",
         "slug": "womens-health",
         "file": "womens-health.html"
-      },
-      {
-        "title": "work",
-        "slug": "work",
-        "file": "work.html"
-      },
-      {
-        "title": "work",
-        "slug": "work",
-        "file": "work.html"
       },
       {
         "title": "work",
@@ -3626,11 +2211,6 @@
         "title": "X-axis Movement",
         "slug": "x-axis-movement",
         "file": "x-axis-movement.html"
-      },
-      {
-        "title": "X-ray",
-        "slug": "x-ray",
-        "file": "x-ray.html"
       },
       {
         "title": "X-ray",
@@ -3704,31 +2284,6 @@
         "file": "calendar.html"
       },
       {
-        "title": "calendar",
-        "slug": "calendar",
-        "file": "calendar.html"
-      },
-      {
-        "title": "calendar",
-        "slug": "calendar",
-        "file": "calendar.html"
-      },
-      {
-        "title": "calendar",
-        "slug": "calendar",
-        "file": "calendar.html"
-      },
-      {
-        "title": "calendar",
-        "slug": "calendar",
-        "file": "calendar.html"
-      },
-      {
-        "title": "calendar",
-        "slug": "calendar",
-        "file": "calendar.html"
-      },
-      {
         "title": "camera",
         "slug": "camera",
         "file": "camera.html"
@@ -3744,39 +2299,9 @@
         "file": "card.html"
       },
       {
-        "title": "card",
-        "slug": "card",
-        "file": "card.html"
-      },
-      {
         "title": "care",
         "slug": "care",
         "file": "care.html"
-      },
-      {
-        "title": "care",
-        "slug": "care",
-        "file": "care.html"
-      },
-      {
-        "title": "care",
-        "slug": "care",
-        "file": "care.html"
-      },
-      {
-        "title": "care",
-        "slug": "care",
-        "file": "care.html"
-      },
-      {
-        "title": "cartoon",
-        "slug": "cartoon",
-        "file": "cartoon.html"
-      },
-      {
-        "title": "cartoon",
-        "slug": "cartoon",
-        "file": "cartoon.html"
       },
       {
         "title": "cartoon",
@@ -3787,21 +2312,6 @@
         "title": "cascade",
         "slug": "cascade",
         "file": "cascade.html"
-      },
-      {
-        "title": "center",
-        "slug": "center",
-        "file": "center.html"
-      },
-      {
-        "title": "center",
-        "slug": "center",
-        "file": "center.html"
-      },
-      {
-        "title": "center",
-        "slug": "center",
-        "file": "center.html"
       },
       {
         "title": "center",
@@ -3824,21 +2334,6 @@
         "file": "challenge.html"
       },
       {
-        "title": "challenge",
-        "slug": "challenge",
-        "file": "challenge.html"
-      },
-      {
-        "title": "challenge",
-        "slug": "challenge",
-        "file": "challenge.html"
-      },
-      {
-        "title": "changes",
-        "slug": "changes",
-        "file": "changes.html"
-      },
-      {
         "title": "changes",
         "slug": "changes",
         "file": "changes.html"
@@ -3854,104 +2349,9 @@
         "file": "character.html"
       },
       {
-        "title": "character",
-        "slug": "character",
-        "file": "character.html"
-      },
-      {
         "title": "chart",
         "slug": "chart",
         "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "chart",
-        "slug": "chart",
-        "file": "chart.html"
-      },
-      {
-        "title": "check",
-        "slug": "check",
-        "file": "check.html"
-      },
-      {
-        "title": "check",
-        "slug": "check",
-        "file": "check.html"
       },
       {
         "title": "check",
@@ -3969,44 +2369,9 @@
         "file": "checklist.html"
       },
       {
-        "title": "checklist",
-        "slug": "checklist",
-        "file": "checklist.html"
-      },
-      {
-        "title": "checklist",
-        "slug": "checklist",
-        "file": "checklist.html"
-      },
-      {
-        "title": "checklist",
-        "slug": "checklist",
-        "file": "checklist.html"
-      },
-      {
-        "title": "checklist",
-        "slug": "checklist",
-        "file": "checklist.html"
-      },
-      {
-        "title": "checklist",
-        "slug": "checklist",
-        "file": "checklist.html"
-      },
-      {
-        "title": "checklist",
-        "slug": "checklist",
-        "file": "checklist.html"
-      },
-      {
         "title": "child",
         "slug": "child",
         "file": "child.html"
-      },
-      {
-        "title": "choices",
-        "slug": "choices",
-        "file": "choices.html"
       },
       {
         "title": "choices",
@@ -4059,71 +2424,6 @@
         "file": "comparison.html"
       },
       {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
-        "title": "comparison",
-        "slug": "comparison",
-        "file": "comparison.html"
-      },
-      {
         "title": "Compensation Patterns",
         "slug": "compensation-patterns",
         "file": "compensation-patterns.html"
@@ -4152,31 +2452,6 @@
         "title": "confidence",
         "slug": "confidence",
         "file": "confidence.html"
-      },
-      {
-        "title": "connection",
-        "slug": "connection",
-        "file": "connection.html"
-      },
-      {
-        "title": "connection",
-        "slug": "connection",
-        "file": "connection.html"
-      },
-      {
-        "title": "connection",
-        "slug": "connection",
-        "file": "connection.html"
-      },
-      {
-        "title": "connection",
-        "slug": "connection",
-        "file": "connection.html"
-      },
-      {
-        "title": "connection",
-        "slug": "connection",
-        "file": "connection.html"
       },
       {
         "title": "connection",
@@ -4229,11 +2504,6 @@
         "file": "cousins.html"
       },
       {
-        "title": "cousins",
-        "slug": "cousins",
-        "file": "cousins.html"
-      },
-      {
         "title": "Craniovertebral Angle",
         "slug": "craniovertebral-angle",
         "file": "craniovertebral-angle.html"
@@ -4242,26 +2512,6 @@
         "title": "cross-section",
         "slug": "cross-section",
         "file": "cross-section.html"
-      },
-      {
-        "title": "curve",
-        "slug": "curve",
-        "file": "curve.html"
-      },
-      {
-        "title": "curve",
-        "slug": "curve",
-        "file": "curve.html"
-      },
-      {
-        "title": "curve",
-        "slug": "curve",
-        "file": "curve.html"
-      },
-      {
-        "title": "curve",
-        "slug": "curve",
-        "file": "curve.html"
       },
       {
         "title": "curve",
@@ -4296,399 +2546,9 @@
         "file": "illustration.html"
       },
       {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
-        "title": "illustration",
-        "slug": "illustration",
-        "file": "illustration.html"
-      },
-      {
         "title": "image",
         "slug": "image",
         "file": "image.html"
-      },
-      {
-        "title": "image",
-        "slug": "image",
-        "file": "image.html"
-      },
-      {
-        "title": "image",
-        "slug": "image",
-        "file": "image.html"
-      },
-      {
-        "title": "image",
-        "slug": "image",
-        "file": "image.html"
-      },
-      {
-        "title": "image",
-        "slug": "image",
-        "file": "image.html"
-      },
-      {
-        "title": "image",
-        "slug": "image",
-        "file": "image.html"
-      },
-      {
-        "title": "image",
-        "slug": "image",
-        "file": "image.html"
-      },
-      {
-        "title": "improvement",
-        "slug": "improvement",
-        "file": "improvement.html"
       },
       {
         "title": "improvement",
@@ -4716,41 +2576,6 @@
         "file": "infographic.html"
       },
       {
-        "title": "infographic",
-        "slug": "infographic",
-        "file": "infographic.html"
-      },
-      {
-        "title": "infographic",
-        "slug": "infographic",
-        "file": "infographic.html"
-      },
-      {
-        "title": "infographic",
-        "slug": "infographic",
-        "file": "infographic.html"
-      },
-      {
-        "title": "infographic",
-        "slug": "infographic",
-        "file": "infographic.html"
-      },
-      {
-        "title": "infographic",
-        "slug": "infographic",
-        "file": "infographic.html"
-      },
-      {
-        "title": "infographic",
-        "slug": "infographic",
-        "file": "infographic.html"
-      },
-      {
-        "title": "infographic",
-        "slug": "infographic",
-        "file": "infographic.html"
-      },
-      {
         "title": "Injury Prevention",
         "slug": "injury-prevention",
         "file": "injury-prevention.html"
@@ -4762,16 +2587,6 @@
       },
       {
         "title": "integration",
-        "slug": "integration",
-        "file": "integration.html"
-      },
-      {
-        "title": "integration",
-        "slug": "integration",
-        "file": "integration.html"
-      },
-      {
-        "title": "Integration",
         "slug": "integration",
         "file": "integration.html"
       },
@@ -4821,11 +2636,6 @@
         "file": "inventor.html"
       },
       {
-        "title": "inventor",
-        "slug": "inventor",
-        "file": "inventor.html"
-      },
-      {
         "title": "Inversion Therapy",
         "slug": "inversion-therapy",
         "file": "inversion-therapy.html"
@@ -4863,11 +2673,6 @@
         "file": "dashboard.html"
       },
       {
-        "title": "dashboard",
-        "slug": "dashboard",
-        "file": "dashboard.html"
-      },
-      {
         "title": "data",
         "slug": "data",
         "file": "data.html"
@@ -4886,36 +2691,6 @@
         "title": "Degenerative Changes",
         "slug": "degenerative-changes",
         "file": "degenerative-changes.html"
-      },
-      {
-        "title": "demonstration",
-        "slug": "demonstration",
-        "file": "demonstration.html"
-      },
-      {
-        "title": "demonstration",
-        "slug": "demonstration",
-        "file": "demonstration.html"
-      },
-      {
-        "title": "demonstration",
-        "slug": "demonstration",
-        "file": "demonstration.html"
-      },
-      {
-        "title": "demonstration",
-        "slug": "demonstration",
-        "file": "demonstration.html"
-      },
-      {
-        "title": "demonstration",
-        "slug": "demonstration",
-        "file": "demonstration.html"
-      },
-      {
-        "title": "demonstration",
-        "slug": "demonstration",
-        "file": "demonstration.html"
       },
       {
         "title": "demonstration",
@@ -4963,271 +2738,6 @@
         "file": "diagram.html"
       },
       {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "diagram",
-        "slug": "diagram",
-        "file": "diagram.html"
-      },
-      {
-        "title": "difference",
-        "slug": "difference",
-        "file": "difference.html"
-      },
-      {
         "title": "difference",
         "slug": "difference",
         "file": "difference.html"
@@ -5236,16 +2746,6 @@
         "title": "different",
         "slug": "different",
         "file": "different.html"
-      },
-      {
-        "title": "different",
-        "slug": "different",
-        "file": "different.html"
-      },
-      {
-        "title": "directions",
-        "slug": "directions",
-        "file": "directions.html"
       },
       {
         "title": "directions",
@@ -5268,16 +2768,6 @@
         "file": "display.html"
       },
       {
-        "title": "display",
-        "slug": "display",
-        "file": "display.html"
-      },
-      {
-        "title": "display",
-        "slug": "display",
-        "file": "display.html"
-      },
-      {
         "title": "distance",
         "slug": "distance",
         "file": "distance.html"
@@ -5286,11 +2776,6 @@
         "title": "do",
         "slug": "do",
         "file": "do.html"
-      },
-      {
-        "title": "doctor",
-        "slug": "doctor",
-        "file": "doctor.html"
       },
       {
         "title": "doctor",
@@ -5340,39 +2825,9 @@
         "file": "gait.html"
       },
       {
-        "title": "Gait",
-        "slug": "gait",
-        "file": "gait.html"
-      },
-      {
         "title": "game",
         "slug": "game",
         "file": "game.html"
-      },
-      {
-        "title": "game",
-        "slug": "game",
-        "file": "game.html"
-      },
-      {
-        "title": "game",
-        "slug": "game",
-        "file": "game.html"
-      },
-      {
-        "title": "game",
-        "slug": "game",
-        "file": "game.html"
-      },
-      {
-        "title": "game",
-        "slug": "game",
-        "file": "game.html"
-      },
-      {
-        "title": "garden",
-        "slug": "garden",
-        "file": "garden.html"
       },
       {
         "title": "garden",
@@ -5415,161 +2870,6 @@
         "file": "gps.html"
       },
       {
-        "title": "GPS",
-        "slug": "gps",
-        "file": "gps.html"
-      },
-      {
-        "title": "GPS",
-        "slug": "gps",
-        "file": "gps.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
-        "title": "graph",
-        "slug": "graph",
-        "file": "graph.html"
-      },
-      {
         "title": "graph",
         "slug": "graph",
         "file": "graph.html"
@@ -5583,11 +2883,6 @@
         "title": "Group Classes",
         "slug": "group-classes",
         "file": "group-classes.html"
-      },
-      {
-        "title": "guide",
-        "slug": "guide",
-        "file": "guide.html"
       },
       {
         "title": "guide",
@@ -5615,16 +2910,6 @@
         "title": "L5-S1 Junction",
         "slug": "l5-s1-junction",
         "file": "l5-s1-junction.html"
-      },
-      {
-        "title": "lab",
-        "slug": "lab",
-        "file": "lab.html"
-      },
-      {
-        "title": "lab",
-        "slug": "lab",
-        "file": "lab.html"
       },
       {
         "title": "lab",
@@ -5670,11 +2955,6 @@
         "title": "limit",
         "slug": "limit",
         "file": "limit.html"
-      },
-      {
-        "title": "line",
-        "slug": "line",
-        "file": "line.html"
       },
       {
         "title": "line",
@@ -5739,21 +3019,6 @@
         "file": "kids.html"
       },
       {
-        "title": "kids",
-        "slug": "kids",
-        "file": "kids.html"
-      },
-      {
-        "title": "kids",
-        "slug": "kids",
-        "file": "kids.html"
-      },
-      {
-        "title": "kids",
-        "slug": "kids",
-        "file": "kids.html"
-      },
-      {
         "title": "Kinesthetic Awareness",
         "slug": "kinesthetic-awareness",
         "file": "kinesthetic-awareness.html"
@@ -5779,11 +3044,6 @@
         "title": "Joint Mechanics",
         "slug": "joint-mechanics",
         "file": "joint-mechanics.html"
-      },
-      {
-        "title": "joints",
-        "slug": "joints",
-        "file": "joints.html"
       },
       {
         "title": "joints",
@@ -5828,34 +3088,9 @@
         "file": "happiness.html"
       },
       {
-        "title": "happiness",
-        "slug": "happiness",
-        "file": "happiness.html"
-      },
-      {
         "title": "Head Position",
         "slug": "head-position",
         "file": "head-position.html"
-      },
-      {
-        "title": "health",
-        "slug": "health",
-        "file": "health.html"
-      },
-      {
-        "title": "health",
-        "slug": "health",
-        "file": "health.html"
-      },
-      {
-        "title": "health",
-        "slug": "health",
-        "file": "health.html"
-      },
-      {
-        "title": "health",
-        "slug": "health",
-        "file": "health.html"
       },
       {
         "title": "health",
@@ -5873,74 +3108,9 @@
         "file": "help.html"
       },
       {
-        "title": "help",
-        "slug": "help",
-        "file": "help.html"
-      },
-      {
-        "title": "help",
-        "slug": "help",
-        "file": "help.html"
-      },
-      {
-        "title": "help",
-        "slug": "help",
-        "file": "help.html"
-      },
-      {
-        "title": "help",
-        "slug": "help",
-        "file": "help.html"
-      },
-      {
-        "title": "help",
-        "slug": "help",
-        "file": "help.html"
-      },
-      {
         "title": "helper",
         "slug": "helper",
         "file": "helper.html"
-      },
-      {
-        "title": "helper",
-        "slug": "helper",
-        "file": "helper.html"
-      },
-      {
-        "title": "helpers",
-        "slug": "helpers",
-        "file": "helpers.html"
-      },
-      {
-        "title": "helpers",
-        "slug": "helpers",
-        "file": "helpers.html"
-      },
-      {
-        "title": "helpers",
-        "slug": "helpers",
-        "file": "helpers.html"
-      },
-      {
-        "title": "helpers",
-        "slug": "helpers",
-        "file": "helpers.html"
-      },
-      {
-        "title": "helpers",
-        "slug": "helpers",
-        "file": "helpers.html"
-      },
-      {
-        "title": "helpers",
-        "slug": "helpers",
-        "file": "helpers.html"
-      },
-      {
-        "title": "helpers",
-        "slug": "helpers",
-        "file": "helpers.html"
       },
       {
         "title": "helpers",
@@ -5951,11 +3121,6 @@
         "title": "helps",
         "slug": "helps",
         "file": "helps.html"
-      },
-      {
-        "title": "hero",
-        "slug": "hero",
-        "file": "hero.html"
       },
       {
         "title": "hero",
@@ -6001,16 +3166,6 @@
         "title": "homework",
         "slug": "homework",
         "file": "homework.html"
-      },
-      {
-        "title": "homework",
-        "slug": "homework",
-        "file": "homework.html"
-      },
-      {
-        "title": "hurt",
-        "slug": "hurt",
-        "file": "hurt.html"
       },
       {
         "title": "hurt",
