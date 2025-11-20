@@ -91,14 +91,8 @@
     .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
     .sub { color: var(--muted); max-width: 58ch; }
     .widget-card { position:relative; aspect-ratio: 1.2/1; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); display:grid; place-items:center; padding-top: 2rem; }
-    .cube { width: 160px; height:160px; transform-style: preserve-3d; transition: transform 80ms linear; }
-    .face { position:absolute; width:100%; height:100%; display:grid; place-items:center; font-weight:800; font-size:1.2rem; color:#fff; background: color-mix(in oklab, var(--brand), #000 15%); border: 1px solid color-mix(in oklab, #000, transparent 75%); opacity:.92; }
-    .face:nth-child(1) { transform: translateZ(80px); }
-    .face:nth-child(2) { transform: rotateY(180deg) translateZ(80px); }
-    .face:nth-child(3) { transform: rotateY(90deg) translateZ(80px); }
-    .face:nth-child(4) { transform: rotateY(-90deg) translateZ(80px); }
-    .face:nth-child(5) { transform: rotateX(90deg) translateZ(80px); }
-    .face:nth-child(6) { transform: rotateX(-90deg) translateZ(80px); }
+    .head-container { width: 200px; height:240px; transform-style: preserve-3d; transition: transform 80ms linear; perspective: 800px; }
+    .head-svg { width: 100%; height: 100%; display: block; }
     .widget-ui { position:absolute; inset:auto 0 0 0; display:flex; gap:.5rem; padding:.6rem; background: color-mix(in oklab, var(--bg), transparent 35%); backdrop-filter: blur(8px); align-items:center; justify-content:space-between; }
     .widget-ui .status { font-size:.85rem; color: var(--muted); }
 
@@ -232,27 +226,35 @@
         <div class="widget-card" aria-live="polite" aria-busy="false">
           <div id="uprightBanner" class="widget-banner" aria-hidden="true">Hold phone upright</div>
           <div id="uprightCue" class="widget-cue" aria-hidden="true">HEAD UP — TUCK CHIN</div>
-          <div id="cube" class="cube" role="img" aria-label="Interactive orientation cube">
-            <div class="face">EL</div>
-            <div class="face">DO</div>
-            <div class="face">A‑I</div>
-            <div class="face">C‑2</div>
-            <div class="face">T‑12</div>
-            <div class="face">L‑5 S1</div>
+          <div id="headContainer" class="head-container" role="img" aria-label="Interactive orientation head - mimics your posture">
+            <svg class="head-svg" viewBox="0 0 100 120" xmlns="http://www.w3.org/2000/svg">
+              <!-- Neck -->
+              <rect x="42" y="85" width="16" height="25" rx="4" fill="color-mix(in oklab, var(--brand), transparent 70%)" opacity="0.8"/>
+
+              <!-- Head shape -->
+              <ellipse cx="50" cy="50" rx="28" ry="35" fill="color-mix(in oklab, var(--brand), transparent 70%)" stroke="color-mix(in oklab, var(--brand), transparent 40%)" stroke-width="2" opacity="0.9"/>
+
+              <!-- Eyes -->
+              <ellipse cx="40" cy="45" rx="4" ry="5" fill="color-mix(in oklab, var(--brand), transparent 30%)" opacity="0.85"/>
+              <ellipse cx="60" cy="45" rx="4" ry="5" fill="color-mix(in oklab, var(--brand), transparent 30%)" opacity="0.85"/>
+
+              <!-- Subtle nose indication -->
+              <line x1="50" y1="50" x2="50" y2="58" stroke="color-mix(in oklab, var(--brand), transparent 50%)" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+
+              <!-- Subtle mouth -->
+              <path d="M 42 68 Q 50 71 58 68" stroke="color-mix(in oklab, var(--brand), transparent 50%)" stroke-width="1.5" fill="none" stroke-linecap="round" opacity="0.5"/>
+            </svg>
           </div>
           <div class="widget-ui">
             <div class="status" id="gyroStatus">Optimal phone angle: <strong>inactive</strong> <span id="gyroReadout" class="readout"></span></div>
-            <div style="display:flex; gap:.5rem;">
-              <button id="activateGyro" class="btn" type="button">Activate Gyroscope</button>
-              <button id="simulateMouse" class="btn" type="button" aria-pressed="false">Mouse Sim</button>
-            </div>
+            <button id="activateGyro" class="btn" type="button">Activate Gyroscope</button>
           </div>
           <noscript>
             <div class="status">Enable JavaScript to try the mobile orientation demo.</div>
           </noscript>
         </div>
       </div>
-      <p class="section-sub" style="margin-top:.75rem">On phones/tablets, tap <em>Activate Gyroscope</em>. On laptops, use <em>Mouse Sim</em>. Keep the phone <strong>upright at eye level</strong> — don’t look down.</p>
+      <p class="section-sub" style="margin-top:.75rem">On phones/tablets, tap <em>Activate Gyroscope</em>. The head will mirror your posture — keep your phone <strong>upright at eye level</strong> to maintain proper alignment. Don't look down.</p>
     </section>
 
     <!-- DIAGNOSTIC TOOL FEATURE -->
@@ -474,13 +476,11 @@
 
     // GYROSCOPE WIDGET — Optimal phone angle (beta-only)
     (function(){
-      const cube = document.getElementById('cube');
+      const headContainer = document.getElementById('headContainer');
       const statusEl = document.getElementById('gyroStatus');
       const readoutEl = document.getElementById('gyroReadout');
       const activateBtn = document.getElementById('activateGyro');
-      const simulateBtn = document.getElementById('simulateMouse');
 
-      let simulating = false;
       let last = {alpha:0, beta:0, gamma:0};
       let lastGold = false;
 
@@ -494,7 +494,7 @@
         statusEl.style.color = level==="ok"?"var(--ok)":level==="warn"?"var(--warn)":level==="err"?"var(--err)":"var(--muted)";
       };
 
-      const render = (a, b, g) => { cube.style.transform = `rotateX(${b}deg) rotateY(${a}deg) rotateZ(${g}deg)`; };
+      const render = (a, b, g) => { headContainer.style.transform = `rotateX(${b}deg) rotateY(${a}deg) rotateZ(${g}deg)`; };
 
       const getAngle = () => {
         if (screen.orientation && typeof screen.orientation.angle === 'number') return screen.orientation.angle;
@@ -532,7 +532,7 @@
       };
 
       const updateUI = (upright, b, angle) => {
-        const card = cube.parentElement;
+        const card = headContainer.parentElement;
         const banner = document.getElementById('uprightBanner');
         const cue = document.getElementById('uprightCue');
         const db = Math.abs((b??0) - upright.t.beta);
@@ -602,21 +602,6 @@
         } catch (e) {
           setStatus('error', 'err');
         }
-      });
-
-      // Mouse simulation for desktops/laptops
-      simulateBtn.addEventListener('click', () => {
-        simulating = !simulating;
-        simulateBtn.setAttribute('aria-pressed', String(simulating));
-        setStatus(simulating? 'mouse sim' : 'inactive');
-      });
-      window.addEventListener('mousemove', (e)=>{
-        if(!simulating) return;
-        const angle = 0; // simulate portrait
-        const beta = (e.clientY / window.innerHeight) * 180 - 90; // approximate
-        render(0, beta, 0);
-        const upright = isUpright(beta, 0, angle);
-        updateUI(upright, beta, angle);
       });
 
       // Sanity tests

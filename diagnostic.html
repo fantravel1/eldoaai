@@ -524,6 +524,14 @@
 
         // Render results
         renderResults(data);
+
+        // Smooth scroll to results panel (especially helpful on mobile)
+        setTimeout(() => {
+          const resultsPanel = document.querySelector('.results-panel');
+          if (resultsPanel) {
+            resultsPanel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }, 100);
       });
     });
 
