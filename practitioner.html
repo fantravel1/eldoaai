@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">ELDOA Practitioner | ELDOA AI</title>
+    <meta name="description" id="page-description" content="View detailed profile information for this certified ELDOA practitioner.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+    <style>
+        :root {
+            --brand: oklch(65% 0.25 265);
+            --surface: oklch(98% 0.01 265);
+            --border: oklch(90% 0.01 265);
+            --text: oklch(25% 0.01 265);
+            --text-secondary: oklch(50% 0.01 265);
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--surface);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--brand);
+            text-decoration: none;
+            margin-bottom: 2rem;
+            font-weight: 600;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+
+        .profile-header {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .header-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .name-section h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            color: var(--text);
+        }
+
+        .level-badge {
+            background: var(--brand);
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .status-active {
+            background: oklch(90% 0.15 145);
+            color: oklch(35% 0.15 145);
+        }
+
+        .location-section {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.1rem;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+        }
+
+        .credentials-section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .credential-tag {
+            background: oklch(95% 0.05 265);
+            color: var(--text);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .info-item {
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        .info-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .info-value {
+            font-size: 1.1rem;
+            color: var(--text);
+        }
+
+        .content-section {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .section-content {
+            color: var(--text);
+            line-height: 1.8;
+        }
+
+        .specializations-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .specialization-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            background: oklch(98% 0.01 265);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .contact-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: oklch(98% 0.01 265);
+            border-radius: 8px;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: white;
+            border-radius: 8px;
+        }
+
+        .contact-details {
+            flex: 1;
+        }
+
+        .contact-label {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.25rem;
+        }
+
+        .contact-value {
+            font-size: 1rem;
+            color: var(--text);
+        }
+
+        .contact-value a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        .contact-value a:hover {
+            text-decoration: underline;
+        }
+
+        .notable-section {
+            background: linear-gradient(135deg, oklch(96% 0.08 265), oklch(98% 0.05 285));
+            padding: 1.5rem;
+            border-radius: var(--radius);
+            border-left: 4px solid var(--brand);
+        }
+
+        .loading {
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .loading-spinner {
+            font-size: 3rem;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .error {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: oklch(50% 0.15 25);
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+
+        footer a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .name-section h1 {
+                font-size: 2rem;
+            }
+
+            .header-top {
+                flex-direction: column;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .specializations-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="/practitioners.html" class="back-link">← Back to Directory</a>
+
+        <div id="content">
+            <div class="loading">
+                <div class="loading-spinner">⏳</div>
+                <p>Loading practitioner profile...</p>
+            </div>
+        </div>
+
+        <footer>
+            <p><a href="/">Home</a> | <a href="/practitioners.html">Find Practitioners</a> | <a href="/about.html">About</a> | <a href="/contact.html">Contact</a></p>
+        </footer>
+    </div>
+
+    <script>
+        // Get practitioner ID from URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const practitionerId = urlParams.get('id');
+
+        async function loadPractitioner() {
+            try {
+                const response = await fetch('/data/practitioners.json');
+                const data = await response.json();
+                const practitioner = data.practitioners.find(p => p.id === practitionerId);
+
+                if (!practitioner) {
+                    showError('Practitioner not found');
+                    return;
+                }
+
+                displayPractitioner(practitioner);
+            } catch (error) {
+                console.error('Error loading practitioner:', error);
+                showError('Error loading practitioner data. Please try again later.');
+            }
+        }
+
+        function displayPractitioner(p) {
+            // Update page title and meta
+            document.getElementById('page-title').textContent = `${p.name} - ELDOA Practitioner | ELDOA AI`;
+            document.getElementById('page-description').content =
+                `Certified ELDOA practitioner ${p.name} in ${p.city}, ${p.country}. ${p.specializations ? p.specializations.join(', ') : ''}`;
+
+            const location = [p.city, p.state || p.region, p.country].filter(Boolean).join(', ');
+            const levelText = p.level ? `Level ${p.level}` : '';
+            const levelTitle = p.levelTitle || '';
+
+            const statusClass = `status-${p.status || 'active'}`;
+            const statusText = (p.status || 'active').split('-').map(w =>
+                w.charAt(0).toUpperCase() + w.slice(1)
+            ).join(' ');
+
+            let html = `
+                <div class="profile-header">
+                    <div class="header-top">
+                        <div class="name-section">
+                            <h1>${p.name}</h1>
+                            ${levelText ? `<span class="level-badge">${levelText}${levelTitle ? ` - ${levelTitle}` : ''}</span>` : ''}
+                            <span class="status-badge ${statusClass}">${statusText}</span>
+                        </div>
+                    </div>
+
+                    <div class="location-section">
+                        📍 ${location}
+                    </div>
+
+                    ${p.credentials && p.credentials.length > 0 ? `
+                        <div class="credentials-section">
+                            ${p.credentials.map(c => `<span class="credential-tag">${c}</span>`).join('')}
+                        </div>
+                    ` : ''}
+
+                    <div class="info-grid">
+                        ${p.yearsExperience ? `
+                            <div class="info-item">
+                                <div class="info-label">Experience</div>
+                                <div class="info-value">${p.yearsExperience}</div>
+                            </div>
+                        ` : ''}
+                        ${p.practice ? `
+                            <div class="info-item">
+                                <div class="info-label">Practice</div>
+                                <div class="info-value">${p.practice}</div>
+                            </div>
+                        ` : ''}
+                        ${p.education ? `
+                            <div class="info-item">
+                                <div class="info-label">Education</div>
+                                <div class="info-value">${p.education}</div>
+                            </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `;
+
+            // Background section
+            if (p.background || p.legacy) {
+                html += `
+                    <div class="content-section">
+                        <h2 class="section-title">Background</h2>
+                        <div class="section-content">
+                            <p>${p.background || ''}</p>
+                            ${p.legacy ? `<p style="margin-top: 1rem;"><strong>Legacy:</strong> ${p.legacy}</p>` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Specializations section
+            if (p.specializations && p.specializations.length > 0) {
+                html += `
+                    <div class="content-section">
+                        <h2 class="section-title">Specializations</h2>
+                        <div class="specializations-grid">
+                            ${p.specializations.map(s => `
+                                <div class="specialization-item">
+                                    ✓ ${s}
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Notable clients & achievements
+            if (p.notable || p.notableClients) {
+                html += `
+                    <div class="content-section">
+                        <div class="notable-section">
+                            <h2 class="section-title">Notable Achievements & Clients</h2>
+                            <div class="section-content">
+                                ${p.notable || p.notableClients || ''}
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Contact information
+            const hasContact = p.phone || p.email || p.website || p.address;
+            if (hasContact) {
+                html += `
+                    <div class="content-section">
+                        <h2 class="section-title">Contact Information</h2>
+                        <div class="contact-grid">
+                            ${p.practice ? `
+                                <div class="contact-item">
+                                    <div class="contact-icon">🏢</div>
+                                    <div class="contact-details">
+                                        <div class="contact-label">Practice</div>
+                                        <div class="contact-value">${p.practice}</div>
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${p.address ? `
+                                <div class="contact-item">
+                                    <div class="contact-icon">📍</div>
+                                    <div class="contact-details">
+                                        <div class="contact-label">Address</div>
+                                        <div class="contact-value">${p.address}</div>
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${p.phone ? `
+                                <div class="contact-item">
+                                    <div class="contact-icon">📞</div>
+                                    <div class="contact-details">
+                                        <div class="contact-label">Phone</div>
+                                        <div class="contact-value">${p.phone}</div>
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${p.email ? `
+                                <div class="contact-item">
+                                    <div class="contact-icon">✉️</div>
+                                    <div class="contact-details">
+                                        <div class="contact-label">Email</div>
+                                        <div class="contact-value"><a href="mailto:${p.email}">${p.email}</a></div>
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${p.website ? `
+                                <div class="contact-item">
+                                    <div class="contact-icon">🌐</div>
+                                    <div class="contact-details">
+                                        <div class="contact-label">Website</div>
+                                        <div class="contact-value"><a href="https://${p.website}" target="_blank">${p.website}</a></div>
+                                    </div>
+                                </div>
+                            ` : ''}
+                        </div>
+                    </div>
+                `;
+            }
+
+            // Additional notes
+            if (p.note) {
+                html += `
+                    <div class="content-section">
+                        <div style="padding: 1rem; background: oklch(95% 0.05 45); border-radius: 8px; border-left: 4px solid oklch(65% 0.15 45);">
+                            <strong>Note:</strong> ${p.note}
+                        </div>
+                    </div>
+                `;
+            }
+
+            document.getElementById('content').innerHTML = html;
+        }
+
+        function showError(message) {
+            document.getElementById('content').innerHTML = `
+                <div class="error">
+                    <div style="font-size: 4rem; margin-bottom: 1rem;">❌</div>
+                    <h2>${message}</h2>
+                    <p><a href="/practitioners.html">← Back to Directory</a></p>
+                </div>
+            `;
+        }
+
+        // Load practitioner if ID is provided
+        if (practitionerId) {
+            loadPractitioner();
+        } else {
+            showError('No practitioner ID specified');
+        }
+    </script>
+</body>
+</html>

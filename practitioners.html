@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find ELDOA Practitioners | ELDOA AI</title>
+    <meta name="description" content="Search our comprehensive directory of certified ELDOA practitioners in France and the United States. Find Level 4 trainers, specialists, and certified practitioners near you.">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
+    <style>
+        :root {
+            --brand: oklch(65% 0.25 265);
+            --surface: oklch(98% 0.01 265);
+            --border: oklch(90% 0.01 265);
+            --text: oklch(25% 0.01 265);
+            --text-secondary: oklch(50% 0.01 265);
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+            background: var(--surface);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(135deg, var(--brand), oklch(70% 0.20 285));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .filters {
+            background: white;
+            border-radius: var(--radius);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .filter-row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .filter-group select,
+        .filter-group input {
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            transition: border-color 0.2s;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: var(--brand);
+        }
+
+        .search-box {
+            width: 100%;
+        }
+
+        .stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--brand);
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+
+        .practitioners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .practitioner-card {
+            background: white;
+            border-radius: var(--radius);
+            padding: 1.5rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.2s, box-shadow 0.2s;
+            border: 1px solid var(--border);
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+
+        .practitioner-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .practitioner-name {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+        }
+
+        .level-badge {
+            background: var(--brand);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 0.5rem;
+        }
+
+        .status-active {
+            background: oklch(90% 0.15 145);
+            color: oklch(35% 0.15 145);
+        }
+
+        .status-deceased {
+            background: oklch(90% 0.05 265);
+            color: oklch(35% 0.05 265);
+        }
+
+        .status-not-accepting-patients {
+            background: oklch(90% 0.15 45);
+            color: oklch(35% 0.15 45);
+        }
+
+        .status-closed {
+            background: oklch(90% 0.05 265);
+            color: oklch(35% 0.05 265);
+        }
+
+        .location {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .credential-tag {
+            background: oklch(95% 0.05 265);
+            color: var(--text-secondary);
+            padding: 0.25rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.8rem;
+        }
+
+        .specializations {
+            margin-bottom: 1rem;
+        }
+
+        .specializations-label {
+            font-weight: 600;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+
+        .specializations-list {
+            font-size: 0.9rem;
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .contact-item {
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .contact-item a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 4rem 2rem;
+            color: var(--text-secondary);
+        }
+
+        .no-results-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 3rem 2rem;
+            color: var(--text-secondary);
+            border-top: 1px solid var(--border);
+        }
+
+        footer a {
+            color: var(--brand);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .practitioners-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .filter-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find ELDOA Practitioners</h1>
+            <p class="subtitle">Comprehensive directory of certified ELDOA practitioners worldwide</p>
+        </header>
+
+        <div class="stats">
+            <div class="stat">
+                <div class="stat-number" id="total-count">0</div>
+                <div class="stat-label">Total Practitioners</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="active-count">0</div>
+                <div class="stat-label">Active Practitioners</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number" id="countries-count">0</div>
+                <div class="stat-label">Countries</div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="search">Search by name or city</label>
+                    <input type="text" id="search" class="search-box" placeholder="Search practitioners...">
+                </div>
+            </div>
+            <div class="filter-row">
+                <div class="filter-group">
+                    <label for="country">Country</label>
+                    <select id="country">
+                        <option value="">All Countries</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="state">State/Region</label>
+                    <select id="state">
+                        <option value="">All States/Regions</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="level">Certification Level</label>
+                    <select id="level">
+                        <option value="">All Levels</option>
+                        <option value="6">Level 6 - Expert</option>
+                        <option value="5">Level 5 - Therapist</option>
+                        <option value="4">Level 4 - Trainer</option>
+                        <option value="2">Level 2 - Student</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="status">Status</label>
+                    <select id="status">
+                        <option value="">All Statuses</option>
+                        <option value="active">Active</option>
+                        <option value="not-accepting-patients">Not Accepting Patients</option>
+                        <option value="deceased">Deceased</option>
+                        <option value="closed">Closed</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="practitioners-grid" id="practitioners-grid">
+            <!-- Practitioners will be loaded here -->
+        </div>
+
+        <div class="no-results" id="no-results" style="display: none;">
+            <div class="no-results-icon">🔍</div>
+            <h2>No practitioners found</h2>
+            <p>Try adjusting your filters or search terms</p>
+        </div>
+
+        <footer>
+            <p>Data last updated: <span id="last-updated"></span></p>
+            <p><a href="/">← Back to Home</a> | <a href="/about.html">About ELDOA</a> | <a href="/contact.html">Contact</a></p>
+        </footer>
+    </div>
+
+    <script>
+        let allPractitioners = [];
+        let filteredPractitioners = [];
+
+        // Load practitioners data
+        async function loadPractitioners() {
+            try {
+                const response = await fetch('/data/practitioners.json');
+                const data = await response.json();
+                allPractitioners = data.practitioners;
+                filteredPractitioners = allPractitioners;
+
+                // Update stats
+                document.getElementById('total-count').textContent = data.totalCount;
+                document.getElementById('countries-count').textContent = data.countries.length;
+                document.getElementById('last-updated').textContent = data.lastUpdated;
+
+                const activeCount = allPractitioners.filter(p => p.status === 'active').length;
+                document.getElementById('active-count').textContent = activeCount;
+
+                // Populate filter dropdowns
+                populateFilters();
+
+                // Display all practitioners
+                displayPractitioners(filteredPractitioners);
+            } catch (error) {
+                console.error('Error loading practitioners:', error);
+                document.getElementById('practitioners-grid').innerHTML =
+                    '<p>Error loading practitioners data. Please try again later.</p>';
+            }
+        }
+
+        function populateFilters() {
+            // Get unique countries
+            const countries = [...new Set(allPractitioners.map(p => p.country))].sort();
+            const countrySelect = document.getElementById('country');
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                countrySelect.appendChild(option);
+            });
+
+            // Get unique states/regions
+            const states = [...new Set(allPractitioners
+                .map(p => p.state || p.region)
+                .filter(s => s))].sort();
+            const stateSelect = document.getElementById('state');
+            states.forEach(state => {
+                const option = document.createElement('option');
+                option.value = state;
+                option.textContent = state;
+                stateSelect.appendChild(option);
+            });
+        }
+
+        function displayPractitioners(practitioners) {
+            const grid = document.getElementById('practitioners-grid');
+            const noResults = document.getElementById('no-results');
+
+            if (practitioners.length === 0) {
+                grid.style.display = 'none';
+                noResults.style.display = 'block';
+                return;
+            }
+
+            grid.style.display = 'grid';
+            noResults.style.display = 'none';
+
+            grid.innerHTML = practitioners.map(p => createPractitionerCard(p)).join('');
+        }
+
+        function createPractitionerCard(p) {
+            const location = [p.city, p.state || p.region, p.country].filter(Boolean).join(', ');
+            const credentials = p.credentials ? p.credentials.join(', ') : '';
+            const specializations = p.specializations ? p.specializations.slice(0, 3).join(', ') : '';
+            const moreSpecializations = p.specializations && p.specializations.length > 3 ?
+                ` +${p.specializations.length - 3} more` : '';
+
+            const levelBadge = p.level ?
+                `<span class="level-badge">Level ${p.level}</span>` : '';
+
+            const statusClass = `status-${p.status || 'active'}`;
+            const statusText = (p.status || 'active').split('-').map(w =>
+                w.charAt(0).toUpperCase() + w.slice(1)
+            ).join(' ');
+
+            const phone = p.phone ?
+                `<div class="contact-item">📞 ${p.phone}</div>` : '';
+            const email = p.email ?
+                `<div class="contact-item">✉️ <a href="mailto:${p.email}">${p.email}</a></div>` : '';
+            const website = p.website ?
+                `<div class="contact-item">🌐 <a href="https://${p.website}" target="_blank">${p.website}</a></div>` : '';
+            const practice = p.practice ?
+                `<div class="contact-item">🏢 ${p.practice}</div>` : '';
+
+            return `
+                <a href="/practitioner.html?id=${p.id}" class="practitioner-card">
+                    <div class="card-header">
+                        <div>
+                            <div class="practitioner-name">${p.name}</div>
+                            <span class="status-badge ${statusClass}">${statusText}</span>
+                        </div>
+                        ${levelBadge}
+                    </div>
+
+                    <div class="location">📍 ${location}</div>
+
+                    ${credentials ? `
+                        <div class="credentials">
+                            ${credentials.split(', ').map(c =>
+                                `<span class="credential-tag">${c}</span>`
+                            ).join('')}
+                        </div>
+                    ` : ''}
+
+                    ${p.yearsExperience ? `
+                        <div class="contact-item">⏱️ ${p.yearsExperience} experience</div>
+                    ` : ''}
+
+                    ${specializations ? `
+                        <div class="specializations">
+                            <div class="specializations-label">Specializations:</div>
+                            <div class="specializations-list">${specializations}${moreSpecializations}</div>
+                        </div>
+                    ` : ''}
+
+                    ${phone || email || website || practice ? `
+                        <div class="contact-info">
+                            ${practice}
+                            ${phone}
+                            ${email}
+                            ${website}
+                        </div>
+                    ` : ''}
+                </a>
+            `;
+        }
+
+        function filterPractitioners() {
+            const searchTerm = document.getElementById('search').value.toLowerCase();
+            const country = document.getElementById('country').value;
+            const state = document.getElementById('state').value;
+            const level = document.getElementById('level').value;
+            const status = document.getElementById('status').value;
+
+            filteredPractitioners = allPractitioners.filter(p => {
+                const matchesSearch = !searchTerm ||
+                    p.name.toLowerCase().includes(searchTerm) ||
+                    (p.city && p.city.toLowerCase().includes(searchTerm)) ||
+                    (p.practice && p.practice.toLowerCase().includes(searchTerm));
+
+                const matchesCountry = !country || p.country === country;
+                const matchesState = !state || p.state === state || p.region === state;
+                const matchesLevel = !level || String(p.level) === level;
+                const matchesStatus = !status || p.status === status;
+
+                return matchesSearch && matchesCountry && matchesState &&
+                       matchesLevel && matchesStatus;
+            });
+
+            displayPractitioners(filteredPractitioners);
+        }
+
+        // Add event listeners
+        document.getElementById('search').addEventListener('input', filterPractitioners);
+        document.getElementById('country').addEventListener('change', filterPractitioners);
+        document.getElementById('state').addEventListener('change', filterPractitioners);
+        document.getElementById('level').addEventListener('change', filterPractitioners);
+        document.getElementById('status').addEventListener('change', filterPractitioners);
+
+        // Load practitioners on page load
+        loadPractitioners();
+    </script>
+</body>
+</html>
