@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Terms of Service — ELDOA AI</title>
+  <meta name="description" content="Terms of Service for ELDOA AI (www.eldoaai.com). Review the terms and conditions for using our educational resources."/>
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://eldoaai.com/terms.html"/>
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://eldoaai.com/terms.html"/>
+  <meta property="og:title" content="Terms of Service — ELDOA AI"/>
+  <meta property="og:description" content="Terms of Service for ELDOA AI. Review the terms and conditions for using our educational resources."/>
+  <meta property="og:image" content="/images/og-image.jpg"/>
+
+  <!-- App / PWA friendliness -->
+  <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <style>
+    [data-theme="light"] {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #475569;
+      --brand: #2f2fe6;
+      --brand-2: #0891b2;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --ok: #15803d;
+      --warn: #a16207;
+      --err: #b91c1c;
+    }
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #c7d2fe;
+      --brand: #8b5cf6;
+      --brand-2: #22d3ee;
+      --card: #111827;
+      --border: #262b36;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --err: #ef4444;
+    }
+
+    html, body {height: 100%;}
+    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: var(--bg); color: var(--fg);
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1100px, 92vw); margin: 0 auto; }
+    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg), transparent 20%); border-bottom: 1px solid var(--border); }
+    .nav { display:flex; align-items:center; justify-content:space-between; padding: .75rem 0; }
+    .logo { display:flex; align-items:center; gap:.6rem; font-weight:800; letter-spacing:.2px; }
+    .logo-mark { width:32px; height:32px; border-radius:8px; background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2)); box-shadow: 0 0 0 2px color-mix(in oklab, var(--bg), transparent 65%); }
+    .nav a { font-weight:600; }
+    .nav-right { display:flex; align-items:center; gap:.75rem; }
+    .nav-links { display:flex; align-items:center; gap:.5rem; }
+    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.65rem .9rem; border-radius:12px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); color: var(--fg); font-weight:700; }
+    .btn:hover { filter: brightness(1.03); }
+    .switch { cursor:pointer; border:1px solid var(--border); border-radius:999px; padding:.3rem; display:flex; align-items:center; gap:.3rem; }
+    .switch span { display:inline-block; width:20px; height:20px; border-radius:999px; background: var(--brand); }
+
+    /* Hamburger */
+    .hamburger { display:none; width:40px; height:40px; border-radius:10px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); align-items:center; justify-content:center; }
+    .hamburger svg { width:22px; height:22px; }
+    .mobile-menu { position:fixed; inset:56px 0 auto 0; background: var(--bg); border-bottom:1px solid var(--border); box-shadow: 0 10px 30px color-mix(in oklab, #000, transparent 70%); z-index:49; transform: translateY(-8px); opacity:0; pointer-events:none; transition: transform .18s ease, opacity .18s ease; }
+    .mobile-menu.open { transform: translateY(0); opacity:1; pointer-events:auto; }
+    .mobile-menu .menu-inner { padding: .75rem; display:grid; gap:.5rem; }
+    .mobile-menu a { display:block; padding:.9rem 1rem; border:1px solid var(--border); border-radius:12px; background: color-mix(in oklab, var(--bg), var(--card) 35%); font-weight:700; text-align:center; }
+
+    /* Hero */
+    .hero { padding: 3rem 0 2rem; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5.5vw, 3.5rem); line-height:1.08; margin:.3rem 0 .75rem; max-width: 24ch; margin-left: auto; margin-right: auto; }
+    .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
+    .sub { color: var(--muted); max-width: 66ch; font-size: 1.1rem; line-height: 1.6; margin: 0 auto 2rem; }
+
+    /* Sections */
+    section { padding: 2.5rem 0; border-top: 1px solid var(--border); }
+    h2 { font-size: clamp(1.4rem, 3.8vw, 2rem); margin: 0 0 .5rem; }
+    h3 { font-size: clamp(1.1rem, 2.8vw, 1.4rem); margin: 1.5rem 0 .4rem; }
+    p { line-height: 1.7; margin: .75rem 0; }
+    p.section-sub { color: var(--muted); margin:.1rem 0 1.5rem; max-width: 68ch; line-height: 1.65; }
+    ul, ol { line-height: 1.8; margin: 1rem 0; padding-left: 1.5rem; }
+    li { margin: .5rem 0; }
+
+    .card { border:1px solid var(--border); border-radius:18px; padding: 1.5rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); margin-bottom: 1.5rem; }
+    .content { max-width: 75ch; }
+
+    /* Footer */
+    footer { padding:2rem 0 4rem; border-top:1px solid var(--border); color: var(--muted); }
+
+    /* Accessibility helpers */
+    .sr-only { position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
+
+    /* Responsive adjustments */
+    @media(max-width: 720px){
+      .nav-links { display:none; }
+      .hamburger { display:inline-flex; }
+      .nav { padding: .5rem 0; }
+      header .btn { padding:.55rem .75rem; }
+      .container { width: min(1000px, 94vw); }
+    }
+  </style>
+</head>
+<body>
+  <a class="sr-only" href="#main">Skip to content</a>
+  <header role="banner">
+    <div class="container nav" aria-label="Primary">
+      <a class="logo" href="/" aria-label="ELDOA AI Home">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+      </a>
+      <div class="nav-right">
+        <nav class="nav-links" aria-label="Primary links">
+          <a href="/research/" class="btn">🔬 Research</a>
+          <a href="/diagnostic.html" class="btn">🎯 Diagnostic Tool</a>
+          <a href="/videos/" class="btn">📹 Videos</a>
+          <a href="/kids/" class="btn">📚 Kids Guide</a>
+          <a href="/encyclopedia.html" class="btn">📖 Encyclopedia</a>
+        </nav>
+        <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </button>
+        <button id="themeToggle" class="switch" aria-label="Toggle dark/light theme"><span></span></button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="mobile-menu" hidden>
+      <div class="menu-inner container">
+        <a href="/research/">🔬 Research & Evidence</a>
+        <a href="/diagnostic.html">🎯 Interactive Diagnostic</a>
+        <a href="/videos/">📹 Complete Video Library</a>
+        <a href="/kids/">📚 Kids Pocket Guide</a>
+        <a href="/encyclopedia.html">📖 Complete Encyclopedia</a>
+        <a href="/about.html">About & Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container" role="main">
+    <!-- HERO -->
+    <section class="hero" id="hero" aria-labelledby="hero-title">
+      <div class="kicker">Terms of Service</div>
+      <h1 id="hero-title">Terms of <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">Use</span></h1>
+      <p class="sub">By accessing or using ELDOA AI (www.eldoaai.com), you agree to be bound by these Terms of Service. Please read them carefully.</p>
+      <p style="color: var(--muted); font-size: .95rem; margin-top: 1rem;"><strong>Last Updated:</strong> November 19, 2025</p>
+    </section>
+
+    <!-- TERMS CONTENT -->
+    <section id="terms" aria-labelledby="terms-title">
+      <div class="content">
+        <h2 id="terms-title">1. Acceptance of Terms</h2>
+        <p>By accessing, browsing, or using the ELDOA AI website (www.eldoaai.com) and its resources, you acknowledge that you have read, understood, and agree to be bound by these Terms of Service and our Privacy Policy. If you do not agree to these terms, please do not use this website.</p>
+
+        <h2>2. Description of Service</h2>
+        <p>ELDOA AI provides free educational resources about ELDOA (Étirements Longitudinaux avec Decoaptation Ostéo-Articulaire), including:</p>
+        <ul>
+          <li>A comprehensive encyclopedia of ELDOA terminology, techniques, and concepts</li>
+          <li>Video tutorials and demonstrations from certified ELDOA practitioners</li>
+          <li>Interactive diagnostic tools to help identify potential exercises</li>
+          <li>Research articles and evidence-based information</li>
+          <li>A directory of ELDOA practitioners worldwide</li>
+        </ul>
+        <p><strong>Important:</strong> All content is for educational and informational purposes only and does not constitute medical advice, diagnosis, or treatment.</p>
+
+        <h2>3. Educational Content — Not Medical Advice</h2>
+        <div class="card" style="background: linear-gradient(135deg, color-mix(in oklab, var(--warn), transparent 88%), color-mix(in oklab, var(--warn), transparent 92%)); border: 2px solid var(--warn);">
+          <p><strong>Disclaimer:</strong> ELDOA AI provides educational content only. The information, videos, and tools on this website are NOT intended to replace professional medical advice, diagnosis, or treatment.</p>
+          <ul style="margin-bottom: 0;">
+            <li>Always consult with a qualified healthcare provider before beginning any new exercise program</li>
+            <li>Do not disregard professional medical advice or delay seeking it because of something you read or watched on ELDOA AI</li>
+            <li>If you have a medical condition, injury, or concern, seek guidance from a licensed healthcare professional</li>
+            <li>ELDOA exercises, when performed incorrectly, may cause injury. Proper instruction and form are essential</li>
+          </ul>
+        </div>
+
+        <h2>4. User Responsibilities</h2>
+        <p>As a user of ELDOA AI, you agree to:</p>
+        <ul>
+          <li><strong>Use at Your Own Risk:</strong> You assume full responsibility for any use of the information, techniques, or exercises presented on this site</li>
+          <li><strong>Respect Intellectual Property:</strong> All content on ELDOA AI is protected by copyright. You may not reproduce, distribute, or create derivative works without permission</li>
+          <li><strong>Use Resources Appropriately:</strong> Do not misuse, abuse, or exploit the website or its resources for commercial purposes without authorization</li>
+          <li><strong>Provide Accurate Information:</strong> When submitting contributions, applications, or inquiries, provide truthful and accurate information</li>
+          <li><strong>Respect Others:</strong> Do not post or transmit harmful, offensive, or unlawful content</li>
+        </ul>
+
+        <h2>5. Intellectual Property Rights</h2>
+        <p>All content on ELDOA AI — including text, images, videos, graphics, logos, and software — is owned by ELDOA AI, its contributors, or used with permission. This content is protected by copyright, trademark, and other intellectual property laws.</p>
+
+        <h3>What You Can Do</h3>
+        <ul>
+          <li>Access and view content for personal, non-commercial, educational use</li>
+          <li>Share links to ELDOA AI pages on social media or with others</li>
+          <li>Print individual pages for personal reference</li>
+        </ul>
+
+        <h3>What You Cannot Do</h3>
+        <ul>
+          <li>Reproduce, distribute, or republish content without written permission</li>
+          <li>Use content for commercial purposes without a license</li>
+          <li>Remove or alter copyright notices, watermarks, or attribution</li>
+          <li>Create derivative works based on our content without authorization</li>
+        </ul>
+
+        <h2>6. ELDOA Methodology and Dr. Guy Voyer</h2>
+        <p>ELDOA is a proprietary methodology created by <strong>Dr. Guy Voyer, DO</strong>. ELDOA AI exists to honor and share his work with proper attribution and respect for his intellectual contributions. All references to ELDOA techniques and principles are based on Dr. Voyer's teachings and are presented for educational purposes.</p>
+
+        <h2>7. Third-Party Content and Links</h2>
+        <p>ELDOA AI may include:</p>
+        <ul>
+          <li><strong>Videos:</strong> Embedded from YouTube, Vimeo, and other platforms, contributed by certified practitioners</li>
+          <li><strong>External Links:</strong> Links to practitioner websites, research papers, and related resources</li>
+          <li><strong>Practitioner Directory:</strong> Listings of independent ELDOA practitioners</li>
+        </ul>
+        <p>We do not control or endorse third-party content. You access third-party sites and services at your own risk and subject to their terms and policies. ELDOA AI is not responsible for the accuracy, safety, or practices of external sites or practitioners.</p>
+
+        <h2>8. User Contributions</h2>
+        <p>If you submit content to ELDOA AI (videos, articles, research, feedback, etc.):</p>
+        <ul>
+          <li>You grant ELDOA AI a non-exclusive, royalty-free, worldwide license to use, reproduce, distribute, and display your contribution on the platform</li>
+          <li>You represent that you own or have permission to submit the content</li>
+          <li>You agree that your contribution does not violate any copyright, trademark, privacy, or other rights</li>
+          <li>We reserve the right to review, edit, or decline any contribution at our discretion</li>
+        </ul>
+
+        <h2>9. Privacy and Data Protection</h2>
+        <p>Your use of ELDOA AI is also governed by our <a href="/privacy.html">Privacy Policy</a>, which explains how we collect, use, and protect your information. By using this site, you consent to the practices described in the Privacy Policy.</p>
+
+        <h2>10. Limitation of Liability</h2>
+        <p><strong>To the fullest extent permitted by law, ELDOA AI and its operators, contributors, and partners:</strong></p>
+        <ul>
+          <li>Provide all content and services "AS IS" without warranties of any kind, express or implied</li>
+          <li>Do not guarantee the accuracy, completeness, reliability, or suitability of any information or resources</li>
+          <li>Are not liable for any injury, loss, or damage arising from your use of the website or reliance on its content</li>
+          <li>Are not responsible for interruptions, errors, or technical issues with the website</li>
+        </ul>
+        <p><strong>You expressly agree that your use of ELDOA AI is at your sole risk.</strong></p>
+
+        <h2>11. Indemnification</h2>
+        <p>You agree to indemnify, defend, and hold harmless ELDOA AI, its operators, contributors, and partners from any claims, liabilities, damages, losses, or expenses (including legal fees) arising from:</p>
+        <ul>
+          <li>Your use or misuse of the website</li>
+          <li>Your violation of these Terms of Service</li>
+          <li>Your violation of any third-party rights, including intellectual property or privacy rights</li>
+          <li>Any content you submit or post to the site</li>
+        </ul>
+
+        <h2>12. Modifications to Terms</h2>
+        <p>ELDOA AI reserves the right to modify these Terms of Service at any time. Changes will be effective immediately upon posting the updated terms on this page with a revised "Last Updated" date. Your continued use of the site after changes constitutes acceptance of the new terms.</p>
+
+        <h2>13. Modifications to the Website</h2>
+        <p>We reserve the right to:</p>
+        <ul>
+          <li>Modify, suspend, or discontinue any part of the website at any time</li>
+          <li>Update, remove, or add content without notice</li>
+          <li>Change or restrict access to certain features or resources</li>
+        </ul>
+
+        <h2>14. Termination</h2>
+        <p>We reserve the right to terminate or restrict your access to ELDOA AI at any time, without notice, for any reason, including violation of these Terms of Service.</p>
+
+        <h2>15. Governing Law</h2>
+        <p>These Terms of Service are governed by the laws of the United States. Any disputes arising from these terms or your use of ELDOA AI will be resolved in accordance with U.S. law and subject to the exclusive jurisdiction of courts in the United States.</p>
+
+        <h2>16. Severability</h2>
+        <p>If any provision of these Terms of Service is found to be invalid or unenforceable, the remaining provisions will remain in full force and effect.</p>
+
+        <h2>17. Entire Agreement</h2>
+        <p>These Terms of Service, together with our Privacy Policy, constitute the entire agreement between you and ELDOA AI regarding your use of the website.</p>
+
+        <h2>18. Contact Information</h2>
+        <p>If you have questions or concerns about these Terms of Service, please contact us:</p>
+        <div class="card" style="margin-top: 1rem;">
+          <p><strong>ELDOA AI</strong><br>
+          Email: <a href="mailto:contact@eldoa.ai">contact@eldoa.ai</a><br>
+          Website: <a href="https://www.eldoaai.com">www.eldoaai.com</a></p>
+        </div>
+
+        <div class="card" style="margin-top: 1.5rem; background: linear-gradient(135deg, color-mix(in oklab, var(--brand), transparent 92%), color-mix(in oklab, var(--brand-2), transparent 92%)); border: 2px solid var(--border);">
+          <h3 style="margin-top: 0;">Thank You for Using ELDOA AI</h3>
+          <p style="margin-bottom: 0;">We are grateful for your interest in ELDOA and your commitment to learning. By using this platform responsibly and in the spirit of collaboration, you help us build a global community dedicated to sharing the transformative work of Dr. Guy Voyer.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container" style="display:grid; gap:1rem">
+      <div><strong>ELDOA AI</strong> — Knowledge • Videos • Practitioners</div>
+      <div style="display:flex; gap:.75rem; flex-wrap:wrap">
+        <a href="/">Home</a>
+        <a href="/about.html">About</a>
+        <a href="/about.html#contact">Contact</a>
+        <a href="/contribute.html">Contribute</a>
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+      </div>
+      <small>Educational content only — not medical advice.</small>
+    </div>
+  </footer>
+
+  <script>
+    // THEME TOGGLE
+    (function(){
+      const root = document.documentElement;
+      const btn = document.getElementById('themeToggle');
+      const key = 'theme';
+      const metaLight = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: light)"]') || document.querySelector('meta[name="theme-color"]');
+      const metaDark = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: dark)"]');
+      const setTheme = (mode) => {
+        root.setAttribute('data-theme', mode);
+        localStorage.setItem(key, mode);
+        if (metaLight && metaDark) {
+          if (mode === 'dark') { metaDark.setAttribute('content', '#0b0d12'); metaLight.setAttribute('content', '#0b0d12'); }
+          else { metaLight.setAttribute('content', '#ffffff'); metaDark.setAttribute('content', '#ffffff'); }
+        }
+      };
+      setTheme(localStorage.getItem(key) === 'dark' ? 'dark' : 'light');
+      btn.addEventListener('click', () => setTheme((root.getAttribute('data-theme')||'light') === 'light' ? 'dark' : 'light'));
+    })();
+
+    // MOBILE MENU
+    (function(){
+      const toggle = document.getElementById('menuToggle');
+      const panel = document.getElementById('mobileMenu');
+      if (!toggle || !panel) return;
+      const open = () => { panel.hidden = false; panel.classList.add('open'); toggle.setAttribute('aria-expanded','true'); document.documentElement.style.overflow='hidden'; };
+      const close = () => { panel.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); document.documentElement.style.overflow=''; setTimeout(()=>{ panel.hidden = true; }, 180); };
+      toggle.addEventListener('click', ()=>{ panel.hidden || !panel.classList.contains('open') ? open() : close(); });
+      panel.addEventListener('click', (e)=>{ if (e.target === panel) close(); });
+      panel.querySelectorAll('a').forEach(a=> a.addEventListener('click', close));
+      window.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') close(); });
+      window.addEventListener('resize', ()=>{ if (window.innerWidth > 720 && !panel.hidden) close(); });
+    })();
+  </script>
+</body>
+</html>
