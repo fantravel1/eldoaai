@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2025-11-21",
-  "totalCount": 148,
+  "totalCount": 213,
   "countries": [
     "Austria",
     "Canada",
@@ -8,6 +8,8 @@
     "Germany",
     "Italy",
     "New Zealand",
+    "South Africa",
+    "Switzerland",
     "United Arab Emirates",
     "United Kingdom",
     "United States"
@@ -2550,6 +2552,931 @@
       ],
       "background": "Co-owner Grace Yoga, offers dedicated ELDOA classes addressing Tech Neck and cervical spine",
       "website": "graceyogaonhighland.com"
+    },
+    {
+      "id": "elio-dalla-giovanna",
+      "name": "Elio Dalla Giovanna",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "Switzerland",
+      "city": "Zurich",
+      "yearsExperience": "20+",
+      "specializations": [
+        "First Continental Europe ELDOA Trainer",
+        "Pilates",
+        "ELDOA"
+      ],
+      "website": "veropilates.ch"
+    },
+    {
+      "id": "mila-aleshina",
+      "name": "Mila Aleshina",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Switzerland",
+      "city": "Geneva",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Functional Movement",
+        "STOTT Pilates",
+        "ELDOA"
+      ],
+      "website": "milaaleshina.com"
+    },
+    {
+      "id": "sabrina-tissot",
+      "name": "Sabrina Tissot",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Switzerland",
+      "city": "La Tour-de-Peilz",
+      "yearsExperience": "5+",
+      "specializations": [
+        "Pilates",
+        "ELDOA"
+      ],
+      "practice": "Espace Pilates",
+      "website": "espace-pilates.ch"
+    },
+    {
+      "id": "rolandas-mensikovas",
+      "name": "Rolandas Mensikovas",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "South Africa",
+      "city": "Cape Town",
+      "yearsExperience": "10+",
+      "specializations": [
+        "ELDOA Training"
+      ]
+    },
+    {
+      "id": "tracy-assaad",
+      "name": "Tracy Assaad",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Arab Emirates",
+      "city": "Abu Dhabi",
+      "alternateCity": "Lebanon",
+      "yearsExperience": "2+",
+      "specializations": [
+        "ELDOA Practice"
+      ],
+      "certifiedYear": "2023"
+    },
+    {
+      "id": "dee-tidwell",
+      "name": "Dee Tidwell",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "Colorado",
+      "city": "Denver",
+      "yearsExperience": "25+",
+      "specializations": [
+        "Corrective Exercise",
+        "High Performance"
+      ],
+      "website": "denvereldoa.com"
+    },
+    {
+      "id": "mark-albrecht",
+      "name": "Mark Albrecht",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "Texas",
+      "city": "Austin",
+      "yearsExperience": "8+",
+      "specializations": [
+        "ELDOA Training"
+      ],
+      "website": "eldoainaustin.com"
+    },
+    {
+      "id": "christopher-collier",
+      "name": "Christopher Collier",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "Florida",
+      "city": "Miami",
+      "yearsExperience": "12+",
+      "specializations": [
+        "Whole Body Training"
+      ],
+      "website": "mywholebody.net"
+    },
+    {
+      "id": "christopher-crawford",
+      "name": "Christopher Crawford",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "New York",
+      "city": "New York",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Wellness",
+        "Spinal Health"
+      ],
+      "website": "dekhanawellness.com"
+    },
+    {
+      "id": "teresa-frangopol",
+      "name": "Teresa Frangopol",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "New York",
+      "city": "Roslyn",
+      "yearsExperience": "8+",
+      "specializations": [
+        "ELDOA Training"
+      ]
+    },
+    {
+      "id": "doreen-johnson",
+      "name": "Doreen Johnson",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "Louisiana",
+      "city": "Covington",
+      "yearsExperience": "15+",
+      "specializations": [
+        "Natural Movement",
+        "Nutrition"
+      ],
+      "website": "naturalmovementsolutions.com"
+    },
+    {
+      "id": "ian-lusins",
+      "name": "Ian Lusins",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "Louisiana",
+      "city": "Baton Rouge",
+      "yearsExperience": "8+",
+      "specializations": [
+        "ELDOA Training"
+      ],
+      "website": "ianlusins.com"
+    },
+    {
+      "id": "camille-muhammad",
+      "name": "Camille Muhammad",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "Louisiana",
+      "city": "Baton Rouge",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Wellness"
+      ],
+      "website": "omniety180.com"
+    },
+    {
+      "id": "kevin-cardone",
+      "name": "Kevin Cardone",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "United States",
+      "state": "Georgia",
+      "city": "Alpharetta",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Joint Decompression",
+        "Fascia Work",
+        "Scoliosis"
+      ],
+      "website": "studiohfalpharetta.com"
+    },
+    {
+      "id": "claudia-king",
+      "name": "Claudia King",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United States",
+      "state": "Connecticut",
+      "city": "Darien",
+      "yearsExperience": "5+",
+      "specializations": [
+        "Pilates",
+        "ELDOA"
+      ]
+    },
+    {
+      "id": "nancy-lochtefeld",
+      "name": "Nancy Lochtefeld",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United States",
+      "state": "Connecticut",
+      "city": "New Canaan",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Pilates",
+        "ELDOA"
+      ],
+      "website": "halofitnessnc.com"
+    },
+    {
+      "id": "carrie-lynn-nieves",
+      "name": "Carrie-Lynn Nieves",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Toronto",
+      "region": "Ontario",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Pilates Studio Owner"
+      ],
+      "website": "counterbalancestudiopilates.com"
+    },
+    {
+      "id": "elaine-biagi-turner",
+      "name": "Elaine Biagi Turner",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Toronto",
+      "region": "Ontario",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Pilates Integration"
+      ],
+      "website": "counterbalancestudiopilates.com"
+    },
+    {
+      "id": "tammy-moreau",
+      "name": "Tammy Moreau",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Toronto",
+      "region": "Ontario",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Pilates"
+      ],
+      "website": "bodyharmonics.com"
+    },
+    {
+      "id": "sarah-fegeau",
+      "name": "Sarah Fegeau",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Toronto",
+      "region": "Ontario",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Pilates",
+        "Movement"
+      ],
+      "website": "inhabitpilates.com"
+    },
+    {
+      "id": "inna-loor",
+      "name": "Inna Loor",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Thornhill",
+      "region": "Ontario",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Movement Therapy"
+      ],
+      "website": "innalor.com"
+    },
+    {
+      "id": "maria-mountain",
+      "name": "Maria Mountain",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "London",
+      "region": "Ontario",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Goalie Training"
+      ],
+      "website": "goalietrainingpro.com"
+    },
+    {
+      "id": "kristin-honey",
+      "name": "Kristin Honey",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Guelph",
+      "region": "Ontario",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Yoga",
+        "ELDOA"
+      ],
+      "website": "kristinhoneyyoga.com"
+    },
+    {
+      "id": "alan-cohen-health",
+      "name": "Alan Cohen",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Montreal",
+      "region": "Quebec",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Health Coaching"
+      ],
+      "website": "alancohenhealth.com"
+    },
+    {
+      "id": "troy-perrin",
+      "name": "Troy Perrin",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Montreal",
+      "region": "Quebec",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Training"
+      ],
+      "website": "afterburn.ca"
+    },
+    {
+      "id": "ryan-murray",
+      "name": "Ryan Murray",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Burnaby",
+      "region": "British Columbia",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Physiotherapy"
+      ]
+    },
+    {
+      "id": "sean-waldie",
+      "name": "Sean Waldie",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Campbell River",
+      "region": "British Columbia",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Osteopathy"
+      ],
+      "website": "counterstrain.ca"
+    },
+    {
+      "id": "danielle-cournoyer",
+      "name": "Danielle Cournoyer",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Kaleden",
+      "region": "British Columbia",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Fitness",
+        "Flexibility"
+      ],
+      "website": "bamboobody.net"
+    },
+    {
+      "id": "beth-backman",
+      "name": "Beth Backman",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Canada",
+      "city": "Calgary",
+      "region": "Alberta",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Osteopathic Manual Therapy",
+        "RMT"
+      ],
+      "website": "movementmuse.ca"
+    },
+    {
+      "id": "adam-sanvido",
+      "name": "Adam Sanvido",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "Canada",
+      "city": "Calgary",
+      "region": "Alberta",
+      "yearsExperience": "12+",
+      "specializations": [
+        "Somatherapist",
+        "RMT"
+      ],
+      "website": "innovationshealth.ca"
+    },
+    {
+      "id": "joel-schneider",
+      "name": "Joel Schneider",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Sports Performance",
+        "Edmonton Oilers"
+      ]
+    },
+    {
+      "id": "simon-bennett",
+      "name": "Simon Bennett",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Edmonton",
+      "region": "Alberta",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Sports Performance",
+        "Edmonton Oilers"
+      ]
+    },
+    {
+      "id": "terry-blizzard",
+      "name": "Terry Blizzard",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Canada",
+      "city": "Saint John",
+      "region": "New Brunswick",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Performance Training"
+      ],
+      "website": "afterburn.ca"
+    },
+    {
+      "id": "jermeele-baptiste",
+      "name": "Jermeele Baptiste",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "London"
+    },
+    {
+      "id": "riikka-heikkila",
+      "name": "Riikka Heikkila",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "London",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Golf Performance"
+      ],
+      "website": "golfperformance.eu"
+    },
+    {
+      "id": "anna-reece",
+      "name": "Anna Reece",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "Nottingham",
+      "yearsExperience": "5+",
+      "specializations": [
+        "Physiotherapy"
+      ],
+      "website": "rushcliffephysio.com"
+    },
+    {
+      "id": "charles-longden",
+      "name": "Charles Longden",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "Brentwood",
+      "yearsExperience": "7+",
+      "specializations": [
+        "Golf Fitness"
+      ],
+      "website": "golf-fitness.co.uk"
+    },
+    {
+      "id": "georgina-ramos",
+      "name": "Georgina Ramos",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "Sheffield",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Movement Freedom"
+      ],
+      "website": "move-free.co.uk"
+    },
+    {
+      "id": "lou-hart",
+      "name": "Lou Hart",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "Colchester",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Retreats",
+        "Wellness"
+      ],
+      "website": "louhart.com"
+    },
+    {
+      "id": "sophie-dhenin",
+      "name": "Sophie Dhenin",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "Virginia Water",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Physiotherapy"
+      ],
+      "website": "scorpioclinics.com"
+    },
+    {
+      "id": "oliver-cummings",
+      "name": "Oliver Cummings",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "Maghera",
+      "region": "Northern Ireland",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Gym Training"
+      ]
+    },
+    {
+      "id": "russell-allchin",
+      "name": "Russell Allchin",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "United Kingdom",
+      "city": "Jersey",
+      "region": "Channel Islands",
+      "yearsExperience": "5+",
+      "specializations": [
+        "Strength Training"
+      ]
+    },
+    {
+      "id": "rebecca-rainey",
+      "name": "Rebecca Rainey",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "Germany",
+      "city": "Berlin",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Somatic Movement"
+      ],
+      "website": "rebeccarainey.com"
+    },
+    {
+      "id": "shannon-cooney",
+      "name": "Shannon Cooney",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "Germany",
+      "city": "Berlin",
+      "yearsExperience": "7+",
+      "specializations": [
+        "ELDOA Training"
+      ]
+    },
+    {
+      "id": "alexander-brikman",
+      "name": "Alexander Brikman",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Germany",
+      "city": "Munich",
+      "yearsExperience": "5+",
+      "specializations": [
+        "New Health Society"
+      ],
+      "website": "newhealthsociety.com"
+    },
+    {
+      "id": "renata-mach",
+      "name": "Renata Mach",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Germany",
+      "city": "Reutlingen",
+      "yearsExperience": "7+",
+      "specializations": [
+        "Pilates"
+      ],
+      "website": "pilates-reutlingen.de"
+    },
+    {
+      "id": "wladimir-bornemann",
+      "name": "Wladimir Bornemann",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Germany",
+      "city": "Münster",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Practice"
+      ],
+      "website": "praxis-bornemann.de"
+    },
+    {
+      "id": "chiara-della-misericordia",
+      "name": "Chiara della Misericordia",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Italy",
+      "city": "Milan",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Studio Pilates CDM"
+      ]
+    },
+    {
+      "id": "roberta-paola-pedretti",
+      "name": "Roberta Paola Pedretti",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer",
+      "country": "Italy",
+      "city": "Milan",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Joy Moves"
+      ],
+      "website": "joymoves.it"
+    },
+    {
+      "id": "gloria-rizzati",
+      "name": "Gloria Rizzati",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Italy",
+      "city": "Caldiero",
+      "region": "Verona",
+      "specializations": [
+        "Corpolibero"
+      ],
+      "website": "corpolibero.eu"
+    },
+    {
+      "id": "valentina-maiani",
+      "name": "Valentina Maiani",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Italy",
+      "city": "Bologna",
+      "yearsExperience": "5+"
+    },
+    {
+      "id": "paola-gandolfi",
+      "name": "Paola Gandolfi",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Italy",
+      "city": "Busseto",
+      "region": "Parma",
+      "yearsExperience": "6+"
+    },
+    {
+      "id": "massimo-trevisan",
+      "name": "Massimo Trevisan",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "Italy",
+      "city": "Bassano Del Grappa",
+      "specializations": [
+        "PerforMax Fitness"
+      ],
+      "website": "performaxfitness.net"
+    },
+    {
+      "id": "luca-revrenna",
+      "name": "Luca Revrenna",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Italy",
+      "city": "Villaverla",
+      "yearsExperience": "5+",
+      "specializations": [
+        "Officina della Schiena"
+      ]
+    },
+    {
+      "id": "grazia-biagi",
+      "name": "Grazia Biagi",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Italy",
+      "city": "Montecatini Terme",
+      "yearsExperience": "6+"
+    },
+    {
+      "id": "miriana-fattiboni",
+      "name": "Miriana Fattiboni",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Italy",
+      "city": "Naples",
+      "yearsExperience": "5+"
+    },
+    {
+      "id": "jolanda-sanapo",
+      "name": "Jolanda Sanapo",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "Italy",
+      "city": "Sesto San Giovanni",
+      "yearsExperience": "6+"
+    },
+    {
+      "id": "sheehan-sharma",
+      "name": "Sheehan Sharma",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "yearsExperience": "5+",
+      "specializations": [
+        "Sweet7 Studio"
+      ],
+      "website": "sweet7.co.nz"
+    },
+    {
+      "id": "wendy-bobsein",
+      "name": "Wendy Bobsein",
+      "status": "active",
+      "level": 3,
+      "levelTitle": "Advanced Student",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "yearsExperience": "8+",
+      "specializations": [
+        "East Side Body Transformation"
+      ],
+      "website": "eastsidestudio.co.nz"
+    },
+    {
+      "id": "emma-brake",
+      "name": "Emma Brake",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "specializations": [
+        "Body Form Ponsonby"
+      ],
+      "website": "emmabrakecoaching.co.nz"
+    },
+    {
+      "id": "mark-holyoake",
+      "name": "Mark Holyoake",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "yearsExperience": "6+",
+      "specializations": [
+        "Carbon Method CrossFit"
+      ],
+      "website": "carbonmethodcrossfit.co.nz"
+    },
+    {
+      "id": "nishant-murali",
+      "name": "Nishant Murali",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "yearsExperience": "5+",
+      "specializations": [
+        "Posturefit"
+      ],
+      "website": "posturefit.nz"
+    },
+    {
+      "id": "rob-lee-nz",
+      "name": "Rob Lee",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Physio Form"
+      ],
+      "website": "formphysio.net"
+    },
+    {
+      "id": "rod-fielder",
+      "name": "Rod Fielder",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "yearsExperience": "10+",
+      "specializations": [
+        "The Power of 2"
+      ],
+      "website": "rawener-chi.nz"
+    },
+    {
+      "id": "sarndra-walsh",
+      "name": "Sarndra Walsh",
+      "status": "active",
+      "level": 2,
+      "levelTitle": "Student Practitioner",
+      "country": "New Zealand",
+      "city": "Auckland",
+      "yearsExperience": "8+",
+      "specializations": [
+        "Maintain Massage Therapy"
+      ],
+      "website": "maintainmassage.co.nz"
     }
   ]
 }
