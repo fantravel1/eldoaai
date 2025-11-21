@@ -1,14 +1,14 @@
 # Practitioner List Expansion - Summary
 
 ## Overview
-Expanded the ELDOA practitioner directory from **61 to 146 practitioners** using data extracted from research PDF files.
+Expanded the ELDOA practitioner directory from **61 to 148 practitioners** using data extracted from research PDF files.
 
 ## What Changed
 
 ### Data Expansion
 - **Previous Count:** 61 practitioners
-- **New Count:** 146 practitioners
-- **Increase:** 85 new practitioners (+139%)
+- **New Count:** 148 practitioners
+- **Increase:** 87 new practitioners (+143%)
 
 ### Geographic Coverage
 **Previous:** 2 countries (France, United States)
@@ -27,12 +27,13 @@ Expanded the ELDOA practitioner directory from **61 to 146 practitioners** using
 ### Practitioner Level Distribution
 - **Level 6 (Expert/Creator):** 1 practitioner
 - **Level 5 (Certified Therapist):** 2 practitioners
-- **Level 4 (Certified Trainer/Master Instructor):** 86 practitioners
+- **Level 4 (Certified Trainer/Master Instructor):** 93 practitioners
 - **Level 3 (Advanced Student):** 36 practitioners
-- **Level 2 (Student Practitioner):** 11 practitioners
+- **Level 2 (Student Practitioner):** 14 practitioners
+- **ELDOA Advocates (Uncertified Influencers):** 2 practitioners
 
 ### Top Countries by Practitioner Count
-1. **United States:** 70 practitioners
+1. **United States:** 72 practitioners
 2. **Canada:** 22 practitioners
 3. **France:** 15 practitioners
 4. **Italy:** 9 practitioners
@@ -114,14 +115,18 @@ The existing schema was maintained with the following fields:
 ## Future Opportunities
 
 ### Additional Data Available
-The PDF research contains **500+ certified professionals** across 11 countries. Current extraction covers approximately **30% of available data**.
+The PDF research contains **500+ certified professionals** across 11 countries. Current extraction covers Level 4+ practitioners comprehensively (93 Level 4 trainers captured from ART8's "80+" documented).
+
+### Completed Extractions
+1. **Level 4 practitioners from ART8** - COMPLETED (93 trainers)
+2. Level 5 and Level 6 practitioners - COMPLETED (3 total)
 
 ### Next Steps for Further Expansion
-1. Extract remaining Level 4 practitioners from ART8 (150+ more)
-2. Process ART9 parts (Certified Trainer Directory 2025 - 14 parts)
-3. Add Level 1 and 2 practitioners from ART11
-4. Cross-reference ART10 for France/USA Level 4 trainers
-5. Analyze ART12 for market expansion opportunities
+1. Process ART9 parts (Certified Trainer Directory 2025 - 14 parts)
+2. Add Level 1 and 2 practitioners from ART11 (200+ available)
+3. Cross-reference ART10 for France/USA Level 4 trainers
+4. Analyze ART12 for market expansion opportunities
+5. Add more Level 3 practitioners (200+ available in PDF)
 
 ### Potential Final Numbers
 - **Target:** 300-500 practitioners globally

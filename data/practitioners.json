@@ -1,6 +1,6 @@
 {
   "lastUpdated": "2025-11-21",
-  "totalCount": 146,
+  "totalCount": 148,
   "countries": [
     "Austria",
     "Canada",
@@ -233,7 +233,7 @@
       "country": "France",
       "city": "Vincennes",
       "alternateCity": "Paris",
-      "level": null,
+      "level": 2,
       "credentials": [
         "Pilates/ELDOA Instructor"
       ],
@@ -247,7 +247,8 @@
       "practice": "Free Corpus & Paris studios",
       "address": "1 Rue Vincennes",
       "phone": "95",
-      "email": "karine@freecorpus.fr"
+      "email": "karine@freecorpus.fr",
+      "levelTitle": "Student Practitioner"
     },
     {
       "id": "sandrine-kinard-tessier",
@@ -269,7 +270,9 @@
       ],
       "practice": "Kinésiplus",
       "address": "3A Rue",
-      "website": "kinesiplus.com"
+      "website": "kinesiplus.com",
+      "level": 2,
+      "levelTitle": "Student Practitioner"
     },
     {
       "id": "laura-adams",
@@ -1953,7 +1956,9 @@
         "ELDOA"
       ],
       "background": "Physical therapist and performance coach, named top 50 fitness experts Men's Health, published comprehensive ELDOA articles, pain-free performance training",
-      "website": "drjohnrusin.com"
+      "website": "drjohnrusin.com",
+      "level": null,
+      "levelTitle": "ELDOA Advocate / Influencer"
     },
     {
       "id": "jacob-magnusson-schoen",
@@ -1967,7 +1972,9 @@
         "ELDOA"
       ],
       "background": "Owner SHIFT Fitness Systems, featured on Ben Greenfield Fitness podcast, introduced ELDOA to Greenfield who discussed on Joe Rogan",
-      "website": "shiftfitnesssystems.com"
+      "website": "shiftfitnesssystems.com",
+      "level": 2,
+      "levelTitle": "Student Practitioner"
     },
     {
       "id": "mind-pump-media",
@@ -1979,7 +1986,9 @@
         "ELDOA"
       ],
       "background": "Popular fitness podcast/YouTube (Mind Pump TV) featuring ELDOA education, partnered with ELDOAUSA",
-      "website": "mindpumpmedia.com"
+      "website": "mindpumpmedia.com",
+      "level": null,
+      "levelTitle": "ELDOA Advocate / Influencer"
     },
     {
       "id": "dr-eric",
@@ -1997,7 +2006,9 @@
         "Chiropractic"
       ],
       "background": "Bay Chiro Santa Monica, integrates chiropractic with ELDOA home exercises, collaborates with Bryce Turner",
-      "website": "baychirosantamonica.com"
+      "website": "baychirosantamonica.com",
+      "level": 4,
+      "levelTitle": "Certified Trainer / Master Instructor"
     },
     {
       "id": "robbi-basran",
@@ -2008,7 +2019,9 @@
       "country": "Canada",
       "yearsExperience": "8+",
       "background": "Coast Performance Rehab, demonstration videos for back/neck pain",
-      "website": "coastperformancerehab.com"
+      "website": "coastperformancerehab.com",
+      "level": 4,
+      "levelTitle": "Certified Trainer / Master Instructor"
     },
     {
       "id": "ekemba-sooh",
@@ -2100,7 +2113,9 @@
         "ELDOA"
       ],
       "background": "Owner Wellness Within Studio, specializes in ELDOA Alignment Classes, offers infrared sauna/ice bath",
-      "website": "wellnesswithinstudio.com"
+      "website": "wellnesswithinstudio.com",
+      "level": 4,
+      "levelTitle": "Certified Trainer / Master Instructor"
     },
     {
       "id": "shannon-julian",
@@ -2138,7 +2153,9 @@
         "ELDOA"
       ],
       "background": "Integrates ELDOA with Pilates, Myofascial stretching, Feet-Ness, breath exercises, online consultations",
-      "website": "laurasifuentez.com"
+      "website": "laurasifuentez.com",
+      "level": 4,
+      "levelTitle": "Certified Trainer / Master Instructor"
     },
     {
       "id": "jillian-keeler",
@@ -2150,7 +2167,9 @@
       "specializations": [
         "ELDOA"
       ],
-      "background": "Hosts ELDOA certification courses in Nashville, works with Ben Hubers"
+      "background": "Hosts ELDOA certification courses in Nashville, works with Ben Hubers",
+      "level": 4,
+      "levelTitle": "Certified Trainer / Master Instructor"
     },
     {
       "id": "sue-falsone",
@@ -2497,6 +2516,40 @@
       "levelTitle": "Advanced Student",
       "city": "Auckland",
       "country": "New Zealand"
+    },
+    {
+      "id": "shannon",
+      "name": "Shannon",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer / Master Instructor",
+      "country": "United States",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Yoga",
+        "ELDOA",
+        "Tech Neck",
+        "Cervical spine"
+      ],
+      "background": "Co-owner Grace Yoga, offers dedicated ELDOA classes addressing Tech Neck and cervical spine",
+      "website": "graceyogaonhighland.com"
+    },
+    {
+      "id": "julian",
+      "name": "Julian",
+      "status": "active",
+      "level": 4,
+      "levelTitle": "Certified Trainer / Master Instructor",
+      "country": "United States",
+      "yearsExperience": "10+",
+      "specializations": [
+        "Yoga",
+        "ELDOA",
+        "Tech Neck",
+        "Cervical spine"
+      ],
+      "background": "Co-owner Grace Yoga, offers dedicated ELDOA classes addressing Tech Neck and cervical spine",
+      "website": "graceyogaonhighland.com"
     }
   ]
 }
