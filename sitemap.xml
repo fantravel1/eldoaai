@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main Pages Sitemap -->
+    <sitemap>
+        <loc>https://eldoa.ai/sitemap-main.xml</loc>
+        <lastmod>2025-11-21</lastmod>
+    </sitemap>
+
+    <!-- Practitioners Directory Sitemap -->
+    <sitemap>
+        <loc>https://eldoa.ai/practitioners-sitemap.xml</loc>
+        <lastmod>2025-11-21</lastmod>
+    </sitemap>
+
+    <!-- Video Library Sitemap -->
+    <sitemap>
+        <loc>https://eldoa.ai/videos/video-sitemap.xml</loc>
+        <lastmod>2025-01-18</lastmod>
+    </sitemap>
+</sitemapindex>
