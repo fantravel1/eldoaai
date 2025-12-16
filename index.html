@@ -85,35 +85,40 @@
 
     /* Hero */
     .hero { padding: 2rem 0 1.5rem; }
-    .hero-grid { display:grid; grid-template-columns:1fr; gap:1rem; }
-    @media(min-width:900px){ .hero-grid { grid-template-columns: 1.2fr .8fr; align-items:center; } }
+    .hero-grid { display:grid; grid-template-columns:1fr; gap:1.5rem; }
+    @media(min-width:900px){ .hero-grid { grid-template-columns: 1fr 1fr; align-items:start; } }
     .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); line-height:1.05; margin:.2rem 0 .6rem; }
     .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
     .sub { color: var(--muted); max-width: 58ch; }
-    .widget-card { position:relative; aspect-ratio: 1.2/1; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); display:grid; place-items:center; padding-top: 2rem; perspective: 1000px; }
-    .head-container { width: 180px; height:220px; transform-style: preserve-3d; transition: transform 80ms linear; position: relative; }
-    .head-3d { position: absolute; width: 120px; height: 160px; left: 50%; top: 50%; margin-left: -60px; margin-top: -80px; transform-style: preserve-3d; }
 
-    /* 3D Head faces */
-    .head-face { position: absolute; width: 120px; height: 160px; border-radius: 50%; background: color-mix(in oklab, var(--brand), transparent 70%); border: 2px solid color-mix(in oklab, var(--brand), transparent 40%); backface-visibility: visible; }
-    .head-face.front { transform: translateZ(40px); }
-    .head-face.back { transform: translateZ(-40px) rotateY(180deg); background: color-mix(in oklab, var(--brand), transparent 80%); }
-    .head-face.left { width: 80px; left: -40px; transform: rotateY(-90deg) translateZ(20px); border-radius: 50% 0 0 50%; background: color-mix(in oklab, var(--brand), transparent 75%); }
-    .head-face.right { width: 80px; right: -40px; left: auto; transform: rotateY(90deg) translateZ(20px); border-radius: 0 50% 50% 0; background: color-mix(in oklab, var(--brand), transparent 75%); }
-    .head-face.top { height: 80px; border-radius: 50% 50% 30% 30%; transform: rotateX(90deg) translateZ(40px); background: color-mix(in oklab, var(--brand), transparent 78%); }
-
-    /* Facial features on front face */
-    .face-features { position: absolute; width: 100%; height: 100%; transform: translateZ(41px); pointer-events: none; }
-    .eye { position: absolute; width: 14px; height: 18px; border-radius: 50%; background: color-mix(in oklab, var(--brand), transparent 30%); top: 45%; }
-    .eye.left { left: 28%; }
-    .eye.right { right: 28%; }
-    .nose { position: absolute; width: 3px; height: 30px; background: color-mix(in oklab, var(--brand), transparent 50%); top: 50%; left: 50%; margin-left: -1.5px; border-radius: 2px; }
-    .mouth { position: absolute; width: 40px; height: 15px; border: 2px solid color-mix(in oklab, var(--brand), transparent 50%); border-top: none; border-radius: 0 0 50% 50%; top: 68%; left: 50%; margin-left: -20px; }
-
-    /* Neck */
-    .neck { position: absolute; width: 50px; height: 70px; background: color-mix(in oklab, var(--brand), transparent 70%); bottom: -70px; left: 50%; margin-left: -25px; border-radius: 8px; transform-style: preserve-3d; }
-    .widget-ui { position:absolute; inset:auto 0 0 0; display:flex; gap:.5rem; padding:.6rem; background: color-mix(in oklab, var(--bg), transparent 35%); backdrop-filter: blur(8px); align-items:center; justify-content:space-between; }
-    .widget-ui .status { font-size:.85rem; color: var(--muted); }
+    /* Diagnostic Preview Widget */
+    .diagnostic-preview { position:relative; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 90%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); padding: 1rem; }
+    .diagnostic-preview-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:.75rem; }
+    .diagnostic-preview-header h3 { font-size:1.1rem; margin:0; display:flex; align-items:center; gap:.5rem; }
+    .diagnostic-preview-header .pulse-dot { width:8px; height:8px; background:var(--ok); border-radius:50%; animation: pulse-glow 2s ease-in-out infinite; }
+    @keyframes pulse-glow { 0%,100%{opacity:1;box-shadow:0 0 0 0 color-mix(in oklab,var(--ok),transparent 60%)} 50%{opacity:.7;box-shadow:0 0 0 6px color-mix(in oklab,var(--ok),transparent 90%)} }
+    .diagnostic-mini-body { display:grid; grid-template-columns: 120px 1fr; gap:1rem; align-items:start; }
+    @media(max-width:500px){ .diagnostic-mini-body { grid-template-columns:1fr; } .mini-body-svg-wrap { max-width:180px; margin:0 auto; } }
+    .mini-body-svg { width:100%; height:auto; display:block; }
+    .mini-region { cursor:pointer; transition:all .15s ease; fill:color-mix(in oklab,var(--brand),transparent 85%); stroke:var(--brand); stroke-width:1.5; }
+    .mini-region:hover, .mini-region:focus { fill:color-mix(in oklab,var(--brand),transparent 55%); transform:scale(1.08); outline:none; }
+    .mini-region.active { fill:var(--brand); stroke:var(--brand-2); stroke-width:2.5; animation:region-pulse 1.2s ease-in-out infinite; }
+    @keyframes region-pulse { 0%,100%{opacity:1} 50%{opacity:.75} }
+    .mini-result { background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:.9rem; min-height:180px; }
+    .mini-result-placeholder { text-align:center; color:var(--muted); padding:1.5rem .5rem; }
+    .mini-result-placeholder svg { width:40px; height:40px; margin-bottom:.5rem; opacity:.4; }
+    .mini-result h4 { font-size:1rem; margin:0 0 .4rem; color:var(--brand); }
+    .mini-result-tags { display:flex; flex-wrap:wrap; gap:.3rem; margin:.5rem 0; }
+    .mini-tag { display:inline-block; padding:.15rem .45rem; border-radius:999px; font-size:.7rem; font-weight:600; background:color-mix(in oklab,var(--brand),transparent 88%); color:var(--brand); }
+    .mini-cta { display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap; }
+    .mini-cta a { flex:1; min-width:120px; text-align:center; padding:.55rem .75rem; border-radius:10px; font-weight:700; font-size:.85rem; text-decoration:none; transition:filter .15s; }
+    .mini-cta .primary { background:var(--brand); color:#fff; }
+    .mini-cta .secondary { background:color-mix(in oklab,var(--bg),var(--card) 50%); color:var(--fg); border:1px solid var(--border); }
+    .mini-cta a:hover { filter:brightness(1.1); }
+    .diagnostic-preview-footer { display:flex; align-items:center; justify-content:space-between; margin-top:.75rem; padding-top:.75rem; border-top:1px solid var(--border); gap:.5rem; flex-wrap:wrap; }
+    .diagnostic-preview-footer span { font-size:.8rem; color:var(--muted); }
+    .diagnostic-preview-footer a { font-size:.85rem; font-weight:700; color:var(--brand); text-decoration:none; display:flex; align-items:center; gap:.3rem; }
+    .diagnostic-preview-footer a:hover { text-decoration:underline; }
 
     /* Sections */
     section { padding: 2rem 0; border-top: 1px solid var(--border); }
@@ -144,19 +149,6 @@
     /* Accessibility helpers */
     .sr-only { position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 
-    /* Upright posture feedback */
-    .widget-card.ok { outline: 3px solid var(--ok); box-shadow: 0 0 0 2px color-mix(in oklab, var(--ok), transparent 60%); }
-    .widget-card.ok.flash { animation: flash-ok 900ms ease-in-out infinite alternate; }
-    @keyframes flash-ok {
-      from { box-shadow: 0 0 0 4px color-mix(in oklab, var(--ok), transparent 70%), 0 0 0 10px color-mix(in oklab, #eab308, transparent 90%); }
-      to   { box-shadow: 0 0 0 8px color-mix(in oklab, var(--ok), transparent 45%), 0 0 0 16px color-mix(in oklab, #eab308, transparent 65%); }
-    }
-    .widget-banner { position:absolute; top:.6rem; right:.6rem; border-radius:10px; padding:.35rem .55rem; font-weight:800; font-size:.8rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); border:1px solid var(--border); }
-    .widget-banner.ok { background: linear-gradient(90deg, color-mix(in oklab, #16a34a, transparent 20%), color-mix(in oklab, #eab308, transparent 20%)); color:#052e16; }
-    .widget-cue { position:absolute; inset:0; display:grid; place-items:center; font-weight:900; letter-spacing:.06em; font-size:clamp(1rem, 4.8vw, 1.3rem); color: color-mix(in oklab, var(--fg), transparent 40%); pointer-events:none; text-align:center; padding:1rem; }
-    .widget-cue.ok { color:#065f46; }
-    .readout { font-size:.8rem; margin-left:.5rem; color: var(--muted); }
-
     /* Responsive adjustments */
     @media(max-width: 720px){
       .nav-links { display:none; }
@@ -165,8 +157,9 @@
       header .btn { padding:.55rem .75rem; }
       form[role="search"] { flex-wrap:wrap; }
       form[role="search"] button { width:100%; justify-content:center; }
-      .widget-card { aspect-ratio: 1/1; padding-top: 2.6rem; } /* lower the cube so banner isn't covered */
       .container { width: min(1000px, 94vw); }
+      .diagnostic-preview { padding:.75rem; }
+      .mini-result { min-height:auto; padding:.75rem; }
     }
 
     /* Search results */
@@ -202,8 +195,8 @@
       </a>
       <div class="nav-right">
         <nav class="nav-links" aria-label="Primary links">
-          <a href="/research/" class="btn">🔬 Research</a>
-          <a href="/diagnostic.html" class="btn">🎯 Diagnostic Tool</a>
+          <a href="/diagnostic.html" class="btn">🎯 Diagnostic</a>
+          <a href="/posture-check.html" class="btn">📐 Posture Check</a>
           <a href="/videos/" class="btn">📹 Videos</a>
           <a href="/practitioners.html" class="btn">🧑‍⚕️ Practitioners</a>
           <a href="/encyclopedia.html" class="btn">📖 Encyclopedia</a>
@@ -216,19 +209,19 @@
     </div>
     <div id="mobileMenu" class="mobile-menu" hidden>
       <div class="menu-inner container">
-        <a href="/research/">🔬 Research & Evidence</a>
         <a href="/diagnostic.html">🎯 Interactive Diagnostic</a>
+        <a href="/posture-check.html">📐 Posture Check Tool</a>
         <a href="/videos/">📹 Complete Video Library</a>
         <a href="/practitioners.html">🧑‍⚕️ Find Practitioners</a>
         <a href="/encyclopedia.html">📖 Complete Encyclopedia</a>
-        <a href="#practitioners" rel="nofollow">About Practitioners</a>
+        <a href="/research/">🔬 Research & Evidence</a>
         <a href="#philosophy">Philosophies</a>
       </div>
     </div>
   </header>
 
   <main id="main" class="container" role="main">
-    <!-- HERO / GYROSCOPE WIDGET -->
+    <!-- HERO / DIAGNOSTIC PREVIEW -->
     <section class="hero" id="hero" aria-labelledby="hero-title">
       <div class="hero-grid">
         <div>
@@ -242,48 +235,65 @@
           </form>
         </div>
 
-        <div class="widget-card" aria-live="polite" aria-busy="false">
-          <div id="uprightBanner" class="widget-banner" aria-hidden="true">Hold phone upright</div>
-          <div id="uprightCue" class="widget-cue" aria-hidden="true">HEAD UP — TUCK CHIN</div>
-          <div id="headContainer" class="head-container" role="img" aria-label="Interactive orientation head - mirrors your posture">
-            <div class="head-3d">
-              <!-- 3D Head faces -->
-              <div class="head-face front"></div>
-              <div class="head-face back"></div>
-              <div class="head-face left"></div>
-              <div class="head-face right"></div>
-              <div class="head-face top"></div>
-
-              <!-- Facial features -->
-              <div class="face-features">
-                <div class="eye left"></div>
-                <div class="eye right"></div>
-                <div class="nose"></div>
-                <div class="mouth"></div>
+        <!-- Interactive Diagnostic Preview Widget -->
+        <div class="diagnostic-preview" aria-label="Interactive body diagnostic preview">
+          <div class="diagnostic-preview-header">
+            <h3><span class="pulse-dot" aria-hidden="true"></span> Where Does It Hurt?</h3>
+            <span style="font-size:.75rem;color:var(--muted)">Tap to explore</span>
+          </div>
+          <div class="diagnostic-mini-body">
+            <div class="mini-body-svg-wrap">
+              <svg class="mini-body-svg" viewBox="0 0 100 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive body map - tap regions to see exercises">
+                <!-- Head/Neck -->
+                <ellipse class="mini-region" data-region="neck" cx="50" cy="22" rx="14" ry="12" tabindex="0" aria-label="Neck and cervical spine"/>
+                <!-- Shoulders -->
+                <circle class="mini-region" data-region="shoulder" cx="26" cy="55" r="10" tabindex="0" aria-label="Shoulders"/>
+                <circle class="mini-region" data-region="shoulder" cx="74" cy="55" r="10" tabindex="0" aria-label="Shoulders"/>
+                <!-- Upper Back -->
+                <rect class="mini-region" data-region="upper-back" x="35" y="40" width="30" height="30" rx="4" tabindex="0" aria-label="Upper back and thoracic spine"/>
+                <!-- Lower Back -->
+                <rect class="mini-region" data-region="lower-back" x="38" y="75" width="24" height="35" rx="4" tabindex="0" aria-label="Lower back and lumbar spine"/>
+                <!-- Hips -->
+                <ellipse class="mini-region" data-region="hip" cx="35" cy="125" rx="12" ry="10" tabindex="0" aria-label="Left hip"/>
+                <ellipse class="mini-region" data-region="hip" cx="65" cy="125" rx="12" ry="10" tabindex="0" aria-label="Right hip"/>
+                <!-- Legs (visual only) -->
+                <rect x="32" y="140" width="12" height="50" rx="4" fill="color-mix(in oklab,var(--muted),transparent 80%)" stroke="none"/>
+                <rect x="56" y="140" width="12" height="50" rx="4" fill="color-mix(in oklab,var(--muted),transparent 80%)" stroke="none"/>
+                <!-- Labels -->
+                <text x="50" y="26" text-anchor="middle" font-size="6" fill="currentColor" pointer-events="none" style="font-weight:600">NECK</text>
+                <text x="50" y="58" text-anchor="middle" font-size="5" fill="currentColor" pointer-events="none">UPPER</text>
+                <text x="50" y="96" text-anchor="middle" font-size="5" fill="currentColor" pointer-events="none">LOWER</text>
+                <text x="50" y="128" text-anchor="middle" font-size="5" fill="currentColor" pointer-events="none">HIPS</text>
+              </svg>
+            </div>
+            <div class="mini-result" id="miniResult" aria-live="polite">
+              <div class="mini-result-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <p style="font-weight:600;margin-bottom:.25rem">Tap any body region</p>
+                <p style="font-size:.8rem">Get instant ELDOA exercise recommendations</p>
               </div>
-
-              <!-- Neck -->
-              <div class="neck"></div>
             </div>
           </div>
-          <div class="widget-ui">
-            <div class="status" id="gyroStatus">Optimal phone angle: <strong>inactive</strong> <span id="gyroReadout" class="readout"></span></div>
-            <button id="activateGyro" class="btn" type="button">Activate Gyroscope</button>
+          <div class="diagnostic-preview-footer">
+            <span>12 body regions • Personalized protocols</span>
+            <a href="/diagnostic.html">Full Diagnostic Tool <span aria-hidden="true">→</span></a>
           </div>
-          <noscript>
-            <div class="status">Enable JavaScript to try the mobile orientation demo.</div>
-          </noscript>
         </div>
       </div>
-      <p class="section-sub" style="margin-top:.75rem">On phones/tablets, tap <em>Activate Gyroscope</em>. The head will mirror your posture — keep your phone <strong>upright at eye level</strong> to maintain proper alignment. Don't look down.</p>
+      <p class="section-sub" style="margin-top:.75rem">Try our <a href="/posture-check.html"><strong>Posture Check Tool</strong></a> — uses your phone's gyroscope to help you maintain proper head alignment and avoid "tech neck."</p>
     </section>
 
-    <!-- DIAGNOSTIC TOOL FEATURE -->
-    <section id="diagnostic" aria-labelledby="diagnostic-title" style="background:linear-gradient(135deg,color-mix(in oklab,var(--brand),transparent 95%),color-mix(in oklab,var(--brand-2),transparent 95%));padding:2.5rem 1rem;border-radius:20px;margin:2rem 0">
-      <div style="max-width:900px;margin:0 auto;text-align:center">
-        <h2 id="diagnostic-title" style="font-size:clamp(1.5rem,4vw,2.2rem);margin-bottom:.5rem">🎯 Interactive Body Diagnostic</h2>
-        <p class="section-sub" style="margin:0 auto 1.5rem;max-width:60ch">Click on any body region to discover common issues, evidence-based relief protocols, and targeted video tutorials for that specific area</p>
-        <a class="btn" href="/diagnostic.html" style="font-size:1.1rem;padding:.9rem 1.5rem;background:var(--brand);color:#fff;border-color:var(--brand)">Launch Diagnostic Tool →</a>
+    <!-- POSTURE CHECK FEATURE -->
+    <section id="posture-cta" aria-labelledby="posture-cta-title" style="background:linear-gradient(135deg,color-mix(in oklab,var(--brand),transparent 95%),color-mix(in oklab,var(--brand-2),transparent 95%));padding:2rem 1rem;border-radius:20px;margin:2rem 0">
+      <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center">
+        <div style="text-align:center">
+          <h2 id="posture-cta-title" style="font-size:clamp(1.3rem,3.5vw,1.8rem);margin-bottom:.5rem">📐 Check Your Posture with Gyroscope</h2>
+          <p class="section-sub" style="margin:0 auto 1rem;max-width:55ch">Your phone's sensors can help you combat "tech neck." Learn why keeping your head perpendicular to the ground is crucial for spinal health.</p>
+          <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
+            <a class="btn" href="/posture-check.html" style="background:var(--brand);color:#fff;border-color:var(--brand)">Try Posture Check →</a>
+            <a class="btn" href="/diagnostic.html" style="background:transparent;color:var(--fg);border:1px solid var(--border)">Full Diagnostic Tool</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -525,153 +535,71 @@
       window.addEventListener('resize', ()=>{ if (window.innerWidth > 720 && !panel.hidden) close(); });
     })();
 
-    // GYROSCOPE WIDGET — Optimal phone angle (beta-only)
+    // DIAGNOSTIC PREVIEW WIDGET — Interactive mini body map
     (function(){
-      const headContainer = document.getElementById('headContainer');
-      const statusEl = document.getElementById('gyroStatus');
-      const readoutEl = document.getElementById('gyroReadout');
-      const activateBtn = document.getElementById('activateGyro');
-
-      let last = {alpha:0, beta:0, gamma:0};
-      let lastGold = false;
-
-      const THRESH_GOLD = 1.5; // degrees (kept for visual gold flash)
-      const THRESH_GREEN = 3.0; // degrees (kept for green state)
-      const SWEET = 2.0; // ± degrees = sweet spot (~1–2% give requested)
-      const PERCENT_MODE = 'fitness'; // 'fitness' = 100% best; 'error' = 0% best
-
-      const setStatus = (txt, level='') => {
-        statusEl.innerHTML = `Optimal phone angle: <strong>${txt}</strong> <span id="gyroReadout" class="readout">${readoutEl?.textContent||''}</span>`;
-        statusEl.style.color = level==="ok"?"var(--ok)":level==="warn"?"var(--warn)":level==="err"?"var(--err)":"var(--muted)";
-      };
-
-      const render = (a, b, g) => {
-        // Mirror the rotation: when phone is upright (beta=90), head faces forward (rotateX=0)
-        // When phone is flat (beta=0), head tilts back (rotateX=90)
-        const mirrorBeta = 90 - b;
-        const mirrorAlpha = -a; // Also invert left/right for true mirror effect
-        headContainer.style.transform = `rotateX(${mirrorBeta}deg) rotateY(${mirrorAlpha}deg) rotateZ(${-g}deg)`;
-      };
-
-      const getAngle = () => {
-        if (screen.orientation && typeof screen.orientation.angle === 'number') return screen.orientation.angle;
-        return (typeof window.orientation === 'number') ? (window.orientation % 360 + 360) % 360 : 0;
-      };
-
-      const targetsForAngle = (angle) => {
-        const a = Math.round(((angle % 360) + 360) % 360);
-        if (a === 0) return {beta: 90, gamma: 0, mode:'portrait'};
-        if (a === 180) return {beta: -90, gamma: 0, mode:'portrait-inverted'};
-        if (a === 90) return {beta: 0, gamma: 90, mode:'landscape-left'};
-        if (a === 270) return {beta: 0, gamma: -90, mode:'landscape-right'};
-        return {beta: 90, gamma: 0, mode:'portrait'};
-      };
-
-      // percent based on |beta-targetBeta| only
-      function optimalPercent(db){
-        if (db <= SWEET) return PERCENT_MODE==='fitness' ? 100 : 0;
-        const windowDeg = 20; // falloff window
-        const over = db - SWEET;
-        if (PERCENT_MODE === 'fitness') {
-          // 100 at sweet, down to 0 at SWEET+window, negative beyond
-          return Math.round(100 - (over/windowDeg)*100);
-        } else {
-          // 0 at sweet, up to 100 at SWEET+window, >100 beyond
-          return Math.round((over/windowDeg)*100);
+      const miniRegionData = {
+        'neck': {
+          name: 'Neck & Cervical Spine',
+          issues: ['Neck pain', 'Tech neck', 'Headaches', 'Disc herniation'],
+          topExercise: { name: 'Top 5 for Neck Pain', url: '/videos/pages/top-5-eldoa-exercises-for-neck-pain-relief.html' },
+          segments: ['C1-C2', 'C4-C5', 'C7-T1']
+        },
+        'shoulder': {
+          name: 'Shoulders',
+          issues: ['Rotator cuff', 'Impingement', 'Frozen shoulder', 'Referral pain'],
+          topExercise: { name: 'Top 5 for Shoulder Pain', url: '/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html' },
+          segments: ['C7-T1', 'Upper Thoracic']
+        },
+        'upper-back': {
+          name: 'Upper & Mid Back',
+          issues: ['Poor posture', 'Hyperkyphosis', 'Breathing issues', 'Upper back pain'],
+          topExercise: { name: 'T8-T9 Posture Correction', url: '/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html' },
+          segments: ['T8-T9', 'T12-L1']
+        },
+        'lower-back': {
+          name: 'Lower Back & Lumbar',
+          issues: ['Low back pain', 'Sciatica', 'Disc herniation', 'Sitting-related pain'],
+          topExercise: { name: 'L5-S1 Sciatica Relief', url: '/videos/pages/l5s1-eldoa-for-low-back-pain-and-sciatica.html' },
+          segments: ['L4-L5', 'L5-S1']
+        },
+        'hip': {
+          name: 'Hips & Pelvis',
+          issues: ['Hip pain', 'FAI', 'SI joint dysfunction', 'Pelvic tilt'],
+          topExercise: { name: 'Hip Pain Relief', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' },
+          segments: ['Hip', 'Sacrum']
         }
+      };
+
+      const resultEl = document.getElementById('miniResult');
+      const regions = document.querySelectorAll('.mini-region');
+
+      function renderMiniResult(regionId) {
+        const data = miniRegionData[regionId];
+        if (!data) return;
+
+        resultEl.innerHTML = `
+          <h4>${data.name}</h4>
+          <div class="mini-result-tags">
+            ${data.issues.slice(0,3).map(i => `<span class="mini-tag">${i}</span>`).join('')}
+          </div>
+          <p style="font-size:.8rem;color:var(--muted);margin:.4rem 0">Segments: ${data.segments.join(', ')}</p>
+          <div class="mini-cta">
+            <a href="${data.topExercise.url}" class="primary">Watch Video</a>
+            <a href="/diagnostic.html" class="secondary">Full Diagnostic</a>
+          </div>
+        `;
       }
 
-      const isUpright = (b, _g, angle) => {
-        const t = targetsForAngle(angle);
-        const db = Math.abs((b ?? 0) - t.beta);
-        // Visual states still rely on tight beta windows
-        return { gold: db < THRESH_GOLD, green: db < THRESH_GREEN, db, t };
-      };
-
-      const updateUI = (upright, b, angle) => {
-        const card = headContainer.parentElement;
-        const banner = document.getElementById('uprightBanner');
-        const cue = document.getElementById('uprightCue');
-        const db = Math.abs((b??0) - upright.t.beta);
-        const pct = optimalPercent(db);
-        const pctLabel = (pct > 0 ? pct : Math.ceil(pct)) + '%'; // allow negative for fitness mode when far off
-
-        if (readoutEl) readoutEl.textContent = `β:${(b??0).toFixed(0)}° • ${pctLabel}`;
-
-        if (upright.gold) {
-          card.classList.add('ok','flash');
-          cue.classList.add('ok'); cue.setAttribute('aria-hidden','false');
-          setStatus('100% ✓', 'ok');
-          banner.textContent = 'Perfect vertical — gold!';
-          banner.classList.add('ok'); banner.setAttribute('aria-hidden','false');
-          if (!lastGold && navigator.vibrate) { try { navigator.vibrate([25, 40, 25]); } catch(_){} }
-          lastGold = true;
-        } else if (upright.green) {
-          card.classList.add('ok'); card.classList.remove('flash');
-          cue.classList.add('ok'); cue.setAttribute('aria-hidden','false');
-          setStatus('~100% ✓', 'ok');
-          banner.textContent = 'Vertical — green';
-          banner.classList.add('ok'); banner.setAttribute('aria-hidden','false');
-          lastGold = false;
-        } else {
-          card.classList.remove('ok','flash');
-          cue.classList.remove('ok'); cue.setAttribute('aria-hidden','true');
-          setStatus(pctLabel, 'warn');
-          banner.textContent = 'Hold phone upright';
-          banner.classList.remove('ok'); banner.setAttribute('aria-hidden','true');
-          lastGold = false;
-        }
-      };
-
-      const onOrient = (e) => {
-        const a = e.alpha ?? last.alpha;
-        const b = e.beta ?? last.beta;   // beta only
-        const g = e.gamma ?? last.gamma;
-        last = {alpha:a, beta:b, gamma:g};
-        render(a, b, g);
-        const angle = getAngle();
-        const upright = isUpright(b, g, angle);
-        updateUI(upright, b, angle);
-      };
-
-      const startListening = () => {
-        window.addEventListener('deviceorientation', onOrient, true);
-        if (screen.orientation && 'onchange' in screen.orientation) {
-          screen.orientation.addEventListener('change', () => {});
-        } else {
-          window.addEventListener('orientationchange', () => {});
-        }
-        setStatus('active', 'ok');
-      };
-
-      const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
-
-      activateBtn.addEventListener('click', async () => {
-        try {
-          if (isIOS() && window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission === 'function') {
-            const p = await DeviceOrientationEvent.requestPermission();
-            if (p === 'granted') startListening(); else setStatus('denied', 'err');
-          } else if ('ondeviceorientation' in window) {
-            startListening();
-          } else {
-            setStatus('unsupported', 'warn');
-          }
-        } catch (e) {
-          setStatus('error', 'err');
-        }
+      regions.forEach(region => {
+        const handler = () => {
+          const regionId = region.getAttribute('data-region');
+          regions.forEach(r => r.classList.remove('active'));
+          document.querySelectorAll(`[data-region="${regionId}"]`).forEach(r => r.classList.add('active'));
+          renderMiniResult(regionId);
+        };
+        region.addEventListener('click', handler);
+        region.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); } });
       });
-
-      // Sanity tests
-      (function(){
-        const tests = [];
-        const assert = (n,c)=>tests.push({n,pass:!!c});
-        const t0 = targetsForAngle(0); assert('targets 0° portrait', t0.beta===90);
-        assert('percent sweet spot 100', optimalPercent(1.5)===100);
-        assert('percent declines', optimalPercent(10) < 100);
-        console.groupCollapsed('%cELDOA AI — optimal angle tests','color:var(--brand)');
-        tests.forEach(t=>console[t.pass?'log':'warn'](`${t.pass?'PASS':'FAIL'}: ${t.n}`));
-        console.groupEnd();
-      })();
     })();
 
     // A–Z filters

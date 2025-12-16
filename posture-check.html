@@ -1,0 +1,727 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Posture Check Tool - Combat Tech Neck with Real-Time Feedback | ELDOA AI</title>
+  <meta name="description" content="Use your phone's gyroscope to check your head posture in real-time. Learn why keeping your head perpendicular to the ground prevents tech neck, cervical pain, and spinal degeneration."/>
+  <meta name="keywords" content="tech neck, forward head posture, posture checker, gyroscope posture, cervical spine health, text neck, phone posture"/>
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="canonical" href="https://eldoa.ai/posture-check"/>
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://eldoa.ai/posture-check"/>
+  <meta property="og:title" content="Posture Check Tool - Combat Tech Neck | ELDOA AI"/>
+  <meta property="og:description" content="Real-time posture feedback using your phone's gyroscope. Learn why proper head alignment prevents pain and degeneration."/>
+  <meta property="og:image" content="/images/og-posture.jpg"/>
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "ELDOA AI Posture Check Tool",
+    "description": "Real-time posture monitoring using device gyroscope to prevent tech neck and forward head posture",
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS, Android",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #475569;
+      --brand: #2f2fe6;
+      --brand-2: #0891b2;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --ok: #15803d;
+      --warn: #f59e0b;
+      --err: #dc2626;
+    }
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #c7d2fe;
+      --brand: #8b5cf6;
+      --brand-2: #22d3ee;
+      --card: #111827;
+      --border: #262b36;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --err: #ef4444;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container { width: min(1100px, 94vw); margin: 0 auto; padding: 1rem 0; }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(1.2) blur(8px);
+      background: color-mix(in oklab, var(--bg), transparent 20%);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 0;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--fg);
+    }
+
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2));
+    }
+
+    h1 {
+      font-size: clamp(1.6rem, 4vw, 2.4rem);
+      margin: 1.5rem 0 .5rem;
+      line-height: 1.1;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 65ch;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Gyroscope Widget */
+    .gyro-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+    @media(min-width: 800px) {
+      .gyro-section { grid-template-columns: 1fr 1fr; align-items: start; }
+    }
+
+    .widget-card {
+      position: relative;
+      aspect-ratio: 1/1;
+      max-width: 400px;
+      margin: 0 auto;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 85%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%));
+      display: grid;
+      place-items: center;
+      padding: 2rem 1rem;
+      perspective: 1000px;
+    }
+
+    .head-container {
+      width: 180px;
+      height: 220px;
+      transform-style: preserve-3d;
+      transition: transform 80ms linear;
+      position: relative;
+    }
+
+    .head-3d {
+      position: absolute;
+      width: 120px;
+      height: 160px;
+      left: 50%;
+      top: 50%;
+      margin-left: -60px;
+      margin-top: -80px;
+      transform-style: preserve-3d;
+    }
+
+    .head-face {
+      position: absolute;
+      width: 120px;
+      height: 160px;
+      border-radius: 50%;
+      background: color-mix(in oklab, var(--brand), transparent 70%);
+      border: 2px solid color-mix(in oklab, var(--brand), transparent 40%);
+      backface-visibility: visible;
+    }
+    .head-face.front { transform: translateZ(40px); }
+    .head-face.back { transform: translateZ(-40px) rotateY(180deg); background: color-mix(in oklab, var(--brand), transparent 80%); }
+    .head-face.left { width: 80px; left: -40px; transform: rotateY(-90deg) translateZ(20px); border-radius: 50% 0 0 50%; background: color-mix(in oklab, var(--brand), transparent 75%); }
+    .head-face.right { width: 80px; right: -40px; left: auto; transform: rotateY(90deg) translateZ(20px); border-radius: 0 50% 50% 0; background: color-mix(in oklab, var(--brand), transparent 75%); }
+    .head-face.top { height: 80px; border-radius: 50% 50% 30% 30%; transform: rotateX(90deg) translateZ(40px); background: color-mix(in oklab, var(--brand), transparent 78%); }
+
+    .face-features { position: absolute; width: 100%; height: 100%; transform: translateZ(41px); pointer-events: none; }
+    .eye { position: absolute; width: 14px; height: 18px; border-radius: 50%; background: color-mix(in oklab, var(--brand), transparent 30%); top: 45%; }
+    .eye.left { left: 28%; }
+    .eye.right { right: 28%; }
+    .nose { position: absolute; width: 3px; height: 30px; background: color-mix(in oklab, var(--brand), transparent 50%); top: 50%; left: 50%; margin-left: -1.5px; border-radius: 2px; }
+    .mouth { position: absolute; width: 40px; height: 15px; border: 2px solid color-mix(in oklab, var(--brand), transparent 50%); border-top: none; border-radius: 0 0 50% 50%; top: 68%; left: 50%; margin-left: -20px; }
+    .neck { position: absolute; width: 50px; height: 70px; background: color-mix(in oklab, var(--brand), transparent 70%); bottom: -70px; left: 50%; margin-left: -25px; border-radius: 8px; transform-style: preserve-3d; }
+
+    .widget-banner {
+      position: absolute;
+      top: .8rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 10px;
+      padding: .4rem .7rem;
+      font-weight: 800;
+      font-size: .85rem;
+      background: color-mix(in oklab, var(--bg), var(--card) 35%);
+      border: 1px solid var(--border);
+      text-align: center;
+      white-space: nowrap;
+    }
+    .widget-banner.ok {
+      background: linear-gradient(90deg, color-mix(in oklab, #16a34a, transparent 20%), color-mix(in oklab, #eab308, transparent 20%));
+      color: #052e16;
+    }
+
+    .widget-ui {
+      position: absolute;
+      inset: auto 0 0 0;
+      display: flex;
+      gap: .5rem;
+      padding: .75rem;
+      background: color-mix(in oklab, var(--bg), transparent 35%);
+      backdrop-filter: blur(8px);
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .widget-ui .status { font-size: .85rem; color: var(--muted); }
+    .readout { font-size: .8rem; margin-left: .5rem; color: var(--muted); }
+
+    .widget-card.ok { outline: 3px solid var(--ok); box-shadow: 0 0 0 2px color-mix(in oklab, var(--ok), transparent 60%); }
+    .widget-card.ok.flash { animation: flash-ok 900ms ease-in-out infinite alternate; }
+    @keyframes flash-ok {
+      from { box-shadow: 0 0 0 4px color-mix(in oklab, var(--ok), transparent 70%), 0 0 0 10px color-mix(in oklab, #eab308, transparent 90%); }
+      to { box-shadow: 0 0 0 8px color-mix(in oklab, var(--ok), transparent 45%), 0 0 0 16px color-mix(in oklab, #eab308, transparent 65%); }
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .65rem .9rem;
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      background: var(--brand);
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      font-size: .9rem;
+    }
+    .btn:hover { filter: brightness(1.1); }
+    .btn-secondary { background: color-mix(in oklab, var(--bg), var(--card) 35%); color: var(--fg); }
+
+    /* Instructions Panel */
+    .instructions {
+      background: color-mix(in oklab, var(--bg), var(--card) 35%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+    }
+    .instructions h2 { font-size: 1.3rem; margin-bottom: 1rem; }
+    .step { display: flex; gap: 1rem; margin: 1rem 0; }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--brand);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      flex-shrink: 0;
+    }
+    .step-content h3 { font-size: 1rem; margin-bottom: .25rem; }
+    .step-content p { color: var(--muted); font-size: .9rem; }
+
+    /* Research Section */
+    .research { margin: 3rem 0; }
+    .research h2 {
+      font-size: clamp(1.4rem, 3.5vw, 2rem);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .research-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+    @media(min-width: 700px) { .research-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media(min-width: 1000px) { .research-grid { grid-template-columns: repeat(3, 1fr); } }
+
+    .research-card {
+      background: color-mix(in oklab, var(--bg), var(--card) 35%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem;
+    }
+    .research-card h3 { font-size: 1.1rem; margin-bottom: .5rem; color: var(--brand); }
+    .research-card p { color: var(--muted); font-size: .9rem; margin-bottom: .75rem; }
+    .stat-highlight {
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--err);
+      display: block;
+      margin: .5rem 0;
+    }
+    .citation { font-size: .75rem; color: var(--muted); font-style: italic; margin-top: .5rem; }
+
+    /* Anatomy Diagram */
+    .anatomy-section {
+      background: linear-gradient(135deg, color-mix(in oklab, var(--brand), transparent 95%), color-mix(in oklab, var(--brand-2), transparent 95%));
+      border-radius: 20px;
+      padding: 2rem;
+      margin: 2rem 0;
+    }
+    .anatomy-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    @media(min-width: 800px) { .anatomy-grid { grid-template-columns: 300px 1fr; } }
+
+    .posture-comparison {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+    .posture-example { text-align: center; }
+    .posture-example svg { width: 100px; height: 180px; }
+    .posture-label { font-weight: 700; font-size: .9rem; margin-top: .5rem; }
+    .posture-label.good { color: var(--ok); }
+    .posture-label.bad { color: var(--err); }
+
+    /* ELDOA Solutions */
+    .solutions { margin: 3rem 0; }
+    .solutions h2 { font-size: clamp(1.4rem, 3.5vw, 2rem); margin-bottom: 1rem; }
+    .solution-card {
+      background: color-mix(in oklab, var(--bg), var(--card) 35%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.25rem;
+      margin: 1rem 0;
+    }
+    .solution-card h3 { font-size: 1.1rem; margin-bottom: .5rem; }
+    .solution-card p { color: var(--muted); font-size: .9rem; }
+
+    /* Footer */
+    footer { padding: 2rem 0 4rem; border-top: 1px solid var(--border); color: var(--muted); margin-top: 2rem; }
+
+    /* Mobile optimizations */
+    @media(max-width: 600px) {
+      .widget-card { aspect-ratio: 1/1.1; padding: 1.5rem .75rem; }
+      .instructions { padding: 1rem; }
+      .anatomy-section { padding: 1.25rem; }
+      .posture-comparison { gap: 1rem; }
+      .posture-example svg { width: 80px; height: 140px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark"></span>
+        <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+      </a>
+      <a href="/" style="text-decoration:none;color:var(--muted);font-size:.9rem">Back to Home</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Posture Check: Combat Tech Neck</h1>
+    <p class="intro">
+      Your phone's gyroscope can help you maintain proper head alignment. The 3D head below mirrors your device orientation in real-time.
+      Keep your phone upright at eye level to train yourself out of the "tech neck" position that's damaging millions of spines.
+    </p>
+
+    <div class="gyro-section">
+      <!-- Gyroscope Widget -->
+      <div class="widget-card" id="widgetCard" aria-live="polite" aria-busy="false">
+        <div id="uprightBanner" class="widget-banner" aria-hidden="true">Hold phone upright at eye level</div>
+        <div id="headContainer" class="head-container" role="img" aria-label="Interactive 3D head that mirrors your phone orientation">
+          <div class="head-3d">
+            <div class="head-face front"></div>
+            <div class="head-face back"></div>
+            <div class="head-face left"></div>
+            <div class="head-face right"></div>
+            <div class="head-face top"></div>
+            <div class="face-features">
+              <div class="eye left"></div>
+              <div class="eye right"></div>
+              <div class="nose"></div>
+              <div class="mouth"></div>
+            </div>
+            <div class="neck"></div>
+          </div>
+        </div>
+        <div class="widget-ui">
+          <div class="status" id="gyroStatus">Status: <strong>inactive</strong> <span id="gyroReadout" class="readout"></span></div>
+          <button id="activateGyro" class="btn" type="button">Activate Gyroscope</button>
+        </div>
+        <noscript>
+          <div class="status" style="padding:1rem;text-align:center">Enable JavaScript to use the posture checker.</div>
+        </noscript>
+      </div>
+
+      <!-- Instructions -->
+      <div class="instructions">
+        <h2>How to Use</h2>
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Activate the Gyroscope</h3>
+            <p>Tap the button below the 3D head. On iOS, you'll need to grant motion permission.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Hold Phone at Eye Level</h3>
+            <p>Bring your phone up so you're looking straight ahead, not down. The screen should be roughly perpendicular to the ground.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Achieve "Gold" Status</h3>
+            <p>When perfectly upright (within 1.5 degrees), you'll see a gold flash and feel a subtle vibration. This is proper head alignment.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>Practice Daily</h3>
+            <p>Use this tool throughout the day to build awareness of your head position. Your cervical spine will thank you.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1rem;background:color-mix(in oklab,var(--warn),transparent 90%);border-radius:12px">
+          <strong style="color:var(--warn)">Pro Tip:</strong> Notice how your head tilts forward when you look down at your phone? That's tech neck happening in real-time.
+        </div>
+      </div>
+    </div>
+
+    <!-- Research Section -->
+    <section class="research">
+      <h2>The Science Behind Tech Neck</h2>
+      <p style="color:var(--muted);margin-bottom:1.5rem;max-width:75ch">Forward head posture (FHP), commonly called "tech neck" or "text neck," is an epidemic affecting billions of smartphone and computer users. Here's what the research tells us:</p>
+
+      <div class="research-grid">
+        <article class="research-card">
+          <h3>The Weight Multiplier Effect</h3>
+          <p>The average human head weighs 10-12 pounds. But for every inch your head moves forward, the effective weight on your cervical spine increases dramatically:</p>
+          <span class="stat-highlight">60 lbs</span>
+          <p>at 60 degrees forward tilt (typical texting angle)</p>
+          <div class="citation">Hansraj KK. Assessment of stresses in the cervical spine caused by posture and position of the head. Surgical Technology International. 2014;25:277-9.</div>
+        </article>
+
+        <article class="research-card">
+          <h3>Prevalence Statistics</h3>
+          <p>Forward head posture is increasingly common across all age groups:</p>
+          <span class="stat-highlight">66-90%</span>
+          <p>of patients with neck pain show forward head posture on examination</p>
+          <div class="citation">Yip CH, Chiu TT, Poon AT. The relationship between head posture and severity and disability of patients with neck pain. Manual Therapy. 2008;13(2):148-54.</div>
+        </article>
+
+        <article class="research-card">
+          <h3>Structural Changes</h3>
+          <p>Chronic forward head posture leads to measurable anatomical changes:</p>
+          <ul style="color:var(--muted);font-size:.9rem;margin:.5rem 0;padding-left:1.2rem">
+            <li>Reduced cervical lordosis (natural curve)</li>
+            <li>Increased thoracic kyphosis (rounded upper back)</li>
+            <li>Shortened suboccipital muscles</li>
+            <li>Lengthened deep cervical flexors</li>
+          </ul>
+          <div class="citation">Griegel-Morris P, et al. Incidence of common postural abnormalities. Physical Therapy. 1992;72(6):425-31.</div>
+        </article>
+
+        <article class="research-card">
+          <h3>Associated Conditions</h3>
+          <p>Research links forward head posture to multiple health issues:</p>
+          <ul style="color:var(--muted);font-size:.9rem;margin:.5rem 0;padding-left:1.2rem">
+            <li><strong>Tension headaches</strong> and migraines</li>
+            <li><strong>Cervicogenic dizziness</strong></li>
+            <li><strong>Temporomandibular (TMJ)</strong> dysfunction</li>
+            <li><strong>Reduced lung capacity</strong> (up to 30%)</li>
+            <li><strong>Accelerated disc degeneration</strong></li>
+          </ul>
+          <div class="citation">Multiple studies compiled from PubMed research database.</div>
+        </article>
+
+        <article class="research-card">
+          <h3>Screen Time Correlation</h3>
+          <p>Modern device usage directly correlates with postural problems:</p>
+          <span class="stat-highlight">4+ hours</span>
+          <p>daily smartphone use significantly increases forward head posture severity</p>
+          <div class="citation">Damasceno GM, et al. Text neck and neck pain in 18-21-year-old young adults. European Spine Journal. 2018;27(6):1249-54.</div>
+        </article>
+
+        <article class="research-card">
+          <h3>Reversibility Through Exercise</h3>
+          <p>The good news: targeted exercises can improve craniovertebral angle:</p>
+          <span class="stat-highlight" style="color:var(--ok)">7-8 degrees</span>
+          <p>improvement in craniovertebral angle with consistent ELDOA and corrective exercise</p>
+          <div class="citation">ELDOA clinical observations and cervical posture rehabilitation studies.</div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Anatomy Visual -->
+    <section class="anatomy-section">
+      <div class="anatomy-grid">
+        <div class="posture-comparison">
+          <div class="posture-example">
+            <svg viewBox="0 0 60 120" fill="none" stroke="currentColor" stroke-width="2">
+              <!-- Good posture - head aligned -->
+              <circle cx="30" cy="15" r="12" fill="color-mix(in oklab, var(--ok), transparent 70%)"/>
+              <line x1="30" y1="27" x2="30" y2="80" stroke-width="3"/>
+              <line x1="30" y1="40" x2="15" y2="55"/>
+              <line x1="30" y1="40" x2="45" y2="55"/>
+              <line x1="30" y1="80" x2="20" y2="115"/>
+              <line x1="30" y1="80" x2="40" y2="115"/>
+              <!-- Plumb line -->
+              <line x1="30" y1="0" x2="30" y2="120" stroke="var(--ok)" stroke-dasharray="3,3" stroke-width="1"/>
+            </svg>
+            <div class="posture-label good">Correct: Head Over Shoulders</div>
+          </div>
+          <div class="posture-example">
+            <svg viewBox="0 0 60 120" fill="none" stroke="currentColor" stroke-width="2">
+              <!-- Bad posture - head forward -->
+              <circle cx="45" cy="18" r="12" fill="color-mix(in oklab, var(--err), transparent 70%)"/>
+              <path d="M 38 28 Q 35 35, 30 45" stroke-width="3" fill="none"/>
+              <line x1="30" y1="45" x2="30" y2="80" stroke-width="3"/>
+              <line x1="30" y1="45" x2="15" y2="60"/>
+              <line x1="30" y1="45" x2="42" y2="55"/>
+              <line x1="30" y1="80" x2="20" y2="115"/>
+              <line x1="30" y1="80" x2="40" y2="115"/>
+              <!-- Plumb line showing offset -->
+              <line x1="30" y1="0" x2="30" y2="120" stroke="var(--err)" stroke-dasharray="3,3" stroke-width="1"/>
+              <!-- Angle indicator -->
+              <path d="M 30 30 Q 35 25, 42 22" stroke="var(--err)" stroke-width="1.5" fill="none"/>
+            </svg>
+            <div class="posture-label bad">Tech Neck: +60 lbs on Spine</div>
+          </div>
+        </div>
+
+        <div>
+          <h2 style="margin-bottom:1rem">Why Perpendicular Matters</h2>
+          <p style="margin-bottom:1rem">When your head is stacked directly over your shoulders (perpendicular to the ground), your cervical spine bears only its natural load of 10-12 pounds.</p>
+          <p style="margin-bottom:1rem">The moment your head moves forward - as it does when looking down at a phone - the lever arm lengthens and multiplies the effective weight exponentially.</p>
+          <p><strong>At just 15 degrees forward:</strong> 27 lbs<br>
+          <strong>At 30 degrees:</strong> 40 lbs<br>
+          <strong>At 45 degrees:</strong> 49 lbs<br>
+          <strong>At 60 degrees:</strong> 60 lbs</p>
+          <p style="margin-top:1rem;color:var(--muted)">This chronic overload accelerates disc degeneration, strains muscles, and creates a cascade of postural compensations throughout the entire spine.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ELDOA Solutions -->
+    <section class="solutions">
+      <h2>ELDOA Solutions for Tech Neck</h2>
+      <p style="color:var(--muted);margin-bottom:1.5rem;max-width:75ch">ELDOA exercises specifically target the cervical and cervicothoracic regions most affected by forward head posture. Here are recommended protocols:</p>
+
+      <div class="research-grid">
+        <article class="solution-card">
+          <h3>C4-C5 Decompression</h3>
+          <p>Targets the mid-cervical region commonly affected by disc herniation from chronic flexion.</p>
+          <a href="/videos/pages/decompress-your-neck-c4-c5-with-eldoa.html" class="btn" style="margin-top:.75rem">Watch Tutorial</a>
+        </article>
+
+        <article class="solution-card">
+          <h3>C7-T1 Junction</h3>
+          <p>The cervicothoracic junction bears enormous stress from forward head posture. Essential for office workers.</p>
+          <a href="/videos/pages/tight-neck-relief-eldoa-c5-c6.html" class="btn" style="margin-top:.75rem">Watch Tutorial</a>
+        </article>
+
+        <article class="solution-card">
+          <h3>Upper Thoracic (T8-T9)</h3>
+          <p>Address the hyperkyphosis (rounded upper back) that accompanies and reinforces forward head posture.</p>
+          <a href="/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html" class="btn" style="margin-top:.75rem">Watch Tutorial</a>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:2rem">
+        <a href="/diagnostic.html" class="btn" style="font-size:1.1rem;padding:1rem 1.5rem">Use Full Diagnostic Tool</a>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container" style="display:grid; gap:1rem">
+      <div><strong>ELDOA AI</strong> — Knowledge, Videos, Practitioners</div>
+      <div style="display:flex; gap:.75rem; flex-wrap:wrap">
+        <a href="/">Home</a>
+        <a href="/diagnostic.html">Diagnostic Tool</a>
+        <a href="/videos/">Videos</a>
+        <a href="/encyclopedia.html">Encyclopedia</a>
+        <a href="/practitioners.html">Practitioners</a>
+      </div>
+      <small>Educational content only - not medical advice. Consult a healthcare provider for diagnosis and treatment.</small>
+    </div>
+  </footer>
+
+  <script>
+    // GYROSCOPE WIDGET - Optimal phone angle (beta-only)
+    (function(){
+      const headContainer = document.getElementById('headContainer');
+      const widgetCard = document.getElementById('widgetCard');
+      const statusEl = document.getElementById('gyroStatus');
+      const readoutEl = document.getElementById('gyroReadout');
+      const activateBtn = document.getElementById('activateGyro');
+      const banner = document.getElementById('uprightBanner');
+
+      let last = {alpha:0, beta:0, gamma:0};
+      let lastGold = false;
+
+      const THRESH_GOLD = 1.5; // degrees
+      const THRESH_GREEN = 3.0; // degrees
+      const SWEET = 2.0; // degrees
+
+      const setStatus = (txt, level='') => {
+        statusEl.innerHTML = `Status: <strong>${txt}</strong> <span id="gyroReadout" class="readout">${readoutEl?.textContent||''}</span>`;
+        statusEl.style.color = level==="ok"?"var(--ok)":level==="warn"?"var(--warn)":level==="err"?"var(--err)":"var(--muted)";
+      };
+
+      const render = (a, b, g) => {
+        const mirrorBeta = 90 - b;
+        const mirrorAlpha = -a;
+        headContainer.style.transform = `rotateX(${mirrorBeta}deg) rotateY(${mirrorAlpha}deg) rotateZ(${-g}deg)`;
+      };
+
+      const getAngle = () => {
+        if (screen.orientation && typeof screen.orientation.angle === 'number') return screen.orientation.angle;
+        return (typeof window.orientation === 'number') ? (window.orientation % 360 + 360) % 360 : 0;
+      };
+
+      const targetsForAngle = (angle) => {
+        const a = Math.round(((angle % 360) + 360) % 360);
+        if (a === 0) return {beta: 90, gamma: 0, mode:'portrait'};
+        if (a === 180) return {beta: -90, gamma: 0, mode:'portrait-inverted'};
+        if (a === 90) return {beta: 0, gamma: 90, mode:'landscape-left'};
+        if (a === 270) return {beta: 0, gamma: -90, mode:'landscape-right'};
+        return {beta: 90, gamma: 0, mode:'portrait'};
+      };
+
+      function optimalPercent(db){
+        if (db <= SWEET) return 100;
+        const windowDeg = 20;
+        const over = db - SWEET;
+        return Math.round(100 - (over/windowDeg)*100);
+      }
+
+      const isUpright = (b, _g, angle) => {
+        const t = targetsForAngle(angle);
+        const db = Math.abs((b ?? 0) - t.beta);
+        return { gold: db < THRESH_GOLD, green: db < THRESH_GREEN, db, t };
+      };
+
+      const updateUI = (upright, b, angle) => {
+        const db = Math.abs((b??0) - upright.t.beta);
+        const pct = optimalPercent(db);
+        const pctLabel = (pct > 0 ? pct : Math.ceil(pct)) + '%';
+
+        if (readoutEl) readoutEl.textContent = `Tilt: ${(b??0).toFixed(0)}° • ${pctLabel}`;
+
+        if (upright.gold) {
+          widgetCard.classList.add('ok','flash');
+          setStatus('PERFECT - 100%', 'ok');
+          banner.textContent = 'Perfect alignment! Gold achieved';
+          banner.classList.add('ok');
+          if (!lastGold && navigator.vibrate) { try { navigator.vibrate([25, 40, 25]); } catch(_){} }
+          lastGold = true;
+        } else if (upright.green) {
+          widgetCard.classList.add('ok'); widgetCard.classList.remove('flash');
+          setStatus('Good - ~100%', 'ok');
+          banner.textContent = 'Good posture - keep it up!';
+          banner.classList.add('ok');
+          lastGold = false;
+        } else {
+          widgetCard.classList.remove('ok','flash');
+          const tiltDir = (b??0) < upright.t.beta ? 'Tilt phone back (raise it)' : 'Tilt phone forward';
+          setStatus(pctLabel, 'warn');
+          banner.textContent = tiltDir;
+          banner.classList.remove('ok');
+          lastGold = false;
+        }
+      };
+
+      const onOrient = (e) => {
+        const a = e.alpha ?? last.alpha;
+        const b = e.beta ?? last.beta;
+        const g = e.gamma ?? last.gamma;
+        last = {alpha:a, beta:b, gamma:g};
+        render(a, b, g);
+        const angle = getAngle();
+        const upright = isUpright(b, g, angle);
+        updateUI(upright, b, angle);
+      };
+
+      const startListening = () => {
+        window.addEventListener('deviceorientation', onOrient, true);
+        if (screen.orientation && 'onchange' in screen.orientation) {
+          screen.orientation.addEventListener('change', () => {});
+        } else {
+          window.addEventListener('orientationchange', () => {});
+        }
+        setStatus('Active - move your phone', 'ok');
+        activateBtn.textContent = 'Gyroscope Active';
+        activateBtn.disabled = true;
+        activateBtn.style.opacity = '0.7';
+      };
+
+      const isIOS = () => /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
+      activateBtn.addEventListener('click', async () => {
+        try {
+          if (isIOS() && window.DeviceOrientationEvent && typeof DeviceOrientationEvent.requestPermission === 'function') {
+            const p = await DeviceOrientationEvent.requestPermission();
+            if (p === 'granted') startListening(); else setStatus('Permission denied', 'err');
+          } else if ('ondeviceorientation' in window) {
+            startListening();
+          } else {
+            setStatus('Gyroscope not available on this device', 'warn');
+          }
+        } catch (e) {
+          setStatus('Error activating gyroscope', 'err');
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
