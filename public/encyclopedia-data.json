@@ -1789,6 +1789,16 @@
         "title": "system",
         "slug": "system",
         "file": "system.html"
+      },
+      {
+        "title": "Self-power",
+        "slug": "self-power",
+        "file": "self-power.html"
+      },
+      {
+        "title": "Swayback",
+        "slug": "swayback",
+        "file": "swayback.html"
       }
     ],
     "Q": [
@@ -2040,6 +2050,11 @@
         "title": "Usage Patterns",
         "slug": "usage-patterns",
         "file": "usage-patterns.html"
+      },
+      {
+        "title": "Unsquishing",
+        "slug": "unsquishing",
+        "file": "unsquishing.html"
       }
     ],
     "V": [
@@ -3181,23 +3196,6 @@
         "title": "Hypermobility",
         "slug": "hypermobility",
         "file": "hypermobility.html"
-      }
-    ],
-    "\"": [
-      {
-        "title": "\"Self-power",
-        "slug": "self-power",
-        "file": "self-power.html"
-      },
-      {
-        "title": "\"Swayback",
-        "slug": "swayback",
-        "file": "swayback.html"
-      },
-      {
-        "title": "\"Unsquishing",
-        "slug": "unsquishing",
-        "file": "unsquishing.html"
       }
     ]
   }
