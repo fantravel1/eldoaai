@@ -254,9 +254,10 @@
     "instructor": "Mario Novo",
     "duration": "8:37",
     "duration_seconds": 517,
-    "segment": "General",
+    "segment": "Thoracic",
     "segments": [
-      "General"
+      "T8-T9",
+      "T12-L1"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -281,15 +282,17 @@
     "instructor": "Mario Novo",
     "duration": "7:39",
     "duration_seconds": 459,
-    "segment": "General",
+    "segment": "Lumbar",
     "segments": [
-      "General"
+      "L4-L5",
+      "L5-S1"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
     "description": "Demonstration of an ELDOA exercise for the lumbar spine",
     "ailment": [
-      "General Spinal Health"
+      "General Spinal Health",
+      "Low Back Pain"
     ],
     "url": "https://www.youtube.com/watch?v=E6jTpI6KpE8",
     "youtube_id": "E6jTpI6KpE8",
@@ -308,15 +311,17 @@
     "instructor": "Mario Novo",
     "duration": "6:19",
     "duration_seconds": 379,
-    "segment": "General",
+    "segment": "Cervical",
     "segments": [
-      "General"
+      "C4-C5",
+      "C6-C7"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
     "description": "Demonstration of an ELDOA exercise for the cervical spine",
     "ailment": [
-      "General Spinal Health"
+      "General Spinal Health",
+      "Neck Pain"
     ],
     "url": "https://www.youtube.com/watch?v=mJKb0xjfpQA",
     "youtube_id": "mJKb0xjfpQA",
@@ -335,9 +340,11 @@
     "instructor": "Carolyn Zepf",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Cervical",
     "segments": [
-      "General"
+      "C4-C5",
+      "C5-C6",
+      "C6-C7"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -364,15 +371,17 @@
     "instructor": "Carolyn Zepf",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Upper Thoracic",
     "segments": [
-      "General"
+      "C7-T1",
+      "T1-T2"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
     "description": "ELDOA postures for the upper thoracic spine to alleviate pain",
     "ailment": [
-      "Postural Issues"
+      "Postural Issues",
+      "Shoulder Pain"
     ],
     "url": "https://www.youtube.com/watch?v=AkSokv7Ke5Y",
     "youtube_id": "AkSokv7Ke5Y",
@@ -391,9 +400,10 @@
     "instructor": "Carolyn Zepf",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Lower Thoracic",
     "segments": [
-      "General"
+      "T11-T12",
+      "T12-L1"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -418,15 +428,17 @@
     "instructor": "Carolyn Zepf",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Lumbar",
     "segments": [
-      "General"
+      "L4-L5",
+      "L5-S1"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
     "description": "ELDOA postures targeting the lumbar spine",
     "ailment": [
-      "Postural Issues"
+      "Postural Issues",
+      "Low Back Pain"
     ],
     "url": "https://www.youtube.com/watch?v=LqYrE2HhRIA",
     "youtube_id": "LqYrE2HhRIA",
@@ -453,7 +465,8 @@
     "difficulty": "All Levels",
     "description": "Brief ELDOA stretch for C4-C5 to relieve neck tension",
     "ailment": [
-      "General Spinal Health"
+      "General Spinal Health",
+      "Neck Pain"
     ],
     "url": "https://www.youtube.com/watch?v=zo8UjzUj6LQ",
     "youtube_id": "zo8UjzUj6LQ",
@@ -509,7 +522,8 @@
     "difficulty": "All Levels",
     "description": "Follow-along ELDOA flow targeting the neck",
     "ailment": [
-      "General Spinal Health"
+      "General Spinal Health",
+      "Neck Pain"
     ],
     "url": "https://www.youtube.com/watch?v=60ZSc6xl4Dc",
     "youtube_id": "60ZSc6xl4Dc",
@@ -537,7 +551,8 @@
     "difficulty": "All Levels",
     "description": "Combined ELDOA routine focusing on lumbar spine levels L4-L5 and L2-L3",
     "ailment": [
-      "General Spinal Health"
+      "General Spinal Health",
+      "Low Back Pain"
     ],
     "url": "https://www.youtube.com/watch?v=HHofsJWqfAY",
     "youtube_id": "HHofsJWqfAY",
@@ -925,7 +940,8 @@
     "ailment": [
       "Neck Pain",
       "Shoulder Pain",
-      "Postural Issues"
+      "Postural Issues",
+      "Low Back Pain"
     ],
     "url": "https://www.youtube.com/shorts/GWemwzDhOeQ",
     "youtube_id": "GWemwzDhOeQ",
@@ -947,9 +963,12 @@
     "instructor": "Team Youphoric Health & Performance",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Lumbar",
     "segments": [
-      "General"
+      "L2-L3",
+      "L3-L4",
+      "L4-L5",
+      "L5-S1"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -1329,9 +1348,11 @@
     "instructor": "Team Youphoric Health & Performance",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Thoracic",
     "segments": [
-      "General"
+      "T7-T8",
+      "T8-T9",
+      "T11-T12"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -1358,15 +1379,17 @@
     "instructor": "Team Youphoric Health & Performance",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Thoracic",
     "segments": [
-      "General"
+      "T7-T8",
+      "T8-T9"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
     "description": "Top 5 ELDOA exercises to correct thoracic hypokyphosis",
     "ailment": [
-      "Hyperkyphosis"
+      "Hyperkyphosis",
+      "Postural Issues"
     ],
     "url": "https://www.youtube.com/watch?v=wqQWCkUskWU",
     "youtube_id": "wqQWCkUskWU",
@@ -1497,9 +1520,11 @@
     "instructor": "Team Youphoric Health & Performance",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Lumbar",
     "segments": [
-      "General"
+      "L3-L4",
+      "L4-L5",
+      "L5-S1"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -1748,9 +1773,11 @@
     "instructor": "Team Youphoric Health & Performance",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Thoracic",
     "segments": [
-      "General"
+      "T7-T8",
+      "T8-T9",
+      "T11-T12"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -1837,7 +1864,8 @@
     "difficulty": "All Levels",
     "description": "Rehabilitation exercises targeting piriformis syndrome and foot drop using ELDOA.",
     "ailment": [
-      "Piriformis Syndrome"
+      "Piriformis Syndrome",
+      "Foot Pain"
     ],
     "url": "https://www.youtube.com/watch?v=DHyFeO9QZ84",
     "youtube_id": "DHyFeO9QZ84",
@@ -1864,7 +1892,9 @@
     "difficulty": "All Levels",
     "description": "Addressing glute pain and coccyx pain using the S5-Coccyx ELDOA.",
     "ailment": [
-      "General Spinal Health"
+      "General Spinal Health",
+      "Piriformis Syndrome",
+      "Hip Pain"
     ],
     "url": "https://www.youtube.com/watch?v=YLX4IYWNvg4",
     "youtube_id": "YLX4IYWNvg4",
@@ -2192,9 +2222,11 @@
     "instructor": "Team Youphoric Health & Performance",
     "duration": "0:00",
     "duration_seconds": 0,
-    "segment": "General",
+    "segment": "Lumbar",
     "segments": [
-      "General"
+      "L3-L4",
+      "L4-L5",
+      "L5-S1"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
@@ -2783,7 +2815,9 @@
     "difficulty": "All Levels",
     "description": "Active decompression exercise targeting the L5-S1 segment.",
     "ailment": [
-      "General Spinal Health"
+      "General Spinal Health",
+      "Low Back Pain",
+      "Sciatica"
     ],
     "url": "https://www.youtube.com/watch?v=jaN4xUceNws",
     "youtube_id": "jaN4xUceNws",
@@ -2883,15 +2917,17 @@
     "instructor": "Sheri Kimura",
     "duration": "2447:00",
     "duration_seconds": 146820,
-    "segment": "General",
+    "segment": "Upper Thoracic",
     "segments": [
-      "General"
+      "C7-T1",
+      "T1-T2"
     ],
     "region": "Lumbosacral",
     "difficulty": "All Levels",
     "description": "ELDOA class targeting upper thoracic, shoulder and neck areas.",
     "ailment": [
-      "Shoulder Pain"
+      "Shoulder Pain",
+      "Neck Pain"
     ],
     "url": "https://www.youtube.com/watch?v=4cJPHXfokFg",
     "youtube_id": "4cJPHXfokFg",
