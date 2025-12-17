@@ -124,7 +124,10 @@
       margin: 2rem 0;
     }
     @media(min-width: 800px) {
-      .gyro-section { grid-template-columns: 1fr 1fr; align-items: start; }
+      .gyro-section { grid-template-columns: 1.2fr 1fr; align-items: start; gap: 2rem; }
+    }
+    @media(min-width: 1000px) {
+      .gyro-section { grid-template-columns: 1.3fr 1fr; gap: 2.5rem; }
     }
 
     .widget-card {
@@ -159,6 +162,50 @@
       margin-left: -60px;
       margin-top: -80px;
       transform-style: preserve-3d;
+    }
+
+    /* Desktop: Larger gyroscope widget */
+    @media(min-width: 800px) {
+      .widget-card {
+        max-width: 550px;
+        aspect-ratio: 1/1;
+        padding: 2.5rem 1.5rem;
+      }
+      .head-container {
+        width: 280px;
+        height: 340px;
+      }
+      .head-3d {
+        width: 180px;
+        height: 240px;
+        margin-left: -90px;
+        margin-top: -120px;
+      }
+      .head-face {
+        width: 180px;
+        height: 240px;
+      }
+      .head-face.front { transform: translateZ(60px); }
+      .head-face.back { transform: translateZ(-60px) rotateY(180deg); }
+      .head-face.left { width: 120px; left: -60px; transform: rotateY(-90deg) translateZ(30px); }
+      .head-face.right { width: 120px; right: -60px; left: auto; transform: rotateY(90deg) translateZ(30px); }
+      .head-face.top { height: 120px; transform: rotateX(90deg) translateZ(60px); }
+      .eye { width: 20px; height: 26px; }
+      .nose { width: 4px; height: 45px; }
+      .mouth { width: 60px; height: 22px; margin-left: -30px; }
+      .neck { width: 75px; height: 105px; margin-left: -37.5px; bottom: -105px; }
+      .widget-banner { font-size: 1rem; padding: .5rem 1rem; }
+      .widget-ui { padding: 1rem 1.25rem; }
+      .widget-ui .status { font-size: 1rem; }
+      .readout { font-size: .95rem; }
+      .btn { font-size: 1rem; padding: .75rem 1.1rem; }
+    }
+
+    /* Extra large screens */
+    @media(min-width: 1100px) {
+      .widget-card {
+        max-width: 600px;
+      }
     }
 
     .head-face {
