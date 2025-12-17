@@ -33,14 +33,14 @@
       ],
       "yearsExperience": "40+",
       "specializations": [
-        "Fascia treatment",
-        "Spinal health",
-        "Joint decoaptation",
-        "Sports medicine",
-        "Manual osteopathy",
-        "Visceral/cranial osteopathy"
+        "ELDOA Creator",
+        "Fascia Treatment",
+        "Spinal Health",
+        "Joint Decoaptation",
+        "Manual Osteopathy",
+        "Visceral/Cranial Osteopathy"
       ],
-      "background": "Creator and founder of ELDOA methodology. Born in Paris. Degrees: Physical Education, Physiotherapy, Sports Medicine, Traumatology, 5 osteopathic programs, PhD Educational Science. Former world champion judo (twenties). Studied at Marseille Faculty of Medicine. One of first to map fascial chains. Developed SomaTraining and SomaTherapy programs.",
+      "background": "Creator and founder of ELDOA methodology (1977). Born in Paris. Degrees: Physical Education, Physiotherapy, Sports Medicine, Traumatology, 5 osteopathic programs, PhD Educational Science. Former world champion judo. One of first to map fascial chains. Developed SomaTraining and SomaTherapy programs. Passed away June 23, 2024.",
       "legacy": "Created ELDOA in 1977. Only Level 6 Certified ELDOA Expert in France. His wife, Lydie VOYER, has taken over management of the practice.",
       "address": "42 Rue Borde, Marseille"
     },
@@ -266,11 +266,11 @@
       ],
       "yearsExperience": "25+ years movement therapy, 10+ years functional rehab",
       "specializations": [
-        "ELDOA as PT complement",
-        "Functional rehabilitation",
-        "Myofascial techniques"
+        "ELDOA",
+        "Kinesiology",
+        "Movement Therapy"
       ],
-      "practice": "Kinésiplus",
+      "practice": "Kinesi Plus",
       "address": "3A Rue",
       "website": "kinesiplus.com",
       "level": 2,
@@ -1013,20 +1013,20 @@
       "city": "Bay Area",
       "level": 4,
       "credentials": [
-        "TPI certifications",
-        "C.H.E.K Level 3",
-        "Soma Golf Trainer L1"
+        "Golf Digest Best Young Teachers",
+        "Golf Digest Best Golf Fitness Professionals",
+        "TPI Certified"
       ],
       "yearsExperience": "15+ years golf instruction",
       "education": "Towson University BS Marketing/E-Business (Summa Cum Laude), 2 years NCAA D1 golf",
       "specializations": [
-        "Golf swing technique",
-        "3D motion biomechanics",
-        "Functional fitness for golf",
-        "Tactical coaching using hands-on methods",
-        "Exercise prescription for golf"
+        "Golf Instruction",
+        "Biomechanics",
+        "ELDOA",
+        "Golf Fitness",
+        "3D Motion Analysis"
       ],
-      "background": "ONLY person named to BOTH Golf Digest 'Best Young Teachers' AND 'Best Golf Fitness Professionals.' Founded Golf Smart Academy (1100+ videos). Presented World Golf Fitness Summit (2016), TPI Summit (2024). Author 'The Stock Tour Swing.'",
+      "background": "Founder of Golf Smart Academy. Only person named to both Golf Digest's Best Young Teachers AND Best Golf Fitness Professionals lists. Expert in golf swing technique and 3D motion biomechanics. Author of \"The Stock Tour Swing\". Former Division 1 golfer at Towson University.",
       "notableClients": "Charles Howell III (PGA Tour Winner), consulted top coaches/pro players. Dr. Greg Rose (TPI): 'one of the best in the business.' 2024 TPI presentation: 'Tactical Coaching: Sensing/Guiding Golf Swing Body Movements.'",
       "practice": "Golf Smart Academy",
       "website": "golfsmartacademy.com"
@@ -1414,7 +1414,13 @@
       "city": "Kelowna",
       "yearsExperience": "15+",
       "background": "Fluidpower Health and Performance specialist, advanced spinal pathology expertise",
-      "website": "fluidpowerkelowna.com"
+      "website": "fluidpowerkelowna.com",
+      "practice": "Fluid Power Kelowna",
+      "specializations": [
+        "ELDOA",
+        "Fluid Movement",
+        "Performance"
+      ]
     },
     {
       "id": "dr-samarpan-ananda",
@@ -1446,11 +1452,13 @@
       "city": "Brescia",
       "yearsExperience": "15+",
       "specializations": [
-        "Pilates",
-        "ELDOA"
+        "ELDOA",
+        "Movement Therapy",
+        "Wellness"
       ],
       "background": "Founder of ELDOA Revolution, integrates Pilates with ELDOA, runs certification school in Italy",
-      "website": "eldoarevolution.com"
+      "website": "eldoarevolution.com",
+      "practice": "ELDOA Revolution"
     },
     {
       "id": "scott-herrera",
@@ -1463,10 +1471,16 @@
       "city": "Dallas",
       "yearsExperience": "20+",
       "specializations": [
-        "ELDOA"
+        "ELDOA",
+        "Performance Training",
+        "Sports Rehabilitation"
       ],
-      "background": "Author of ELDOA Levels 1-3 course books, works with MLB/NHL teams (Atlanta Braves, Washington Nationals, Dallas Stars, LA Dodgers), founder Legacy Sport & Wellness",
-      "website": "legacyperformwell.com"
+      "background": "Co-founder of Legacy Performance. Certified to teach ELDOA Level 4 practical portions alongside Guy VOYER DO.",
+      "website": "legacyperformwell.com",
+      "credentials": [
+        "ELDOA Trainer",
+        "SOMA Instructor"
+      ]
     },
     {
       "id": "bryce-turner",
@@ -1479,11 +1493,19 @@
       "city": "Seal Beach",
       "yearsExperience": "13+",
       "specializations": [
-        "ELDOA",
-        "Sports medicine"
+        "ELDOA Training/Certification",
+        "SomaTraining",
+        "SomaTherapy",
+        "Sports Performance"
       ],
-      "background": "Co-founder Beach Fitness and ELDOAUSA, one of elite few approved Level 1-4 instructors in US, works with NBA/NHL/NFL/MLB athletes",
-      "website": "eldoausa.com"
+      "background": "Founder of ELDOAUSA and co-founder of Beach Fitness in Seal Beach, CA (2006). Studied under Guy VOYER DO since 2012. Graduated from SomaTraining & SomaTherapy programs in 2016. Certified ELDOA Trainer in 2017. Highest level of approved ELDOA Instructors (Level 1-4) in the US.",
+      "website": "eldoausa.com",
+      "credentials": [
+        "SOMA Training Instructor",
+        "SOMA Trainer",
+        "SOMA Therapist",
+        "ELDOA Instructor/Trainer"
+      ]
     },
     {
       "id": "petra-baethmann",
@@ -1496,11 +1518,13 @@
       "city": "Toronto",
       "yearsExperience": "18+",
       "specializations": [
+        "ELDOA",
         "Pilates",
-        "ELDOA"
+        "Core Strength"
       ],
       "background": "Owner Sphinx Pilates + ELDOA, combines Pilates with ELDOA, teaches certification courses internationally, B.Commerce McGill",
-      "website": "sphinxpilates.com"
+      "website": "sphinxpilates.com",
+      "practice": "Sphinx Pilates"
     },
     {
       "id": "ben-hubers",
@@ -1513,10 +1537,13 @@
       "city": "Santa Monica",
       "yearsExperience": "10+",
       "specializations": [
-        "Sports medicine"
+        "ELDOA",
+        "SomaTraining",
+        "Performance"
       ],
       "background": "Former Olympic Trials track athlete for Canada, multiple Georgia state champion, works with NHL players, teaches Nashville and California courses",
-      "website": "bensomaperformance.com"
+      "website": "bensomaperformance.com",
+      "practice": "Ben Soma Performance"
     },
     {
       "id": "brent-meier",
@@ -1543,10 +1570,14 @@
       "city": "New York",
       "yearsExperience": "15+",
       "specializations": [
+        "ELDOA",
+        "Foot Health",
+        "Movement",
         "Pilates"
       ],
       "background": "Founder of FEETNESS™ ('posture from the ground up'), teaches NYC/Milan, Pilates Anytime instructor, B.S. Movement Science, trained with Romana Kryzanowska",
-      "website": "ilariacavagna.com, feetness.com"
+      "website": "ilariacavagna.com, feetness.com",
+      "practice": "Feetness"
     },
     {
       "id": "peter-bodi",
@@ -1558,7 +1589,13 @@
       "city": "London",
       "yearsExperience": "15+",
       "background": "SomaTraining UK director, operates Bowskill Clinic",
-      "website": "somatraining.co.uk"
+      "website": "somatraining.co.uk",
+      "practice": "SomaTraining UK",
+      "specializations": [
+        "ELDOA",
+        "SomaTraining",
+        "Movement Education"
+      ]
     },
     {
       "id": "marcelle-jalkh",
@@ -1570,7 +1607,12 @@
       "city": "Zahra",
       "yearsExperience": "12+",
       "background": "Middle East operations specialist",
-      "website": "marcellejalkh.com"
+      "website": "marcellejalkh.com",
+      "specializations": [
+        "ELDOA",
+        "Movement Therapy",
+        "Wellness"
+      ]
     },
     {
       "id": "clemens-dolinar",
@@ -1594,11 +1636,13 @@
       "city": "Berlin",
       "yearsExperience": "12+",
       "specializations": [
+        "ELDOA",
         "Pilates",
-        "ELDOA"
+        "Body Control"
       ],
       "background": "Germany operations, integrates ELDOA with classical Pilates, manual therapy background, podcast guest",
-      "website": "authenticbodycontrol.com"
+      "website": "authenticbodycontrol.com",
+      "practice": "Authentic Body Control"
     },
     {
       "id": "justin-brien",
@@ -1609,8 +1653,17 @@
       "country": "United States",
       "city": "Covington",
       "yearsExperience": "18+",
-      "background": "One of three approved Level 4 practical instructors, owner Natural Movement Solutions, hosts courses New Orleans/Sausalito",
-      "website": "naturalmovementsolutions.com"
+      "background": "Certified to teach ELDOA Level 4 practical portions. Works with Natural Movement Solutions.",
+      "website": "naturalmovementsolutions.com",
+      "credentials": [
+        "ELDOA Trainer",
+        "SOMA Instructor"
+      ],
+      "specializations": [
+        "ELDOA",
+        "Natural Movement",
+        "Corrective Exercise"
+      ]
     },
     {
       "id": "dan-hellman",
@@ -1624,10 +1677,12 @@
       "yearsExperience": "15+",
       "specializations": [
         "ELDOA",
-        "Golf fitness"
+        "Fitness Training",
+        "Health Optimization"
       ],
       "background": "Golf Digest '50 Best Golf Fitness Professionals,' co-creator 'ELDOA FOR GOLF' TPI course, trained Tiger Woods and NHL/NFL players, owner H3",
-      "website": "h3bydan.com"
+      "website": "h3bydan.com",
+      "practice": "H3 by Dan"
     },
     {
       "id": "janet-alexander",
@@ -1641,11 +1696,12 @@
       "yearsExperience": "35+",
       "specializations": [
         "ELDOA",
-        "Golf fitness",
-        "Sports medicine"
+        "Fitness",
+        "Health & Wellness"
       ],
       "background": "Co-creator 'ELDOA FOR GOLF' TPI course, co-owner Pacific Fitness and Health, featured Golf Channel, successful triathlete",
-      "website": "pacificfitnesshealth.com"
+      "website": "pacificfitnesshealth.com",
+      "practice": "Pacific Fitness Health"
     },
     {
       "id": "kacey-a-grissom",
@@ -1684,7 +1740,13 @@
       "country": "United States",
       "yearsExperience": "10+",
       "background": "Knox Trainz owner",
-      "website": "knoxtrainz.com"
+      "website": "knoxtrainz.com",
+      "practice": "Knox Trainz",
+      "specializations": [
+        "ELDOA",
+        "Personal Training",
+        "Performance"
+      ]
     },
     {
       "id": "bob-bowers",
@@ -1697,10 +1759,13 @@
       "country": "Canada",
       "yearsExperience": "20+",
       "specializations": [
-        "Massage therapy"
+        "ELDOA",
+        "Healing",
+        "Holistic Health"
       ],
       "background": "Co-operates Infinite Healing with Hajnal Laszlo, physical preparation coach, Thai Massage, Life Coach",
-      "website": "infinite-healing.com"
+      "website": "infinite-healing.com",
+      "practice": "Infinite Healing"
     },
     {
       "id": "hajnal-laszlo",
@@ -1713,10 +1778,13 @@
       "country": "Canada",
       "yearsExperience": "12+",
       "specializations": [
-        "Sports medicine"
+        "ELDOA",
+        "Healing",
+        "Holistic Health"
       ],
       "background": "Co-operates Infinite Healing, works with high-performance athletes",
-      "website": "infinite-healing.com"
+      "website": "infinite-healing.com",
+      "practice": "Infinite Healing"
     },
     {
       "id": "kathleen-trotter",
@@ -1822,8 +1890,20 @@
       "region": "BC",
       "country": "Canada",
       "yearsExperience": "15+",
-      "background": "Soma Education Canada director",
-      "website": "somaeducation.ca"
+      "background": "Founder of Soma Education Canada and Rehab Room. Renowned Manual Osteopath and Physiotherapist based in Squamish, BC. Studied with Guy Voyer DO for 12+ years. Consulted with professional sports teams and athletes.",
+      "website": "somaeducation.ca",
+      "credentials": [
+        "BSc",
+        "DOMP",
+        "Manual Osteopath",
+        "Physiotherapist"
+      ],
+      "specializations": [
+        "ELDOA Education",
+        "Manual Osteopathy",
+        "Sports Performance",
+        "Rehabilitation"
+      ]
     },
     {
       "id": "sheri-kimura",
@@ -1836,11 +1916,13 @@
       "country": "Canada",
       "yearsExperience": "18+",
       "specializations": [
-        "Pilates",
-        "ELDOA"
+        "ELDOA",
+        "Bodywork",
+        "Movement Therapy"
       ],
       "background": "Former dancer, Pilates/ELDOA at Shift Bodywork, specializes in pre/post surgery rehab, Myofascial Stretching Certified",
-      "website": "shiftbodywork.com"
+      "website": "shiftbodywork.com",
+      "practice": "Shift Bodywork"
     },
     {
       "id": "todd-fontaine",
@@ -1905,11 +1987,13 @@
       "city": "Canada",
       "yearsExperience": "10+",
       "specializations": [
+        "ELDOA",
         "Pilates",
-        "ELDOA"
+        "Core Strengthening"
       ],
       "background": "Pilates/ELDOA specialist",
-      "website": "sarahpilateseldoa.com"
+      "website": "sarahpilateseldoa.com",
+      "practice": "Sarah Pilates ELDOA"
     },
     {
       "id": "claudia-zelazny",
@@ -1922,7 +2006,9 @@
       "country": "United States",
       "yearsExperience": "10+",
       "specializations": [
-        "Sports medicine"
+        "ELDOA",
+        "Performance Training",
+        "Wellness"
       ],
       "background": "Co-owner Legacy Sport & Wellness with Scott Herrera, works with pro athletes",
       "website": "legacyperformwell.com"
@@ -1938,10 +2024,16 @@
       "yearsExperience": "17+",
       "specializations": [
         "ELDOA",
-        "Sports medicine"
+        "Athletic Performance",
+        "Track & Field",
+        "Online ELDOA Education"
       ],
-      "background": "Founder ELDOA METHOD, head instructor with online video library and live sessions. B.S. Kinesiology, NSCA certified. Featured in Runner's World. Former U Maine track athlete, worked with NZ Skycity Breakers",
-      "website": "eldoamethod.com"
+      "background": "Head instructor at ELDOA METHOD. Began training with Guy VOYER DO in Los Angeles in 2008. Completed 40+ courses with Dr. VOYER. Former Division 1 track and field athlete at University of Maine (long jump, triple jump). Works with NZ Skycity Breakers Basketball Team.",
+      "website": "eldoamethod.com",
+      "credentials": [
+        "Level 4 ELDOA Trainer",
+        "SomaTraining Graduate"
+      ]
     },
     {
       "id": "dr-john-rusin",
@@ -1952,15 +2044,21 @@
       "country": "United States",
       "yearsExperience": "18+",
       "credentials": [
-        "DPT"
+        "DPT",
+        "CSCS"
       ],
       "specializations": [
-        "ELDOA"
+        "Injury Prevention",
+        "ELDOA",
+        "Pain-Free Performance",
+        "Strength Training",
+        "Mobility"
       ],
-      "background": "Physical therapist and performance coach, named top 50 fitness experts Men's Health, published comprehensive ELDOA articles, pain-free performance training",
+      "background": "Physical Therapist, Personal Trainer and Injury Prevention Specialist. Named one of the top 50 fitness experts in the world by Men's Health magazine. 18+ years coaching experience with focus on preventative health, performance and longevity.",
       "website": "drjohnrusin.com",
       "level": null,
-      "levelTitle": "ELDOA Advocate / Influencer"
+      "levelTitle": "ELDOA Advocate / Influencer",
+      "youtube": "https://www.youtube.com/drjohnrusin"
     },
     {
       "id": "jacob-magnusson-schoen",
@@ -1971,12 +2069,15 @@
       "country": "United States",
       "yearsExperience": "10+",
       "specializations": [
-        "ELDOA"
+        "ELDOA",
+        "Fitness Systems",
+        "Performance Training"
       ],
       "background": "Owner SHIFT Fitness Systems, featured on Ben Greenfield Fitness podcast, introduced ELDOA to Greenfield who discussed on Joe Rogan",
       "website": "shiftfitnesssystems.com",
       "level": 2,
-      "levelTitle": "Student Practitioner"
+      "levelTitle": "Student Practitioner",
+      "practice": "Shift Fitness Systems"
     },
     {
       "id": "mind-pump-media",
@@ -1985,12 +2086,16 @@
       "city": "California",
       "yearsExperience": "40+",
       "specializations": [
-        "ELDOA"
+        "Fitness Education",
+        "ELDOA",
+        "Personal Training",
+        "Podcast/Media"
       ],
-      "background": "Popular fitness podcast/YouTube (Mind Pump TV) featuring ELDOA education, partnered with ELDOAUSA",
+      "background": "Mind Pump is the #1 fitness podcast in the world with over half a billion downloads. Hosted by Adam Schafer, Sal Di Stefano, Justin Andrews, and Doug Egge. Featured ELDOA content and hosted ELDOA seminars at their studio.",
       "website": "mindpumpmedia.com",
       "level": null,
-      "levelTitle": "ELDOA Advocate / Influencer"
+      "levelTitle": "ELDOA Advocate / Influencer",
+      "youtube": "https://www.youtube.com/mindpumptv"
     },
     {
       "id": "dr-eric",
@@ -2023,7 +2128,13 @@
       "background": "Coast Performance Rehab, demonstration videos for back/neck pain",
       "website": "coastperformancerehab.com",
       "level": 4,
-      "levelTitle": "Certified Trainer / Master Instructor"
+      "levelTitle": "Certified Trainer / Master Instructor",
+      "practice": "Coast Performance Rehab",
+      "specializations": [
+        "ELDOA",
+        "Sports Rehabilitation",
+        "Performance"
+      ]
     },
     {
       "id": "ekemba-sooh",
@@ -2035,10 +2146,13 @@
       "country": "United States",
       "yearsExperience": "12+",
       "specializations": [
-        "ELDOA"
+        "ELDOA",
+        "Core Training",
+        "Fitness"
       ],
       "background": "Certified all 5 ELDOA levels, SMTr, SMTh. Comprehensive ELDOA and osteopathic exercise programs, monthly free classes, online training",
-      "website": "solcorefitness.com"
+      "website": "solcorefitness.com",
+      "practice": "Solcore Fitness"
     },
     {
       "id": "angie-campbell",
@@ -2051,10 +2165,12 @@
       "yearsExperience": "20+",
       "specializations": [
         "ELDOA",
-        "Yoga"
+        "Yoga",
+        "Breathwork"
       ],
       "background": "Certified ELDOA Trainer, Yoga Therapist (C-IAYT, E-RYT 500). Integrates ELDOA with yoga therapy, BFA dance, teaches 200/300-hr Yoga Teacher Training",
-      "website": "urbanbreathyoga.com"
+      "website": "urbanbreathyoga.com",
+      "practice": "Urban Breath Yoga"
     },
     {
       "id": "stacey-stone",
@@ -2066,10 +2182,12 @@
       "yearsExperience": "20+",
       "specializations": [
         "ELDOA",
-        "Yoga"
+        "Movement",
+        "Mindfulness"
       ],
       "background": "ELDOA Practitioner, CPT, CHEK Level 1, Yoga, Reiki Master. Integrates ELDOA with strengthening, whole-body approach",
-      "website": "stillandmovingcenter.com"
+      "website": "stillandmovingcenter.com",
+      "practice": "Still and Moving Center"
     },
     {
       "id": "abena",
@@ -2081,11 +2199,13 @@
       "state": "NY",
       "country": "United States",
       "specializations": [
+        "ELDOA",
         "Pilates",
-        "ELDOA"
+        "Movement"
       ],
       "background": "Owner Abena Pilates studio Upper West Side, offers ELDOA in private sessions or Feel Fab Pilates packages for chronic pain",
-      "website": "abenapilates.com"
+      "website": "abenapilates.com",
+      "practice": "Abena Pilates"
     },
     {
       "id": "brooke-chaffee",
@@ -2098,8 +2218,9 @@
       "country": "United States",
       "yearsExperience": "2009+",
       "specializations": [
-        "Pilates",
-        "Sports medicine"
+        "ELDOA",
+        "Movement Therapy",
+        "Wellness"
       ],
       "background": "Former figure skater/dancer, trained at Romana's Pilates (PPATT 2018), University of the Arts Philadelphia, works with athletes and injury recovery",
       "website": "brookechaffee.com"
@@ -2112,12 +2233,15 @@
       "state": "NY",
       "country": "United States",
       "specializations": [
-        "ELDOA"
+        "ELDOA",
+        "Wellness",
+        "Inner Health"
       ],
       "background": "Owner Wellness Within Studio, specializes in ELDOA Alignment Classes, offers infrared sauna/ice bath",
       "website": "wellnesswithinstudio.com",
       "level": 4,
-      "levelTitle": "Certified Trainer / Master Instructor"
+      "levelTitle": "Certified Trainer / Master Instructor",
+      "practice": "Wellness Within Studio"
     },
     {
       "id": "shannon-julian",
@@ -2143,7 +2267,13 @@
       "state": "WA",
       "country": "United States",
       "background": "Lead instructor Pacific Clinic, group classes and 1:1 sessions, chronic pain and aging optimization, CPT, Senior Fitness Specialist",
-      "website": "pacific.clinic"
+      "website": "pacific.clinic",
+      "practice": "Pacific Clinic",
+      "specializations": [
+        "ELDOA",
+        "Clinical Treatment",
+        "Rehabilitation"
+      ]
     },
     {
       "id": "laura-sifuentez",
@@ -2151,8 +2281,9 @@
       "status": "active",
       "city": "USA",
       "specializations": [
-        "Pilates",
-        "ELDOA"
+        "ELDOA",
+        "Movement",
+        "Wellness"
       ],
       "background": "Integrates ELDOA with Pilates, Myofascial stretching, Feet-Ness, breath exercises, online consultations",
       "website": "laurasifuentez.com",
@@ -2563,11 +2694,12 @@
       "city": "Zurich",
       "yearsExperience": "20+",
       "specializations": [
-        "First Continental Europe ELDOA Trainer",
+        "ELDOA",
         "Pilates",
-        "ELDOA"
+        "Movement Education"
       ],
-      "website": "veropilates.ch"
+      "website": "veropilates.ch",
+      "practice": "Vero Pilates"
     },
     {
       "id": "mila-aleshina",
@@ -2579,9 +2711,9 @@
       "city": "Geneva",
       "yearsExperience": "8+",
       "specializations": [
-        "Functional Movement",
-        "STOTT Pilates",
-        "ELDOA"
+        "ELDOA",
+        "Movement",
+        "Flexibility"
       ],
       "website": "milaaleshina.com"
     },
@@ -2595,8 +2727,9 @@
       "city": "La Tour-de-Peilz",
       "yearsExperience": "5+",
       "specializations": [
+        "ELDOA",
         "Pilates",
-        "ELDOA"
+        "Body Conditioning"
       ],
       "practice": "Espace Pilates",
       "website": "espace-pilates.ch"
@@ -2640,10 +2773,22 @@
       "city": "Denver",
       "yearsExperience": "25+",
       "specializations": [
-        "Corrective Exercise",
-        "High Performance"
+        "Golf Fitness",
+        "ELDOA",
+        "Soft Tissue Therapy",
+        "Mountain Biking Performance",
+        "Corrective Exercise"
       ],
-      "website": "denvereldoa.com"
+      "website": "denvereldoa.com",
+      "phone": "303-883-0435",
+      "email": "deetidwell@gmail.com",
+      "credentials": [
+        "TPI Level 3",
+        "SOMA Golf Trainer",
+        "Soft Tissue Specialist",
+        "ELDOA Trainer"
+      ],
+      "background": "25+ years in fitness industry. Colorado's only certified ELDOA Trainer and leader in golf fitness for 24 years. 3X Golf Digest Top 50 Fitness Instructor. Owner of Colorado Golf Fitness Club."
     },
     {
       "id": "mark-albrecht",
@@ -2656,9 +2801,12 @@
       "city": "Austin",
       "yearsExperience": "8+",
       "specializations": [
-        "ELDOA Training"
+        "ELDOA",
+        "Spinal Health",
+        "Posture Correction"
       ],
-      "website": "eldoainaustin.com"
+      "website": "eldoainaustin.com",
+      "practice": "ELDOA in Austin"
     },
     {
       "id": "christopher-collier",
@@ -2671,9 +2819,12 @@
       "city": "Miami",
       "yearsExperience": "12+",
       "specializations": [
-        "Whole Body Training"
+        "ELDOA",
+        "Holistic Fitness",
+        "Wellness"
       ],
-      "website": "mywholebody.net"
+      "website": "mywholebody.net",
+      "practice": "My Whole Body"
     },
     {
       "id": "christopher-crawford",
@@ -2686,10 +2837,12 @@
       "city": "New York",
       "yearsExperience": "10+",
       "specializations": [
+        "ELDOA",
         "Wellness",
-        "Spinal Health"
+        "Mind-Body"
       ],
-      "website": "dekhanawellness.com"
+      "website": "dekhanawellness.com",
+      "practice": "Dekhana Wellness"
     },
     {
       "id": "teresa-frangopol",
@@ -2716,10 +2869,12 @@
       "city": "Covington",
       "yearsExperience": "15+",
       "specializations": [
+        "ELDOA",
         "Natural Movement",
-        "Nutrition"
+        "Corrective Exercise"
       ],
-      "website": "naturalmovementsolutions.com"
+      "website": "naturalmovementsolutions.com",
+      "practice": "Natural Movement Solutions"
     },
     {
       "id": "ian-lusins",
@@ -2732,7 +2887,9 @@
       "city": "Baton Rouge",
       "yearsExperience": "8+",
       "specializations": [
-        "ELDOA Training"
+        "ELDOA",
+        "Spinal Health",
+        "Movement"
       ],
       "website": "ianlusins.com"
     },
@@ -2747,9 +2904,12 @@
       "city": "Baton Rouge",
       "yearsExperience": "10+",
       "specializations": [
-        "Wellness"
+        "ELDOA",
+        "Holistic Fitness",
+        "Transformation"
       ],
-      "website": "omniety180.com"
+      "website": "omniety180.com",
+      "practice": "Omniety 180"
     },
     {
       "id": "kevin-cardone",
@@ -2762,11 +2922,12 @@
       "city": "Alpharetta",
       "yearsExperience": "8+",
       "specializations": [
-        "Joint Decompression",
-        "Fascia Work",
-        "Scoliosis"
+        "ELDOA",
+        "Studio Training",
+        "Fitness"
       ],
-      "website": "studiohfalpharetta.com"
+      "website": "studiohfalpharetta.com",
+      "practice": "Studio HF Alpharetta"
     },
     {
       "id": "claudia-king",
@@ -2794,10 +2955,12 @@
       "city": "New Canaan",
       "yearsExperience": "8+",
       "specializations": [
-        "Pilates",
-        "ELDOA"
+        "ELDOA",
+        "Fitness",
+        "Wellness"
       ],
-      "website": "halofitnessnc.com"
+      "website": "halofitnessnc.com",
+      "practice": "Halo Fitness NC"
     },
     {
       "id": "carrie-lynn-nieves",
@@ -2810,9 +2973,12 @@
       "region": "Ontario",
       "yearsExperience": "10+",
       "specializations": [
-        "Pilates Studio Owner"
+        "ELDOA",
+        "Pilates",
+        "Balance Training"
       ],
-      "website": "counterbalancestudiopilates.com"
+      "website": "counterbalancestudiopilates.com",
+      "practice": "Counterbalance Studio Pilates"
     },
     {
       "id": "elaine-biagi-turner",
@@ -2825,9 +2991,12 @@
       "region": "Ontario",
       "yearsExperience": "8+",
       "specializations": [
-        "Pilates Integration"
+        "ELDOA",
+        "Pilates",
+        "Core Training"
       ],
-      "website": "counterbalancestudiopilates.com"
+      "website": "counterbalancestudiopilates.com",
+      "practice": "Counterbalance Studio Pilates"
     },
     {
       "id": "tammy-moreau",
@@ -2840,9 +3009,12 @@
       "region": "Ontario",
       "yearsExperience": "6+",
       "specializations": [
-        "Pilates"
+        "ELDOA",
+        "Pilates",
+        "Movement Education"
       ],
-      "website": "bodyharmonics.com"
+      "website": "bodyharmonics.com",
+      "practice": "Body Harmonics"
     },
     {
       "id": "sarah-fegeau",
@@ -2855,10 +3027,12 @@
       "region": "Ontario",
       "yearsExperience": "8+",
       "specializations": [
+        "ELDOA",
         "Pilates",
-        "Movement"
+        "Body Awareness"
       ],
-      "website": "inhabitpilates.com"
+      "website": "inhabitpilates.com",
+      "practice": "Inhabit Pilates"
     },
     {
       "id": "inna-loor",
@@ -2871,7 +3045,9 @@
       "region": "Ontario",
       "yearsExperience": "8+",
       "specializations": [
-        "Movement Therapy"
+        "ELDOA",
+        "Movement",
+        "Wellness"
       ],
       "website": "innalor.com"
     },
@@ -2886,9 +3062,19 @@
       "region": "Ontario",
       "yearsExperience": "10+",
       "specializations": [
-        "Goalie Training"
+        "Ice Hockey Goalie Training",
+        "ELDOA",
+        "Hip Mobility",
+        "Sports Performance",
+        "Injury Prevention"
       ],
-      "website": "goalietrainingpro.com"
+      "website": "goalietrainingpro.com",
+      "youtube": "https://www.youtube.com/goalietrainingprotv",
+      "credentials": [
+        "MSc",
+        "Exercise Physiologist"
+      ],
+      "background": "Exercise Physiologist dedicated to helping goalies win more games with fewer injuries since 2001. Founded Goalie Training Pro in 2012. Works with NHL teams, USA Hockey, and Czech Hockey. Known for free Butterfly Challenge program."
     },
     {
       "id": "kristin-honey",
@@ -2901,10 +3087,12 @@
       "region": "Ontario",
       "yearsExperience": "8+",
       "specializations": [
+        "ELDOA",
         "Yoga",
-        "ELDOA"
+        "Flexibility"
       ],
-      "website": "kristinhoneyyoga.com"
+      "website": "kristinhoneyyoga.com",
+      "practice": "Kristin Honey Yoga"
     },
     {
       "id": "alan-cohen-health",
@@ -2917,9 +3105,12 @@
       "region": "Quebec",
       "yearsExperience": "6+",
       "specializations": [
-        "Health Coaching"
+        "ELDOA",
+        "Health Optimization",
+        "Wellness"
       ],
-      "website": "alancohenhealth.com"
+      "website": "alancohenhealth.com",
+      "practice": "Alan Cohen Health"
     },
     {
       "id": "troy-perrin",
@@ -2932,9 +3123,12 @@
       "region": "Quebec",
       "yearsExperience": "6+",
       "specializations": [
-        "Training"
+        "ELDOA",
+        "High-Intensity Training",
+        "Performance"
       ],
-      "website": "afterburn.ca"
+      "website": "afterburn.ca",
+      "practice": "Afterburn"
     },
     {
       "id": "ryan-murray",
@@ -2961,9 +3155,12 @@
       "region": "British Columbia",
       "yearsExperience": "6+",
       "specializations": [
-        "Osteopathy"
+        "ELDOA",
+        "Counterstrain",
+        "Manual Therapy"
       ],
-      "website": "counterstrain.ca"
+      "website": "counterstrain.ca",
+      "practice": "Counterstrain Canada"
     },
     {
       "id": "danielle-cournoyer",
@@ -2976,10 +3173,12 @@
       "region": "British Columbia",
       "yearsExperience": "8+",
       "specializations": [
-        "Fitness",
-        "Flexibility"
+        "ELDOA",
+        "Pilates",
+        "Body Conditioning"
       ],
-      "website": "bamboobody.net"
+      "website": "bamboobody.net",
+      "practice": "Bamboo Body"
     },
     {
       "id": "beth-backman",
@@ -2992,10 +3191,12 @@
       "region": "Alberta",
       "yearsExperience": "8+",
       "specializations": [
-        "Osteopathic Manual Therapy",
-        "RMT"
+        "ELDOA",
+        "Movement",
+        "Wellness"
       ],
-      "website": "movementmuse.ca"
+      "website": "movementmuse.ca",
+      "practice": "Movement Muse"
     },
     {
       "id": "adam-sanvido",
@@ -3008,10 +3209,12 @@
       "region": "Alberta",
       "yearsExperience": "12+",
       "specializations": [
-        "Somatherapist",
-        "RMT"
+        "ELDOA",
+        "Health Innovation",
+        "Performance"
       ],
-      "website": "innovationshealth.ca"
+      "website": "innovationshealth.ca",
+      "practice": "Innovations Health"
     },
     {
       "id": "joel-schneider",
@@ -3054,9 +3257,12 @@
       "region": "New Brunswick",
       "yearsExperience": "8+",
       "specializations": [
-        "Performance Training"
+        "ELDOA",
+        "Fitness Training",
+        "Performance"
       ],
-      "website": "afterburn.ca"
+      "website": "afterburn.ca",
+      "practice": "Afterburn"
     },
     {
       "id": "jermeele-baptiste",
@@ -3077,9 +3283,12 @@
       "city": "London",
       "yearsExperience": "6+",
       "specializations": [
-        "Golf Performance"
+        "ELDOA",
+        "Golf Fitness",
+        "Performance Training"
       ],
-      "website": "golfperformance.eu"
+      "website": "golfperformance.eu",
+      "practice": "Golf Performance EU"
     },
     {
       "id": "anna-reece",
@@ -3091,9 +3300,15 @@
       "city": "Nottingham",
       "yearsExperience": "5+",
       "specializations": [
-        "Physiotherapy"
+        "ELDOA",
+        "Physiotherapy",
+        "Rehabilitation"
       ],
-      "website": "rushcliffephysio.com"
+      "website": "rushcliffephysio.com",
+      "practice": "Rushcliffe Physio",
+      "credentials": [
+        "Physiotherapist"
+      ]
     },
     {
       "id": "charles-longden",
@@ -3105,9 +3320,12 @@
       "city": "Brentwood",
       "yearsExperience": "7+",
       "specializations": [
-        "Golf Fitness"
+        "ELDOA",
+        "Golf Fitness",
+        "Sports Performance"
       ],
-      "website": "golf-fitness.co.uk"
+      "website": "golf-fitness.co.uk",
+      "practice": "Golf Fitness UK"
     },
     {
       "id": "georgina-ramos",
@@ -3119,9 +3337,12 @@
       "city": "Sheffield",
       "yearsExperience": "6+",
       "specializations": [
-        "Movement Freedom"
+        "ELDOA",
+        "Movement Therapy",
+        "Mobility"
       ],
-      "website": "move-free.co.uk"
+      "website": "move-free.co.uk",
+      "practice": "Move Free"
     },
     {
       "id": "lou-hart",
@@ -3133,8 +3354,9 @@
       "city": "Colchester",
       "yearsExperience": "8+",
       "specializations": [
-        "Retreats",
-        "Wellness"
+        "ELDOA",
+        "Pilates",
+        "Movement"
       ],
       "website": "louhart.com"
     },
@@ -3148,9 +3370,12 @@
       "city": "Virginia Water",
       "yearsExperience": "10+",
       "specializations": [
-        "Physiotherapy"
+        "ELDOA",
+        "Clinical Treatment",
+        "Rehabilitation"
       ],
-      "website": "scorpioclinics.com"
+      "website": "scorpioclinics.com",
+      "practice": "Scorpio Clinics"
     },
     {
       "id": "oliver-cummings",
@@ -3190,7 +3415,9 @@
       "city": "Berlin",
       "yearsExperience": "8+",
       "specializations": [
-        "Somatic Movement"
+        "ELDOA",
+        "Movement Therapy",
+        "Wellness"
       ],
       "website": "rebeccarainey.com"
     },
@@ -3217,9 +3444,12 @@
       "city": "Munich",
       "yearsExperience": "5+",
       "specializations": [
-        "New Health Society"
+        "ELDOA",
+        "Health Education",
+        "Wellness"
       ],
-      "website": "newhealthsociety.com"
+      "website": "newhealthsociety.com",
+      "practice": "New Health Society"
     },
     {
       "id": "renata-mach",
@@ -3231,9 +3461,12 @@
       "city": "Reutlingen",
       "yearsExperience": "7+",
       "specializations": [
-        "Pilates"
+        "ELDOA",
+        "Pilates",
+        "Core Training"
       ],
-      "website": "pilates-reutlingen.de"
+      "website": "pilates-reutlingen.de",
+      "practice": "Pilates Reutlingen"
     },
     {
       "id": "wladimir-bornemann",
@@ -3245,9 +3478,12 @@
       "city": "Münster",
       "yearsExperience": "8+",
       "specializations": [
-        "Practice"
+        "ELDOA",
+        "Manual Therapy",
+        "Rehabilitation"
       ],
-      "website": "praxis-bornemann.de"
+      "website": "praxis-bornemann.de",
+      "practice": "Praxis Bornemann"
     },
     {
       "id": "chiara-della-misericordia",
@@ -3272,9 +3508,12 @@
       "city": "Milan",
       "yearsExperience": "8+",
       "specializations": [
-        "Joy Moves"
+        "ELDOA",
+        "Joyful Movement",
+        "Wellness"
       ],
-      "website": "joymoves.it"
+      "website": "joymoves.it",
+      "practice": "Joy Moves"
     },
     {
       "id": "gloria-rizzati",
@@ -3286,9 +3525,12 @@
       "city": "Caldiero",
       "region": "Verona",
       "specializations": [
-        "Corpolibero"
+        "ELDOA",
+        "Movement",
+        "Body Freedom"
       ],
-      "website": "corpolibero.eu"
+      "website": "corpolibero.eu",
+      "practice": "Corpo Libero"
     },
     {
       "id": "valentina-maiani",
@@ -3320,9 +3562,12 @@
       "country": "Italy",
       "city": "Bassano Del Grappa",
       "specializations": [
-        "PerforMax Fitness"
+        "ELDOA",
+        "Performance Training",
+        "Fitness"
       ],
-      "website": "performaxfitness.net"
+      "website": "performaxfitness.net",
+      "practice": "Performax Fitness"
     },
     {
       "id": "luca-revrenna",
@@ -3377,9 +3622,12 @@
       "city": "Auckland",
       "yearsExperience": "5+",
       "specializations": [
-        "Sweet7 Studio"
+        "ELDOA",
+        "Movement",
+        "Wellness"
       ],
-      "website": "sweet7.co.nz"
+      "website": "sweet7.co.nz",
+      "practice": "Sweet7 Studio"
     },
     {
       "id": "wendy-bobsein",
@@ -3391,9 +3639,12 @@
       "city": "Auckland",
       "yearsExperience": "8+",
       "specializations": [
-        "East Side Body Transformation"
+        "ELDOA",
+        "Movement",
+        "Wellness"
       ],
-      "website": "eastsidestudio.co.nz"
+      "website": "eastsidestudio.co.nz",
+      "practice": "Eastside Studio"
     },
     {
       "id": "emma-brake",
@@ -3404,9 +3655,12 @@
       "country": "New Zealand",
       "city": "Auckland",
       "specializations": [
-        "Body Form Ponsonby"
+        "ELDOA",
+        "Coaching",
+        "Performance"
       ],
-      "website": "emmabrakecoaching.co.nz"
+      "website": "emmabrakecoaching.co.nz",
+      "practice": "Emma Brake Coaching"
     },
     {
       "id": "mark-holyoake",
@@ -3418,9 +3672,12 @@
       "city": "Auckland",
       "yearsExperience": "6+",
       "specializations": [
-        "Carbon Method CrossFit"
+        "ELDOA",
+        "CrossFit",
+        "Functional Fitness"
       ],
-      "website": "carbonmethodcrossfit.co.nz"
+      "website": "carbonmethodcrossfit.co.nz",
+      "practice": "Carbon Method CrossFit"
     },
     {
       "id": "nishant-murali",
@@ -3432,9 +3689,12 @@
       "city": "Auckland",
       "yearsExperience": "5+",
       "specializations": [
-        "Posturefit"
+        "ELDOA",
+        "Posture Correction",
+        "Spinal Health"
       ],
-      "website": "posturefit.nz"
+      "website": "posturefit.nz",
+      "practice": "Posturefit NZ"
     },
     {
       "id": "rob-lee-nz",
@@ -3446,9 +3706,15 @@
       "city": "Auckland",
       "yearsExperience": "8+",
       "specializations": [
-        "Physio Form"
+        "ELDOA",
+        "Physiotherapy",
+        "Movement"
       ],
-      "website": "formphysio.net"
+      "website": "formphysio.net",
+      "practice": "Form Physio",
+      "credentials": [
+        "Physiotherapist"
+      ]
     },
     {
       "id": "rod-fielder",
@@ -3460,9 +3726,12 @@
       "city": "Auckland",
       "yearsExperience": "10+",
       "specializations": [
-        "The Power of 2"
+        "ELDOA",
+        "Energy Work",
+        "Holistic Health"
       ],
-      "website": "rawener-chi.nz"
+      "website": "rawener-chi.nz",
+      "practice": "Raw Ener-chi"
     },
     {
       "id": "sarndra-walsh",
@@ -3474,9 +3743,12 @@
       "city": "Auckland",
       "yearsExperience": "8+",
       "specializations": [
-        "Maintain Massage Therapy"
+        "ELDOA",
+        "Massage Therapy",
+        "Recovery"
       ],
-      "website": "maintainmassage.co.nz"
+      "website": "maintainmassage.co.nz",
+      "practice": "Maintain Massage"
     }
   ]
 }
