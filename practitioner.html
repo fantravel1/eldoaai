@@ -1,671 +1,628 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" data-theme="light">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title id="page-title">ELDOA Practitioner | ELDOA AI</title>
-    <meta name="description" id="page-description" content="View detailed profile information for this certified ELDOA practitioner.">
-    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
-    <link rel="canonical" id="page-canonical" href="https://eldoa.ai/practitioner.html">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title id="page-title">ELDOA Practitioner | ELDOA AI</title>
+  <meta name="description" id="page-description" content="View detailed profile information for this certified ELDOA practitioner.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
+  <link rel="canonical" id="page-canonical" href="https://eldoa.ai/practitioner.html">
 
-    <!-- Open Graph / Twitter - dynamically updated -->
-    <meta property="og:type" content="profile">
-    <meta property="og:url" id="og-url" content="https://eldoa.ai/practitioner.html">
-    <meta property="og:title" id="og-title" content="ELDOA Practitioner | ELDOA AI">
-    <meta property="og:description" id="og-description" content="View detailed profile for this certified ELDOA practitioner.">
-    <meta property="og:image" content="https://eldoa.ai/images/og-practitioners.jpg">
-    <meta name="twitter:card" content="summary">
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="profile">
+  <meta property="og:url" id="og-url" content="https://eldoa.ai/practitioner.html">
+  <meta property="og:title" id="og-title" content="ELDOA Practitioner | ELDOA AI">
+  <meta property="og:description" id="og-description" content="View detailed profile for this certified ELDOA practitioner.">
+  <meta property="og:image" content="https://eldoa.ai/images/og-practitioners.jpg">
+  <meta name="twitter:card" content="summary">
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 
-    <!-- Dynamic Structured Data placeholder -->
-    <script type="application/ld+json" id="person-schema">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "ELDOA Practitioner",
-        "jobTitle": "ELDOA Practitioner"
+  <!-- Dynamic Schema -->
+  <script type="application/ld+json" id="person-schema">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "ELDOA Practitioner",
+    "jobTitle": "ELDOA Practitioner"
+  }
+  </script>
+
+  <style>
+    :root, [data-theme="light"] {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #475569;
+      --brand: #2f2fe6;
+      --brand-2: #0891b2;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+      --ok: #15803d;
+      --warn: #a16207;
+      --err: #b91c1c;
     }
-    </script>
-
-    <!-- Breadcrumb Schema -->
-    <script type="application/ld+json" id="breadcrumb-schema">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://eldoa.ai/"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Find Practitioners",
-                "item": "https://eldoa.ai/practitioners.html"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "Practitioner Profile",
-                "item": "https://eldoa.ai/practitioner.html"
-            }
-        ]
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #c7d2fe;
+      --brand: #8b5cf6;
+      --brand-2: #22d3ee;
+      --card: #111827;
+      --border: #262b36;
+      --ok: #22c55e;
+      --warn: #f59e0b;
+      --err: #ef4444;
     }
-    </script>
 
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧘</text></svg>">
-    <style>
-        :root {
-            --brand: oklch(65% 0.25 265);
-            --surface: oklch(98% 0.01 265);
-            --border: oklch(90% 0.01 265);
-            --text: oklch(25% 0.01 265);
-            --text-secondary: oklch(50% 0.01 265);
-            --radius: 12px;
-        }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--brand); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(900px, 94vw); margin: 0 auto; padding: 0 1rem; }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+    /* Header */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: saturate(1.2) blur(8px);
+      background: color-mix(in oklab, var(--bg), transparent 20%);
+      border-bottom: 1px solid var(--border);
+      padding: .75rem 0;
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: .6rem;
+      font-weight: 800;
+      text-decoration: none;
+      color: var(--fg);
+    }
+    .logo-mark {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2));
+    }
+    .nav-links { display: flex; align-items: center; gap: .5rem; }
+    .nav-links a {
+      padding: .5rem .75rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: .9rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: background .15s, color .15s;
+    }
+    .nav-links a:hover { background: color-mix(in oklab, var(--card), var(--bg) 50%); color: var(--fg); }
+    .nav-links a.active { background: var(--brand); color: #fff; }
+    @media(max-width: 600px) { .nav-links { display: none; } }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
-            background: var(--surface);
-            color: var(--text);
-            line-height: 1.6;
-        }
+    /* Back Link */
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      color: var(--muted);
+      font-size: .9rem;
+      font-weight: 600;
+      margin: 1.5rem 0 1rem;
+      text-decoration: none;
+    }
+    .back-link:hover { color: var(--brand); }
 
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
+    /* Profile Header */
+    .profile-header {
+      background: color-mix(in oklab, var(--bg), var(--card) 50%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 2rem;
+      margin-bottom: 1.5rem;
+    }
+    .profile-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 1rem;
+    }
+    .profile-name {
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+    .profile-level {
+      padding: .4rem .8rem;
+      border-radius: 10px;
+      font-size: .85rem;
+      font-weight: 700;
+      background: var(--brand);
+      color: #fff;
+      white-space: nowrap;
+    }
+    .profile-level.l6 { background: linear-gradient(135deg, #8b5cf6, #ec4899); }
+    .profile-level.l5 { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+    .profile-level.l4 { background: var(--brand); }
+    .profile-level.l2 { background: color-mix(in oklab, var(--brand), transparent 30%); }
 
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            color: var(--brand);
-            text-decoration: none;
-            margin-bottom: 2rem;
-            font-weight: 600;
-        }
+    .profile-status {
+      display: inline-flex;
+      align-items: center;
+      gap: .4rem;
+      padding: .3rem .7rem;
+      border-radius: 8px;
+      font-size: .8rem;
+      font-weight: 600;
+      margin-top: .5rem;
+    }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; }
+    .status-dot.active { background: var(--ok); }
+    .status-dot.not-accepting { background: var(--warn); }
+    .status-dot.deceased { background: var(--muted); }
+    .status-dot.closed { background: var(--err); }
+    .status-active { background: color-mix(in oklab, var(--ok), transparent 85%); color: var(--ok); }
+    .status-deceased { background: color-mix(in oklab, var(--muted), transparent 85%); color: var(--muted); }
+    .status-not-accepting-patients { background: color-mix(in oklab, var(--warn), transparent 85%); color: var(--warn); }
 
-        .back-link:hover {
-            text-decoration: underline;
-        }
+    .profile-location {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      color: var(--muted);
+      font-size: 1rem;
+      margin: .75rem 0;
+    }
+    .profile-location svg { width: 16px; height: 16px; }
 
-        .profile-header {
-            background: white;
-            border-radius: var(--radius);
-            padding: 2.5rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
+    .profile-creds {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .4rem;
+      margin: 1rem 0;
+    }
+    .cred-tag {
+      padding: .25rem .6rem;
+      border-radius: 8px;
+      font-size: .8rem;
+      font-weight: 600;
+      background: color-mix(in oklab, var(--brand), transparent 88%);
+      color: var(--brand);
+    }
 
-        .header-top {
-            display: flex;
-            justify-content: space-between;
-            align-items: start;
-            margin-bottom: 1.5rem;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
+    .profile-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 1rem;
+      margin-top: 1.25rem;
+      padding-top: 1.25rem;
+      border-top: 1px solid var(--border);
+    }
+    .meta-item label {
+      display: block;
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: .25rem;
+    }
+    .meta-item span { font-size: .95rem; color: var(--fg); }
 
-        .name-section h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-            color: var(--text);
-        }
+    /* Content Sections */
+    .section {
+      background: color-mix(in oklab, var(--bg), var(--card) 50%);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+    }
+    .section-title svg { width: 20px; height: 20px; color: var(--brand); }
 
-        .level-badge {
-            background: var(--brand);
-            color: white;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.95rem;
-            font-weight: 600;
-            display: inline-block;
-        }
+    .section-text { color: var(--fg); line-height: 1.7; }
+    .section-text p + p { margin-top: .75rem; }
 
-        .status-badge {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            border-radius: 20px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-top: 0.5rem;
-        }
+    /* Specializations */
+    .specs-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .5rem;
+    }
+    .spec-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: .3rem;
+      padding: .4rem .7rem;
+      border-radius: 8px;
+      font-size: .85rem;
+      background: color-mix(in oklab, var(--ok), transparent 90%);
+      color: var(--ok);
+    }
 
-        .status-active {
-            background: oklch(90% 0.15 145);
-            color: oklch(35% 0.15 145);
-        }
+    /* YouTube Section */
+    .youtube-section {
+      background: linear-gradient(135deg, color-mix(in oklab, #ff0000, transparent 92%), color-mix(in oklab, #ff0000, transparent 96%));
+      border: 1px solid color-mix(in oklab, #ff0000, transparent 80%);
+    }
+    .youtube-link {
+      display: inline-flex;
+      align-items: center;
+      gap: .6rem;
+      padding: .75rem 1.25rem;
+      background: #ff0000;
+      color: #fff;
+      border-radius: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: filter .15s;
+    }
+    .youtube-link:hover { filter: brightness(1.1); text-decoration: none; }
+    .youtube-link svg { width: 24px; height: 24px; }
 
-        .location-section {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 1.1rem;
-            color: var(--text-secondary);
-            margin-bottom: 1.5rem;
-        }
+    /* Contact Grid */
+    .contact-grid {
+      display: grid;
+      gap: .75rem;
+    }
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: .75rem;
+      padding: .75rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+    }
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: color-mix(in oklab, var(--brand), transparent 90%);
+      border-radius: 10px;
+      font-size: 1.2rem;
+    }
+    .contact-details { flex: 1; }
+    .contact-label {
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .03em;
+    }
+    .contact-value { font-size: .95rem; color: var(--fg); }
+    .contact-value a { color: var(--brand); }
 
-        .credentials-section {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.75rem;
-            margin-bottom: 1.5rem;
-        }
+    /* Loading & Error */
+    .loading, .error {
+      text-align: center;
+      padding: 4rem 2rem;
+      color: var(--muted);
+    }
+    .loading-spinner {
+      width: 48px;
+      height: 48px;
+      border: 4px solid var(--border);
+      border-top-color: var(--brand);
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 1rem;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .error h2 { color: var(--fg); margin-bottom: .5rem; }
 
-        .credential-tag {
-            background: oklch(95% 0.05 265);
-            color: var(--text);
-            padding: 0.5rem 1rem;
-            border-radius: 8px;
-            font-size: 0.9rem;
-            font-weight: 500;
-        }
+    /* Footer */
+    footer {
+      margin-top: 3rem;
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .footer-links { display: flex; gap: .75rem; flex-wrap: wrap; margin-bottom: 1rem; }
+    .footer-links a { color: var(--muted); font-size: .9rem; }
+    .footer-links a:hover { color: var(--brand); }
+    footer small { font-size: .8rem; }
 
-        .info-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border);
-        }
-
-        .info-item {
-            display: flex;
-            flex-direction: column;
-            gap: 0.25rem;
-        }
-
-        .info-label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--text-secondary);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .info-value {
-            font-size: 1.1rem;
-            color: var(--text);
-        }
-
-        .content-section {
-            background: white;
-            border-radius: var(--radius);
-            padding: 2rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        .section-title {
-            font-size: 1.5rem;
-            font-weight: 700;
-            margin-bottom: 1rem;
-            color: var(--text);
-        }
-
-        .section-content {
-            color: var(--text);
-            line-height: 1.8;
-        }
-
-        .specializations-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 0.75rem;
-        }
-
-        .specialization-item {
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-            padding: 0.75rem;
-            background: oklch(98% 0.01 265);
-            border-radius: 8px;
-            font-size: 0.95rem;
-        }
-
-        .contact-grid {
-            display: grid;
-            gap: 1.5rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-            padding: 1rem;
-            background: oklch(98% 0.01 265);
-            border-radius: 8px;
-        }
-
-        .contact-icon {
-            font-size: 1.5rem;
-            width: 3rem;
-            height: 3rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: white;
-            border-radius: 8px;
-        }
-
-        .contact-details {
-            flex: 1;
-        }
-
-        .contact-label {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-bottom: 0.25rem;
-        }
-
-        .contact-value {
-            font-size: 1rem;
-            color: var(--text);
-        }
-
-        .contact-value a {
-            color: var(--brand);
-            text-decoration: none;
-        }
-
-        .contact-value a:hover {
-            text-decoration: underline;
-        }
-
-        .notable-section {
-            background: linear-gradient(135deg, oklch(96% 0.08 265), oklch(98% 0.05 285));
-            padding: 1.5rem;
-            border-radius: var(--radius);
-            border-left: 4px solid var(--brand);
-        }
-
-        .loading {
-            text-align: center;
-            padding: 4rem 2rem;
-        }
-
-        .loading-spinner {
-            font-size: 3rem;
-            animation: spin 1s linear infinite;
-        }
-
-        @keyframes spin {
-            to { transform: rotate(360deg); }
-        }
-
-        .error {
-            text-align: center;
-            padding: 4rem 2rem;
-            color: oklch(50% 0.15 25);
-        }
-
-        footer {
-            text-align: center;
-            padding: 3rem 2rem;
-            color: var(--text-secondary);
-            border-top: 1px solid var(--border);
-        }
-
-        footer a {
-            color: var(--brand);
-            text-decoration: none;
-        }
-
-        footer a:hover {
-            text-decoration: underline;
-        }
-
-        @media (max-width: 768px) {
-            .name-section h1 {
-                font-size: 2rem;
-            }
-
-            .header-top {
-                flex-direction: column;
-            }
-
-            .info-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .specializations-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    @media(max-width: 600px) {
+      .profile-header { padding: 1.25rem; }
+      .section { padding: 1.25rem; }
+      .profile-top { flex-direction: column; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <!-- Breadcrumb Navigation -->
-        <nav aria-label="Breadcrumb" style="margin-bottom: 1rem;">
-            <ol style="display: flex; gap: 0.5rem; list-style: none; padding: 0; margin: 0; font-size: 0.9rem; color: var(--text-secondary);">
-                <li><a href="/" style="color: var(--brand);">Home</a></li>
-                <li aria-hidden="true">/</li>
-                <li><a href="/practitioners.html" style="color: var(--brand);">Find Practitioners</a></li>
-                <li aria-hidden="true">/</li>
-                <li aria-current="page" id="breadcrumb-name">Profile</li>
-            </ol>
-        </nav>
-
-        <a href="/practitioners.html" class="back-link">← Back to Directory</a>
-
-        <div id="content">
-            <div class="loading">
-                <div class="loading-spinner">⏳</div>
-                <p>Loading practitioner profile...</p>
-            </div>
-        </div>
-
-        <footer>
-            <nav aria-label="Footer navigation" style="margin: 1rem 0;">
-                <a href="/">Home</a> |
-                <a href="/practitioners.html">Find Practitioners</a> |
-                <a href="/encyclopedia.html">Encyclopedia</a> |
-                <a href="/videos/">Video Library</a> |
-                <a href="/diagnostic.html">Diagnostic Tool</a> |
-                <a href="/about.html">About</a>
-            </nav>
-            <p style="font-size: 0.85rem; margin-top: 1rem;">Educational content only — not medical advice. | <a href="/privacy.html">Privacy</a> | <a href="/terms.html">Terms</a></p>
-        </footer>
+  <header>
+    <div class="container nav">
+      <a class="logo" href="/">
+        <span class="logo-mark"></span>
+        <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+      </a>
+      <nav class="nav-links">
+        <a href="/diagnostic.html">Diagnostic</a>
+        <a href="/videos/">Videos</a>
+        <a href="/encyclopedia.html">Encyclopedia</a>
+        <a href="/practitioners.html" class="active">Practitioners</a>
+      </nav>
     </div>
+  </header>
 
-    <script>
-        // Get practitioner ID from URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const practitionerId = urlParams.get('id');
+  <main class="container">
+    <a href="/practitioners.html" class="back-link">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M19 12H5M12 19l-7-7 7-7"/>
+      </svg>
+      Back to Directory
+    </a>
 
-        async function loadPractitioner() {
-            try {
-                const response = await fetch('/data/practitioners.json');
-                const data = await response.json();
-                const practitioner = data.practitioners.find(p => p.id === practitionerId);
+    <div id="content">
+      <div class="loading">
+        <div class="loading-spinner"></div>
+        <p>Loading practitioner profile...</p>
+      </div>
+    </div>
+  </main>
 
-                if (!practitioner) {
-                    showError('Practitioner not found');
-                    return;
-                }
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="/">Home</a>
+        <a href="/diagnostic.html">Diagnostic Tool</a>
+        <a href="/videos/">Video Library</a>
+        <a href="/encyclopedia.html">Encyclopedia</a>
+        <a href="/posture-check.html">Posture Check</a>
+      </div>
+      <small>Educational content only - not medical advice. Consult a healthcare provider for diagnosis and treatment.</small>
+    </div>
+  </footer>
 
-                displayPractitioner(practitioner);
-            } catch (error) {
-                console.error('Error loading practitioner:', error);
-                showError('Error loading practitioner data. Please try again later.');
-            }
+  <script>
+    const urlParams = new URLSearchParams(window.location.search);
+    const practitionerId = urlParams.get('id');
+
+    async function loadPractitioner() {
+      try {
+        const response = await fetch('/data/practitioners.json');
+        const data = await response.json();
+        const p = data.practitioners.find(pr => pr.id === practitionerId);
+
+        if (!p) {
+          showError('Practitioner not found');
+          return;
         }
 
-        function displayPractitioner(p) {
-            // Update page title and meta
-            document.getElementById('page-title').textContent = `${p.name} - ELDOA Practitioner | ELDOA AI`;
-            const description = `Certified ELDOA practitioner ${p.name} in ${p.city}, ${p.country}. ${p.specializations ? 'Specializations: ' + p.specializations.slice(0, 3).join(', ') : ''}`;
-            document.getElementById('page-description').content = description;
+        displayPractitioner(p);
+      } catch (error) {
+        console.error('Error:', error);
+        showError('Error loading practitioner data');
+      }
+    }
 
-            // Update canonical URL
-            const canonicalUrl = `https://eldoa.ai/practitioner.html?id=${p.id}`;
-            document.getElementById('page-canonical').href = canonicalUrl;
+    function displayPractitioner(p) {
+      // Update page meta
+      const title = `${p.name} - ELDOA Practitioner | ELDOA AI`;
+      document.getElementById('page-title').textContent = title;
+      document.getElementById('og-title').content = title;
 
-            // Update Open Graph meta tags
-            const ogUrl = document.getElementById('og-url');
-            const ogTitle = document.getElementById('og-title');
-            const ogDesc = document.getElementById('og-description');
-            if (ogUrl) ogUrl.content = canonicalUrl;
-            if (ogTitle) ogTitle.content = `${p.name} - ELDOA Practitioner | ELDOA AI`;
-            if (ogDesc) ogDesc.content = description;
+      const desc = `Certified ELDOA practitioner ${p.name} in ${p.city || ''}, ${p.country || ''}. ${p.specializations ? p.specializations.slice(0, 3).join(', ') : ''}`;
+      document.getElementById('page-description').content = desc;
+      document.getElementById('og-description').content = desc;
 
-            // Generate dynamic Schema.org Person data
-            const personSchema = {
-                "@context": "https://schema.org",
-                "@type": "Person",
-                "name": p.name,
-                "jobTitle": p.levelTitle || "ELDOA Practitioner",
-                "description": p.background || description,
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": p.city,
-                    "addressRegion": p.state || p.region || "",
-                    "addressCountry": p.country
-                }
-            };
+      const location = [p.city, p.state || p.region, p.country].filter(Boolean).join(', ');
+      const levelClass = p.level ? `l${p.level}` : '';
+      const levelText = p.level ? `Level ${p.level}${p.levelTitle ? ' - ' + p.levelTitle : ''}` : '';
 
-            // Add optional fields
-            if (p.email) personSchema.email = p.email;
-            if (p.phone) personSchema.telephone = p.phone;
-            if (p.website) personSchema.url = `https://${p.website}`;
-            if (p.credentials && p.credentials.length > 0) {
-                personSchema.hasCredential = p.credentials.map(c => ({
-                    "@type": "EducationalOccupationalCredential",
-                    "credentialCategory": c
-                }));
-            }
-            if (p.specializations && p.specializations.length > 0) {
-                personSchema.knowsAbout = p.specializations;
-            }
-            if (p.practice) {
-                personSchema.worksFor = {
-                    "@type": "Organization",
-                    "name": p.practice
-                };
-            }
+      const statusClass = (p.status || 'active');
+      const statusText = {
+        'active': 'Active',
+        'not-accepting-patients': 'Not accepting new patients',
+        'deceased': 'Deceased',
+        'closed': 'Practice closed'
+      }[p.status || 'active'];
 
-            // Update the schema script element
-            const schemaEl = document.getElementById('person-schema');
-            if (schemaEl) schemaEl.textContent = JSON.stringify(personSchema, null, 2);
+      let html = `
+        <div class="profile-header">
+          <div class="profile-top">
+            <div>
+              <h1 class="profile-name">${p.name}</h1>
+              <div class="profile-status status-${statusClass}">
+                <span class="status-dot ${statusClass.replace('-patients', '')}"></span>
+                ${statusText}
+              </div>
+            </div>
+            ${levelText ? `<span class="profile-level ${levelClass}">${levelText}</span>` : ''}
+          </div>
 
-            // Update breadcrumb schema
-            const breadcrumbSchema = {
-                "@context": "https://schema.org",
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                    {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://eldoa.ai/"},
-                    {"@type": "ListItem", "position": 2, "name": "Find Practitioners", "item": "https://eldoa.ai/practitioners.html"},
-                    {"@type": "ListItem", "position": 3, "name": p.name, "item": canonicalUrl}
-                ]
-            };
-            const breadcrumbEl = document.getElementById('breadcrumb-schema');
-            if (breadcrumbEl) breadcrumbEl.textContent = JSON.stringify(breadcrumbSchema, null, 2);
+          <div class="profile-location">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            ${location}
+          </div>
 
-            // Update visual breadcrumb
-            const breadcrumbName = document.getElementById('breadcrumb-name');
-            if (breadcrumbName) breadcrumbName.textContent = p.name;
+          ${p.credentials && p.credentials.length ? `
+            <div class="profile-creds">
+              ${p.credentials.map(c => `<span class="cred-tag">${c}</span>`).join('')}
+            </div>
+          ` : ''}
 
-            const location = [p.city, p.state || p.region, p.country].filter(Boolean).join(', ');
-            const levelText = p.level ? `Level ${p.level}` : '';
-            const levelTitle = p.levelTitle || '';
-
-            const statusClass = `status-${p.status || 'active'}`;
-            const statusText = (p.status || 'active').split('-').map(w =>
-                w.charAt(0).toUpperCase() + w.slice(1)
-            ).join(' ');
-
-            let html = `
-                <div class="profile-header">
-                    <div class="header-top">
-                        <div class="name-section">
-                            <h1>${p.name}</h1>
-                            ${levelText ? `<span class="level-badge">${levelText}${levelTitle ? ` - ${levelTitle}` : ''}</span>` : ''}
-                            <span class="status-badge ${statusClass}">${statusText}</span>
-                        </div>
-                    </div>
-
-                    <div class="location-section">
-                        📍 ${location}
-                    </div>
-
-                    ${p.credentials && p.credentials.length > 0 ? `
-                        <div class="credentials-section">
-                            ${p.credentials.map(c => `<span class="credential-tag">${c}</span>`).join('')}
-                        </div>
-                    ` : ''}
-
-                    <div class="info-grid">
-                        ${p.yearsExperience ? `
-                            <div class="info-item">
-                                <div class="info-label">Experience</div>
-                                <div class="info-value">${p.yearsExperience}</div>
-                            </div>
-                        ` : ''}
-                        ${p.practice ? `
-                            <div class="info-item">
-                                <div class="info-label">Practice</div>
-                                <div class="info-value">${p.practice}</div>
-                            </div>
-                        ` : ''}
-                        ${p.education ? `
-                            <div class="info-item">
-                                <div class="info-label">Education</div>
-                                <div class="info-value">${p.education}</div>
-                            </div>
-                        ` : ''}
-                    </div>
+          ${(p.yearsExperience || p.practice) ? `
+            <div class="profile-meta">
+              ${p.yearsExperience ? `
+                <div class="meta-item">
+                  <label>Experience</label>
+                  <span>${p.yearsExperience}</span>
                 </div>
-            `;
-
-            // Background section
-            if (p.background || p.legacy) {
-                html += `
-                    <div class="content-section">
-                        <h2 class="section-title">Background</h2>
-                        <div class="section-content">
-                            <p>${p.background || ''}</p>
-                            ${p.legacy ? `<p style="margin-top: 1rem;"><strong>Legacy:</strong> ${p.legacy}</p>` : ''}
-                        </div>
-                    </div>
-                `;
-            }
-
-            // Specializations section
-            if (p.specializations && p.specializations.length > 0) {
-                html += `
-                    <div class="content-section">
-                        <h2 class="section-title">Specializations</h2>
-                        <div class="specializations-grid">
-                            ${p.specializations.map(s => `
-                                <div class="specialization-item">
-                                    ✓ ${s}
-                                </div>
-                            `).join('')}
-                        </div>
-                    </div>
-                `;
-            }
-
-            // Notable clients & achievements
-            if (p.notable || p.notableClients) {
-                html += `
-                    <div class="content-section">
-                        <div class="notable-section">
-                            <h2 class="section-title">Notable Achievements & Clients</h2>
-                            <div class="section-content">
-                                ${p.notable || p.notableClients || ''}
-                            </div>
-                        </div>
-                    </div>
-                `;
-            }
-
-            // Contact information
-            const hasContact = p.phone || p.email || p.website || p.address;
-            if (hasContact) {
-                html += `
-                    <div class="content-section">
-                        <h2 class="section-title">Contact Information</h2>
-                        <div class="contact-grid">
-                            ${p.practice ? `
-                                <div class="contact-item">
-                                    <div class="contact-icon">🏢</div>
-                                    <div class="contact-details">
-                                        <div class="contact-label">Practice</div>
-                                        <div class="contact-value">${p.practice}</div>
-                                    </div>
-                                </div>
-                            ` : ''}
-                            ${p.address ? `
-                                <div class="contact-item">
-                                    <div class="contact-icon">📍</div>
-                                    <div class="contact-details">
-                                        <div class="contact-label">Address</div>
-                                        <div class="contact-value">${p.address}</div>
-                                    </div>
-                                </div>
-                            ` : ''}
-                            ${p.phone ? `
-                                <div class="contact-item">
-                                    <div class="contact-icon">📞</div>
-                                    <div class="contact-details">
-                                        <div class="contact-label">Phone</div>
-                                        <div class="contact-value">${p.phone}</div>
-                                    </div>
-                                </div>
-                            ` : ''}
-                            ${p.email ? `
-                                <div class="contact-item">
-                                    <div class="contact-icon">✉️</div>
-                                    <div class="contact-details">
-                                        <div class="contact-label">Email</div>
-                                        <div class="contact-value"><a href="mailto:${p.email}">${p.email}</a></div>
-                                    </div>
-                                </div>
-                            ` : ''}
-                            ${p.website ? `
-                                <div class="contact-item">
-                                    <div class="contact-icon">🌐</div>
-                                    <div class="contact-details">
-                                        <div class="contact-label">Website</div>
-                                        <div class="contact-value"><a href="https://${p.website}" target="_blank">${p.website}</a></div>
-                                    </div>
-                                </div>
-                            ` : ''}
-                        </div>
-                    </div>
-                `;
-            }
-
-            // Additional notes
-            if (p.note) {
-                html += `
-                    <div class="content-section">
-                        <div style="padding: 1rem; background: oklch(95% 0.05 45); border-radius: 8px; border-left: 4px solid oklch(65% 0.15 45);">
-                            <strong>Note:</strong> ${p.note}
-                        </div>
-                    </div>
-                `;
-            }
-
-            document.getElementById('content').innerHTML = html;
-        }
-
-        function showError(message) {
-            document.getElementById('content').innerHTML = `
-                <div class="error">
-                    <div style="font-size: 4rem; margin-bottom: 1rem;">❌</div>
-                    <h2>${message}</h2>
-                    <p><a href="/practitioners.html">← Back to Directory</a></p>
+              ` : ''}
+              ${p.practice ? `
+                <div class="meta-item">
+                  <label>Practice</label>
+                  <span>${p.practice}</span>
                 </div>
-            `;
-        }
+              ` : ''}
+            </div>
+          ` : ''}
+        </div>
+      `;
 
-        // Load practitioner if ID is provided
-        if (practitionerId) {
-            loadPractitioner();
-        } else {
-            showError('No practitioner ID specified');
-        }
-    </script>
+      // Background
+      if (p.background) {
+        html += `
+          <div class="section">
+            <h2 class="section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                <circle cx="12" cy="7" r="4"/>
+              </svg>
+              Background
+            </h2>
+            <div class="section-text">
+              <p>${p.background}</p>
+              ${p.legacy ? `<p><strong>Legacy:</strong> ${p.legacy}</p>` : ''}
+            </div>
+          </div>
+        `;
+      }
+
+      // Specializations
+      if (p.specializations && p.specializations.length) {
+        html += `
+          <div class="section">
+            <h2 class="section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 11 12 14 22 4"/>
+                <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+              </svg>
+              Specializations
+            </h2>
+            <div class="specs-grid">
+              ${p.specializations.map(s => `<span class="spec-tag">✓ ${s}</span>`).join('')}
+            </div>
+          </div>
+        `;
+      }
+
+      // YouTube
+      if (p.youtube) {
+        html += `
+          <div class="section youtube-section">
+            <h2 class="section-title">
+              <svg viewBox="0 0 24 24" fill="#ff0000">
+                <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 0 0-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/>
+                <polygon fill="#fff" points="9.5,15.5 15.8,12 9.5,8.5"/>
+              </svg>
+              YouTube Channel
+            </h2>
+            <a href="${p.youtube}" target="_blank" class="youtube-link">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6a3 3 0 0 0-2.1 2.1C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1c.5-1.9.5-5.8.5-5.8s0-3.9-.5-5.8z"/>
+                <polygon fill="#ff0000" points="9.5,15.5 15.8,12 9.5,8.5"/>
+              </svg>
+              Watch on YouTube
+            </a>
+          </div>
+        `;
+      }
+
+      // Contact
+      const hasContact = p.phone || p.email || p.website || p.address;
+      if (hasContact) {
+        html += `
+          <div class="section">
+            <h2 class="section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+              </svg>
+              Contact Information
+            </h2>
+            <div class="contact-grid">
+              ${p.address ? `
+                <div class="contact-item">
+                  <div class="contact-icon">📍</div>
+                  <div class="contact-details">
+                    <div class="contact-label">Address</div>
+                    <div class="contact-value">${p.address}</div>
+                  </div>
+                </div>
+              ` : ''}
+              ${p.phone ? `
+                <div class="contact-item">
+                  <div class="contact-icon">📞</div>
+                  <div class="contact-details">
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">${p.phone}</div>
+                  </div>
+                </div>
+              ` : ''}
+              ${p.email ? `
+                <div class="contact-item">
+                  <div class="contact-icon">✉️</div>
+                  <div class="contact-details">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value"><a href="mailto:${p.email}">${p.email}</a></div>
+                  </div>
+                </div>
+              ` : ''}
+              ${p.website ? `
+                <div class="contact-item">
+                  <div class="contact-icon">🌐</div>
+                  <div class="contact-details">
+                    <div class="contact-label">Website</div>
+                    <div class="contact-value"><a href="https://${p.website}" target="_blank">${p.website}</a></div>
+                  </div>
+                </div>
+              ` : ''}
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('content').innerHTML = html;
+    }
+
+    function showError(message) {
+      document.getElementById('content').innerHTML = `
+        <div class="error">
+          <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" style="margin-bottom:1rem;opacity:.4">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M15 9l-6 6M9 9l6 6"/>
+          </svg>
+          <h2>${message}</h2>
+          <p><a href="/practitioners.html">← Back to Directory</a></p>
+        </div>
+      `;
+    }
+
+    if (practitionerId) {
+      loadPractitioner();
+    } else {
+      showError('No practitioner specified');
+    }
+
+    // Theme detection
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
 </body>
 </html>
