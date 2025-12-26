@@ -50,7 +50,7 @@ mark { background-color: #fef08a; padding: 0.125rem 0.25rem; }
 .content-section li { margin-bottom: 0.5rem; line-height: 1.6; list-style-type: disc; }
 @media (max-width: 768px) { .container { padding: 1rem; } .eldoa-logo { font-size: 2rem; } .entry-title { font-size: 1.5rem; } .entry-content { font-size: 1rem; } .related-list, .connections-list { grid-template-columns: 1fr; } }
 </style></head>
-<body>
+<body data-entry-id="spatial-awareness">
 <div class="container">
 <div class="header">
 <div class="eldoa-logo"><span class="eldoa">ELDOA</span> <span class="ai">AI</span></div>
@@ -58,7 +58,22 @@ mark { background-color: #fef08a; padding: 0.125rem 0.25rem; }
 </div>
 <h1 class="entry-title">Spatial Awareness</h1>
 <div class="entry-content"><div class="content-section"><h2>Overview</h2><p><mark>Knowing where your body is in space without looking.</mark> Like having an internal GPS that tells you where all your body parts are and how they're moving.</p></div><div class="content-section"><h2>Detailed Description</h2><p>Spatial awareness is the ability to perceive and understand the position, orientation, and movement of one's body in three-dimensional space. This encompasses both proprioception (sensing body position) and kinesthesia (sensing body movement), integrating information from multiple sensory systems including the vestibular system, visual system, and somatosensory receptors.</p><p>In ELDOA practice, developing spatial awareness is essential for achieving correct positioning and maintaining proper alignment during exercises. The precise nature of ELDOA positions requires practitioners to develop acute awareness of subtle body positions—the angle of the pelvis, the curve of the spine, the position of the head relative to the trunk.</p><p>Enhanced spatial awareness contributes to better movement quality, reduced injury risk, and improved athletic performance. ELDOA's focus on sustained positions with specific alignment criteria provides an excellent training ground for developing this essential body sense.</p></div><div class="content-section"><h3>Components</h3><ul><li>Proprioceptive feedback from joints and muscles</li><li>Vestibular input for balance and orientation</li><li>Visual spatial processing</li><li>Tactile information from skin</li><li>Integration of multiple sensory streams</li><li>Motor planning and execution</li></ul><h3>ELDOA Benefits</h3><ul><li>Improved position accuracy in exercises</li><li>Better postural awareness throughout day</li><li>Enhanced movement efficiency</li><li>Reduced compensatory patterns</li><li>Faster motor learning</li><li>Injury prevention through awareness</li></ul></div><div class="content-section related-terms"><h2>Related Terms</h2><ul class="related-list"><li><a href="/encyclopedia/proprioception.html">Proprioception</a></li><li><a href="/encyclopedia/body-awareness.html">Body Awareness</a></li><li><a href="/encyclopedia/kinesthetic-awareness.html">Kinesthetic Awareness</a></li><li><a href="/encyclopedia/vestibular-system.html">Vestibular System</a></li></ul></div><div class="content-section connections"><h2>Key Connections</h2><ul class="connections-list"><li><a href="/encyclopedia/balance.html">Balance</a></li><li><a href="/encyclopedia/motor-control.html">Motor Control</a></li></ul></div></div>
+
+<div class="content-section" id="eldoa-related-videos" style="display:none;"></div>
+<div class="content-section" id="eldoa-related-research" style="display:none;"></div>
+<div class="content-section" id="eldoa-find-practitioner" style="display:none;"></div>
 <a class="back-link" href="/encyclopedia.html">← Back to Encyclopedia</a>
 </div>
+
+<!-- Cross-Linking Module -->
+<script src="/assets/js/cross-links.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const entryId = document.body.dataset.entryId;
+  if (entryId && window.ELDOACrossLinks) {
+    window.ELDOACrossLinks.initForEncyclopedia(entryId);
+  }
+});
+</script>
 </body>
 </html>

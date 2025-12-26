@@ -393,7 +393,7 @@
     }
   </style>
 </head>
-<body>
+<body data-research-id="neurological-mechanisms-eldoa">
   <div class="container">
     <a href="/research/" class="back-link">
       ← Back to Research
@@ -692,6 +692,9 @@
           </a>
         </div>
       </div>
+    
+      <div class="related-articles" id="eldoa-related-videos" style="display:none; margin-top: 3rem;"></div>
+      <div class="related-articles" id="eldoa-find-practitioner" style="display:none; margin-top: 3rem;"></div>
     </article>
   </div>
 
@@ -701,6 +704,17 @@
     const stored = localStorage.getItem('theme');
     if (stored) html.dataset.theme = stored;
     else if (window.matchMedia('(prefers-color-scheme: dark)').matches) html.dataset.theme = 'dark';
+  </script>
+
+  <!-- Cross-Linking Module -->
+  <script src="/assets/js/cross-links.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const researchId = document.body.dataset.researchId;
+      if (researchId && window.ELDOACrossLinks) {
+        window.ELDOACrossLinks.initForResearch(researchId);
+      }
+    });
   </script>
 </body>
 </html>

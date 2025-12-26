@@ -370,6 +370,9 @@
 
         
         <!-- Related Encyclopedia (Dynamic) -->
+        <!-- Similar Videos (Dynamic) -->
+        <div id="eldoa-similar-videos" class="description" style="display:none;"></div>
+
         <div id="eldoa-related-encyclopedia" class="description" style="display:none;"></div>
 
         <!-- Find a Practitioner (Dynamic) -->
@@ -384,7 +387,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             const videoId = document.body.dataset.videoId;
             if (videoId && window.ELDOACrossLinks) {
-                window.ELDOACrossLinks.initForVideo(videoId);
+                window.ELDOACrossLinks.initForVideoEnhanced(videoId);
             }
         });
     </script>

@@ -52,7 +52,7 @@ mark { background-color: #fef08a; padding: 0.125rem 0.25rem; }
 .content-section li { margin-bottom: 0.5rem; line-height: 1.6; list-style-type: disc; }
 @media (max-width: 768px) { .container { padding: 1rem; } .eldoa-logo { font-size: 2rem; } .entry-title { font-size: 1.5rem; } .entry-content { font-size: 1rem; } .related-list, .connections-list { grid-template-columns: 1fr; } }
 </style></head>
-<body>
+<body data-entry-id="tissue-remodeling">
 <div class="container">
 <div class="header">
 <div class="eldoa-logo"><span class="eldoa">ELDOA</span> <span class="ai">AI</span></div>
@@ -60,7 +60,22 @@ mark { background-color: #fef08a; padding: 0.125rem 0.25rem; }
 </div>
 <h1 class="entry-title">Tissue Remodeling</h1>
 <div class="entry-content"><div class="content-section"><h2>Overview</h2><p><mark>How your body rebuilds and repairs tissues over time.</mark> Like remodeling a house, your body constantly updates its structures to adapt to the demands placed upon them.</p></div><div class="content-section"><h2>Detailed Description</h2><p>Tissue remodeling is the ongoing biological process by which the body breaks down and rebuilds connective tissues in response to mechanical loading, injury, or changing demands. This process is governed by Wolff's Law for bone and Davis's Law for soft tissues, which state that tissues adapt their structure based on the forces applied to them.</p><p>In the context of ELDOA, controlled mechanical loading through sustained postures stimulates positive tissue remodeling. The fascial system, tendons, and intervertebral discs all respond to appropriate loading by reorganizing their collagen fibers, improving tissue quality, and enhancing functional capacity.</p><p>Tissue remodeling occurs in phases: inflammatory response, proliferation of new cells, and maturation/remodeling of the new tissue. ELDOA's sustained holds provide the mechanical stimulus needed to guide this remodeling process in beneficial directions, promoting aligned collagen deposition and improved tissue architecture.</p></div><div class="content-section"><h3>Remodeling Factors</h3><ul><li>Mechanical loading patterns and intensity</li><li>Duration and frequency of loading</li><li>Tissue blood supply and nutrition</li><li>Age and hormonal status</li><li>Inflammatory environment</li><li>Rest and recovery periods</li></ul><h3>ELDOA Applications</h3><ul><li>Tendon healing and strengthening</li><li>Fascial reorganization</li><li>Disc tissue adaptation</li><li>Scar tissue management</li><li>Post-surgical rehabilitation</li></ul></div><div class="content-section related-terms"><h2>Related Terms</h2><ul class="related-list"><li><a href="/encyclopedia/tissue-hydration.html">Tissue Hydration</a></li><li><a href="/encyclopedia/connective-tissue.html">Connective Tissue</a></li><li><a href="/encyclopedia/fascial-system.html">Fascial System</a></li><li><a href="/encyclopedia/recovery.html">Recovery</a></li></ul></div><div class="content-section connections"><h2>Key Connections</h2><ul class="connections-list"><li><a href="/encyclopedia/achilles-tendinopathy.html">Achilles Tendinopathy</a></li><li><a href="/encyclopedia/rehabilitation.html">Rehabilitation</a></li></ul></div></div>
+
+<div class="content-section" id="eldoa-related-videos" style="display:none;"></div>
+<div class="content-section" id="eldoa-related-research" style="display:none;"></div>
+<div class="content-section" id="eldoa-find-practitioner" style="display:none;"></div>
 <a class="back-link" href="/encyclopedia.html">← Back to Encyclopedia</a>
 </div>
+
+<!-- Cross-Linking Module -->
+<script src="/assets/js/cross-links.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const entryId = document.body.dataset.entryId;
+  if (entryId && window.ELDOACrossLinks) {
+    window.ELDOACrossLinks.initForEncyclopedia(entryId);
+  }
+});
+</script>
 </body>
 </html>

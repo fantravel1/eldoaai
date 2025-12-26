@@ -408,6 +408,167 @@
       if (instructorVideos.length > 0) {
         this.renderRelatedVideos(instructorVideos.slice(0, 4), 'eldoa-practitioner-videos');
       }
+    },
+
+    /**
+     * Find similar videos
+     */
+    async findSimilarVideos(video) {
+      const videos = await this.loadData('videos');
+      if (!videos || !videos.length) return [];
+
+      const matches = [];
+      const videoSegments = (video.segments || []).map(s => s.toLowerCase());
+      const videoTags = (video.tags || []).map(t => t.toLowerCase());
+      const videoRegion = (video.region || '').toLowerCase();
+      const videoDifficulty = (video.difficulty || '').toLowerCase();
+
+      videos.forEach(v => {
+        if (v.id === video.id) return; // Skip same video
+
+        let score = 0;
+        const vSegments = (v.segments || []).map(s => s.toLowerCase());
+        const vTags = (v.tags || []).map(t => t.toLowerCase());
+        const vRegion = (v.region || '').toLowerCase();
+        const vDifficulty = (v.difficulty || '').toLowerCase();
+
+        // Segment matches (high priority)
+        videoSegments.forEach(seg => {
+          if (vSegments.includes(seg)) score += 10;
+        });
+
+        // Same region
+        if (videoRegion === vRegion) score += 5;
+
+        // Same difficulty
+        if (videoDifficulty === vDifficulty) score += 3;
+
+        // Tag matches
+        videoTags.forEach(tag => {
+          if (vTags.includes(tag)) score += 2;
+        });
+
+        if (score > 0) {
+          matches.push({ ...v, score });
+        }
+      });
+
+      return matches
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4);
+    },
+
+    /**
+     * Render similar videos section
+     */
+    renderSimilarVideos(videos, containerId) {
+      const container = document.getElementById(containerId);
+      if (!container || !videos.length) return;
+
+      const html = `
+        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:16px;display:flex;align-items:center;gap:8px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+            <line x1="7" y1="2" x2="7" y2="22"/>
+            <line x1="17" y1="2" x2="17" y2="22"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <line x1="2" y1="7" x2="7" y2="7"/>
+            <line x1="2" y1="17" x2="7" y2="17"/>
+            <line x1="17" y1="17" x2="22" y2="17"/>
+            <line x1="17" y1="7" x2="22" y2="7"/>
+          </svg>
+          Similar Videos
+        </h3>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;">
+          ${videos.map(v => `
+            <a href="/videos/pages/${v.id}.html" style="display:block;padding:12px;background:var(--card-bg,#f8f9fa);border:1px solid var(--border-color,#ddd);border-radius:6px;text-decoration:none;">
+              <div style="font-weight:600;color:var(--text-color,#333);font-size:0.9rem;margin-bottom:4px;line-height:1.3;">${v.title}</div>
+              <div style="font-size:0.8rem;color:#888;">
+                ${v.difficulty || ''} ${v.duration ? '• ' + v.duration : ''}
+              </div>
+            </a>
+          `).join('')}
+        </div>
+      `;
+
+      container.innerHTML = html;
+      container.style.display = 'block';
+    },
+
+    /**
+     * Find videos related to research topic
+     */
+    async findVideosForResearch(researchId) {
+      const videos = await this.loadData('videos');
+      if (!videos || !videos.length) return [];
+
+      // Keywords for each research article
+      const researchKeywords = {
+        'athletic-performance': ['performance', 'sport', 'athletic', 'training', 'l5-s1', 'l4-l5'],
+        'breathing-foundation': ['breathing', 'diaphragm', 't8-t9', 't7-t8'],
+        'digital-posture-crisis': ['posture', 'neck', 'cervical', 'c6-c7', 'c5-c6', 'c4-c5'],
+        'neurological-mechanisms-eldoa': ['neural', 'nervous', 'general', 'spinal'],
+        'visceral-autonomic-effects': ['visceral', 't12-l1', 't8-t9', 'thoracic'],
+        'visual-performance-posture': ['posture', 'cervical', 'neck', 'c-spine']
+      };
+
+      const keywords = researchKeywords[researchId] || [];
+      const matches = [];
+
+      videos.forEach(v => {
+        let score = 0;
+        const vTags = (v.tags || []).map(t => t.toLowerCase());
+        const vSegments = (v.segments || []).map(s => s.toLowerCase());
+        const vTitle = v.title.toLowerCase();
+
+        keywords.forEach(kw => {
+          if (vTags.some(t => t.includes(kw))) score += 5;
+          if (vSegments.some(s => s.includes(kw))) score += 8;
+          if (vTitle.includes(kw)) score += 3;
+        });
+
+        if (score > 0) {
+          matches.push({ ...v, score });
+        }
+      });
+
+      return matches
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 4);
+    },
+
+    /**
+     * Initialize for research page
+     */
+    async initForResearch(researchId) {
+      // Find and render related videos
+      const videos = await this.findVideosForResearch(researchId);
+      this.renderRelatedVideos(videos, 'eldoa-related-videos');
+
+      // Find and render practitioners
+      const practitioners = await this.findPractitioners({ limit: 3 });
+      this.renderPractitioners(practitioners, 'eldoa-find-practitioner');
+    },
+
+    /**
+     * Enhanced video page initialization with similar videos
+     */
+    async initForVideoEnhanced(videoId) {
+      const videos = await this.loadData('videos');
+      const video = videos.find(v => v.id === videoId);
+      if (!video) return;
+
+      // Find and render related encyclopedia entries
+      const entries = await this.findRelatedEncyclopedia(video);
+      this.renderRelatedEncyclopedia(entries, 'eldoa-related-encyclopedia');
+
+      // Find and render similar videos
+      const similar = await this.findSimilarVideos(video);
+      this.renderSimilarVideos(similar, 'eldoa-similar-videos');
+
+      // Find and render practitioners
+      const practitioners = await this.findPractitioners({ limit: 3 });
+      this.renderPractitioners(practitioners, 'eldoa-find-practitioner');
     }
   };
 

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spinal Segments Hub - ELDOA AI</title>
+  <meta name="description" content="Browse ELDOA content organized by spinal segment. Find videos, exercises, and encyclopedia entries for each vertebral level from cervical to sacral.">
+  <link rel="canonical" href="https://eldoa.ai/segments/">
+  <link rel="icon" type="image/png" href="/favicon.png">
+  <meta name="theme-color" content="#2f2fe6">
+
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #0d0f13;
+      --muted: #64748b;
+      --brand: #2f2fe6;
+      --brand-light: #eef2ff;
+      --card: #f8fafc;
+      --border: #e2e8f0;
+    }
+    [data-theme="dark"] {
+      --bg: #0b0d12;
+      --fg: #eef2ff;
+      --muted: #94a3b8;
+      --brand: #818cf8;
+      --brand-light: #1e1b4b;
+      --card: #111827;
+      --border: #1f2937;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+    }
+    .container { max-width: 1000px; margin: 0 auto; padding: 2rem; }
+    header { text-align: center; margin-bottom: 3rem; }
+    .breadcrumb { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.5rem; }
+    .breadcrumb a { color: var(--brand); text-decoration: none; }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle { color: var(--muted); font-size: 1.1rem; }
+
+    .region-section { margin-bottom: 2.5rem; }
+    .region-title {
+      font-size: 1.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      color: var(--brand);
+    }
+    .segment-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .segment-card {
+      display: block;
+      padding: 1.25rem;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      text-decoration: none;
+      transition: transform 0.2s, box-shadow 0.2s, border-color 0.2s;
+    }
+    .segment-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-color: var(--brand);
+    }
+    .segment-name {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 0.25rem;
+    }
+    .segment-desc {
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.4;
+    }
+    footer {
+      margin-top: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      color: var(--muted);
+    }
+    footer a { color: var(--brand); text-decoration: none; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav class="breadcrumb">
+        <a href="/">Home</a> → Segments
+      </nav>
+      <h1>Spinal Segments Hub</h1>
+      <p class="subtitle">Browse ELDOA content organized by vertebral level</p>
+    </header>
+
+    
+    <section class="region-section">
+      <h2 class="region-title">Cervical Spine</h2>
+      <div class="segment-grid">
+        
+        <a href="/segments/c4-c5.html" class="segment-card">
+          <div class="segment-name">C4-C5</div>
+          <div class="segment-desc">Upper neck segment affecting shoulder and arm function</div>
+        </a>
+        
+        <a href="/segments/c5-c6.html" class="segment-card">
+          <div class="segment-name">C5-C6</div>
+          <div class="segment-desc">Mid-cervical segment involved in bicep strength and wrist extension</div>
+        </a>
+        
+        <a href="/segments/c6-c7.html" class="segment-card">
+          <div class="segment-name">C6-C7</div>
+          <div class="segment-desc">Lower cervical segment affecting tricep and grip strength</div>
+        </a>
+        
+      </div>
+    </section>
+    
+    <section class="region-section">
+      <h2 class="region-title">Thoracic Spine</h2>
+      <div class="segment-grid">
+        
+        <a href="/segments/t4-t5.html" class="segment-card">
+          <div class="segment-name">T4-T5</div>
+          <div class="segment-desc">Upper thoracic segment affecting upper back and chest</div>
+        </a>
+        
+        <a href="/segments/t7-t8.html" class="segment-card">
+          <div class="segment-name">T7-T8</div>
+          <div class="segment-desc">Mid-thoracic segment associated with core stability</div>
+        </a>
+        
+        <a href="/segments/t8-t9.html" class="segment-card">
+          <div class="segment-name">T8-T9</div>
+          <div class="segment-desc">Mid-thoracic segment important for posture and breathing</div>
+        </a>
+        
+        <a href="/segments/t12-l1.html" class="segment-card">
+          <div class="segment-name">T12-L1</div>
+          <div class="segment-desc">Thoracolumbar junction, high stress transition zone</div>
+        </a>
+        
+      </div>
+    </section>
+    
+    <section class="region-section">
+      <h2 class="region-title">Lumbar Spine</h2>
+      <div class="segment-grid">
+        
+        <a href="/segments/l1-l2.html" class="segment-card">
+          <div class="segment-name">L1-L2</div>
+          <div class="segment-desc">Upper lumbar segment affecting hip flexion</div>
+        </a>
+        
+        <a href="/segments/l2-l3.html" class="segment-card">
+          <div class="segment-name">L2-L3</div>
+          <div class="segment-desc">Lumbar segment involved in hip and thigh function</div>
+        </a>
+        
+        <a href="/segments/l3-l4.html" class="segment-card">
+          <div class="segment-name">L3-L4</div>
+          <div class="segment-desc">Lumbar segment affecting quadriceps and knee extension</div>
+        </a>
+        
+        <a href="/segments/l4-l5.html" class="segment-card">
+          <div class="segment-name">L4-L5</div>
+          <div class="segment-desc">Lower lumbar segment, common site of disc issues</div>
+        </a>
+        
+        <a href="/segments/l5-s1.html" class="segment-card">
+          <div class="segment-name">L5-S1</div>
+          <div class="segment-desc">Lumbosacral junction, bearing most spinal load</div>
+        </a>
+        
+      </div>
+    </section>
+    
+    <section class="region-section">
+      <h2 class="region-title">Sacral Spine</h2>
+      <div class="segment-grid">
+        
+        <a href="/segments/s1-s2.html" class="segment-card">
+          <div class="segment-name">S1-S2</div>
+          <div class="segment-desc">Upper sacral segment affecting calf and foot function</div>
+        </a>
+        
+      </div>
+    </section>
+    
+
+    <footer>
+      <p>
+        <a href="/">Home</a> • <a href="/videos/">Videos</a> • <a href="/encyclopedia.html">Encyclopedia</a> • <a href="/practitioners.html">Practitioners</a>
+      </p>
+    </footer>
+  </div>
+
+  <script>
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      document.documentElement.setAttribute('data-theme', 'dark');
+    }
+  </script>
+</body>
+</html>
