@@ -300,7 +300,7 @@
         }
     </style>
 </head>
-<body>
+<body data-video-id="top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries">
     <header>
         <nav class="breadcrumb">
             <a href="/">Home</a> / <a href="/videos/">Video Library</a> / Top 5 ELDOA Exercises for SHOULDER PAIN RELIEF to Fix and Prevent Injuries
@@ -368,7 +368,25 @@
             </div>
         </div>
 
+        
+        <!-- Related Encyclopedia (Dynamic) -->
+        <div id="eldoa-related-encyclopedia" class="description" style="display:none;"></div>
+
+        <!-- Find a Practitioner (Dynamic) -->
+        <div id="eldoa-find-practitioner" class="description" style="display:none;"></div>
+
         <a href="/videos/" class="back-link">← Back to Video Library</a>
     </main>
+
+    <!-- Cross-Linking Module -->
+    <script src="/assets/js/cross-links.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoId = document.body.dataset.videoId;
+            if (videoId && window.ELDOACrossLinks) {
+                window.ELDOACrossLinks.initForVideo(videoId);
+            }
+        });
+    </script>
 </body>
 </html>

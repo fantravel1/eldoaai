@@ -300,7 +300,7 @@
         }
     </style>
 </head>
-<body>
+<body data-video-id="eldoa-exercises-to-increase-flexibility-improve-posture-relieve-pain-video-3-of-9">
     <header>
         <nav class="breadcrumb">
             <a href="/">Home</a> / <a href="/videos/">Video Library</a> / ELDOA Exercises to Increase Flexibility, Improve Posture & Relieve Pain (Video 3 of 9)
@@ -368,7 +368,25 @@
             </div>
         </div>
 
+        
+        <!-- Related Encyclopedia (Dynamic) -->
+        <div id="eldoa-related-encyclopedia" class="description" style="display:none;"></div>
+
+        <!-- Find a Practitioner (Dynamic) -->
+        <div id="eldoa-find-practitioner" class="description" style="display:none;"></div>
+
         <a href="/videos/" class="back-link">← Back to Video Library</a>
     </main>
+
+    <!-- Cross-Linking Module -->
+    <script src="/assets/js/cross-links.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const videoId = document.body.dataset.videoId;
+            if (videoId && window.ELDOACrossLinks) {
+                window.ELDOACrossLinks.initForVideo(videoId);
+            }
+        });
+    </script>
 </body>
 </html>

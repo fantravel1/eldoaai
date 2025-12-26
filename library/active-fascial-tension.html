@@ -644,7 +644,7 @@
   });
   </script>
 </head>
-<body class="eldoa-page" data-page-type="concept" data-condition="active-fascial-tension">
+<body class="eldoa-page" data-page-type="concept" data-condition="active-fascial-tension" data-entry-id="active-fascial-tension">
   
   <!-- Theme Toggle Button -->
   <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
@@ -799,6 +799,16 @@
         </ul>
       </section>
       
+
+      <!-- Related Videos (Dynamic) -->
+      <section id="eldoa-related-videos" class="eldoa-related eldoa-section" data-section="videos" style="display:none;"></section>
+
+      <!-- Related Research (Dynamic) -->
+      <section id="eldoa-related-research" class="eldoa-related eldoa-section" data-section="research" style="display:none;"></section>
+
+      <!-- Find a Practitioner (Dynamic) -->
+      <section id="eldoa-find-practitioner" class="eldoa-related eldoa-section" data-section="practitioners" style="display:none;"></section>
+
       <!-- FAQ Section -->
       <section class="eldoa-faq eldoa-section" data-section="faq">
         <h2 class="eldoa-h2">Frequently Asked Questions</h2>
@@ -920,5 +930,16 @@
     })();
   </script>
 
+
+  <!-- Cross-Linking Module -->
+  <script src="/assets/js/cross-links.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const entryId = document.body.dataset.entryId;
+      if (entryId && window.ELDOACrossLinks) {
+        window.ELDOACrossLinks.initForEncyclopedia(entryId);
+      }
+    });
+  </script>
 </body>
 </html>
