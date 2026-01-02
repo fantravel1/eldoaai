@@ -3,16 +3,46 @@
     <!-- Main Pages Sitemap -->
     <sitemap>
         <loc>https://eldoa.ai/sitemap-main.xml</loc>
-        <lastmod>2025-11-21</lastmod>
+        <lastmod>2026-01-02</lastmod>
     </sitemap>
 
-    <!-- Practitioners Directory Sitemap -->
+    <!-- Encyclopedia Pages Sitemap (713 pages) -->
+    <sitemap>
+        <loc>https://eldoa.ai/encyclopedia-sitemap.xml</loc>
+        <lastmod>2026-01-02</lastmod>
+    </sitemap>
+
+    <!-- Kids Encyclopedia Sitemap (629 pages) -->
+    <sitemap>
+        <loc>https://eldoa.ai/kids-encyclopedia-sitemap.xml</loc>
+        <lastmod>2026-01-02</lastmod>
+    </sitemap>
+
+    <!-- Spinal Segments Sitemap (15 pages) -->
+    <sitemap>
+        <loc>https://eldoa.ai/segments-sitemap.xml</loc>
+        <lastmod>2026-01-02</lastmod>
+    </sitemap>
+
+    <!-- Library/Reference Pages Sitemap (8 pages) -->
+    <sitemap>
+        <loc>https://eldoa.ai/library-sitemap.xml</loc>
+        <lastmod>2026-01-02</lastmod>
+    </sitemap>
+
+    <!-- Research Articles Sitemap (7 pages) -->
+    <sitemap>
+        <loc>https://eldoa.ai/research-sitemap.xml</loc>
+        <lastmod>2026-01-02</lastmod>
+    </sitemap>
+
+    <!-- Practitioners Directory Sitemap (214 pages) -->
     <sitemap>
         <loc>https://eldoa.ai/practitioners-sitemap.xml</loc>
         <lastmod>2025-11-21</lastmod>
     </sitemap>
 
-    <!-- Video Library Sitemap -->
+    <!-- Video Library Sitemap (115 pages) -->
     <sitemap>
         <loc>https://eldoa.ai/videos/video-sitemap.xml</loc>
         <lastmod>2025-01-18</lastmod>
