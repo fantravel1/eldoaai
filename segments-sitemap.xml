@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Segments Hub -->
+    <url>
+        <loc>https://eldoa.ai/segments/</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Cervical Segments -->
+    <url>
+        <loc>https://eldoa.ai/segments/c4-c5.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/c5-c6.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/c6-c7.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/c7-t1.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Thoracic Segments -->
+    <url>
+        <loc>https://eldoa.ai/segments/t4-t5.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/t7-t8.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/t8-t9.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/t12-l1.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Lumbar Segments -->
+    <url>
+        <loc>https://eldoa.ai/segments/l1-l2.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/l2-l3.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/l3-l4.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/l4-l5.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://eldoa.ai/segments/l5-s1.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Sacral Segments -->
+    <url>
+        <loc>https://eldoa.ai/segments/s1-s2.html</loc>
+        <lastmod>2026-01-02</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
