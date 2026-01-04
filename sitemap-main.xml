@@ -87,4 +87,20 @@
         <changefreq>monthly</changefreq>
         <priority>0.6</priority>
     </url>
+
+    <!-- Practitioners Directory (Near Me) -->
+    <url>
+        <loc>https://eldoa.ai/practitioners.html</loc>
+        <lastmod>2026-01-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- ELDOA Classes Near Me -->
+    <url>
+        <loc>https://eldoa.ai/eldoa-classes-near-me.html</loc>
+        <lastmod>2026-01-04</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
 </urlset>

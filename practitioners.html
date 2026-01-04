@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Find Certified ELDOA Practitioners Near You | 213+ Worldwide | ELDOA AI</title>
-  <meta name="description" content="Search 213+ certified ELDOA practitioners across 11 countries including USA, Canada, France, Germany, UK. Find Level 4 trainers, specialists, and certified practitioners near you.">
-  <meta name="keywords" content="ELDOA practitioners, find ELDOA trainer, certified ELDOA, ELDOA near me, fascial therapy, spinal health practitioner, Guy Voyer certified">
+  <title>ELDOA Practitioners Near Me | Find Certified Trainers & Classes | ELDOA AI</title>
+  <meta name="description" content="Find ELDOA practitioners near me - search 213+ certified ELDOA trainers across 11 countries. Use your location to discover nearby ELDOA classes, workshops, and certified practitioners for spinal health.">
+  <meta name="keywords" content="ELDOA practitioners near me, ELDOA classes near me, find ELDOA trainer, certified ELDOA, ELDOA near me, fascial therapy near me, spinal health practitioner, Guy Voyer certified, ELDOA therapy near me">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
   <link rel="canonical" href="https://eldoa.ai/practitioners.html">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://eldoa.ai/practitioners.html">
-  <meta property="og:title" content="Find Certified ELDOA Practitioners Near You | 213+ Worldwide">
-  <meta property="og:description" content="Search 213+ certified ELDOA practitioners across 11 countries. Find specialists for spinal health, fascial therapy, and personalized ELDOA training.">
+  <meta property="og:title" content="ELDOA Practitioners Near Me | Find Certified Trainers & Classes">
+  <meta property="og:description" content="Find ELDOA practitioners and classes near you. Search 213+ certified trainers worldwide. Use location to discover nearby ELDOA therapy and workshops.">
   <meta property="og:image" content="https://eldoa.ai/images/og-practitioners.jpg">
   <meta name="twitter:card" content="summary_large_image">
 
@@ -23,15 +23,73 @@
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Structured Data -->
+  <!-- Structured Data - ItemList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    "name": "ELDOA Practitioners Directory",
-    "description": "Comprehensive directory of certified ELDOA practitioners worldwide",
+    "name": "ELDOA Practitioners Near Me Directory",
+    "description": "Find certified ELDOA practitioners and classes near your location. Search 213+ trained specialists worldwide for spinal health, fascial therapy, and personalized ELDOA training.",
     "url": "https://eldoa.ai/practitioners.html",
-    "numberOfItems": 213
+    "numberOfItems": 213,
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": {
+        "@type": "EntryPoint",
+        "urlTemplate": "https://eldoa.ai/practitioners.html?search={search_term}"
+      },
+      "query-input": "required name=search_term"
+    }
+  }
+  </script>
+
+  <!-- Structured Data - FAQPage for AEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How do I find ELDOA practitioners near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the ELDOA AI Practitioners Directory to find certified ELDOA practitioners near your location. Click the 'Find Near Me' button to enable location services and see practitioners sorted by distance. You can also search by city, country, or practitioner name. Our directory includes 213+ certified practitioners across 11 countries including USA, Canada, France, Germany, and UK."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Are there ELDOA classes near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Many ELDOA practitioners offer group classes and workshops. Use the practitioner directory to find certified trainers in your area who offer ELDOA classes. Contact them directly to inquire about class schedules, private sessions, and workshop availability. Level 4 certified trainers are qualified to teach ELDOA group classes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What certification levels do ELDOA practitioners have?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ELDOA practitioners are certified at different levels: Level 6 (Expert/Creator - Dr. Guy Voyer), Level 5 (Certified Therapist), Level 4 (Certified Trainer/Master Instructor who can teach classes), Level 3 (Advanced Student), and Level 2 (Student Practitioner). Our directory shows each practitioner's certification level to help you find the right specialist for your needs."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do ELDOA sessions cost near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "ELDOA session costs vary by location and practitioner. Private sessions typically range from $75-200 per hour, while group classes are usually $20-50 per class. Contact practitioners directly through our directory for specific pricing in your area. Many offer package deals and introductory rates for new clients."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I learn ELDOA online if there are no practitioners near me?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes! Many certified ELDOA practitioners offer virtual sessions and online classes. Use our directory to find practitioners who provide remote training. Additionally, our ELDOA AI Diagnostic Tool can recommend specific ELDOA exercises based on your needs, and our Video Library contains instructional content from certified trainers."
+        }
+      }
+    ]
   }
   </script>
 
@@ -296,6 +354,69 @@
     .no-results svg { width: 64px; height: 64px; margin-bottom: 1rem; opacity: .4; }
     .no-results h3 { font-size: 1.2rem; margin-bottom: .5rem; color: var(--fg); }
 
+    /* Near Me Button */
+    .near-me-row {
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid var(--border);
+    }
+    .near-me-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      padding: .7rem 1.2rem;
+      border: none;
+      border-radius: 10px;
+      font-size: .95rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .15s;
+      background: linear-gradient(135deg, var(--brand), var(--brand-2));
+      color: #fff;
+    }
+    .near-me-btn:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .near-me-btn:disabled { opacity: .6; cursor: not-allowed; transform: none; }
+    .near-me-btn svg { width: 18px; height: 18px; }
+    .near-me-btn.active { background: var(--ok); }
+    .near-me-btn.loading { background: var(--muted); }
+
+    .radius-select {
+      padding: .6rem .9rem;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      font-size: .9rem;
+      background: var(--bg);
+      color: var(--fg);
+    }
+    .radius-select:focus { outline: none; border-color: var(--brand); }
+    .radius-select:disabled { opacity: .5; }
+
+    .location-status {
+      font-size: .85rem;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: .4rem;
+    }
+    .location-status.error { color: var(--err); }
+    .location-status.success { color: var(--ok); }
+
+    /* Distance Badge */
+    .prac-distance {
+      display: flex;
+      align-items: center;
+      gap: .35rem;
+      font-size: .8rem;
+      color: var(--brand);
+      font-weight: 600;
+      margin-bottom: .5rem;
+    }
+    .prac-distance svg { width: 14px; height: 14px; }
+
     /* Footer */
     footer {
       margin-top: 3rem;
@@ -377,6 +498,25 @@
           </select>
         </div>
       </div>
+      <div class="near-me-row">
+        <button type="button" id="near-me-btn" class="near-me-btn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/>
+          </svg>
+          <span>Find Near Me</span>
+        </button>
+        <select id="radius" class="radius-select" disabled>
+          <option value="">Any Distance</option>
+          <option value="10">Within 10 miles</option>
+          <option value="25">Within 25 miles</option>
+          <option value="50">Within 50 miles</option>
+          <option value="100">Within 100 miles</option>
+          <option value="250">Within 250 miles</option>
+          <option value="500">Within 500 miles</option>
+        </select>
+        <span id="location-status" class="location-status"></span>
+      </div>
     </div>
 
     <div class="results-bar">
@@ -407,8 +547,12 @@
     </div>
   </footer>
 
+  <!-- Geolocation Module -->
+  <script src="/assets/js/geolocation.js"></script>
   <script>
     let allPractitioners = [];
+    let userLocation = null;
+    let locationEnabled = false;
 
     async function loadPractitioners() {
       try {
@@ -432,6 +576,17 @@
           countrySelect.appendChild(opt);
         });
 
+        // Check for saved location
+        const savedLocation = window.ELDOAGeolocation.getSavedLocation();
+        if (savedLocation) {
+          userLocation = savedLocation;
+          locationEnabled = true;
+          updateLocationUI(true);
+          allPractitioners = window.ELDOAGeolocation.addDistancesToPractitioners(
+            allPractitioners, userLocation.lat, userLocation.lng
+          );
+        }
+
         filterPractitioners();
       } catch (error) {
         console.error('Error loading practitioners:', error);
@@ -444,8 +599,9 @@
       const country = document.getElementById('country').value;
       const level = document.getElementById('level').value;
       const status = document.getElementById('status').value;
+      const radius = document.getElementById('radius').value;
 
-      const filtered = allPractitioners.filter(p => {
+      let filtered = allPractitioners.filter(p => {
         const matchSearch = !search ||
           p.name.toLowerCase().includes(search) ||
           (p.city && p.city.toLowerCase().includes(search)) ||
@@ -455,6 +611,16 @@
         const matchStatus = !status || p.status === status;
         return matchSearch && matchCountry && matchLevel && matchStatus;
       });
+
+      // Apply radius filter if location is enabled
+      if (locationEnabled && radius) {
+        filtered = window.ELDOAGeolocation.filterByRadius(filtered, parseInt(radius));
+      }
+
+      // Sort by distance if location is enabled
+      if (locationEnabled) {
+        filtered = window.ELDOAGeolocation.sortByDistance(filtered);
+      }
 
       displayPractitioners(filtered);
     }
@@ -493,12 +659,24 @@
           'closed': 'Practice closed'
         }[p.status || 'active'];
 
+        // Distance display
+        const distanceHtml = locationEnabled && p.distanceText ? `
+          <div class="prac-distance">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M12 2v3M12 19v3M2 12h3M19 12h3"/>
+            </svg>
+            ${p.distanceText}
+          </div>
+        ` : '';
+
         return `
           <a href="/practitioner.html?id=${p.id}" class="prac-card">
             <div class="prac-card-header">
               <div class="prac-name">${p.name}</div>
               ${levelText ? `<span class="prac-level ${levelClass}">${levelText}</span>` : ''}
             </div>
+            ${distanceHtml}
             <div class="prac-location">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
@@ -517,11 +695,102 @@
       }).join('');
     }
 
+    function updateLocationUI(enabled, message = '') {
+      const btn = document.getElementById('near-me-btn');
+      const radiusSelect = document.getElementById('radius');
+      const statusEl = document.getElementById('location-status');
+
+      if (enabled) {
+        btn.classList.add('active');
+        btn.classList.remove('loading');
+        btn.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 6L9 17l-5-5"/>
+          </svg>
+          <span>Location Active</span>
+        `;
+        radiusSelect.disabled = false;
+        statusEl.className = 'location-status success';
+        statusEl.textContent = message || 'Sorted by distance';
+      } else if (message) {
+        btn.classList.remove('active', 'loading');
+        statusEl.className = 'location-status error';
+        statusEl.textContent = message;
+      }
+    }
+
+    async function handleNearMeClick() {
+      const btn = document.getElementById('near-me-btn');
+
+      if (locationEnabled) {
+        // Disable location mode
+        locationEnabled = false;
+        userLocation = null;
+        window.ELDOAGeolocation.clearSavedLocation();
+
+        btn.classList.remove('active');
+        btn.innerHTML = `
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"/>
+          </svg>
+          <span>Find Near Me</span>
+        `;
+        document.getElementById('radius').disabled = true;
+        document.getElementById('radius').value = '';
+        document.getElementById('location-status').textContent = '';
+        document.getElementById('location-status').className = 'location-status';
+
+        // Remove distance data
+        allPractitioners = allPractitioners.map(p => {
+          const { distance, distanceText, hasCoordinates, ...rest } = p;
+          return rest;
+        });
+
+        filterPractitioners();
+        return;
+      }
+
+      // Show loading state
+      btn.classList.add('loading');
+      btn.disabled = true;
+      btn.innerHTML = `
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="animation: spin 1s linear infinite">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+        <span>Getting location...</span>
+      `;
+
+      try {
+        const location = await window.ELDOAGeolocation.getUserLocation();
+        userLocation = location;
+        locationEnabled = true;
+
+        // Save location for future visits
+        window.ELDOAGeolocation.saveLocation(location.lat, location.lng);
+
+        // Add distances to all practitioners
+        allPractitioners = window.ELDOAGeolocation.addDistancesToPractitioners(
+          allPractitioners, location.lat, location.lng
+        );
+
+        updateLocationUI(true);
+        filterPractitioners();
+      } catch (error) {
+        updateLocationUI(false, error.message);
+      } finally {
+        btn.disabled = false;
+      }
+    }
+
     // Event listeners
     document.getElementById('search').addEventListener('input', filterPractitioners);
     document.getElementById('country').addEventListener('change', filterPractitioners);
     document.getElementById('level').addEventListener('change', filterPractitioners);
     document.getElementById('status').addEventListener('change', filterPractitioners);
+    document.getElementById('radius').addEventListener('change', filterPractitioners);
+    document.getElementById('near-me-btn').addEventListener('click', handleNearMeClick);
 
     // Load on page load
     loadPractitioners();
