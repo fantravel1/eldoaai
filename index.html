@@ -3,173 +3,293 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>ELDOA AI — Complete ELDOA Encyclopedia, 115+ Videos & Interactive Diagnostic</title>
-  <meta name="description" content="Comprehensive ELDOA resource with 629 encyclopedia pages, 115+ video tutorials, and interactive body diagnostic tool. Evidence-based protocols for spinal health, posture, and pain relief. Inspired by Guy Voyer."/>
-  <meta name="keywords" content="ELDOA, Guy Voyer, fascial stretching, spine health, posture, back pain, sciatica, neck pain, video tutorials, spinal decompression, ELDOA encyclopedia, interactive diagnostic"/>
+  <title>ELDOA AI — Interactive Diagnostic, 115+ Videos & Complete Encyclopedia</title>
+  <meta name="description" content="Interactive body diagnostic for personalized ELDOA protocols. 115+ video tutorials, 629 encyclopedia pages, and 213+ certified practitioners worldwide."/>
+  <meta name="keywords" content="ELDOA, Guy Voyer, fascial stretching, spine health, posture, back pain, sciatica, neck pain, video tutorials, spinal decompression"/>
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://eldoa.ai/"/>
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://eldoa.ai/"/>
-  <meta property="og:title" content="ELDOA AI — Complete Encyclopedia, 115+ Videos & Interactive Diagnostic"/>
-  <meta property="og:description" content="Comprehensive ELDOA resource: 629 encyclopedia pages with full SEO/AEO optimization, 115+ video tutorials from certified instructors, and interactive body diagnostic tool for personalized relief protocols."/>
+  <meta property="og:title" content="ELDOA AI — Interactive Diagnostic & Complete Resource"/>
+  <meta property="og:description" content="Interactive body diagnostic, 115+ video tutorials, 629 encyclopedia pages. Find relief protocols for your specific condition."/>
   <meta property="og:image" content="/images/og-image.jpg"/>
   <meta name="twitter:card" content="summary_large_image"/>
-  <meta name="twitter:title" content="ELDOA AI — Complete Encyclopedia, 115+ Videos & Interactive Diagnostic"/>
-  <meta name="twitter:description" content="629 encyclopedia pages, 115+ videos, interactive diagnostic tool. Evidence-based ELDOA protocols for spinal health and pain relief."/>
-  <meta name="twitter:image" content="/images/og-image.jpg"/>
 
-  <!-- App / PWA friendliness -->
+  <!-- App / PWA -->
   <meta name="theme-color" content="#0d0f13" media="(prefers-color-scheme: dark)">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
-  <link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png">
-  <link rel="icon" type="image/png" sizes="512x512" href="/android-chrome-512x512.png">
 
   <style>
-    [data-theme="light"] {
+    :root {
       --bg: #ffffff;
       --fg: #0d0f13;
-      --muted: #475569;
-      --brand: #2f2fe6;
-      --brand-2: #0891b2;
+      --muted: #64748b;
+      --brand: #4f46e5;
+      --brand-2: #06b6d4;
       --card: #f8fafc;
       --border: #e2e8f0;
-      --ok: #15803d;
-      --warn: #a16207;
-      --err: #b91c1c;
+      --ok: #10b981;
+      --gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
     }
     [data-theme="dark"] {
-      --bg: #0b0d12;
-      --fg: #eef2ff;
-      --muted: #c7d2fe;
-      --brand: #8b5cf6;
+      --bg: #0a0a0f;
+      --fg: #f1f5f9;
+      --muted: #94a3b8;
+      --brand: #818cf8;
       --brand-2: #22d3ee;
-      --card: #111827;
-      --border: #262b36;
-      --ok: #22c55e;
-      --warn: #f59e0b;
-      --err: #ef4444;
+      --card: #151520;
+      --border: #1e293b;
     }
 
-    html, body {height: 100%;}
-    body { margin: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, Ubuntu, Cantarell, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-      background: var(--bg); color: var(--fg);
-      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
     a { color: var(--brand); text-decoration: none; }
     a:hover { text-decoration: underline; }
-    .container { width: min(1100px, 92vw); margin: 0 auto; }
-    header { position: sticky; top: 0; z-index: 50; backdrop-filter: saturate(1.2) blur(8px); background: color-mix(in oklab, var(--bg), transparent 20%); border-bottom: 1px solid var(--border); }
-    .nav { display:flex; align-items:center; justify-content:space-between; padding: .75rem 0; }
-    .logo { display:flex; align-items:center; gap:.6rem; font-weight:800; letter-spacing:.2px; }
-    .logo-mark { width:32px; height:32px; border-radius:8px; background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2)); box-shadow: 0 0 0 2px color-mix(in oklab, var(--bg), transparent 65%); }
-    .nav a { font-weight:600; }
-    .nav-right { display:flex; align-items:center; gap:.75rem; }
-    .nav-links { display:flex; align-items:center; gap:.5rem; }
-    .btn { display:inline-flex; align-items:center; gap:.5rem; padding:.65rem .9rem; border-radius:12px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); color: var(--fg); font-weight:700; }
-    .btn:hover { filter: brightness(1.03); }
-    .switch { cursor:pointer; border:1px solid var(--border); border-radius:999px; padding:.3rem; display:flex; align-items:center; gap:.3rem; }
-    .switch span { display:inline-block; width:20px; height:20px; border-radius:999px; background: var(--brand); }
 
-    /* Hamburger */
-    .hamburger { display:none; width:40px; height:40px; border-radius:10px; border:1px solid var(--border); background: color-mix(in oklab, var(--bg), var(--card) 35%); align-items:center; justify-content:center; }
-    .hamburger svg { width:22px; height:22px; }
-    .mobile-menu { position:fixed; inset:56px 0 auto 0; background: var(--bg); border-bottom:1px solid var(--border); box-shadow: 0 10px 30px color-mix(in oklab, #000, transparent 70%); z-index:49; transform: translateY(-8px); opacity:0; pointer-events:none; transition: transform .18s ease, opacity .18s ease; }
-    .mobile-menu.open { transform: translateY(0); opacity:1; pointer-events:auto; }
-    .mobile-menu .menu-inner { padding: .75rem; display:grid; gap:.5rem; }
-    .mobile-menu a { display:block; padding:.9rem 1rem; border:1px solid var(--border); border-radius:12px; background: color-mix(in oklab, var(--bg), var(--card) 35%); font-weight:700; text-align:center; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
 
-    /* Hero */
-    .hero { padding: 2rem 0 1.5rem; }
-    .hero-grid { display:grid; grid-template-columns:1fr; gap:1.5rem; }
-    @media(min-width:900px){ .hero-grid { grid-template-columns: 1fr 1fr; align-items:start; } }
-    .hero h1 { font-size: clamp(1.8rem, 5vw, 3rem); line-height:1.05; margin:.2rem 0 .6rem; }
-    .kicker { font-size:.9rem; text-transform:uppercase; letter-spacing:.18em; color: var(--muted); font-weight:800; }
-    .sub { color: var(--muted); max-width: 58ch; }
-
-    /* Diagnostic Preview Widget */
-    .diagnostic-preview { position:relative; border:1px solid var(--border); border-radius:18px; overflow:hidden; background: radial-gradient(120% 120% at 0% 0%, color-mix(in oklab, var(--brand), transparent 90%), transparent 40%), linear-gradient(180deg, color-mix(in oklab, var(--card), transparent 5%), color-mix(in oklab, var(--bg), transparent 0%)); padding: 1rem; }
-    .diagnostic-preview-header { display:flex; align-items:center; justify-content:space-between; margin-bottom:.75rem; }
-    .diagnostic-preview-header h3 { font-size:1.1rem; margin:0; display:flex; align-items:center; gap:.5rem; }
-    .diagnostic-preview-header .pulse-dot { width:8px; height:8px; background:var(--ok); border-radius:50%; animation: pulse-glow 2s ease-in-out infinite; }
-    @keyframes pulse-glow { 0%,100%{opacity:1;box-shadow:0 0 0 0 color-mix(in oklab,var(--ok),transparent 60%)} 50%{opacity:.7;box-shadow:0 0 0 6px color-mix(in oklab,var(--ok),transparent 90%)} }
-    .diagnostic-mini-body { display:grid; grid-template-columns: 120px 1fr; gap:1rem; align-items:start; }
-    @media(max-width:500px){ .diagnostic-mini-body { grid-template-columns:1fr; } .mini-body-svg-wrap { max-width:180px; margin:0 auto; } }
-    .mini-body-svg { width:100%; height:auto; display:block; }
-    .mini-region { cursor:pointer; transition:all .15s ease; fill:color-mix(in oklab,var(--brand),transparent 85%); stroke:var(--brand); stroke-width:1.5; }
-    .mini-region:hover, .mini-region:focus { fill:color-mix(in oklab,var(--brand),transparent 55%); transform:scale(1.08); outline:none; }
-    .mini-region.active { fill:var(--brand); stroke:var(--brand-2); stroke-width:2.5; animation:region-pulse 1.2s ease-in-out infinite; }
-    @keyframes region-pulse { 0%,100%{opacity:1} 50%{opacity:.75} }
-    .mini-result { background:var(--bg); border:1px solid var(--border); border-radius:12px; padding:.9rem; min-height:180px; }
-    .mini-result-placeholder { text-align:center; color:var(--muted); padding:1.5rem .5rem; }
-    .mini-result-placeholder svg { width:40px; height:40px; margin-bottom:.5rem; opacity:.4; }
-    .mini-result h4 { font-size:1rem; margin:0 0 .4rem; color:var(--brand); }
-    .mini-result-tags { display:flex; flex-wrap:wrap; gap:.3rem; margin:.5rem 0; }
-    .mini-tag { display:inline-block; padding:.15rem .45rem; border-radius:999px; font-size:.7rem; font-weight:600; background:color-mix(in oklab,var(--brand),transparent 88%); color:var(--brand); }
-    .mini-cta { display:flex; gap:.5rem; margin-top:.75rem; flex-wrap:wrap; }
-    .mini-cta a { flex:1; min-width:120px; text-align:center; padding:.55rem .75rem; border-radius:10px; font-weight:700; font-size:.85rem; text-decoration:none; transition:filter .15s; }
-    .mini-cta .primary { background:var(--brand); color:#fff; }
-    .mini-cta .secondary { background:color-mix(in oklab,var(--bg),var(--card) 50%); color:var(--fg); border:1px solid var(--border); }
-    .mini-cta a:hover { filter:brightness(1.1); }
-    .diagnostic-preview-footer { display:flex; align-items:center; justify-content:space-between; margin-top:.75rem; padding-top:.75rem; border-top:1px solid var(--border); gap:.5rem; flex-wrap:wrap; }
-    .diagnostic-preview-footer span { font-size:.8rem; color:var(--muted); }
-    .diagnostic-preview-footer a { font-size:.85rem; font-weight:700; color:var(--brand); text-decoration:none; display:flex; align-items:center; gap:.3rem; }
-    .diagnostic-preview-footer a:hover { text-decoration:underline; }
-
-    /* Sections */
-    section { padding: 2rem 0; border-top: 1px solid var(--border); }
-    h2 { font-size: clamp(1.2rem, 3.6vw, 1.8rem); margin: 0 0 .25rem; }
-    p.section-sub { color: var(--muted); margin:.1rem 0 1rem; max-width: 65ch; }
-
-    /* A–Z library */
-    .az-controls { display:flex; gap:.5rem; flex-wrap:wrap; align-items:center; }
-    .chip { border:1px solid var(--border); border-radius:999px; padding:.4rem .7rem; font-weight:700; }
-    .list { display:grid; grid-template-columns:1fr; gap:.6rem; margin-top:1rem; }
-    @media(min-width:720px){ .list { grid-template-columns: repeat(2, 1fr);} }
-    @media(min-width:1040px){ .list { grid-template-columns: repeat(3, 1fr);} }
-    .card { border:1px solid var(--border); border-radius:16px; padding: .9rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); }
-    .card h3 { margin:.1rem 0 .3rem; font-size:1rem; }
-    .meta { font-size:.85rem; color: var(--muted); }
-
-    /* Filters */
-    .filters { display:flex; gap:.5rem; flex-wrap:wrap; margin:.5rem 0 1rem; }
-    select, input[type="search"] { padding:.6rem .7rem; border-radius:12px; border:1px solid var(--border); background: var(--bg); color: var(--fg); }
-
-    .grid { display:grid; grid-template-columns:1fr; gap:.75rem; }
-    @media(min-width:760px){ .grid { grid-template-columns: repeat(2, 1fr);} }
-    @media(min-width:1100px){ .grid { grid-template-columns: repeat(3, 1fr);} }
-
-    /* Footer */
-    footer { padding:2rem 0 4rem; border-top:1px solid var(--border); color: var(--muted); }
-
-    /* Accessibility helpers */
-    .sr-only { position:absolute !important; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
-
-    /* Responsive adjustments */
-    @media(max-width: 720px){
-      .nav-links { display:none; }
-      .hamburger { display:inline-flex; }
-      .nav { padding: .5rem 0; }
-      header .btn { padding:.55rem .75rem; }
-      form[role="search"] { flex-wrap:wrap; }
-      form[role="search"] button { width:100%; justify-content:center; }
-      .container { width: min(1000px, 94vw); }
-      .diagnostic-preview { padding:.75rem; }
-      .mini-result { min-height:auto; padding:.75rem; }
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      backdrop-filter: blur(12px) saturate(1.5);
+      background: color-mix(in oklab, var(--bg), transparent 15%);
+      border-bottom: 1px solid var(--border);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 1rem 0; }
+    .logo { display: flex; align-items: center; gap: 0.75rem; font-weight: 800; font-size: 1.1rem; color: var(--fg); }
+    .logo-mark { width: 36px; height: 36px; border-radius: 10px; background: var(--gradient); }
+    .nav-links { display: flex; align-items: center; gap: 0.5rem; }
+    .btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.6rem 1rem; border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg); color: var(--fg);
+      font-weight: 600; font-size: 0.9rem;
+      transition: all 0.2s;
+    }
+    .btn:hover { background: var(--card); text-decoration: none; }
+    .btn-primary { background: var(--brand); color: white; border-color: var(--brand); }
+    .btn-primary:hover { filter: brightness(1.1); }
+    .switch {
+      cursor: pointer; border: 1px solid var(--border); border-radius: 50%;
+      width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+      background: var(--bg);
+    }
+    .switch span { width: 18px; height: 18px; border-radius: 50%; background: var(--brand); }
+    .hamburger { display: none; width: 44px; height: 44px; border-radius: 10px; border: 1px solid var(--border); background: var(--bg); align-items: center; justify-content: center; cursor: pointer; }
+    .hamburger svg { width: 24px; height: 24px; }
+    .mobile-menu {
+      position: fixed; inset: 60px 0 auto 0;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      transform: translateY(-10px); opacity: 0; pointer-events: none;
+      transition: all 0.2s;
+    }
+    .mobile-menu.open { transform: translateY(0); opacity: 1; pointer-events: auto; }
+    .mobile-menu .menu-inner { padding: 1rem; display: grid; gap: 0.5rem; }
+    .mobile-menu a { display: block; padding: 1rem; border: 1px solid var(--border); border-radius: 12px; background: var(--card); font-weight: 600; text-align: center; }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: inline-flex; }
     }
 
-    /* Search results */
-    #searchResults { display:none; padding: 2rem 0; }
-    #searchResults.active { display:block; }
-    .sr-head { display:flex; align-items:baseline; justify-content:space-between; gap:.75rem; }
-    .sr-count { color: var(--muted); font-size:.9rem; }
-    .sr-group { margin-top:1rem; border-top:1px solid var(--border); padding-top:1rem; }
-    .sr-item { display:block; border:1px solid var(--border); border-radius:12px; padding:.9rem; background: color-mix(in oklab, var(--bg), var(--card) 35%); margin:.5rem 0; }
-    .badge { display:inline-block; padding:.15rem .5rem; border-radius:999px; border:1px solid var(--border); font-size:.75rem; margin-left:.4rem; }
+    /* Hero - Diagnostic Front & Center */
+    .hero {
+      padding: 3rem 0 4rem;
+      background: linear-gradient(180deg, color-mix(in oklab, var(--brand), transparent 96%) 0%, var(--bg) 100%);
+    }
+    .hero-content { text-align: center; max-width: 700px; margin: 0 auto 2.5rem; }
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.5rem 1rem; border-radius: 50px;
+      background: color-mix(in oklab, var(--brand), transparent 90%);
+      color: var(--brand); font-weight: 600; font-size: 0.85rem;
+      margin-bottom: 1.25rem;
+    }
+    .hero-badge .dot { width: 8px; height: 8px; background: var(--ok); border-radius: 50%; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 800;
+      line-height: 1.1;
+      margin: 0 0 1rem;
+    }
+    .hero h1 .gradient { background: var(--gradient); -webkit-background-clip: text; background-clip: text; color: transparent; }
+    .hero-sub { color: var(--muted); font-size: 1.15rem; margin: 0; }
+
+    /* Diagnostic Widget - Full Featured */
+    .diagnostic-widget {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 2rem;
+      max-width: 900px;
+      margin: 0 auto;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .diagnostic-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 1.5rem; padding-bottom: 1rem;
+      border-bottom: 1px solid var(--border);
+    }
+    .diagnostic-header h2 { margin: 0; font-size: 1.3rem; display: flex; align-items: center; gap: 0.75rem; }
+    .diagnostic-header .live { font-size: 0.8rem; color: var(--ok); font-weight: 600; }
+    .diagnostic-body { display: grid; grid-template-columns: 200px 1fr; gap: 2rem; align-items: start; }
+    @media (max-width: 600px) {
+      .diagnostic-body { grid-template-columns: 1fr; }
+      .body-svg-wrap { max-width: 200px; margin: 0 auto; }
+    }
+    .body-svg { width: 100%; height: auto; }
+    .body-region {
+      cursor: pointer;
+      fill: color-mix(in oklab, var(--brand), transparent 85%);
+      stroke: var(--brand); stroke-width: 2;
+      transition: all 0.2s;
+    }
+    .body-region:hover { fill: color-mix(in oklab, var(--brand), transparent 60%); transform: scale(1.05); }
+    .body-region.active { fill: var(--brand); stroke: var(--brand-2); stroke-width: 3; }
+    .result-panel {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 1.5rem;
+      min-height: 280px;
+    }
+    .result-placeholder { text-align: center; color: var(--muted); padding: 2rem 1rem; }
+    .result-placeholder svg { width: 48px; height: 48px; margin-bottom: 1rem; opacity: 0.4; }
+    .result-placeholder h3 { margin: 0 0 0.5rem; font-size: 1.1rem; color: var(--fg); }
+    .result-placeholder p { margin: 0; font-size: 0.95rem; }
+    .result-content h3 { margin: 0 0 0.75rem; color: var(--brand); font-size: 1.2rem; }
+    .result-tags { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1rem; }
+    .tag {
+      display: inline-block; padding: 0.35rem 0.75rem;
+      border-radius: 50px; font-size: 0.8rem; font-weight: 600;
+      background: color-mix(in oklab, var(--brand), transparent 88%);
+      color: var(--brand);
+    }
+    .result-segments { font-size: 0.9rem; color: var(--muted); margin-bottom: 1.25rem; }
+    .result-actions { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+    .result-actions .btn { flex: 1; min-width: 140px; justify-content: center; }
+    .diagnostic-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-top: 1.5rem; padding-top: 1rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.9rem;
+    }
+    .diagnostic-footer span { color: var(--muted); }
+    .diagnostic-footer a { font-weight: 600; display: flex; align-items: center; gap: 0.5rem; }
+
+    /* Stats Bar */
+    .stats-bar {
+      display: grid; grid-template-columns: repeat(4, 1fr);
+      gap: 1rem; margin: 3rem 0;
+      text-align: center;
+    }
+    @media (max-width: 600px) { .stats-bar { grid-template-columns: repeat(2, 1fr); } }
+    .stat { padding: 1.5rem 1rem; background: var(--card); border: 1px solid var(--border); border-radius: 16px; }
+    .stat-value { font-size: 2rem; font-weight: 800; color: var(--brand); margin-bottom: 0.25rem; }
+    .stat-label { font-size: 0.9rem; color: var(--muted); font-weight: 500; }
+
+    /* Section Styling */
+    section { padding: 4rem 0; }
+    .section-header { text-align: center; max-width: 600px; margin: 0 auto 2.5rem; }
+    .section-header h2 { font-size: clamp(1.5rem, 4vw, 2rem); margin: 0 0 0.75rem; }
+    .section-header p { color: var(--muted); margin: 0; }
+
+    /* Practitioners Section */
+    .practitioners-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+    @media (max-width: 900px) { .practitioners-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .practitioners-grid { grid-template-columns: 1fr; } }
+    .pract-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 20px; padding: 2rem; text-align: center;
+      transition: all 0.2s;
+    }
+    .pract-card:hover { border-color: var(--brand); box-shadow: 0 8px 24px rgba(0,0,0,0.08); }
+    .pract-icon {
+      width: 60px; height: 60px; border-radius: 50%;
+      background: var(--gradient); display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1rem; font-size: 1.5rem; color: white;
+    }
+    .pract-card h3 { margin: 0 0 0.5rem; font-size: 1.1rem; }
+    .pract-card p { color: var(--muted); margin: 0 0 1.25rem; font-size: 0.95rem; }
+    .pract-card .btn { width: 100%; justify-content: center; }
+
+    /* Cards Grid */
+    .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+    @media (max-width: 900px) { .cards-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 600px) { .cards-grid { grid-template-columns: 1fr; } }
+    .card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.5rem;
+      transition: all 0.2s;
+    }
+    .card:hover { border-color: var(--brand); }
+    .card h3 { margin: 0 0 0.5rem; font-size: 1rem; }
+    .card h3 a { color: var(--fg); }
+    .card h3 a:hover { color: var(--brand); }
+    .card .meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .card p { margin: 0; color: var(--muted); font-size: 0.95rem; }
+
+    /* FAQ Cards */
+    .faq-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 2rem; }
+    @media (max-width: 768px) { .faq-grid { grid-template-columns: 1fr; } }
+    .faq-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: 16px; padding: 1.75rem;
+    }
+    .faq-card h3 { margin: 0 0 0.75rem; font-size: 1.05rem; color: var(--brand); }
+    .faq-card p { margin: 0; color: var(--muted); line-height: 1.7; }
+
+    /* Videos Section */
+    .filters { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1.5rem; justify-content: center; }
+    select, input[type="search"] {
+      padding: 0.65rem 1rem; border-radius: 10px;
+      border: 1px solid var(--border);
+      background: var(--bg); color: var(--fg);
+      font-size: 0.9rem;
+    }
+
+    /* CTA Section */
+    .cta-section {
+      background: var(--gradient);
+      border-radius: 24px;
+      padding: 3rem 2rem;
+      text-align: center;
+      color: white;
+      margin: 2rem 0;
+    }
+    .cta-section h2 { margin: 0 0 0.75rem; font-size: 1.75rem; }
+    .cta-section p { margin: 0 0 1.5rem; opacity: 0.9; }
+    .cta-section .btn { background: white; color: var(--brand); border-color: white; }
+    .cta-section .btn:hover { background: rgba(255,255,255,0.9); }
+
+    /* Footer */
+    footer {
+      padding: 3rem 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+    }
+    .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; }
+    .footer-links { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+    .footer-links a { color: var(--muted); font-size: 0.9rem; }
+    .footer-links a:hover { color: var(--brand); }
+    footer small { display: block; width: 100%; margin-top: 1.5rem; text-align: center; font-size: 0.85rem; }
   </style>
 
   <!-- Structured Data -->
@@ -178,682 +298,405 @@
     "@type":"WebSite",
     "name":"ELDOA AI",
     "url":"https://eldoa.ai/",
-    "potentialAction":{
-      "@type":"SearchAction",
-      "target":"https://eldoa.ai/search?q={query}",
-      "query-input":"required name=query"
-    }
+    "potentialAction":{"@type":"SearchAction","target":"https://eldoa.ai/search?q={query}","query-input":"required name=query"}
   }</script>
 
-  <!-- FAQ Schema for Featured Snippets -->
   <script type="application/ld+json">{
     "@context":"https://schema.org",
     "@type":"FAQPage",
     "mainEntity":[
-      {
-        "@type":"Question",
-        "name":"What does ELDOA stand for?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"ELDOA stands for Étirements Longitudinaux avec Decoaptation Ostéo-Articulaire, which translates from French to 'Longitudinal Stretching with Osteo-Articular Decoaptation.' ELDOA exercises are specific postures designed to create space between the vertebrae of the spine through precise positioning and sustained muscle tension."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"What are ELDOA exercises?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"ELDOA exercises are specific postures held for 60 seconds or more that target individual spinal segments (like L5-S1 or C4-C5) to create decompression and space between vertebrae. Each exercise uses precise body positioning, sustained fascial tension throughout the body, and coordinated breathing to decompress a specific level of the spine."
-        }
-      },
-      {
-        "@type":"Question",
-        "name":"What is the ELDOA method?",
-        "acceptedAnswer":{
-          "@type":"Answer",
-          "text":"The ELDOA method is a comprehensive system of exercises developed by French osteopath Dr. Guy Voyer over 35+ years of clinical practice. It uses specific postures to target individual spinal segments, creating space and decompression through active fascial tension. The method integrates principles from osteopathy, biomechanics, and fascial science."
-        }
-      }
+      {"@type":"Question","name":"What does ELDOA stand for?","acceptedAnswer":{"@type":"Answer","text":"ELDOA stands for Étirements Longitudinaux avec Decoaptation Ostéo-Articulaire (French for Longitudinal Stretching with Osteo-Articular Decoaptation). These exercises create space between vertebrae through precise positioning."}},
+      {"@type":"Question","name":"What are ELDOA exercises?","acceptedAnswer":{"@type":"Answer","text":"Specific postures held 60+ seconds targeting individual spinal segments (L5-S1, C4-C5, etc.) using active fascial tension to decompress specific vertebral levels."}},
+      {"@type":"Question","name":"What is the ELDOA method?","acceptedAnswer":{"@type":"Answer","text":"A comprehensive system by Dr. Guy Voyer combining segment-specific exercises, myofascial stretching, and proprioceptive training for spinal health."}}
     ]
   }</script>
 </head>
 <body>
   <a class="sr-only" href="#main">Skip to content</a>
-  <header role="banner">
-    <div class="container nav" aria-label="Primary">
-      <a class="logo" href="#top" aria-label="ELDOA AI Home">
+
+  <header>
+    <div class="container nav">
+      <a class="logo" href="/" aria-label="ELDOA AI Home">
         <span class="logo-mark" aria-hidden="true"></span>
         <span>ELDOA <span style="color:var(--brand)">AI</span></span>
       </a>
-      <div class="nav-right">
-        <nav class="nav-links" aria-label="Primary links">
-          <a href="/diagnostic.html" class="btn">🎯 Diagnostic</a>
-          <a href="/posture-check.html" class="btn">📐 Posture Check</a>
-          <a href="/videos/" class="btn">📹 Videos</a>
-          <a href="/practitioners.html" class="btn">🧑‍⚕️ Practitioners</a>
-          <a href="/encyclopedia.html" class="btn">📖 Encyclopedia</a>
-        </nav>
-        <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </button>
-        <button id="themeToggle" class="switch" aria-label="Toggle dark/light theme"><span></span></button>
+      <div class="nav-links">
+        <a href="/diagnostic.html" class="btn btn-primary">Diagnostic</a>
+        <a href="/practitioners.html" class="btn">Practitioners</a>
+        <a href="/videos/" class="btn">Videos</a>
+        <a href="/encyclopedia.html" class="btn">Encyclopedia</a>
+        <button id="themeToggle" class="switch" aria-label="Toggle theme"><span></span></button>
       </div>
+      <button id="menuToggle" class="hamburger" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
     </div>
     <div id="mobileMenu" class="mobile-menu" hidden>
       <div class="menu-inner container">
-        <a href="/diagnostic.html">🎯 Interactive Diagnostic</a>
-        <a href="/posture-check.html">📐 Posture Check Tool</a>
-        <a href="/videos/">📹 Complete Video Library</a>
-        <a href="/practitioners.html">🧑‍⚕️ Find Practitioners</a>
-        <a href="/encyclopedia.html">📖 Complete Encyclopedia</a>
-        <a href="/research/">🔬 Research & Evidence</a>
-        <a href="#philosophy">Philosophies</a>
+        <a href="/diagnostic.html">Interactive Diagnostic</a>
+        <a href="/practitioners.html">Find Practitioners</a>
+        <a href="/videos/">Video Library</a>
+        <a href="/encyclopedia.html">Encyclopedia</a>
+        <a href="/posture-check.html">Posture Check</a>
       </div>
     </div>
   </header>
 
-  <main id="main" class="container" role="main">
-    <!-- HERO / DIAGNOSTIC PREVIEW -->
-    <section class="hero" id="hero" aria-labelledby="hero-title">
-      <div class="hero-grid">
-        <div>
-          <div class="kicker">629 Encyclopedia Pages • 115+ Videos • Interactive Diagnostic</div>
-          <h1 id="hero-title">Your Complete <span style="background:linear-gradient(90deg,var(--brand),var(--brand-2));-webkit-background-clip:text;background-clip:text;color:transparent">ELDOA</span> Resource</h1>
-          <p class="sub">Explore <strong>629 optimized encyclopedia entries</strong> with full SEO/AEO metadata, watch <strong>115+ video tutorials</strong> from certified instructors, and use our <strong>interactive body diagnostic</strong> to find targeted relief protocols for your specific condition. Built for speed, clarity, and truth to Guy Voyer's philosophy.</p>
-          <form role="search" action="/search" method="get" aria-label="Site search" style="margin-top:1rem;display:flex;gap:.5rem;">
-            <label class="sr-only" for="q">Search ELDOA AI</label>
-            <input id="q" name="q" type="search" placeholder="Search posture, vertebral level, or term…" autocomplete="on" enterkeyhint="search" style="flex:1"/>
-            <button class="btn" type="submit" aria-label="Search">Search</button>
-          </form>
+  <main id="main">
+    <!-- HERO: Diagnostic Front & Center -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="dot"></span>
+            Interactive Diagnostic Tool
+          </div>
+          <h1>Find Your <span class="gradient">ELDOA</span> Protocol</h1>
+          <p class="hero-sub">Tap where it hurts. Get personalized exercises from 115+ video tutorials.</p>
         </div>
 
-        <!-- Interactive Diagnostic Preview Widget -->
-        <div class="diagnostic-preview" aria-label="Interactive body diagnostic preview">
-          <div class="diagnostic-preview-header">
-            <h3><span class="pulse-dot" aria-hidden="true"></span> Where Does It Hurt?</h3>
-            <span style="font-size:.75rem;color:var(--muted)">Tap to explore</span>
+        <!-- Full Diagnostic Widget -->
+        <div class="diagnostic-widget">
+          <div class="diagnostic-header">
+            <h2>Where Does It Hurt?</h2>
+            <span class="live">LIVE</span>
           </div>
-          <div class="diagnostic-mini-body">
-            <div class="mini-body-svg-wrap">
-              <svg class="mini-body-svg" viewBox="0 0 100 260" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Interactive body map - tap regions to see exercises">
+          <div class="diagnostic-body">
+            <div class="body-svg-wrap">
+              <svg class="body-svg" viewBox="0 0 120 300" xmlns="http://www.w3.org/2000/svg" aria-label="Interactive body map">
                 <!-- Head/Neck -->
-                <ellipse class="mini-region" data-region="neck" cx="50" cy="22" rx="14" ry="12" tabindex="0" aria-label="Neck and cervical spine"/>
+                <ellipse class="body-region" data-region="neck" cx="60" cy="28" rx="18" ry="16" tabindex="0" aria-label="Neck"/>
                 <!-- Shoulders -->
-                <circle class="mini-region" data-region="shoulder" cx="26" cy="55" r="10" tabindex="0" aria-label="Shoulders"/>
-                <circle class="mini-region" data-region="shoulder" cx="74" cy="55" r="10" tabindex="0" aria-label="Shoulders"/>
+                <circle class="body-region" data-region="shoulder" cx="28" cy="70" r="14" tabindex="0" aria-label="Left shoulder"/>
+                <circle class="body-region" data-region="shoulder" cx="92" cy="70" r="14" tabindex="0" aria-label="Right shoulder"/>
                 <!-- Upper Back -->
-                <rect class="mini-region" data-region="upper-back" x="35" y="40" width="30" height="30" rx="4" tabindex="0" aria-label="Upper back and thoracic spine"/>
+                <rect class="body-region" data-region="upper-back" x="38" y="50" width="44" height="40" rx="6" tabindex="0" aria-label="Upper back"/>
                 <!-- Lower Back -->
-                <rect class="mini-region" data-region="lower-back" x="38" y="75" width="24" height="35" rx="4" tabindex="0" aria-label="Lower back and lumbar spine"/>
+                <rect class="body-region" data-region="lower-back" x="42" y="95" width="36" height="50" rx="6" tabindex="0" aria-label="Lower back"/>
                 <!-- Hips -->
-                <ellipse class="mini-region" data-region="hip" cx="35" cy="125" rx="12" ry="10" tabindex="0" aria-label="Left hip"/>
-                <ellipse class="mini-region" data-region="hip" cx="65" cy="125" rx="12" ry="10" tabindex="0" aria-label="Right hip"/>
-                <!-- Legs (visual only) -->
-                <rect x="32" y="140" width="12" height="50" rx="4" fill="color-mix(in oklab,var(--muted),transparent 80%)" stroke="none"/>
-                <rect x="56" y="140" width="12" height="50" rx="4" fill="color-mix(in oklab,var(--muted),transparent 80%)" stroke="none"/>
+                <ellipse class="body-region" data-region="hip" cx="38" cy="160" rx="16" ry="14" tabindex="0" aria-label="Left hip"/>
+                <ellipse class="body-region" data-region="hip" cx="82" cy="160" rx="16" ry="14" tabindex="0" aria-label="Right hip"/>
+                <!-- Legs (visual) -->
+                <rect x="34" y="180" width="18" height="70" rx="6" fill="color-mix(in oklab,var(--muted),transparent 80%)" stroke="none"/>
+                <rect x="68" y="180" width="18" height="70" rx="6" fill="color-mix(in oklab,var(--muted),transparent 80%)" stroke="none"/>
                 <!-- Labels -->
-                <text x="50" y="26" text-anchor="middle" font-size="6" fill="currentColor" pointer-events="none" style="font-weight:600">NECK</text>
-                <text x="50" y="58" text-anchor="middle" font-size="5" fill="currentColor" pointer-events="none">UPPER</text>
-                <text x="50" y="96" text-anchor="middle" font-size="5" fill="currentColor" pointer-events="none">LOWER</text>
-                <text x="50" y="128" text-anchor="middle" font-size="5" fill="currentColor" pointer-events="none">HIPS</text>
+                <text x="60" y="32" text-anchor="middle" font-size="8" fill="currentColor" font-weight="600">NECK</text>
+                <text x="60" y="74" text-anchor="middle" font-size="7" fill="currentColor">UPPER</text>
+                <text x="60" y="124" text-anchor="middle" font-size="7" fill="currentColor">LOWER</text>
+                <text x="60" y="164" text-anchor="middle" font-size="7" fill="currentColor">HIPS</text>
               </svg>
             </div>
-            <div class="mini-result" id="miniResult" aria-live="polite">
-              <div class="mini-result-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-                <p style="font-weight:600;margin-bottom:.25rem">Tap any body region</p>
-                <p style="font-size:.8rem">Get instant ELDOA exercise recommendations</p>
+            <div class="result-panel" id="resultPanel">
+              <div class="result-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <h3>Tap Any Body Region</h3>
+                <p>Get instant ELDOA exercise recommendations tailored to your pain points.</p>
               </div>
             </div>
           </div>
-          <div class="diagnostic-preview-footer">
+          <div class="diagnostic-footer">
             <span>12 body regions • Personalized protocols</span>
-            <a href="/diagnostic.html">Full Diagnostic Tool <span aria-hidden="true">→</span></a>
-          </div>
-        </div>
-      </div>
-      <p class="section-sub" style="margin-top:.75rem">Try our <a href="/posture-check.html"><strong>Posture Check Tool</strong></a> — uses your phone's gyroscope to help you maintain proper head alignment and avoid "tech neck."</p>
-    </section>
-
-    <!-- WHAT IS ELDOA - FAQ Section for SEO -->
-    <section id="what-is-eldoa" aria-labelledby="eldoa-faq-title" style="padding:2rem 0;border-top:1px solid var(--border)">
-      <h2 id="eldoa-faq-title" style="font-size:clamp(1.2rem,3.6vw,1.8rem);margin:0 0 .25rem">What is ELDOA?</h2>
-      <p class="section-sub" style="margin-bottom:1.5rem"><strong>ELDOA</strong> stands for <strong>Étirements Longitudinaux avec Decoaptation Ostéo-Articulaire</strong> — French for "Longitudinal Stretching with Osteo-Articular Decoaptation." Developed by Dr. Guy Voyer, ELDOA exercises create space between vertebrae through precise positioning and sustained tension.</p>
-
-      <div style="display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))">
-        <article class="card">
-          <h3 style="margin:0 0 .5rem;font-size:1.1rem;color:var(--brand)">What Does ELDOA Stand For?</h3>
-          <p style="margin:0;color:var(--muted);line-height:1.7"><strong>É</strong>tirements <strong>L</strong>ongitudinaux avec <strong>D</strong>ecoaptation <strong>O</strong>stéo-<strong>A</strong>rticulaire = Longitudinal stretches that create space between vertebrae by "decoaptating" (separating) the joint surfaces.</p>
-        </article>
-        <article class="card">
-          <h3 style="margin:0 0 .5rem;font-size:1.1rem;color:var(--brand)">What Are ELDOA Exercises?</h3>
-          <p style="margin:0;color:var(--muted);line-height:1.7">Specific postures held for 60+ seconds targeting individual spinal segments (L5-S1, C4-C5, etc.). Unlike yoga, ELDOA uses active fascial tension to decompress specific vertebral levels.</p>
-        </article>
-        <article class="card">
-          <h3 style="margin:0 0 .5rem;font-size:1.1rem;color:var(--brand)">What is the ELDOA Method?</h3>
-          <p style="margin:0;color:var(--muted);line-height:1.7">A comprehensive system by Dr. Guy Voyer combining segment-specific exercises, myofascial stretching, and proprioceptive training. Used by athletes, rehab patients, and wellness practitioners worldwide.</p>
-        </article>
-      </div>
-
-      <div style="margin-top:1.25rem;display:flex;gap:.75rem;flex-wrap:wrap">
-        <a class="btn" href="/what-is-eldoa.html" style="background:var(--brand);color:#fff;border-color:var(--brand)">Complete ELDOA Guide →</a>
-        <a class="btn" href="/encyclopedia/eldoa-protocol.html">ELDOA Protocol</a>
-        <a class="btn" href="/videos/">Watch Tutorials</a>
-      </div>
-    </section>
-
-    <!-- POSTURE CHECK FEATURE -->
-    <section id="posture-cta" aria-labelledby="posture-cta-title" style="background:linear-gradient(135deg,color-mix(in oklab,var(--brand),transparent 95%),color-mix(in oklab,var(--brand-2),transparent 95%));padding:2rem 1rem;border-radius:20px;margin:2rem 0">
-      <div style="max-width:900px;margin:0 auto;display:grid;grid-template-columns:1fr;gap:1.5rem;align-items:center">
-        <div style="text-align:center">
-          <h2 id="posture-cta-title" style="font-size:clamp(1.3rem,3.5vw,1.8rem);margin-bottom:.5rem">📐 Check Your Posture with Gyroscope</h2>
-          <p class="section-sub" style="margin:0 auto 1rem;max-width:55ch">Your phone's sensors can help you combat "tech neck." Learn why keeping your head perpendicular to the ground is crucial for spinal health.</p>
-          <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
-            <a class="btn" href="/posture-check.html" style="background:var(--brand);color:#fff;border-color:var(--brand)">Try Posture Check →</a>
-            <a class="btn" href="/diagnostic.html" style="background:transparent;color:var(--fg);border:1px solid var(--border)">Full Diagnostic Tool</a>
+            <a href="/diagnostic.html">Advanced Diagnostic <span aria-hidden="true">→</span></a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- A–Z ENCYCLOPEDIA -->
-    <section id="library" aria-labelledby="library-title">
-      <h2 id="library-title">📖 ELDOA Encyclopedia — 629 Pages</h2>
-      <p class="section-sub">Complete A-Z reference covering ELDOA theory, practice, anatomy, and terminology. Every page optimized with structured data for AI answer engines.</p>
-      <div class="az-controls" role="toolbar" aria-label="A–Z filters">
-        <input type="search" id="libSearch" placeholder="Search encyclopedia entries…" aria-label="Filter entries"/>
-        <div id="azChips" class="chips" aria-label="Letter filters" style="display:flex; gap:.4rem; flex-wrap:wrap"></div>
+    <!-- Stats Bar -->
+    <div class="container">
+      <div class="stats-bar">
+        <div class="stat">
+          <div class="stat-value">115+</div>
+          <div class="stat-label">Video Tutorials</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">629</div>
+          <div class="stat-label">Encyclopedia Pages</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">213</div>
+          <div class="stat-label">Practitioners</div>
+        </div>
+        <div class="stat">
+          <div class="stat-value">11</div>
+          <div class="stat-label">Countries</div>
+        </div>
       </div>
-      <div id="libList" class="list" aria-live="polite">
-        <!-- Example cards - these will be populated by JS or left as examples -->
-        <article class="card" data-title="Achilles Tendinopathy" data-letter="A">
-          <h3><a href="/encyclopedia/achilles-tendinopathy.html">Achilles Tendinopathy</a></h3>
-          <div class="meta">Region: Lower Extremity • Tags: tendon, ankle</div>
-          <p>ELDOA applications for Achilles tendon health and recovery.</p>
-        </article>
-        <article class="card" data-title="Cervical Spine" data-letter="C">
-          <h3><a href="/encyclopedia/cervical-spine.html">Cervical Spine</a></h3>
-          <div class="meta">Region: Cervical • Tags: neck, posture</div>
-          <p>Anatomy and ELDOA approaches for the cervical vertebrae.</p>
-        </article>
-        <article class="card" data-title="Lumbar Decompression" data-letter="L">
-          <h3><a href="/encyclopedia/lumbar-decompression.html">Lumbar Decompression</a></h3>
-          <div class="meta">Region: Lumbar • Tags: low back, disc</div>
-          <p>Techniques for creating space in the lumbar spine.</p>
-        </article>
-        <article class="card" data-title="Fascia" data-letter="F">
-          <h3><a href="/encyclopedia/fascia.html">Fascia</a></h3>
-          <div class="meta">Region: Whole Body • Tags: connective tissue</div>
-          <p>The fascial system and its role in ELDOA methodology.</p>
-        </article>
-        <article class="card" data-title="Scoliosis" data-letter="S">
-          <h3><a href="/encyclopedia/scoliosis.html">Scoliosis</a></h3>
-          <div class="meta">Region: Spine • Tags: curvature, postural</div>
-          <p>ELDOA protocols for spinal curvature management.</p>
-        </article>
-        <article class="card" data-title="Thoracic Outlet Syndrome" data-letter="T">
-          <h3><a href="/encyclopedia/thoracic-outlet-syndrome.html">Thoracic Outlet Syndrome</a></h3>
-          <div class="meta">Region: Thoracic • Tags: shoulder, compression</div>
-          <p>Understanding and addressing thoracic outlet compression.</p>
-        </article>
-      </div>
-      <div style="margin-top:.75rem;"><a class="btn" href="/encyclopedia.html">View Complete Encyclopedia (629 entries) →</a></div>
-    </section>
+    </div>
 
-    <!-- VIDEOS REPOSITORY -->
-    <section id="videos" aria-labelledby="videos-title">
-      <h2 id="videos-title">📹 Video Library — 115+ Tutorials</h2>
-      <p class="section-sub">Comprehensive collection from certified instructors including Dan Hellman, Team Youphoric Health, Stone Bodyworks. Filter by <strong>spinal segment</strong>, <strong>difficulty level</strong>, <strong>condition</strong>, or <strong>protocol</strong>. Each video includes full metadata and structured data.</p>
-      <div class="filters" role="toolbar" aria-label="Video filters">
-        <label for="vf1" class="sr-only">Practice Level</label>
-        <select id="vf1" aria-label="Practice Level">
-          <option value="">All Levels</option>
-          <option>Beginner</option>
-          <option>Intermediate</option>
-          <option>Advanced</option>
-          <option>All Levels</option>
-        </select>
-        <label for="vf2" class="sr-only">Ailment</label>
-        <select id="vf2" aria-label="Ailment">
-          <option value="">All Conditions</option>
-          <option>Low Back Pain</option>
-          <option>Sciatica</option>
-          <option>Neck Pain</option>
-          <option>Shoulder Pain</option>
-          <option>Hip Pain</option>
-        </select>
-        <label for="vf3" class="sr-only">Segment</label>
-        <select id="vf3" aria-label="Segment">
-          <option value="">All Segments</option>
-          <option>C4-C5 (Cervical)</option>
-          <option>C7-T1 (Cervicothoracic)</option>
-          <option>T12-L1 (Thoracolumbar)</option>
-          <option>L4-L5 (Lumbar)</option>
-          <option>L5-S1 (Lumbosacral)</option>
-          <option>General (Full Spine)</option>
-        </select>
-        <input type="search" id="videoSearch" placeholder="Search videos…" aria-label="Search videos"/>
-      </div>
-      <div id="videoGrid" class="grid">
-        <article class="card" data-practice="Beginner" data-ailment="Low Back Pain" data-segment="L5-S1">
-          <h3>L5-S1 for Sciatica Relief</h3>
-          <p class="meta">Beginner • Low Back Pain • L5-S1 • 9:58</p>
-          <a class="btn" href="/videos/pages/l5s1-eldoa-for-low-back-pain-and-sciatica.html">Watch Video</a>
-        </article>
-        <article class="card" data-practice="Beginner" data-ailment="Neck Pain" data-segment="C4-C5">
-          <h3>Decompress Your Neck (C4-C5)</h3>
-          <p class="meta">Beginner • Neck Pain • C4-C5 • 12:03</p>
-          <a class="btn" href="/videos/pages/decompress-your-neck-c4-c5-with-eldoa.html">Watch Video</a>
-        </article>
-        <article class="card" data-practice="All Levels" data-ailment="General Spinal Health" data-segment="General">
-          <h3>Daily ELDOA Circuit (4 Segments)</h3>
-          <p class="meta">All Levels • Full Spine • 15:00</p>
-          <a class="btn" href="/videos/pages/the-eldoa-you-can-do-every-day-l4-l5-t12-l1-t8-t9-l5-s1.html">Watch Video</a>
-        </article>
-        <article class="card" data-practice="Beginner" data-ailment="Shoulder Pain" data-segment="General">
-          <h3>Top 5 for Shoulder Pain</h3>
-          <p class="meta">Beginner • Shoulder Pain • 11:42</p>
-          <a class="btn" href="/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html">Watch Video</a>
-        </article>
-        <article class="card" data-practice="Intermediate" data-ailment="Postural Issues" data-segment="T8-T9">
-          <h3>T8-T9 Posture Correction</h3>
-          <p class="meta">Intermediate • Hyperkyphosis • T8-T9 • 14:27</p>
-          <a class="btn" href="/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html">Watch Video</a>
-        </article>
-        <article class="card" data-practice="Beginner" data-ailment="Hip Pain" data-segment="General">
-          <h3>External Coxo-Femoral (Hip)</h3>
-          <p class="meta">Beginner • Hip Pain • 8:45</p>
-          <a class="btn" href="/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html">Watch Video</a>
-        </article>
-      </div>
-      <div style="margin-top:.75rem;"><a class="btn" href="/videos/">Browse All 115+ Videos →</a></div>
-    </section>
-
-    <!-- PRACTITIONERS DIRECTORY -->
-    <section id="practitioners" aria-labelledby="pract-title">
-      <h2 id="pract-title">🧑‍⚕️ Find Certified ELDOA Practitioners</h2>
-      <p class="section-sub">Comprehensive directory of <strong>213+ verified ELDOA practitioners</strong> across 11 countries including USA, Canada, France, Germany, UK, and more. Search by location, certification level, specializations, and more.</p>
-
-      <div class="grid" style="margin-bottom:1.5rem">
-        <article class="card" style="text-align:center">
-          <div style="font-size:2.5rem;font-weight:700;color:var(--brand);margin-bottom:.5rem">213</div>
-          <h3 style="font-size:1rem;margin:0">Total Practitioners</h3>
-          <p class="meta">Verified profiles in 11 countries</p>
-        </article>
-        <article class="card" style="text-align:center">
-          <div style="font-size:2.5rem;font-weight:700;color:var(--brand);margin-bottom:.5rem">150+</div>
-          <h3 style="font-size:1rem;margin:0">USA Practitioners</h3>
-          <p class="meta">Certified across 20+ states</p>
-        </article>
-        <article class="card" style="text-align:center">
-          <div style="font-size:2.5rem;font-weight:700;color:var(--brand);margin-bottom:.5rem">11</div>
-          <h3 style="font-size:1rem;margin:0">Countries</h3>
-          <p class="meta">Global ELDOA community</p>
-        </article>
-      </div>
-
-      <div class="grid">
-        <article class="card">
-          <h3>Search Directory</h3>
-          <p>Filter by country, state, certification level, and specializations. View detailed profiles with contact information.</p>
-          <a class="btn" href="/practitioners.html">Browse All Practitioners →</a>
-        </article>
-        <article class="card">
-          <h3>Top Specializations</h3>
-          <p class="meta">Featured expertise areas</p>
-          <ul style="margin:.5rem 0 0;padding-left:1.5rem;line-height:1.8">
-            <li>Chronic pain management</li>
-            <li>Sports performance & rehab</li>
-            <li>Post-surgical recovery</li>
-            <li>Golf-specific fitness</li>
-            <li>Pre/postnatal care</li>
-          </ul>
-        </article>
-        <article class="card">
-          <h3>Notable Practitioners</h3>
-          <p>Work with practitioners who have served Olympic athletes, professional sports teams (MLB, NFL, NBA, NHL), and specialized in advanced ELDOA therapy.</p>
-          <a class="btn" href="/practitioners.html?level=4">View Level 4 Trainers →</a>
-        </article>
+    <!-- PRACTITIONERS - Moved Up -->
+    <section id="practitioners">
+      <div class="container">
+        <div class="section-header">
+          <h2>Find Certified Practitioners</h2>
+          <p>213+ verified ELDOA practitioners across 11 countries. In-person sessions with certified experts.</p>
+        </div>
+        <div class="practitioners-grid">
+          <div class="pract-card">
+            <div class="pract-icon">🔍</div>
+            <h3>Search Directory</h3>
+            <p>Filter by location, certification level, and specialization.</p>
+            <a href="/practitioners.html" class="btn">Browse All →</a>
+          </div>
+          <div class="pract-card">
+            <div class="pract-icon">⭐</div>
+            <h3>Level 4 Trainers</h3>
+            <p>Work with elite practitioners who've trained Olympic & pro athletes.</p>
+            <a href="/practitioners.html?level=4" class="btn">View Experts →</a>
+          </div>
+          <div class="pract-card">
+            <div class="pract-icon">🌍</div>
+            <h3>Global Network</h3>
+            <p>USA, Canada, France, Germany, UK and more.</p>
+            <a href="/practitioners.html" class="btn">Find Near You →</a>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- PHILOSOPHIES -->
-    <section id="philosophy" aria-labelledby="philo-title">
-      <h2 id="philo-title">Philosophies of ELDOA</h2>
-      <p class="section-sub">Featured writings and talks from <strong>Guy Voyer, DO</strong>, with reflections from practitioners worldwide contributing to the living body of work.</p>
-      <div class="grid">
-        <article class="card">
-          <h3>Foundations of Segmental Posture</h3>
-          <p>Why precision, stillness, and tension matter for disc hydration and joint space.</p>
-          <a class="btn" href="/philosophy/foundations">Read</a>
-        </article>
-        <article class="card">
-          <h3>Practitioner Voices</h3>
-          <p>Short essays from the global community on teaching, learning, and care.</p>
-          <a class="btn" href="/philosophy/voices">Read</a>
-        </article>
+    <!-- VIDEOS -->
+    <section id="videos" style="background: var(--card);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Video Library</h2>
+          <p>115+ tutorials from certified instructors. Filter by segment, level, or condition.</p>
+        </div>
+        <div class="filters">
+          <select id="vf1" aria-label="Level">
+            <option value="">All Levels</option>
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+          </select>
+          <select id="vf2" aria-label="Condition">
+            <option value="">All Conditions</option>
+            <option>Low Back Pain</option>
+            <option>Sciatica</option>
+            <option>Neck Pain</option>
+            <option>Shoulder Pain</option>
+            <option>Hip Pain</option>
+          </select>
+          <select id="vf3" aria-label="Segment">
+            <option value="">All Segments</option>
+            <option>C4-C5 (Cervical)</option>
+            <option>T12-L1</option>
+            <option>L4-L5</option>
+            <option>L5-S1</option>
+          </select>
+        </div>
+        <div class="cards-grid" id="videoGrid">
+          <div class="card" data-practice="Beginner" data-ailment="Low Back Pain" data-segment="L5-S1">
+            <h3><a href="/videos/pages/l5s1-eldoa-for-low-back-pain-and-sciatica.html">L5-S1 for Sciatica Relief</a></h3>
+            <p class="meta">Beginner • L5-S1 • 9:58</p>
+            <p>Essential exercise for lower back pain and sciatic nerve relief.</p>
+          </div>
+          <div class="card" data-practice="Beginner" data-ailment="Neck Pain" data-segment="C4-C5">
+            <h3><a href="/videos/pages/decompress-your-neck-c4-c5-with-eldoa.html">Decompress Your Neck (C4-C5)</a></h3>
+            <p class="meta">Beginner • C4-C5 • 12:03</p>
+            <p>Relieve neck tension and combat tech neck with this cervical protocol.</p>
+          </div>
+          <div class="card" data-practice="All Levels" data-ailment="General" data-segment="General">
+            <h3><a href="/videos/pages/the-eldoa-you-can-do-every-day-l4-l5-t12-l1-t8-t9-l5-s1.html">Daily ELDOA Circuit</a></h3>
+            <p class="meta">All Levels • Full Spine • 15:00</p>
+            <p>Complete 4-segment routine for daily spinal maintenance.</p>
+          </div>
+          <div class="card" data-practice="Beginner" data-ailment="Shoulder Pain">
+            <h3><a href="/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html">Top 5 for Shoulder Pain</a></h3>
+            <p class="meta">Beginner • Shoulder • 11:42</p>
+            <p>Comprehensive shoulder relief and injury prevention.</p>
+          </div>
+          <div class="card" data-practice="Intermediate" data-ailment="Postural Issues" data-segment="T8-T9">
+            <h3><a href="/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html">T8-T9 Posture Correction</a></h3>
+            <p class="meta">Intermediate • T8-T9 • 14:27</p>
+            <p>Fix rounded upper back and improve posture.</p>
+          </div>
+          <div class="card" data-practice="Beginner" data-ailment="Hip Pain">
+            <h3><a href="/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html">Hip Pain Relief</a></h3>
+            <p class="meta">Beginner • Hip • 8:45</p>
+            <p>External coxo-femoral ELDOA for hip mobility.</p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="/videos/" class="btn btn-primary">Browse All 115+ Videos →</a>
+        </div>
       </div>
     </section>
 
-    <!-- SEARCH RESULTS (SPA) -->
-    <section id="searchResults" aria-labelledby="sr-title">
-      <div class="sr-head">
-        <h2 id="sr-title">Search results</h2>
-        <div class="sr-count" id="sr-count"></div>
+    <!-- WHAT IS ELDOA - FAQ -->
+    <section id="what-is-eldoa">
+      <div class="container">
+        <div class="section-header">
+          <h2>What is ELDOA?</h2>
+          <p>Longitudinal stretches that create space between vertebrae. Developed by Dr. Guy Voyer.</p>
+        </div>
+        <div class="faq-grid">
+          <div class="faq-card">
+            <h3>What Does ELDOA Stand For?</h3>
+            <p>Étirements Longitudinaux avec Decoaptation Ostéo-Articulaire — stretches that "decoaptate" (separate) vertebral joints.</p>
+          </div>
+          <div class="faq-card">
+            <h3>What Are ELDOA Exercises?</h3>
+            <p>Specific postures held 60+ seconds targeting individual spinal segments using active fascial tension.</p>
+          </div>
+          <div class="faq-card">
+            <h3>What is the ELDOA Method?</h3>
+            <p>A system combining segment-specific exercises, myofascial stretching, and proprioceptive training.</p>
+          </div>
+        </div>
+        <div style="text-align:center;">
+          <a href="/what-is-eldoa.html" class="btn btn-primary">Complete ELDOA Guide →</a>
+          <a href="/encyclopedia.html" class="btn" style="margin-left:0.5rem;">Encyclopedia →</a>
+        </div>
       </div>
-      <div id="sr-groups"></div>
+    </section>
+
+    <!-- ENCYCLOPEDIA -->
+    <section id="encyclopedia" style="background: var(--card);">
+      <div class="container">
+        <div class="section-header">
+          <h2>Encyclopedia — 629 Pages</h2>
+          <p>Complete A-Z reference for ELDOA theory, practice, and anatomy.</p>
+        </div>
+        <div class="cards-grid" id="libList">
+          <div class="card">
+            <h3><a href="/encyclopedia/achilles-tendinopathy.html">Achilles Tendinopathy</a></h3>
+            <p class="meta">Lower Extremity • tendon, ankle</p>
+            <p>ELDOA applications for Achilles tendon health.</p>
+          </div>
+          <div class="card">
+            <h3><a href="/encyclopedia/cervical-spine.html">Cervical Spine</a></h3>
+            <p class="meta">Cervical • neck, posture</p>
+            <p>Anatomy and ELDOA for cervical vertebrae.</p>
+          </div>
+          <div class="card">
+            <h3><a href="/encyclopedia/lumbar-decompression.html">Lumbar Decompression</a></h3>
+            <p class="meta">Lumbar • low back, disc</p>
+            <p>Creating space in the lumbar spine.</p>
+          </div>
+          <div class="card">
+            <h3><a href="/encyclopedia/fascia.html">Fascia</a></h3>
+            <p class="meta">Whole Body • connective tissue</p>
+            <p>The fascial system in ELDOA methodology.</p>
+          </div>
+          <div class="card">
+            <h3><a href="/encyclopedia/scoliosis.html">Scoliosis</a></h3>
+            <p class="meta">Spine • curvature, postural</p>
+            <p>Protocols for spinal curvature management.</p>
+          </div>
+          <div class="card">
+            <h3><a href="/encyclopedia/thoracic-outlet-syndrome.html">Thoracic Outlet Syndrome</a></h3>
+            <p class="meta">Thoracic • shoulder, compression</p>
+            <p>Addressing thoracic outlet compression.</p>
+          </div>
+        </div>
+        <div style="text-align:center;margin-top:2rem;">
+          <a href="/encyclopedia.html" class="btn btn-primary">View All 629 Entries →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section>
+      <div class="container">
+        <div class="cta-section">
+          <h2>Check Your Posture</h2>
+          <p>Use your phone's gyroscope to combat "tech neck" and maintain proper alignment.</p>
+          <a href="/posture-check.html" class="btn">Try Posture Check →</a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer role="contentinfo">
-    <div class="container" style="display:grid; gap:1rem">
-      <div><strong>ELDOA AI</strong> — Knowledge • Videos • Practitioners</div>
-      <div style="display:flex; gap:.75rem; flex-wrap:wrap">
+  <footer>
+    <div class="container footer-inner">
+      <div><strong>ELDOA AI</strong></div>
+      <div class="footer-links">
         <a href="/">Home</a>
         <a href="/what-is-eldoa.html">What is ELDOA?</a>
         <a href="/about.html">About</a>
         <a href="/about.html#contact">Contact</a>
-        <a href="/contribute.html">Contribute</a>
         <a href="/privacy.html">Privacy</a>
-        <a href="/terms.html">Terms</a>
       </div>
-      <small>Educational content only — not medical advice.</small>
+      <small>Educational content only — not medical advice. Based on the work of Dr. Guy Voyer.</small>
     </div>
   </footer>
 
   <script>
-    // THEME TOGGLE
+    // Theme Toggle
     (function(){
       const root = document.documentElement;
       const btn = document.getElementById('themeToggle');
       const key = 'theme';
-      const metaLight = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: light)"]') || document.querySelector('meta[name="theme-color"]');
-      const metaDark = document.querySelector('meta[name="theme-color"][media="(prefers-color-scheme: dark)"]');
-      const setTheme = (mode) => {
-        root.setAttribute('data-theme', mode);
-        localStorage.setItem(key, mode);
-        if (metaLight && metaDark) {
-          if (mode === 'dark') { metaDark.setAttribute('content', '#0b0d12'); metaLight.setAttribute('content', '#0b0d12'); }
-          else { metaLight.setAttribute('content', '#ffffff'); metaDark.setAttribute('content', '#ffffff'); }
-        }
-      };
-      setTheme(localStorage.getItem(key) === 'dark' ? 'dark' : 'light');
-      btn.addEventListener('click', () => setTheme((root.getAttribute('data-theme')||'light') === 'light' ? 'dark' : 'light'));
+      const set = mode => { root.setAttribute('data-theme', mode); localStorage.setItem(key, mode); };
+      set(localStorage.getItem(key) === 'dark' ? 'dark' : 'light');
+      btn.addEventListener('click', () => set(root.getAttribute('data-theme') === 'light' ? 'dark' : 'light'));
     })();
 
-    // MOBILE MENU
+    // Mobile Menu
     (function(){
       const toggle = document.getElementById('menuToggle');
       const panel = document.getElementById('mobileMenu');
-      if (!toggle || !panel) return;
-      const open = () => { panel.hidden = false; panel.classList.add('open'); toggle.setAttribute('aria-expanded','true'); document.documentElement.style.overflow='hidden'; };
-      const close = () => { panel.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); document.documentElement.style.overflow=''; setTimeout(()=>{ panel.hidden = true; }, 180); };
-      toggle.addEventListener('click', ()=>{ panel.hidden || !panel.classList.contains('open') ? open() : close(); });
-      panel.addEventListener('click', (e)=>{ if (e.target === panel) close(); });
-      panel.querySelectorAll('a').forEach(a=> a.addEventListener('click', close));
-      window.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') close(); });
-      window.addEventListener('resize', ()=>{ if (window.innerWidth > 720 && !panel.hidden) close(); });
+      const open = () => { panel.hidden = false; panel.classList.add('open'); toggle.setAttribute('aria-expanded','true'); };
+      const close = () => { panel.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); setTimeout(() => panel.hidden = true, 200); };
+      toggle.addEventListener('click', () => panel.hidden ? open() : close());
+      panel.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
+      window.addEventListener('keydown', e => e.key === 'Escape' && close());
+      window.addEventListener('resize', () => window.innerWidth > 768 && !panel.hidden && close());
     })();
 
-    // DIAGNOSTIC PREVIEW WIDGET — Interactive mini body map
+    // Diagnostic Widget
     (function(){
-      const miniRegionData = {
-        'neck': {
-          name: 'Neck & Cervical Spine',
-          issues: ['Neck pain', 'Tech neck', 'Headaches', 'Disc herniation'],
-          topExercise: { name: 'Top 5 for Neck Pain', url: '/videos/pages/top-5-eldoa-exercises-for-neck-pain-relief.html' },
-          segments: ['C1-C2', 'C4-C5', 'C7-T1']
-        },
-        'shoulder': {
-          name: 'Shoulders',
-          issues: ['Rotator cuff', 'Impingement', 'Frozen shoulder', 'Referral pain'],
-          topExercise: { name: 'Top 5 for Shoulder Pain', url: '/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html' },
-          segments: ['C7-T1', 'Upper Thoracic']
-        },
-        'upper-back': {
-          name: 'Upper & Mid Back',
-          issues: ['Poor posture', 'Hyperkyphosis', 'Breathing issues', 'Upper back pain'],
-          topExercise: { name: 'T8-T9 Posture Correction', url: '/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html' },
-          segments: ['T8-T9', 'T12-L1']
-        },
-        'lower-back': {
-          name: 'Lower Back & Lumbar',
-          issues: ['Low back pain', 'Sciatica', 'Disc herniation', 'Sitting-related pain'],
-          topExercise: { name: 'L5-S1 Sciatica Relief', url: '/videos/pages/l5s1-eldoa-for-low-back-pain-and-sciatica.html' },
-          segments: ['L4-L5', 'L5-S1']
-        },
-        'hip': {
-          name: 'Hips & Pelvis',
-          issues: ['Hip pain', 'FAI', 'SI joint dysfunction', 'Pelvic tilt'],
-          topExercise: { name: 'Hip Pain Relief', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' },
-          segments: ['Hip', 'Sacrum']
-        }
+      const data = {
+        'neck': { name: 'Neck & Cervical Spine', issues: ['Neck pain', 'Tech neck', 'Headaches'], segments: ['C1-C2', 'C4-C5', 'C7-T1'], video: { name: 'Neck Pain Relief', url: '/videos/pages/top-5-eldoa-exercises-for-neck-pain-relief.html' }},
+        'shoulder': { name: 'Shoulders', issues: ['Rotator cuff', 'Impingement', 'Frozen shoulder'], segments: ['C7-T1', 'Upper Thoracic'], video: { name: 'Shoulder Pain Relief', url: '/videos/pages/top-5-eldoa-exercises-for-shoulder-pain-relief-to-fix-and-prevent-injuries.html' }},
+        'upper-back': { name: 'Upper & Mid Back', issues: ['Poor posture', 'Hyperkyphosis', 'Upper back pain'], segments: ['T8-T9', 'T12-L1'], video: { name: 'Posture Correction', url: '/videos/pages/t8t9-eldoa-for-hyperkyphosis-postural-correction-and-back-pain.html' }},
+        'lower-back': { name: 'Lower Back', issues: ['Low back pain', 'Sciatica', 'Disc herniation'], segments: ['L4-L5', 'L5-S1'], video: { name: 'Sciatica Relief', url: '/videos/pages/l5s1-eldoa-for-low-back-pain-and-sciatica.html' }},
+        'hip': { name: 'Hips & Pelvis', issues: ['Hip pain', 'SI joint', 'Pelvic tilt'], segments: ['Hip', 'Sacrum'], video: { name: 'Hip Pain Relief', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' }}
       };
+      const panel = document.getElementById('resultPanel');
+      const regions = document.querySelectorAll('.body-region');
 
-      const resultEl = document.getElementById('miniResult');
-      const regions = document.querySelectorAll('.mini-region');
-
-      function renderMiniResult(regionId) {
-        const data = miniRegionData[regionId];
-        if (!data) return;
-
-        resultEl.innerHTML = `
-          <h4>${data.name}</h4>
-          <div class="mini-result-tags">
-            ${data.issues.slice(0,3).map(i => `<span class="mini-tag">${i}</span>`).join('')}
-          </div>
-          <p style="font-size:.8rem;color:var(--muted);margin:.4rem 0">Segments: ${data.segments.join(', ')}</p>
-          <div class="mini-cta">
-            <a href="${data.topExercise.url}" class="primary">Watch Video</a>
-            <a href="/diagnostic.html" class="secondary">Full Diagnostic</a>
+      function render(id) {
+        const d = data[id]; if (!d) return;
+        panel.innerHTML = `
+          <div class="result-content">
+            <h3>${d.name}</h3>
+            <div class="result-tags">${d.issues.map(i => `<span class="tag">${i}</span>`).join('')}</div>
+            <div class="result-segments">Segments: ${d.segments.join(', ')}</div>
+            <div class="result-actions">
+              <a href="${d.video.url}" class="btn btn-primary">Watch Video</a>
+              <a href="/diagnostic.html" class="btn">Full Diagnostic</a>
+            </div>
           </div>
         `;
       }
 
-      regions.forEach(region => {
+      regions.forEach(r => {
         const handler = () => {
-          const regionId = region.getAttribute('data-region');
-          regions.forEach(r => r.classList.remove('active'));
-          document.querySelectorAll(`[data-region="${regionId}"]`).forEach(r => r.classList.add('active'));
-          renderMiniResult(regionId);
+          const id = r.dataset.region;
+          regions.forEach(x => x.classList.remove('active'));
+          document.querySelectorAll(`[data-region="${id}"]`).forEach(x => x.classList.add('active'));
+          render(id);
         };
-        region.addEventListener('click', handler);
-        region.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); handler(); } });
+        r.addEventListener('click', handler);
+        r.addEventListener('keydown', e => (e.key === 'Enter' || e.key === ' ') && (e.preventDefault(), handler()));
       });
     })();
 
-    // A–Z filters
+    // Video Filters
     (function(){
-      const list = Array.from(document.querySelectorAll('#libList .card'));
-      const search = document.getElementById('libSearch');
-      const chipsWrap = document.getElementById('azChips');
-      const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
-      let activeLetter = '';
-      letters.forEach(L => {
-        const b = document.createElement('button');
-        b.className = 'chip'; b.type='button'; b.textContent = L;
-        b.addEventListener('click', ()=>{ activeLetter = (activeLetter===L?'':L); filter(); });
-        chipsWrap.appendChild(b);
-      });
+      const cards = Array.from(document.querySelectorAll('#videoGrid .card'));
+      const selects = ['vf1','vf2','vf3'].map(id => document.getElementById(id));
       const filter = () => {
-        const q = (search.value || '').toLowerCase();
-        list.forEach(card => {
-          const title = (card.dataset.title || '').toLowerCase();
-          const letter = card.dataset.letter || '';
-          const matchQ = !q || title.includes(q);
-          const matchL = !activeLetter || letter === activeLetter;
-          card.style.display = (matchQ && matchL) ? '' : 'none';
+        const [level, ailment, segment] = selects.map(s => s.value);
+        cards.forEach(c => {
+          const ok = (!level || c.dataset.practice === level) &&
+                     (!ailment || c.dataset.ailment === ailment) &&
+                     (!segment || (c.dataset.segment && c.dataset.segment.includes(segment)));
+          c.style.display = ok ? '' : 'none';
         });
       };
-      search.addEventListener('input', filter);
-    })();
-
-    // Videos filter (demo)
-    (function(){
-      const grid = Array.from(document.querySelectorAll('#videos .card'));
-      const selects = ['vf1','vf2','vf3'].map(id=>document.getElementById(id));
-      const q = document.getElementById('videoSearch');
-      const filter = () => {
-        const [level, ailment, segment] = selects.map(s=>s.value);
-        const query = (q.value||'').toLowerCase();
-        grid.forEach(it => {
-          const matchLevel = !level || it.dataset.practice === level;
-          const matchAilment = !ailment || it.dataset.ailment === ailment;
-          const matchSegment = !segment || (it.dataset.segment && it.dataset.segment.includes(segment));
-          const matchQuery = !query || it.textContent.toLowerCase().includes(query);
-          const good = matchLevel && matchAilment && matchSegment && matchQuery;
-          it.style.display = good ? '' : 'none';
-        });
-      };
-      selects.forEach(s=>s.addEventListener('change', filter));
-      q.addEventListener('input', filter);
-    })();
-
-    // Progressive data loaders (optional JSON sources)
-    (async function(){
-      async function getJSON(url){ try { const r = await fetch(url, {headers:{'Accept':'application/json'}}); if(!r.ok) return null; return await r.json(); } catch { return null; } }
-      window.__ELDOA_GETJSON__ = getJSON;
-
-      const libData = await getJSON('/library/index.json');
-      if (Array.isArray(libData) && libData.length) {
-        const wrap = document.getElementById('libList');
-        wrap.innerHTML = '';
-        libData.slice(0, 18).forEach(item => {
-          const el = document.createElement('article');
-          el.className = 'card';
-          el.dataset.title = item.title || '';
-          el.dataset.letter = (item.letter || (item.title||'')[0] || '').toUpperCase();
-          el.innerHTML = `
-            <h3><a href="/library/${item.slug || ''}">${item.title || 'Untitled'}</a></h3>
-            <div class="meta">${item.region?`Region: ${item.region} • `:''}Tags: ${(item.tags||[]).join(', ')}</div>
-            <p>${item.summary || ''}</p>
-          `;
-          wrap.appendChild(el);
-        });
-      }
-
-      const vidData = await getJSON('/data/video-library.json');
-      if (Array.isArray(vidData) && vidData.length) {
-        const grid = document.getElementById('videoGrid');
-        // Don't replace - we already have good examples. Just leave them.
-        // If we wanted to replace: grid.innerHTML = '';
-        // vidData.slice(0, 6).forEach(v => {
-        //   const a = document.createElement('article');
-        //   a.className = 'card';
-        //   a.dataset.practice = v.difficulty || '';
-        //   a.dataset.ailment = (v.ailment && v.ailment[0]) || '';
-        //   a.dataset.segment = v.segment || '';
-        //   a.innerHTML = `
-        //     <h3>${v.title || 'Untitled'}</h3>
-        //     <p class="meta">${[v.difficulty, v.segment, v.duration].filter(Boolean).join(' • ')}</p>
-        //     <a class="btn" href="/videos/pages/${v.id}.html">Watch Video</a>
-        //   `;
-        //   grid.appendChild(a);
-        // });
-      }
-
-      const proData = await getJSON('/expert/index.json');
-      if (Array.isArray(proData) && proData.length) {
-        const grid = document.getElementById('practGrid');
-        proData.slice(0, 6).forEach(p => {
-          const card = document.createElement('article');
-          card.className = 'card';
-          card.innerHTML = `
-            <h3>${p.name || 'Practitioner'}</h3>
-            <p class="meta">${[p.city, p.country].filter(Boolean).join(', ')}</p>
-            ${p.url ? `<a class="btn" href="${p.url}" target="_blank" rel="nofollow noopener">Profile</a>` : ''}
-          `;
-          grid.appendChild(card);
-        });
-      }
-    })();
-
-    // Global search SPA + typo tolerance
-    (function(){
-      const form = document.querySelector('form[role="search"]');
-      if (!form) return;
-      const input = document.getElementById('q');
-      const sr = document.getElementById('searchResults');
-      const groupsWrap = document.getElementById('sr-groups');
-      const countEl = document.getElementById('sr-count');
-
-      const norm = (s='') => s.toString().toLowerCase().normalize('NFD').replace(/\p{Diacritic}+/gu,'');
-
-      function lev2(a,b,max=2){
-        a = norm(a); b = norm(b);
-        if (!a || !b) return Math.max(a.length,b.length);
-        if (Math.abs(a.length-b.length) > max) return max+1;
-        const prev = new Uint16Array(b.length+1);
-        for (let j=0;j<=b.length;j++) prev[j]=j;
-        for (let i=1;i<=a.length;i++){
-          let last = prev[0]; prev[0] = i; let minRow = prev[0];
-          for (let j=1;j<=b.length;j++){
-            const tmp = prev[j]; const cost = a[i-1]===b[j-1]?0:1;
-            prev[j] = Math.min(prev[j]+1, prev[j-1]+1, last+cost);
-            last = tmp; if (prev[j] < minRow) minRow = prev[j];
-          }
-          if (minRow > max) return max+1;
-        }
-        return prev[b.length];
-      }
-
-      function scoreDoc(query, ...fields){
-        const q = norm(query); if (!q) return 999;
-        let best = Infinity;
-        for (const f of fields){
-          const s = norm(f||''); if (!s) continue;
-          if (s.includes(q)) return 0;
-          const words = s.split(/[^a-z0-9]+/g);
-          for (const w of words){ if (!w) continue; best = Math.min(best, lev2(q,w,2)); if (best===0) return 0; }
-          best = Math.min(best, lev2(q,s,2));
-        }
-        return best;
-      }
-
-      async function getJSON(url){
-        try { const r = await fetch(url, {headers:{'Accept':'application/json'}}); if(!r.ok) return null; return await r.json(); } catch { return null; }
-      }
-      async function fetchAll(){
-        const [E,V,P] = await Promise.all([
-          getJSON('/library/index.json'),
-          getJSON('/video/index.json'),
-          getJSON('/expert/index.json')
-        ]);
-        return {entries: Array.isArray(E)?E:[], videos: Array.isArray(V)?V:[], pros: Array.isArray(P)?P:[]};
-      }
-
-      function renderResults(query, buckets){
-        ['library','videos','practitioners'].forEach(id=>{ const el = document.getElementById(id); if (el) el.style.display='none'; });
-        sr.classList.add('active');
-        groupsWrap.innerHTML = '';
-        let total = 0;
-        const addGroup = (title, items) => { if (!items.length) return; total += items.length; const g = document.createElement('div'); g.className = 'sr-group'; g.innerHTML = `<h3>${title} <span class="badge">${items.length}</span></h3>`; items.forEach(it => g.appendChild(it)); groupsWrap.appendChild(g); };
-        const entryCards = buckets.entries.map(e=>{ const a = document.createElement('a'); a.href = `/library/${e.slug||''}`; a.className='sr-item'; a.innerHTML = `<strong>${e.title||'Untitled'}</strong><div class="meta">${[e.region,(e.tags||[]).join(', ')].filter(Boolean).join(' • ')}</div><p>${e.summary||''}</p>`; return a; });
-        const videoCards = buckets.videos.map(v=>{ const a = document.createElement('a'); a.href = v.url||'#'; a.target='_blank'; a.rel='nofollow noopener'; a.className='sr-item'; a.innerHTML = `<strong>${v.title||'Untitled'}</strong><div class="meta">${[v.practice,v.ailment,v.protocol].filter(Boolean).join(' • ')}</div>`; return a; });
-        const proCards = buckets.pros.map(p=>{ const a = document.createElement('a'); a.href = p.url||'/expert'; a.className='sr-item'; a.innerHTML = `<strong>${p.name||'Practitioner'}</strong><div class="meta">${[p.city,p.country].filter(Boolean).join(', ')}</div>`; return a; });
-        addGroup('Encyclopedia entries', entryCards); addGroup('Videos', videoCards); addGroup('Practitioners', proCards);
-        countEl.textContent = `${total} result${total===1?'':'s'} for “${query}”`;
-      }
-
-      async function runSearch(query){
-        const {entries, videos, pros} = await fetchAll();
-        const scoredEntries = entries.map(e=>({e, s: scoreDoc(query, e.title, e.summary, (e.tags||[]).join(' '), e.region)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
-        const scoredVideos  = videos.map(v=>({v, s: scoreDoc(query, v.title, v.practice, v.ailment, v.protocol)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
-        const scoredPros    = pros.map(p=>({p, s: scoreDoc(query, p.name, p.city, p.country)})).filter(x=>x.s<=2).sort((a,b)=>a.s-b.s).slice(0,50);
-        renderResults(query, { entries: scoredEntries.map(x=>x.e), videos:  scoredVideos.map(x=>x.v), pros:    scoredPros.map(x=>x.p) });
-      }
-
-      form.addEventListener('submit', (ev)=>{
-        ev.preventDefault();
-        const q = input.value.trim(); if(!q) return;
-        history.pushState({q}, '', `/search?q=${encodeURIComponent(q)}`);
-        runSearch(q);
-      });
-
-      const params = new URLSearchParams(location.search);
-      const path = location.pathname.replace(/\/?$/,'/');
-      if (path === '/search/') { const q = params.get('q')||''; if (q) { input.value = q; runSearch(q); } }
-      window.addEventListener('popstate', ()=>{ const ps = new URLSearchParams(location.search); const q = ps.get('q')||''; if (q) { input.value = q; runSearch(q); } });
+      selects.forEach(s => s.addEventListener('change', filter));
     })();
   </script>
 </body>
