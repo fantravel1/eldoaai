@@ -142,6 +142,40 @@
   </style>
 </head>
 <body>
+<a class="sr-only" href="#main">Skip to content</a>
+<header role="banner" class="site-header">
+  <div class="container nav" aria-label="Primary">
+    <a class="logo" href="/" aria-label="ELDOA AI Home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span>ELDOA <span style="color:var(--brand)">AI</span></span>
+    </a>
+    <div class="nav-right">
+      <nav class="nav-links" aria-label="Primary links">
+        <a href="/diagnostic.html" class="btn">🎯 Diagnostic</a>
+        <a href="/posture-check.html" class="btn">📐 Posture Check</a>
+        <a href="/videos/" class="btn">📹 Videos</a>
+        <a href="/practitioners.html" class="btn">🧑‍⚕️ Practitioners</a>
+        <a href="/encyclopedia.html" class="btn">📖 Encyclopedia</a>
+      </nav>
+      <button id="menuToggle" class="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+      <button id="themeToggle" class="switch" aria-label="Toggle dark/light theme"><span></span></button>
+    </div>
+  </div>
+  <div id="mobileMenu" class="mobile-menu" hidden>
+    <div class="menu-inner">
+      <a href="/diagnostic.html">🎯 Interactive Diagnostic</a>
+      <a href="/posture-check.html">📐 Posture Check Tool</a>
+      <a href="/videos/">📹 Complete Video Library</a>
+      <a href="/practitioners.html">🧑‍⚕️ Find Practitioners</a>
+      <a href="/encyclopedia.html">📖 Complete Encyclopedia</a>
+      <a href="/kids/encyclopedia.html">🧒 Kids Encyclopedia</a>
+    </div>
+  </div>
+</header>
+<main id="main" role="main">
+
   <header>
     <div class="container">
       <span class="emoji">🔍</span>
@@ -165,5 +199,50 @@
       <a href="/" class="back-link">🏠 Main Site</a>
     </div>
   </div>
+</main>
+<footer class="site-footer" role="contentinfo">
+  <div class="footer-inner">
+    <div><strong>ELDOA AI</strong> — Knowledge • Videos • Practitioners</div>
+    <div class="footer-links">
+      <a href="/">Home</a>
+      <a href="/what-is-eldoa.html">What is ELDOA?</a>
+      <a href="/encyclopedia.html">Encyclopedia</a>
+      <a href="/videos/">Videos</a>
+      <a href="/about.html">About</a>
+      <a href="/about.html#contact">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </div>
+    <small>Educational content only — not medical advice. Based on the work of Dr. Guy Voyer.</small>
+  </div>
+</footer>
+<script>
+// Theme toggle
+(function(){
+  const root = document.documentElement;
+  const btn = document.getElementById('themeToggle');
+  const key = 'theme';
+  if (!btn) return;
+  const setTheme = (mode) => {
+    root.setAttribute('data-theme', mode);
+    localStorage.setItem(key, mode);
+  };
+  const saved = localStorage.getItem(key);
+  if (saved) setTheme(saved);
+  else if (window.matchMedia('(prefers-color-scheme: dark)').matches) setTheme('dark');
+  btn.addEventListener('click', () => setTheme((root.getAttribute('data-theme')||'light') === 'light' ? 'dark' : 'light'));
+})();
+// Mobile menu
+(function(){
+  const toggle = document.getElementById('menuToggle');
+  const panel = document.getElementById('mobileMenu');
+  if (!toggle || !panel) return;
+  const open = () => { panel.hidden = false; panel.classList.add('open'); toggle.setAttribute('aria-expanded','true'); };
+  const close = () => { panel.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); setTimeout(()=>{ panel.hidden = true; }, 180); };
+  toggle.addEventListener('click', ()=>{ panel.hidden || !panel.classList.contains('open') ? open() : close(); });
+  panel.querySelectorAll('a').forEach(a=> a.addEventListener('click', close));
+  window.addEventListener('keydown', (e)=>{ if (e.key === 'Escape') close(); });
+  window.addEventListener('resize', ()=>{ if (window.innerWidth > 720 && !panel.hidden) close(); });
+})();
+</script>
 </body>
 </html>
