@@ -3,17 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Interactive ELDOA Diagnostic - Find Your Perfect Exercise | ELDOA AI</title>
-  <meta name="description" content="Tap your body where it hurts. Get instant ELDOA exercise recommendations based on your pain location, condition, or goal. Mobile-first interactive diagnostic tool."/>
-  <meta name="keywords" content="ELDOA diagnostic, body pain map, spinal segment selector, ELDOA exercise finder, interactive body map"/>
+  <title>Where Does It Hurt? — Find the Right Stretch for Your Pain | ELDOA AI</title>
+  <meta name="description" content="Tap where it hurts on the body map. Get free, personalized stretches for back pain, neck stiffness, sciatica, hip pain, and more. No signup required."/>
+  <meta name="keywords" content="back pain relief, why does my back hurt, stretches for lower back pain, neck pain from sitting, hip pain stretches, back feels compressed, stiff neck exercises, sciatica help"/>
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <link rel="canonical" href="https://eldoa.ai/diagnostic"/>
 
   <!-- Open Graph -->
   <meta property="og:type" content="website"/>
   <meta property="og:url" content="https://eldoa.ai/diagnostic"/>
-  <meta property="og:title" content="Interactive ELDOA Diagnostic - Find Your Perfect Exercise"/>
-  <meta property="og:description" content="Tap your body where it hurts. Get instant, personalized ELDOA exercise recommendations."/>
+  <meta property="og:title" content="Where Does It Hurt? — Find the Right Stretch for Your Pain"/>
+  <meta property="og:description" content="Tap where it hurts on the body map. Get free, personalized stretches for back pain, neck stiffness, sciatica, hip pain, and more. No signup required."/>
   <meta property="og:image" content="/images/og-diagnostic.jpg"/>
 
   <!-- Schema.org -->
@@ -22,7 +22,7 @@
     "@context": "https://schema.org",
     "@type": "MedicalWebPage",
     "name": "ELDOA Interactive Diagnostic Tool",
-    "description": "Interactive body map diagnostic tool for ELDOA exercise selection",
+    "description": "Tap where it hurts on the body map and get free stretches to relieve your pain — back, neck, hip, and more",
     "mainEntity": {
       "@type": "MedicalCondition",
       "name": "Musculoskeletal Pain",
@@ -252,8 +252,7 @@
   <main class="container">
     <h1>Where Does It Hurt?</h1>
     <p class="intro">
-      Tap any area on the body diagram below to discover targeted ELDOA exercises for your specific concern.
-      Our AI-guided diagnostic tool matches your pain location or condition with evidence-based protocols.
+      Tap where it hurts. We'll show you a simple stretch that targets your specific pain — used by physical therapists and professional athletes.
     </p>
 
     <div class="body-map-container">
@@ -307,6 +306,14 @@
           <!-- Shoulder Right -->
           <circle class="body-region" data-region="shoulder-right" cx="150" cy="120" r="18"/>
           <text x="150" y="125" text-anchor="middle" font-size="8" fill="currentColor" pointer-events="none">R Sh</text>
+
+          <!-- Knee Left -->
+          <rect class="body-region" data-region="knee-left" x="60" y="345" width="30" height="35" rx="8"/>
+          <text x="75" y="367" text-anchor="middle" font-size="8" fill="currentColor" pointer-events="none">L Knee</text>
+
+          <!-- Knee Right -->
+          <rect class="body-region" data-region="knee-right" x="110" y="345" width="30" height="35" rx="8"/>
+          <text x="125" y="367" text-anchor="middle" font-size="8" fill="currentColor" pointer-events="none">R Knee</text>
         </svg>
 
         <p style="text-align:center;margin-top:1rem;color:var(--muted);font-size:.85rem">
@@ -508,6 +515,34 @@
         videoLinks: [
           { title: 'Eliminate Hip Pain', url: '/videos/pages/how-to-eliminate-hip-pain-the-external-coxo-femoral-eldoa.html' },
           { title: 'Internal Coxo-Femoral ELDOA', url: '/videos/pages/internal-coxo-femoral-eldoa-for-hip-pain-si-joint-pain-pelvic-.html' }
+        ]
+      },
+      'knee-left': {
+        name: 'Left Knee',
+        commonIssues: ['Valgus knees', 'Knee pain', 'Bow legs', 'Flat feet'],
+        exercises: [
+          { name: 'Top 5 ELDOA for Valgus Knees', difficulty: 'Intermediate', url: '/videos/pages/top-5-eldoa-exercises-for-valgus-knees-knee-pain-relief.html' },
+          { name: 'Correct Bow Legs', difficulty: 'Intermediate', url: '/videos/pages/how-to-correct-bow-legs-top-5-eldoa-postures.html' }
+        ],
+        description: 'Knee alignment and pain relief through ELDOA. Often linked to lumbosacral and hip dysfunction.',
+        videoLinks: [
+          { title: 'Valgus Knees – Knee Pain Relief', url: '/videos/pages/top-5-eldoa-exercises-for-valgus-knees-knee-pain-relief.html' },
+          { title: 'Correct Bow Legs', url: '/videos/pages/how-to-correct-bow-legs-top-5-eldoa-postures.html' },
+          { title: 'Flat Feet & Foot Pain Relief', url: '/videos/pages/top-5-eldoa-exercises-for-flat-feet-exercises-for-foot-pain-relief.html' }
+        ]
+      },
+      'knee-right': {
+        name: 'Right Knee',
+        commonIssues: ['Valgus knees', 'Knee pain', 'Bow legs', 'Flat feet'],
+        exercises: [
+          { name: 'Top 5 ELDOA for Valgus Knees', difficulty: 'Intermediate', url: '/videos/pages/top-5-eldoa-exercises-for-valgus-knees-knee-pain-relief.html' },
+          { name: 'Correct Bow Legs', difficulty: 'Intermediate', url: '/videos/pages/how-to-correct-bow-legs-top-5-eldoa-postures.html' }
+        ],
+        description: 'Knee alignment and pain relief through ELDOA. Often linked to lumbosacral and hip dysfunction.',
+        videoLinks: [
+          { title: 'Valgus Knees – Knee Pain Relief', url: '/videos/pages/top-5-eldoa-exercises-for-valgus-knees-knee-pain-relief.html' },
+          { title: 'Correct Bow Legs', url: '/videos/pages/how-to-correct-bow-legs-top-5-eldoa-postures.html' },
+          { title: 'Flat Feet & Foot Pain Relief', url: '/videos/pages/top-5-eldoa-exercises-for-flat-feet-exercises-for-foot-pain-relief.html' }
         ]
       }
     };

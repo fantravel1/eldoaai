@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title id="page-title">ELDOA Practitioner Near Me | Certified Trainer | ELDOA AI</title>
-  <meta name="description" id="page-description" content="Find this certified ELDOA practitioner near you for spinal health, fascial therapy, and ELDOA classes. View credentials, specializations, and contact information.">
+  <title id="page-title">Back Pain & Spine Specialist Near You | Trained Practitioner Profile</title>
+  <meta name="description" id="page-description" content="View this specialist's profile — trained to help with back pain, neck stiffness, sciatica, and posture problems. See their credentials, what they treat, and how to book.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1">
   <link rel="canonical" id="page-canonical" href="https://eldoa.ai/practitioner.html">
 
   <!-- Open Graph / Twitter -->
   <meta property="og:type" content="profile">
   <meta property="og:url" id="og-url" content="https://eldoa.ai/practitioner.html">
-  <meta property="og:title" id="og-title" content="ELDOA Practitioner | ELDOA AI">
-  <meta property="og:description" id="og-description" content="View detailed profile for this certified ELDOA practitioner.">
+  <meta property="og:title" id="og-title" content="Back Pain & Spine Specialist Profile | ELDOA AI">
+  <meta property="og:description" id="og-description" content="View this specialist's profile — trained to help with back pain, neck stiffness, sciatica, and posture problems.">
   <meta property="og:image" content="https://eldoa.ai/images/og-practitioners.jpg">
   <meta name="twitter:card" content="summary">
 
@@ -27,8 +27,8 @@
   {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "name": "ELDOA Practitioner",
-    "description": "Certified ELDOA practitioner offering spinal health therapy and classes",
+    "name": "Back Pain & Spine Specialist",
+    "description": "Trained practitioner who helps with back pain, neck stiffness, sciatica, and posture correction",
     "@id": "https://eldoa.ai/practitioner.html",
     "url": "https://eldoa.ai/practitioner.html",
     "priceRange": "$$",
@@ -51,13 +51,13 @@
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "ELDOA Practitioners Near Me",
+        "name": "Find a Back Pain Specialist Near You",
         "item": "https://eldoa.ai/practitioners.html"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Practitioner Profile",
+        "name": "Specialist Profile",
         "item": "https://eldoa.ai/practitioner.html"
       }
     ]
@@ -405,13 +405,13 @@
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
         <path d="M19 12H5M12 19l-7-7 7-7"/>
       </svg>
-      Back to Directory
+      Back to All Specialists
     </a>
 
     <div id="content">
       <div class="loading">
         <div class="loading-spinner"></div>
-        <p>Loading practitioner profile...</p>
+        <p>Loading specialist profile...</p>
       </div>
     </div>
   </main>
@@ -453,12 +453,12 @@
 
     function displayPractitioner(p) {
       // Update page meta
-      const title = `${p.name} - ELDOA Practitioner Near Me in ${p.city || p.country} | ELDOA AI`;
+      const title = `${p.name} — Back Pain & Spine Specialist in ${p.city || p.country} | ELDOA AI`;
       document.getElementById('page-title').textContent = title;
       document.getElementById('og-title').content = title;
 
       const locationStr = [p.city, p.state || p.region, p.country].filter(Boolean).join(', ');
-      const desc = `Find ${p.name}, certified ELDOA practitioner near ${p.city || p.country}. ${p.levelTitle || 'Certified trainer'} offering ${p.specializations ? p.specializations.slice(0, 3).join(', ') : 'spinal health therapy and ELDOA classes'}.`;
+      const desc = `${p.name} in ${p.city || p.country} can help with back pain, neck stiffness, and posture problems. ${p.levelTitle || 'Trained specialist'} offering ${p.specializations ? p.specializations.slice(0, 3).join(', ') : 'pain relief, spinal decompression, and posture correction'}.`;
       document.getElementById('page-description').content = desc;
       document.getElementById('og-description').content = desc;
 
@@ -473,8 +473,8 @@
         const schema = {
           "@context": "https://schema.org",
           "@type": "LocalBusiness",
-          "name": p.practice || `${p.name} - ELDOA Practitioner`,
-          "description": `Certified ELDOA ${p.levelTitle || 'practitioner'} offering spinal health therapy, fascial treatment, and ELDOA classes in ${locationStr}.`,
+          "name": p.practice || `${p.name} — Back Pain & Spine Specialist`,
+          "description": `Trained specialist in ${locationStr} who helps with back pain, neck stiffness, sciatica, and posture correction. ${p.levelTitle || 'Certified practitioner'} offering hands-on treatment and guided sessions.`,
           "@id": canonicalUrl,
           "url": p.website ? `https://${p.website}` : canonicalUrl,
           "priceRange": "$$",
@@ -521,16 +521,16 @@
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "ELDOA Private Sessions",
-              "description": "One-on-one ELDOA therapy sessions for spinal health"
+              "name": "Private Back Pain & Posture Sessions",
+              "description": "One-on-one sessions for back pain relief, spinal decompression, and posture correction"
             }
           },
           {
             "@type": "Offer",
             "itemOffered": {
               "@type": "Service",
-              "name": "ELDOA Group Classes",
-              "description": "Group ELDOA classes and workshops"
+              "name": "Group Classes for Back Pain & Mobility",
+              "description": "Group sessions focused on relieving back pain, improving flexibility, and correcting posture"
             }
           }
         ];
@@ -554,7 +554,7 @@
             {
               "@type": "ListItem",
               "position": 2,
-              "name": "ELDOA Practitioners Near Me",
+              "name": "Find a Back Pain Specialist Near You",
               "item": "https://eldoa.ai/practitioners.html"
             },
             {
@@ -759,7 +759,7 @@
             <path d="M15 9l-6 6M9 9l6 6"/>
           </svg>
           <h2>${message}</h2>
-          <p><a href="/practitioners.html">← Back to Directory</a></p>
+          <p><a href="/practitioners.html">← Back to All Specialists</a></p>
         </div>
       `;
     }
