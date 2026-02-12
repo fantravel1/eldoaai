@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>ELDOA City Pages — Redirecting...</title>
+  <meta name="robots" content="noindex">
+  <script>
+    // Redirect old ?city=slug URLs to new individual HTML pages
+    var params = new URLSearchParams(window.location.search);
+    var city = params.get('city');
+    if (city) {
+      window.location.replace('/eldoa-' + city + '.html');
+    } else {
+      window.location.replace('/practitioners.html');
+    }
+  </script>
+</head>
+<body>
+  <p>Redirecting... <a href="/practitioners.html">Click here if not redirected.</a></p>
+</body>
+</html>

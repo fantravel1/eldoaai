@@ -1,0 +1,506 @@
+/**
+ * ELDOA City Page Styles
+ * Shared CSS for all eldoa-{city}.html pages
+ */
+
+:root, [data-theme="light"] {
+  --bg: #ffffff;
+  --fg: #0d0f13;
+  --muted: #475569;
+  --brand: #2f2fe6;
+  --brand-2: #0891b2;
+  --card: #f8fafc;
+  --border: #e2e8f0;
+  --ok: #15803d;
+  --warn: #a16207;
+  --err: #b91c1c;
+}
+[data-theme="dark"] {
+  --bg: #0b0d12;
+  --fg: #eef2ff;
+  --muted: #c7d2fe;
+  --brand: #8b5cf6;
+  --brand-2: #22d3ee;
+  --card: #111827;
+  --border: #262b36;
+  --ok: #22c55e;
+  --warn: #f59e0b;
+  --err: #ef4444;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: var(--brand); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.container { width: min(1200px, 94vw); margin: 0 auto; padding: 0 1rem; }
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  backdrop-filter: saturate(1.2) blur(8px);
+  background: color-mix(in oklab, var(--bg), transparent 20%);
+  border-bottom: 1px solid var(--border);
+  padding: .75rem 0;
+}
+.nav { display: flex; align-items: center; justify-content: space-between; }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  font-weight: 800;
+  text-decoration: none;
+  color: var(--fg);
+}
+.logo-mark {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background: conic-gradient(from 180deg at 50% 50%, var(--brand), var(--brand-2));
+}
+.nav-links { display: flex; align-items: center; gap: .5rem; }
+.nav-links a {
+  padding: .5rem .75rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: .9rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: background .15s, color .15s;
+}
+.nav-links a:hover { background: color-mix(in oklab, var(--card), var(--bg) 50%); color: var(--fg); }
+.nav-links a.active { background: var(--brand); color: #fff; }
+@media(max-width: 600px) { .nav-links { display: none; } }
+
+/* Back Link */
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 600;
+  margin: 1.5rem 0 .5rem;
+  text-decoration: none;
+}
+.back-link:hover { color: var(--brand); }
+
+/* Hero */
+.hero {
+  padding: 2.5rem 0 2rem;
+  background: linear-gradient(180deg, color-mix(in oklab, var(--brand), transparent 95%), var(--bg));
+}
+.hero h1 {
+  font-size: clamp(1.8rem, 5vw, 2.6rem);
+  margin-bottom: .75rem;
+  line-height: 1.15;
+}
+.hero p { color: var(--muted); font-size: 1.05rem; max-width: 65ch; margin-bottom: 1.5rem; }
+.hero-flag { font-size: 2rem; margin-bottom: .5rem; }
+
+/* Stats Row */
+.stats {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+.stat { text-align: center; }
+.stat-num { font-size: 2rem; font-weight: 800; color: var(--brand); }
+.stat-label { font-size: .8rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+
+/* Quick Links */
+.quick-links {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap;
+}
+.quick-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .7rem 1.1rem;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: .9rem;
+  text-decoration: none;
+  transition: all .15s;
+}
+.quick-link.primary {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  color: #fff;
+}
+.quick-link.secondary {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--fg);
+}
+.quick-link:hover { transform: translateY(-1px); text-decoration: none; }
+.quick-link svg { width: 18px; height: 18px; }
+
+/* Content Sections */
+.section { padding: 2.5rem 0; border-top: 1px solid var(--border); }
+.section-header { margin-bottom: 1.5rem; }
+.section-title { font-size: 1.4rem; font-weight: 800; margin-bottom: .35rem; }
+.section-desc { color: var(--muted); font-size: .95rem; }
+
+.content-block {
+  background: color-mix(in oklab, var(--bg), var(--card) 50%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+.content-block h2 {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+}
+.content-block h2 svg { width: 24px; height: 24px; color: var(--brand); flex-shrink: 0; }
+.content-block p { color: var(--fg); line-height: 1.7; margin-bottom: .75rem; }
+.content-block p:last-child { margin-bottom: 0; }
+.content-block strong { color: var(--fg); }
+
+/* Training Hub Card */
+.hub-card {
+  background: linear-gradient(135deg, color-mix(in oklab, var(--brand), transparent 92%), color-mix(in oklab, var(--brand-2), transparent 92%));
+  border: 1px solid color-mix(in oklab, var(--brand), transparent 70%);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.hub-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+.hub-card p { color: var(--muted); font-size: .95rem; line-height: 1.6; margin-bottom: .5rem; }
+.hub-badge {
+  display: inline-block;
+  padding: .25rem .6rem;
+  border-radius: 6px;
+  font-size: .75rem;
+  font-weight: 700;
+  background: color-mix(in oklab, var(--brand), transparent 80%);
+  color: var(--brand);
+  margin-top: .5rem;
+}
+
+/* Sports Section */
+.sports-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.sport-card {
+  background: color-mix(in oklab, var(--bg), var(--card) 40%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  transition: transform .15s, box-shadow .15s;
+}
+.sport-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px color-mix(in oklab, var(--fg), transparent 92%);
+}
+.sport-badge {
+  display: inline-block;
+  padding: .2rem .5rem;
+  border-radius: 6px;
+  font-size: .7rem;
+  font-weight: 700;
+  background: color-mix(in oklab, var(--brand-2), transparent 85%);
+  color: var(--brand-2);
+  margin-bottom: .5rem;
+}
+.sport-card h4 { font-size: 1rem; font-weight: 700; margin-bottom: .5rem; }
+.sport-card p { font-size: .85rem; color: var(--muted); line-height: 1.5; }
+
+/* Practitioners Grid */
+.practitioners-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media(min-width: 640px) { .practitioners-grid { grid-template-columns: repeat(2, 1fr); } }
+@media(min-width: 1000px) { .practitioners-grid { grid-template-columns: repeat(3, 1fr); } }
+
+/* Practitioner Card */
+.prac-card {
+  background: color-mix(in oklab, var(--bg), var(--card) 40%);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.25rem;
+  transition: transform .15s, box-shadow .15s, border-color .15s;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+}
+.prac-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px color-mix(in oklab, var(--fg), transparent 92%);
+  border-color: var(--brand);
+  text-decoration: none;
+}
+.prac-card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: .75rem;
+  margin-bottom: .75rem;
+}
+.prac-name { font-size: 1.1rem; font-weight: 700; line-height: 1.2; color: var(--fg); }
+.prac-level {
+  flex-shrink: 0;
+  padding: .25rem .6rem;
+  border-radius: 8px;
+  font-size: .75rem;
+  font-weight: 700;
+  background: var(--brand);
+  color: #fff;
+  white-space: nowrap;
+}
+.prac-level.l6 { background: linear-gradient(135deg, #8b5cf6, #ec4899); }
+.prac-level.l5 { background: linear-gradient(135deg, #6366f1, #8b5cf6); }
+.prac-level.l4 { background: var(--brand); }
+.prac-level.l3 { background: color-mix(in oklab, var(--brand), var(--brand-2) 50%); }
+.prac-level.l2 { background: color-mix(in oklab, var(--brand), transparent 30%); }
+
+.prac-location {
+  font-size: .9rem;
+  color: var(--muted);
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+  margin-bottom: .5rem;
+}
+.prac-location svg { width: 14px; height: 14px; flex-shrink: 0; }
+
+.prac-creds { display: flex; flex-wrap: wrap; gap: .35rem; margin-bottom: .75rem; }
+.prac-cred {
+  padding: .15rem .45rem;
+  border-radius: 6px;
+  font-size: .7rem;
+  font-weight: 600;
+  background: color-mix(in oklab, var(--brand), transparent 88%);
+  color: var(--brand);
+}
+
+.prac-specs { font-size: .85rem; color: var(--muted); line-height: 1.4; flex-grow: 1; }
+.prac-practice { margin-top: .5rem; font-size: .8rem; font-weight: 600; color: var(--brand-2); }
+
+.prac-status {
+  margin-top: .75rem;
+  padding-top: .75rem;
+  border-top: 1px solid var(--border);
+  font-size: .8rem;
+  display: flex;
+  align-items: center;
+  gap: .4rem;
+}
+.status-dot { width: 8px; height: 8px; border-radius: 50%; }
+.status-dot.active { background: var(--ok); }
+.status-dot.not-accepting { background: var(--warn); }
+.status-dot.deceased { background: var(--muted); }
+.status-dot.closed { background: var(--err); }
+
+/* No Practitioners Banner */
+.no-practitioners-banner {
+  background: linear-gradient(135deg, color-mix(in oklab, var(--warn), transparent 90%), color-mix(in oklab, var(--brand), transparent 90%));
+  border: 1px solid color-mix(in oklab, var(--warn), transparent 70%);
+  border-radius: 14px;
+  padding: 2rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+.no-practitioners-banner h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: .5rem; }
+.no-practitioners-banner p { color: var(--muted); font-size: .95rem; max-width: 60ch; margin: 0 auto .75rem; }
+
+/* Online Options */
+.online-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.online-card {
+  display: block;
+  background: color-mix(in oklab, var(--bg), var(--card) 50%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1.25rem;
+  text-decoration: none;
+  color: inherit;
+  transition: all .15s;
+}
+.online-card:hover { border-color: var(--brand); transform: translateY(-2px); text-decoration: none; }
+.online-card-name { font-weight: 700; margin-bottom: .25rem; color: var(--fg); }
+.online-card-url { font-size: .85rem; color: var(--brand); margin-bottom: .35rem; }
+.online-card-desc { font-size: .85rem; color: var(--muted); }
+
+/* FAQ Section */
+.faq-list { display: grid; gap: 1rem; }
+.faq-item {
+  background: color-mix(in oklab, var(--bg), var(--card) 50%);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.faq-question {
+  padding: 1.25rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  user-select: none;
+}
+.faq-question:hover { color: var(--brand); }
+.faq-chevron {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  transition: transform .2s;
+  color: var(--muted);
+}
+.faq-item.open .faq-chevron { transform: rotate(180deg); }
+.faq-answer {
+  padding: 0 1.25rem 1.25rem;
+  color: var(--muted);
+  line-height: 1.6;
+  font-size: .95rem;
+  display: none;
+}
+.faq-item.open .faq-answer { display: block; }
+
+/* Nearby Cities */
+.nearby-cities { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1rem; }
+.nearby-city-link {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  padding: .6rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: .9rem;
+  color: var(--fg);
+  text-decoration: none;
+  transition: all .15s;
+}
+.nearby-city-link:hover { border-color: var(--brand); color: var(--brand); transform: translateY(-1px); text-decoration: none; }
+.nearby-city-link svg { width: 14px; height: 14px; }
+
+/* All Practitioners CTA */
+.all-practitioners-cta {
+  background: linear-gradient(135deg, var(--brand), var(--brand-2));
+  border-radius: 16px;
+  padding: 2.5rem;
+  text-align: center;
+  color: #fff;
+  margin: 2rem 0;
+}
+.all-practitioners-cta h2 { font-size: 1.4rem; margin-bottom: .5rem; }
+.all-practitioners-cta p { opacity: .9; margin-bottom: 1.25rem; max-width: 50ch; margin-left: auto; margin-right: auto; }
+.all-practitioners-cta a {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .8rem 1.5rem;
+  background: #fff;
+  color: var(--brand);
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .15s;
+}
+.all-practitioners-cta a:hover { transform: translateY(-2px); text-decoration: none; }
+
+/* ELDOA Tools Section */
+.tools-section {
+  background: color-mix(in oklab, var(--bg), var(--card) 50%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 2rem;
+  margin-bottom: 1.5rem;
+}
+.tools-section h2 { font-size: 1.2rem; font-weight: 800; margin-bottom: 1rem; }
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.tool-link {
+  display: flex;
+  align-items: center;
+  gap: .75rem;
+  padding: .75rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  text-decoration: none;
+  color: inherit;
+  transition: all .15s;
+}
+.tool-link:hover { border-color: var(--brand); transform: translateY(-1px); text-decoration: none; }
+.tool-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: color-mix(in oklab, var(--brand), transparent 90%);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+.tool-icon svg { width: 20px; height: 20px; color: var(--brand); }
+.tool-name { font-weight: 700; font-size: .9rem; }
+.tool-desc { font-size: .8rem; color: var(--muted); }
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: 2rem 0;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+.footer-col h4 { font-size: .85rem; font-weight: 700; color: var(--fg); margin-bottom: .75rem; text-transform: uppercase; letter-spacing: .05em; }
+.footer-col a { display: block; color: var(--muted); font-size: .9rem; padding: .25rem 0; }
+.footer-col a:hover { color: var(--brand); }
+footer small { font-size: .8rem; }
+
+/* Loading & Error */
+.loading, .error-state { text-align: center; padding: 4rem 2rem; color: var(--muted); }
+.loading-spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid var(--border);
+  border-top-color: var(--brand);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.error-state h2 { color: var(--fg); margin-bottom: .5rem; }
+
+@media(max-width: 600px) {
+  .content-block { padding: 1.25rem; }
+  .hub-card { padding: 1.25rem; }
+  .all-practitioners-cta { padding: 1.5rem; }
+}
