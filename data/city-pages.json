@@ -1,0 +1,164 @@
+{
+  "lastUpdated": "2025-11-21",
+  "cities": [
+    {
+      "slug": "montreal",
+      "name": "Montreal",
+      "state": "QC",
+      "country": "Canada",
+      "countryCode": "CA",
+      "flag": "&#127464;&#127462;",
+      "lat": 45.5017,
+      "lng": -73.5673,
+      "practitionerCities": ["Montreal"],
+      "practitionerRegions": ["QC", "Quebec"],
+      "heroTitle": "ELDOA Montreal — Find Back Pain & Spine Specialists in Montreal",
+      "heroSubtitle": "Montreal is one of Canada's most active ELDOA communities, home to a certified training hub, multiple practitioners, and a deep connection to the method's French-Canadian roots. Find a trained specialist who can help with your back pain, neck stiffness, or posture problems.",
+      "metaTitle": "ELDOA Montreal — Back Pain Specialists & Classes in Montreal, QC",
+      "metaDescription": "Find ELDOA practitioners in Montreal, Quebec. Montreal is a certified Canadian training hub with 3+ trained specialists offering spinal decompression, posture correction, and back pain relief. Book a session today.",
+      "metaKeywords": "ELDOA Montreal, back pain Montreal, spine specialist Montreal, ELDOA classes Montreal, posture correction Montreal, spinal decompression Montreal, myofascial stretching Montreal, ELDOA Quebec",
+      "aboutCity": "<p>Montreal has long been a cornerstone of ELDOA in North America. As one of the two anchor cities for <strong>Soma Education Canada</strong>, the official Canadian ELDOA certification body, Montreal serves as a major training hub where new practitioners are trained and certified. The city's bilingual community has a natural connection to the method — ELDOA was created by French osteopath <strong>Dr. Guy VOYER</strong>, and much of the original methodology and instruction was developed in French.</p><p>The Francophone community in Quebec was among the first in North America to embrace ELDOA and myofascial stretching, with practitioners integrating the method into physiotherapy clinics, sports conditioning centers, and wellness studios across the city. From the Plateau to Westmount, Montrealers have access to practitioners who specialize in spinal decompression, fascial work, and postural correction.</p>",
+      "whyPopular": "<p>Montreal's athletic culture and active lifestyle make it a natural fit for ELDOA. The city's long winters drive demand for indoor movement practices that address the postural strain of cold-weather living — think hunched shoulders, tight hip flexors from sitting, and lower back pain from icy sidewalks. ELDOA's targeted spinal decompression exercises offer relief without medication or surgery.</p><p>The city is also home to world-class athletes and sports organizations that have embraced fascial training and myofascial stretching as part of their performance and recovery protocols.</p>",
+      "sportsConnections": [
+        {
+          "team": "Montreal Canadiens (NHL)",
+          "note": "Professional hockey places enormous strain on the spine and hips. NHL teams across Canada have increasingly adopted myofascial stretching and fascial chain work — techniques rooted in the same principles as ELDOA — for player recovery and injury prevention. The repetitive skating motion, body checking, and compressed postures on the bench make spinal decompression exercises highly relevant for hockey athletes.",
+          "sport": "Hockey"
+        },
+        {
+          "team": "CF Montreal (MLS)",
+          "note": "Professional soccer athletes deal with chronic hip, groin, and lower back issues from the constant running, cutting, and kicking demands of the sport. Fascial training and targeted myofascial stretching have gained traction in MLS training rooms as players and trainers look for methods to address the deep fascial chains that connect the foot, hip, and spine.",
+          "sport": "Soccer"
+        },
+        {
+          "team": "Montreal Alouettes (CFL)",
+          "note": "Football players at every level are among the most likely to suffer spinal compression injuries. The CFL's Montreal Alouettes and teams across the league have access to sports medicine professionals who incorporate fascial release techniques similar to ELDOA for post-game recovery and long-term spinal health.",
+          "sport": "Football"
+        }
+      ],
+      "trainingHub": {
+        "name": "Soma Education Canada",
+        "description": "Montreal is one of two Canadian cities (alongside Toronto) where Soma Education Canada offers ELDOA certification training. Practitioners from across Quebec and Eastern Canada travel to Montreal for Level 1-4 training courses.",
+        "website": "somaeducation.ca",
+        "phone": "1-778-970-1069"
+      },
+      "faqs": [
+        {
+          "question": "Where can I find ELDOA classes in Montreal?",
+          "answer": "Montreal has several trained ELDOA practitioners offering private sessions and group classes. Lisa-Marie Farley (Level 4, Institut SomaTraining director) leads instruction in the city, and practitioners like Alan Cohen (Alan Cohen Health) and Troy Perrin (Afterburn) offer ELDOA-integrated sessions. Check their websites for current schedules and booking."
+        },
+        {
+          "question": "Is ELDOA popular in Montreal?",
+          "answer": "Yes — Montreal is one of Canada's most established ELDOA communities. As a bilingual city with deep ties to French culture, Montreal was among the first North American cities to adopt ELDOA, which was created by French osteopath Dr. Guy VOYER. The city is an official Soma Education Canada training hub."
+        },
+        {
+          "question": "How much do ELDOA sessions cost in Montreal?",
+          "answer": "Private one-on-one ELDOA sessions in Montreal typically range from $80-150 CAD per hour. Group classes are usually $25-45 CAD per session. Many studios offer package deals and monthly memberships. Some practitioners also offer virtual sessions at reduced rates."
+        },
+        {
+          "question": "Do any Montreal sports teams use ELDOA or myofascial stretching?",
+          "answer": "While specific team protocols are not publicly disclosed, myofascial stretching and fascial chain training — the same principles underlying ELDOA — are widely used in professional sports rehabilitation across Montreal. NHL, MLS, and CFL training staffs regularly incorporate spinal decompression and fascial release techniques for player recovery."
+        },
+        {
+          "question": "Can I get ELDOA help online if I'm in Montreal?",
+          "answer": "Yes! If you can't find a convenient in-person option, several online practitioners serve the Montreal area. Popular options include Toronto ELDOA (Mon/Thu/Sun live Zoom sessions) and H3TV by Dan Hellman (subscription video library). You can also explore ELDOA METHOD from New Zealand for live Zoom group classes."
+        }
+      ],
+      "onlineFallbacks": [
+        {
+          "name": "Toronto ELDOA",
+          "description": "Live Zoom group classes Mon/Thu/Sun — convenient for Eastern time zone",
+          "website": "torontoeldoa.com"
+        },
+        {
+          "name": "H3TV by Dan Hellman",
+          "description": "Subscription video library with hundreds of guided ELDOA sessions",
+          "website": "h3.tv"
+        }
+      ],
+      "nearbyPractitionerCities": ["Toronto", "Ottawa", "Quebec City"]
+    },
+    {
+      "slug": "new-york-city",
+      "name": "New York City",
+      "state": "NY",
+      "country": "United States",
+      "countryCode": "US",
+      "flag": "&#127482;&#127480;",
+      "lat": 40.7128,
+      "lng": -74.0060,
+      "practitionerCities": ["New York"],
+      "practitionerStates": ["NY"],
+      "heroTitle": "ELDOA New York City — Find Back Pain & Spine Specialists in NYC",
+      "heroSubtitle": "New York City is one of the largest and fastest-growing ELDOA communities in the United States, with 6+ trained practitioners across Manhattan, Brooklyn, and the greater NYC area. Find a trained specialist who can help with your back pain, neck stiffness, or posture problems.",
+      "metaTitle": "ELDOA New York City — Back Pain Specialists & Classes in NYC",
+      "metaDescription": "Find ELDOA practitioners in New York City. NYC has 6+ trained specialists offering spinal decompression, posture correction, and back pain relief across Manhattan and Brooklyn. Book a session today.",
+      "metaKeywords": "ELDOA New York, ELDOA NYC, back pain NYC, spine specialist New York, ELDOA classes NYC, posture correction Manhattan, spinal decompression Brooklyn, myofascial stretching New York",
+      "aboutCity": "<p>New York City's ELDOA community has grown rapidly as more New Yorkers discover the method's effectiveness for addressing the specific postural challenges of city living. From desk workers in Midtown suffering from chronic lower back pain to performers on Broadway dealing with repetitive strain, ELDOA's targeted spinal decompression exercises offer a precise, no-equipment approach to pain relief that fits the city's fast-paced lifestyle.</p><p>NYC is home to multiple Level 4 Certified Trainers and several advanced practitioners who bring diverse backgrounds in Pilates, movement science, and holistic wellness. Studios across Manhattan — from the Upper West Side to downtown — now offer ELDOA as a standalone modality or integrated into broader movement programs.</p>",
+      "whyPopular": "<p>New York's unique lifestyle demands make ELDOA particularly relevant. Hours spent commuting on the subway, sitting at desks in high-rise offices, and navigating concrete sidewalks take a toll on the spine. ELDOA exercises specifically target the fascial chains that get compressed and shortened during these daily activities, offering relief in as little as one minute per position.</p><p>The city's wellness-forward culture and appetite for science-backed fitness methods have also fueled ELDOA's growth. As word spreads through Pilates studios, physical therapy clinics, and personal training circles, more New Yorkers are seeking out practitioners who can teach them these targeted decompression techniques.</p>",
+      "sportsConnections": [
+        {
+          "team": "New York Knicks & Brooklyn Nets (NBA)",
+          "note": "Professional basketball demands explosive movement, vertical jumping, and constant direction changes that compress the spine. NBA training staffs have increasingly adopted fascial training and myofascial stretching protocols to help players maintain spinal health throughout the grueling 82-game season. The principles of ELDOA — targeted decompression of specific spinal segments — align directly with what elite basketball players need for recovery.",
+          "sport": "Basketball"
+        },
+        {
+          "team": "New York Yankees & Mets (MLB)",
+          "note": "Baseball's rotational demands place enormous asymmetric stress on the spine. Throwing, batting, and fielding all involve explosive spinal rotation that can lead to disc issues and fascial imbalances. MLB teams have been at the forefront of adopting fascial chain training and myofascial release techniques for both performance enhancement and injury prevention.",
+          "sport": "Baseball"
+        },
+        {
+          "team": "New York Giants & Jets (NFL)",
+          "note": "NFL athletes face some of the highest spinal compression forces in all of professional sports. Tackling, blocking, and absorbing hits compress vertebral segments repeatedly over a season. Fascial training and spinal decompression methods derived from the same principles as ELDOA are used in NFL training facilities to help players recover and maintain spinal health between games.",
+          "sport": "Football"
+        },
+        {
+          "team": "New York Rangers & Islanders (NHL)",
+          "note": "Hockey's skating posture, body checking, and board play create significant spinal compression and fascial strain. NHL training staffs across the league have embraced myofascial stretching and fascial chain work — techniques rooted in the same science as ELDOA — for player recovery and long-term joint health.",
+          "sport": "Hockey"
+        }
+      ],
+      "trainingHub": null,
+      "faqs": [
+        {
+          "question": "Where can I find ELDOA classes in New York City?",
+          "answer": "NYC has 6+ trained ELDOA practitioners across Manhattan and the greater area. Top options include Ilaria Cavagna (Level 4, Feetness — also teaches ELDOA on Pilates Anytime), Enqing at Wellness Within Studio (Level 4, ELDOA Alignment Classes), Christopher Crawford at Dekhana Wellness (Level 4), Abena Pilates on the Upper West Side, and Brooke Chaffee. Check their individual websites for current class schedules and booking."
+        },
+        {
+          "question": "Is ELDOA popular in New York City?",
+          "answer": "ELDOA is growing rapidly in NYC. The method appeals to New Yorkers because it addresses the specific postural problems of city living — lower back pain from long commutes, neck stiffness from desk work, and hip tightness from walking on concrete. Multiple Pilates studios and wellness centers now integrate ELDOA into their offerings, and word-of-mouth among fitness professionals has fueled steady growth."
+        },
+        {
+          "question": "How much do ELDOA sessions cost in NYC?",
+          "answer": "Private ELDOA sessions in New York City typically range from $100-200 per hour, reflecting the city's higher cost of living. Group classes generally run $30-50 per session. Many studios offer introductory packages and multi-session discounts. Virtual sessions are also available from some NYC practitioners at lower price points."
+        },
+        {
+          "question": "Do any New York sports teams use ELDOA or myofascial stretching?",
+          "answer": "While specific team protocols are proprietary, myofascial stretching and fascial chain training — the same principles underlying ELDOA — are widely used in professional sports training facilities across New York. NBA, MLB, NFL, and NHL teams all employ sports medicine professionals who incorporate spinal decompression and fascial release techniques into player recovery programs."
+        },
+        {
+          "question": "Can I take ELDOA classes online if I'm in New York?",
+          "answer": "Absolutely! Several excellent online options are available for NYC residents. H3TV by Dan Hellman offers a subscription video library with hundreds of ELDOA sessions. Toronto ELDOA runs live Zoom group classes on Mon/Thu/Sun (same time zone). ELDOAUSA in Seal Beach also offers live Zoom group classes. Some NYC-based practitioners like Ilaria Cavagna also have content on Pilates Anytime."
+        }
+      ],
+      "onlineFallbacks": [
+        {
+          "name": "H3TV by Dan Hellman",
+          "description": "Subscription video library with hundreds of guided ELDOA sessions",
+          "website": "h3.tv"
+        },
+        {
+          "name": "Toronto ELDOA",
+          "description": "Live Zoom group classes Mon/Thu/Sun — same time zone as NYC",
+          "website": "torontoeldoa.com"
+        },
+        {
+          "name": "ELDOAUSA",
+          "description": "Live Zoom group classes from the US Education Center in Seal Beach, CA",
+          "website": "eldoausa.com"
+        }
+      ],
+      "nearbyPractitionerCities": ["Philadelphia", "Boston", "Washington DC"]
+    }
+  ]
+}
